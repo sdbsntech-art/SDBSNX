@@ -1,0 +1,5473 @@
+// Index officiel des 530+ supports de cours réels
+export const REAL_COURSES_INDEX = {
+  "L1": {
+    "semestres": {
+      "Semestre 2": {
+        "ALGORITHME": [
+          {
+            "name": "Seq1_Algo",
+            "filename": "Seq1_Algo.pdf",
+            "url": "/courses/L1/SEMESTRE 02/ALGORITHME/Seq1_Algo.pdf",
+            "size": "834.3 Ko",
+            "sizeBytes": 854341,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/ALGORITHME/Seq1_Algo.pdf"
+          },
+          {
+            "name": "seq2_algo",
+            "filename": "seq2_algo.pdf",
+            "url": "/courses/L1/SEMESTRE 02/ALGORITHME/seq2_algo.pdf",
+            "size": "508.5 Ko",
+            "sizeBytes": 520693,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/ALGORITHME/seq2_algo.pdf"
+          },
+          {
+            "name": "seq3_algo (1)",
+            "filename": "seq3_algo (1).pdf",
+            "url": "/courses/L1/SEMESTRE 02/ALGORITHME/seq3_algo (1).pdf",
+            "size": "913.7 Ko",
+            "sizeBytes": 935624,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/ALGORITHME/seq3_algo (1).pdf"
+          }
+        ],
+        "ASPECTS  ETHIQUES ET LEGEAUX": [
+          {
+            "name": "Séquence 1",
+            "filename": "Séquence 1.pdf",
+            "url": "/courses/L1/SEMESTRE 02/ASPECTS  ETHIQUES ET LEGEAUX/Séquence 1.pdf",
+            "size": "342.5 Ko",
+            "sizeBytes": 350723,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/ASPECTS  ETHIQUES ET LEGEAUX/Séquence 1.pdf"
+          },
+          {
+            "name": "Séquence 2",
+            "filename": "Séquence 2.pdf",
+            "url": "/courses/L1/SEMESTRE 02/ASPECTS  ETHIQUES ET LEGEAUX/Séquence 2.pdf",
+            "size": "342.5 Ko",
+            "sizeBytes": 350723,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/ASPECTS  ETHIQUES ET LEGEAUX/Séquence 2.pdf"
+          },
+          {
+            "name": "séquence 3 Aspects ethiques et légaux",
+            "filename": "séquence 3 Aspects ethiques et légaux.pdf",
+            "url": "/courses/L1/SEMESTRE 02/ASPECTS  ETHIQUES ET LEGEAUX/séquence 3 Aspects ethiques et légaux.pdf",
+            "size": "717.3 Ko",
+            "sizeBytes": 734512,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/ASPECTS  ETHIQUES ET LEGEAUX/séquence 3 Aspects ethiques et légaux.pdf"
+          },
+          {
+            "name": "séquence 4 Aspects ethiques et légaux",
+            "filename": "séquence 4 Aspects ethiques et légaux.pdf",
+            "url": "/courses/L1/SEMESTRE 02/ASPECTS  ETHIQUES ET LEGEAUX/séquence 4 Aspects ethiques et légaux.pdf",
+            "size": "606.9 Ko",
+            "sizeBytes": 621502,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/ASPECTS  ETHIQUES ET LEGEAUX/séquence 4 Aspects ethiques et légaux.pdf"
+          }
+        ],
+        "CSS3": [
+          {
+            "name": "Sequence 1 Les bases du CSS",
+            "filename": "Sequence 1 Les bases du CSS.pdf",
+            "url": "/courses/L1/SEMESTRE 02/CSS3/Sequence 1 Les bases du CSS.pdf",
+            "size": "1.33 Mo",
+            "sizeBytes": 1399444,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/CSS3/Sequence 1 Les bases du CSS.pdf"
+          },
+          {
+            "name": "Sequence 2 Les nouveautes de CSS3",
+            "filename": "Sequence 2 Les nouveautes de CSS3.pdf",
+            "url": "/courses/L1/SEMESTRE 02/CSS3/Sequence 2 Les nouveautes de CSS3.pdf",
+            "size": "825.7 Ko",
+            "sizeBytes": 845556,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/CSS3/Sequence 2 Les nouveautes de CSS3.pdf"
+          }
+        ],
+        "HTML5": [
+          {
+            "name": "arc",
+            "filename": "arc.html",
+            "url": "/courses/L1/SEMESTRE 02/HTML5/arc.html",
+            "size": "0.3 Ko",
+            "sizeBytes": 332,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/HTML5/arc.html"
+          },
+          {
+            "name": "COURS DE LA SEQUENCE 04",
+            "filename": "COURS DE LA SEQUENCE 04.pdf",
+            "url": "/courses/L1/SEMESTRE 02/HTML5/COURS DE LA SEQUENCE 04.pdf",
+            "size": "1.16 Mo",
+            "sizeBytes": 1219357,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/HTML5/COURS DE LA SEQUENCE 04.pdf"
+          },
+          {
+            "name": "SEQUENCE 01 DU COURS LE LANGAGE HTML5",
+            "filename": "SEQUENCE 01 DU COURS LE LANGAGE HTML5.pdf",
+            "url": "/courses/L1/SEMESTRE 02/HTML5/SEQUENCE 01 DU COURS LE LANGAGE HTML5.pdf",
+            "size": "879.6 Ko",
+            "sizeBytes": 900664,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/HTML5/SEQUENCE 01 DU COURS LE LANGAGE HTML5.pdf"
+          },
+          {
+            "name": "SEQUENCE 02 DU COURS LE LANGAGE HTML5",
+            "filename": "SEQUENCE 02 DU COURS LE LANGAGE HTML5.pdf",
+            "url": "/courses/L1/SEMESTRE 02/HTML5/SEQUENCE 02 DU COURS LE LANGAGE HTML5.pdf",
+            "size": "898.3 Ko",
+            "sizeBytes": 919840,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/HTML5/SEQUENCE 02 DU COURS LE LANGAGE HTML5.pdf"
+          },
+          {
+            "name": "SEQUENCE 03 ",
+            "filename": "SEQUENCE 03 .pdf",
+            "url": "/courses/L1/SEMESTRE 02/HTML5/SEQUENCE 03 .pdf",
+            "size": "1.24 Mo",
+            "sizeBytes": 1300807,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/HTML5/SEQUENCE 03 .pdf"
+          },
+          {
+            "name": "td4 ",
+            "filename": "td4 .html",
+            "url": "/courses/L1/SEMESTRE 02/HTML5/td4 .html",
+            "size": "0.4 Ko",
+            "sizeBytes": 452,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/SEMESTRE 02/HTML5/td4 .html"
+          }
+        ],
+        "INTRODUCTION AUX JEUX VIDEOS": [
+          {
+            "name": "chap_01_Introduction",
+            "filename": "chap_01_Introduction.pdf",
+            "url": "/courses/L1/SEMESTRE 02/INTRODUCTION AUX JEUX VIDEOS/chap_01_Introduction.pdf",
+            "size": "19.81 Mo",
+            "sizeBytes": 20771423,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/INTRODUCTION AUX JEUX VIDEOS/chap_01_Introduction.pdf"
+          },
+          {
+            "name": "chap_02_Dispositif informatique pour les jeux video",
+            "filename": "chap_02_Dispositif informatique pour les jeux video.pdf",
+            "url": "/courses/L1/SEMESTRE 02/INTRODUCTION AUX JEUX VIDEOS/chap_02_Dispositif informatique pour les jeux video.pdf",
+            "size": "32.01 Mo",
+            "sizeBytes": 33565074,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/INTRODUCTION AUX JEUX VIDEOS/chap_02_Dispositif informatique pour les jeux video.pdf"
+          },
+          {
+            "name": "chap_03_Les outils de creation de jeux videos",
+            "filename": "chap_03_Les outils de creation de jeux videos.pdf",
+            "url": "/courses/L1/SEMESTRE 02/INTRODUCTION AUX JEUX VIDEOS/chap_03_Les outils de creation de jeux videos.pdf",
+            "size": "4.27 Mo",
+            "sizeBytes": 4478896,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/INTRODUCTION AUX JEUX VIDEOS/chap_03_Les outils de creation de jeux videos.pdf"
+          }
+        ],
+        "JAVASCRIPT02": [
+          {
+            "name": "Chapitre 1",
+            "filename": "Chapitre 1.pdf",
+            "url": "/courses/L1/SEMESTRE 02/JAVASCRIPT02/Chapitre 1.pdf",
+            "size": "541.2 Ko",
+            "sizeBytes": 554192,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/JAVASCRIPT02/Chapitre 1.pdf"
+          },
+          {
+            "name": "Chapitre 2",
+            "filename": "Chapitre 2.pdf",
+            "url": "/courses/L1/SEMESTRE 02/JAVASCRIPT02/Chapitre 2.pdf",
+            "size": "1000.1 Ko",
+            "sizeBytes": 1024078,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/JAVASCRIPT02/Chapitre 2.pdf"
+          },
+          {
+            "name": "Chapitre 3",
+            "filename": "Chapitre 3.pdf",
+            "url": "/courses/L1/SEMESTRE 02/JAVASCRIPT02/Chapitre 3.pdf",
+            "size": "1.25 Mo",
+            "sizeBytes": 1308373,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/JAVASCRIPT02/Chapitre 3.pdf"
+          },
+          {
+            "name": "Chapitre 4",
+            "filename": "Chapitre 4.pdf",
+            "url": "/courses/L1/SEMESTRE 02/JAVASCRIPT02/Chapitre 4.pdf",
+            "size": "681.6 Ko",
+            "sizeBytes": 697936,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/JAVASCRIPT02/Chapitre 4.pdf"
+          },
+          {
+            "name": "Chapitre 5",
+            "filename": "Chapitre 5.pdf",
+            "url": "/courses/L1/SEMESTRE 02/JAVASCRIPT02/Chapitre 5.pdf",
+            "size": "922.2 Ko",
+            "sizeBytes": 944354,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/JAVASCRIPT02/Chapitre 5.pdf"
+          }
+        ],
+        "LANGAGE C": [
+          {
+            "name": "sequence1",
+            "filename": "sequence1.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGAGE C/sequence1.pdf",
+            "size": "880.7 Ko",
+            "sizeBytes": 901873,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGAGE C/sequence1.pdf"
+          },
+          {
+            "name": "sequnce2",
+            "filename": "sequnce2.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGAGE C/sequnce2.pdf",
+            "size": "1.04 Mo",
+            "sizeBytes": 1086888,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGAGE C/sequnce2.pdf"
+          }
+        ],
+        "LANGUE NATIONALE ET TIC": [
+          {
+            "name": "01-CHAPITRE 3  ALPHABETS DES LANGUES NATIONALES ET TIC(1)",
+            "filename": "01-CHAPITRE 3  ALPHABETS DES LANGUES NATIONALES ET TIC(1).pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/01-CHAPITRE 3  ALPHABETS DES LANGUES NATIONALES ET TIC(1).pdf",
+            "size": "1.38 Mo",
+            "sizeBytes": 1443694,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/01-CHAPITRE 3  ALPHABETS DES LANGUES NATIONALES ET TIC(1).pdf"
+          },
+          {
+            "name": "02-Alphabets wolof",
+            "filename": "02-Alphabets wolof.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/02-Alphabets wolof.pdf",
+            "size": "153.2 Ko",
+            "sizeBytes": 156882,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/02-Alphabets wolof.pdf"
+          },
+          {
+            "name": "03-Alphabets pulaar",
+            "filename": "03-Alphabets pulaar.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/03-Alphabets pulaar.pdf",
+            "size": "155.9 Ko",
+            "sizeBytes": 159620,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/03-Alphabets pulaar.pdf"
+          },
+          {
+            "name": "04-Alphabets seereer",
+            "filename": "04-Alphabets seereer.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/04-Alphabets seereer.pdf",
+            "size": "133.9 Ko",
+            "sizeBytes": 137130,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/04-Alphabets seereer.pdf"
+          },
+          {
+            "name": "05-Alphabets sooninke",
+            "filename": "05-Alphabets sooninke.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/05-Alphabets sooninke.pdf",
+            "size": "150.2 Ko",
+            "sizeBytes": 153795,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/05-Alphabets sooninke.pdf"
+          },
+          {
+            "name": "06-Alphabets mandinka",
+            "filename": "06-Alphabets mandinka.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/06-Alphabets mandinka.pdf",
+            "size": "149.9 Ko",
+            "sizeBytes": 153547,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/06-Alphabets mandinka.pdf"
+          },
+          {
+            "name": "Autres ressources-20210201",
+            "filename": "Autres ressources-20210201.zip",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/Autres ressources-20210201.zip",
+            "size": "1018.7 Ko",
+            "sizeBytes": 1043114,
+            "ext": "ZIP",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/Autres ressources-20210201.zip"
+          },
+          {
+            "name": "CHAPITRE 1_LANGUES NATIONALES ET TIC",
+            "filename": "CHAPITRE 1_LANGUES NATIONALES ET TIC.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/CHAPITRE 1_LANGUES NATIONALES ET TIC.pdf",
+            "size": "1.11 Mo",
+            "sizeBytes": 1163626,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/CHAPITRE 1_LANGUES NATIONALES ET TIC.pdf"
+          },
+          {
+            "name": "CHAPITRE 2 COURS LANGUES NATIONALES ET TIC",
+            "filename": "CHAPITRE 2 COURS LANGUES NATIONALES ET TIC.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/CHAPITRE 2 COURS LANGUES NATIONALES ET TIC.pdf",
+            "size": "1.16 Mo",
+            "sizeBytes": 1215107,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/CHAPITRE 2 COURS LANGUES NATIONALES ET TIC.pdf"
+          },
+          {
+            "name": "CHAPITRE 4  ALPHABETS DES LANGUES NATIONALES ET TIC",
+            "filename": "CHAPITRE 4  ALPHABETS DES LANGUES NATIONALES ET TIC.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/CHAPITRE 4  ALPHABETS DES LANGUES NATIONALES ET TIC.pdf",
+            "size": "1.93 Mo",
+            "sizeBytes": 2025716,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/CHAPITRE 4  ALPHABETS DES LANGUES NATIONALES ET TIC.pdf"
+          },
+          {
+            "name": "Ressources complémentaires 3-20210201",
+            "filename": "Ressources complémentaires 3-20210201.zip",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/Ressources complémentaires 3-20210201.zip",
+            "size": "1.89 Mo",
+            "sizeBytes": 1976796,
+            "ext": "ZIP",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/Ressources complémentaires 3-20210201.zip"
+          },
+          {
+            "name": "Ressources complémentaires 4-20210201",
+            "filename": "Ressources complémentaires 4-20210201.zip",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/Ressources complémentaires 4-20210201.zip",
+            "size": "1.75 Mo",
+            "sizeBytes": 1831785,
+            "ext": "ZIP",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/Ressources complémentaires 4-20210201.zip"
+          },
+          {
+            "name": "Langues nationales et TIC_TP2",
+            "filename": "Langues nationales et TIC_TP2.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/TD et Exo/Langues nationales et TIC_TP2.pdf",
+            "size": "517.5 Ko",
+            "sizeBytes": 529941,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/SEMESTRE 02/LANGUE NATIONALE ET TIC/TD et Exo/Langues nationales et TIC_TP2.pdf"
+          }
+        ],
+        "TRAITEMENT D'IMAGE": [
+          {
+            "name": "chap_01_Image_numerique",
+            "filename": "chap_01_Image_numerique.pdf",
+            "url": "/courses/L1/SEMESTRE 02/TRAITEMENT D'IMAGE/chap_01_Image_numerique.pdf",
+            "size": "6.92 Mo",
+            "sizeBytes": 7257263,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/TRAITEMENT D'IMAGE/chap_01_Image_numerique.pdf"
+          },
+          {
+            "name": "chap_02_debuter sur Photoshop CS",
+            "filename": "chap_02_debuter sur Photoshop CS.pdf",
+            "url": "/courses/L1/SEMESTRE 02/TRAITEMENT D'IMAGE/chap_02_debuter sur Photoshop CS.pdf",
+            "size": "10.54 Mo",
+            "sizeBytes": 11054638,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/TRAITEMENT D'IMAGE/chap_02_debuter sur Photoshop CS.pdf"
+          },
+          {
+            "name": "chap_03_Les outils de Photoshop CS6",
+            "filename": "chap_03_Les outils de Photoshop CS6.pdf",
+            "url": "/courses/L1/SEMESTRE 02/TRAITEMENT D'IMAGE/chap_03_Les outils de Photoshop CS6.pdf",
+            "size": "23.37 Mo",
+            "sizeBytes": 24506153,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/TRAITEMENT D'IMAGE/chap_03_Les outils de Photoshop CS6.pdf"
+          },
+          {
+            "name": "td_1_chap_01_ti",
+            "filename": "td_1_chap_01_ti.pdf",
+            "url": "/courses/L1/SEMESTRE 02/TRAITEMENT D'IMAGE/TD et Exo/td_1_chap_01_ti.pdf",
+            "size": "114.6 Ko",
+            "sizeBytes": 117334,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/SEMESTRE 02/TRAITEMENT D'IMAGE/TD et Exo/td_1_chap_01_ti.pdf"
+          }
+        ],
+        "XML": [
+          {
+            "name": "sequence 1",
+            "filename": "sequence 1.pdf",
+            "url": "/courses/L1/SEMESTRE 02/XML/sequence 1.pdf",
+            "size": "111.8 Ko",
+            "sizeBytes": 114531,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/XML/sequence 1.pdf"
+          },
+          {
+            "name": "séquence 2",
+            "filename": "séquence 2.pdf",
+            "url": "/courses/L1/SEMESTRE 02/XML/séquence 2.pdf",
+            "size": "123.3 Ko",
+            "sizeBytes": 126214,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/XML/séquence 2.pdf"
+          },
+          {
+            "name": "séquence 3",
+            "filename": "séquence 3.pdf",
+            "url": "/courses/L1/SEMESTRE 02/XML/séquence 3.pdf",
+            "size": "96.7 Ko",
+            "sizeBytes": 99004,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/SEMESTRE 02/XML/séquence 3.pdf"
+          }
+        ],
+        "introduction aux reseaux": [
+          {
+            "name": "Travaux-Pratiques2-2-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques2-2-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques2-2-IntroductionAuxReseaux.pdf",
+            "size": "432.7 Ko",
+            "sizeBytes": 443076,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques2-2-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Travaux-Pratiques2-3-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques2-3-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques2-3-IntroductionAuxReseaux.pdf",
+            "size": "573.7 Ko",
+            "sizeBytes": 587461,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques2-3-IntroductionAuxReseaux.pdf"
+          }
+        ]
+      },
+      "Semestre 1": {
+        "LANGAGE C": [
+          {
+            "name": "Exercices de Travaux Dirigés1",
+            "filename": "Exercices de Travaux Dirigés1.pdf",
+            "url": "/courses/L1/SEMESTRE 02/LANGAGE C/Exercices de Travaux Dirigés1.pdf",
+            "size": "176.5 Ko",
+            "sizeBytes": 180750,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/SEMESTRE 02/LANGAGE C/Exercices de Travaux Dirigés1.pdf"
+          }
+        ],
+        "anglais": [
+          {
+            "name": "IDA_ang_chap1_TD_1_FICHE_1_2019",
+            "filename": "IDA_ang_chap1_TD_1_FICHE_1_2019.docx",
+            "url": "/courses/L1/semestre 1/SR/anglais/A Rendre/IDA_ang_chap1_TD_1_FICHE_1_2019.docx",
+            "size": "44.4 Ko",
+            "sizeBytes": 45450,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/anglais/A Rendre/IDA_ang_chap1_TD_1_FICHE_1_2019.docx"
+          },
+          {
+            "name": "IDA_ang_chap1_TD_1_FICHE_2_2019",
+            "filename": "IDA_ang_chap1_TD_1_FICHE_2_2019.docx",
+            "url": "/courses/L1/semestre 1/SR/anglais/A Rendre/IDA_ang_chap1_TD_1_FICHE_2_2019.docx",
+            "size": "44.0 Ko",
+            "sizeBytes": 45087,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/anglais/A Rendre/IDA_ang_chap1_TD_1_FICHE_2_2019.docx"
+          },
+          {
+            "name": "IDA_ang_chap2_TD_2_FICHE_1_2019",
+            "filename": "IDA_ang_chap2_TD_2_FICHE_1_2019.docx",
+            "url": "/courses/L1/semestre 1/SR/anglais/A Rendre/IDA_ang_chap2_TD_2_FICHE_1_2019.docx",
+            "size": "45.1 Ko",
+            "sizeBytes": 46141,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/anglais/A Rendre/IDA_ang_chap2_TD_2_FICHE_1_2019.docx"
+          },
+          {
+            "name": "IDA_ang_chap2_TD_2_FICHE_2_2019",
+            "filename": "IDA_ang_chap2_TD_2_FICHE_2_2019.docx",
+            "url": "/courses/L1/semestre 1/SR/anglais/A Rendre/IDA_ang_chap2_TD_2_FICHE_2_2019.docx",
+            "size": "44.5 Ko",
+            "sizeBytes": 45547,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/anglais/A Rendre/IDA_ang_chap2_TD_2_FICHE_2_2019.docx"
+          },
+          {
+            "name": "Ang_chap1_MIC_CD_IDA_2018",
+            "filename": "Ang_chap1_MIC_CD_IDA_2018.pdf",
+            "url": "/courses/L1/semestre 1/SR/anglais/cours/Ang_chap1_MIC_CD_IDA_2018.pdf",
+            "size": "110.6 Ko",
+            "sizeBytes": 113258,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/anglais/cours/Ang_chap1_MIC_CD_IDA_2018.pdf"
+          },
+          {
+            "name": "Ang_chap2_IDA_2018",
+            "filename": "Ang_chap2_IDA_2018.pdf",
+            "url": "/courses/L1/semestre 1/SR/anglais/cours/Ang_chap2_IDA_2018.pdf",
+            "size": "535.4 Ko",
+            "sizeBytes": 548284,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/anglais/cours/Ang_chap2_IDA_2018.pdf"
+          },
+          {
+            "name": "Computer_terms_Ang_MIC-CD-IDA_2018",
+            "filename": "Computer_terms_Ang_MIC-CD-IDA_2018.pdf",
+            "url": "/courses/L1/semestre 1/SR/anglais/cours/Computer_terms_Ang_MIC-CD-IDA_2018.pdf",
+            "size": "122.7 Ko",
+            "sizeBytes": 125616,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/anglais/cours/Computer_terms_Ang_MIC-CD-IDA_2018.pdf"
+          },
+          {
+            "name": "Consignes_Ang_chap1_2_IDA_2018",
+            "filename": "Consignes_Ang_chap1_2_IDA_2018.pdf",
+            "url": "/courses/L1/semestre 1/SR/anglais/cours/Consignes_Ang_chap1_2_IDA_2018.pdf",
+            "size": "111.6 Ko",
+            "sizeBytes": 114324,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/anglais/cours/Consignes_Ang_chap1_2_IDA_2018.pdf"
+          },
+          {
+            "name": "Dossier 1_ Science in the Modern World (support illustré)-20190423",
+            "filename": "Dossier 1_ Science in the Modern World (support illustré)-20190423.zip",
+            "url": "/courses/L1/semestre 1/SR/anglais/cours/Dossier 1_ Science in the Modern World (support illustré)-20190423.zip",
+            "size": "5.93 Mo",
+            "sizeBytes": 6213876,
+            "ext": "ZIP",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/anglais/cours/Dossier 1_ Science in the Modern World (support illustré)-20190423.zip"
+          },
+          {
+            "name": "Dossier 2-20190423",
+            "filename": "Dossier 2-20190423.zip",
+            "url": "/courses/L1/semestre 1/SR/anglais/cours/Dossier 2-20190423.zip",
+            "size": "19.71 Mo",
+            "sizeBytes": 20672584,
+            "ext": "ZIP",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/anglais/cours/Dossier 2-20190423.zip"
+          },
+          {
+            "name": "Multimedia Terms",
+            "filename": "Multimedia Terms.pdf",
+            "url": "/courses/L1/semestre 1/SR/anglais/cours/Multimedia Terms.pdf",
+            "size": "317.2 Ko",
+            "sizeBytes": 324797,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/anglais/cours/Multimedia Terms.pdf"
+          },
+          {
+            "name": "science in the modern word P 1.2 (1)",
+            "filename": "science in the modern word P 1.2 (1).pdf",
+            "url": "/courses/L1/semestre 1/SR/anglais/cours/science in the modern word P 1.2 (1).pdf",
+            "size": "1.99 Mo",
+            "sizeBytes": 2086063,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/anglais/cours/science in the modern word P 1.2 (1).pdf"
+          },
+          {
+            "name": "science in the modern word P 5",
+            "filename": "science in the modern word P 5.pdf",
+            "url": "/courses/L1/semestre 1/SR/anglais/cours/science in the modern word P 5.pdf",
+            "size": "2.56 Mo",
+            "sizeBytes": 2687980,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/anglais/cours/science in the modern word P 5.pdf"
+          },
+          {
+            "name": "tutoriel_andiaye_uvs",
+            "filename": "tutoriel_andiaye_uvs.pdf",
+            "url": "/courses/L1/semestre 1/SR/anglais/cours/tutoriel_andiaye_uvs.pdf",
+            "size": "1.08 Mo",
+            "sizeBytes": 1130745,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/anglais/cours/tutoriel_andiaye_uvs.pdf"
+          }
+        ],
+        "développement personnel": [
+          {
+            "name": "DEVPERSO - SEQUENCE 1 - INTRODDUCTION",
+            "filename": "DEVPERSO - SEQUENCE 1 - INTRODDUCTION.pdf",
+            "url": "/courses/L1/semestre 1/SR/développement personnel/cours/DEVPERSO - SEQUENCE 1 - INTRODDUCTION.pdf",
+            "size": "2.37 Mo",
+            "sizeBytes": 2482041,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/développement personnel/cours/DEVPERSO - SEQUENCE 1 - INTRODDUCTION.pdf"
+          },
+          {
+            "name": "DEVPERSO-SEQUENCE 3 - NOUS SOMMES TOUS DES ENTREPRENEURS, 2e PARTIE",
+            "filename": "DEVPERSO-SEQUENCE 3 - NOUS SOMMES TOUS DES ENTREPRENEURS, 2e PARTIE.pdf",
+            "url": "/courses/L1/semestre 1/SR/développement personnel/cours/DEVPERSO-SEQUENCE 3 - NOUS SOMMES TOUS DES ENTREPRENEURS, 2e PARTIE.pdf",
+            "size": "1.38 Mo",
+            "sizeBytes": 1444484,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/développement personnel/cours/DEVPERSO-SEQUENCE 3 - NOUS SOMMES TOUS DES ENTREPRENEURS, 2e PARTIE.pdf"
+          },
+          {
+            "name": "DEVPERSO-SEQUENCE 4 - LES LOIS DU SUCCES - INTRODUCTION",
+            "filename": "DEVPERSO-SEQUENCE 4 - LES LOIS DU SUCCES - INTRODUCTION.pdf",
+            "url": "/courses/L1/semestre 1/SR/développement personnel/cours/DEVPERSO-SEQUENCE 4 - LES LOIS DU SUCCES - INTRODUCTION.pdf",
+            "size": "1.04 Mo",
+            "sizeBytes": 1088122,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/développement personnel/cours/DEVPERSO-SEQUENCE 4 - LES LOIS DU SUCCES - INTRODUCTION.pdf"
+          },
+          {
+            "name": "DEVPERSO-SEQUENCE 5 - AU COMMENCEMENT EST LA PENSEE",
+            "filename": "DEVPERSO-SEQUENCE 5 - AU COMMENCEMENT EST LA PENSEE.pdf",
+            "url": "/courses/L1/semestre 1/SR/développement personnel/cours/DEVPERSO-SEQUENCE 5 - AU COMMENCEMENT EST LA PENSEE.pdf",
+            "size": "1.02 Mo",
+            "sizeBytes": 1070812,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/développement personnel/cours/DEVPERSO-SEQUENCE 5 - AU COMMENCEMENT EST LA PENSEE.pdf"
+          },
+          {
+            "name": "DEVPERSO-SEQUENCE6-LE REVE.docx",
+            "filename": "DEVPERSO-SEQUENCE6-LE REVE.docx.pdf",
+            "url": "/courses/L1/semestre 1/SR/développement personnel/cours/DEVPERSO-SEQUENCE6-LE REVE.docx.pdf",
+            "size": "1.01 Mo",
+            "sizeBytes": 1059119,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/développement personnel/cours/DEVPERSO-SEQUENCE6-LE REVE.docx.pdf"
+          },
+          {
+            "name": "DEVPERSO-SEQUENCE7-LE DESIR",
+            "filename": "DEVPERSO-SEQUENCE7-LE DESIR.pdf",
+            "url": "/courses/L1/semestre 1/SR/développement personnel/cours/DEVPERSO-SEQUENCE7-LE DESIR.pdf",
+            "size": "1.49 Mo",
+            "sizeBytes": 1560683,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/développement personnel/cours/DEVPERSO-SEQUENCE7-LE DESIR.pdf"
+          },
+          {
+            "name": "sequence 2",
+            "filename": "sequence 2.pdf",
+            "url": "/courses/L1/semestre 1/SR/développement personnel/cours/sequence 2.pdf",
+            "size": "2.1 Mo",
+            "sizeBytes": 2204531,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/développement personnel/cours/sequence 2.pdf"
+          }
+        ],
+        "environnement mobile": [
+          {
+            "name": "TP N°3",
+            "filename": "TP N°3.docx",
+            "url": "/courses/L1/semestre 1/SR/environnement mobile/A Rendre/TP N°3.docx",
+            "size": "17.2 Ko",
+            "sizeBytes": 17636,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/environnement mobile/A Rendre/TP N°3.docx"
+          },
+          {
+            "name": "TP N°4",
+            "filename": "TP N°4.docx",
+            "url": "/courses/L1/semestre 1/SR/environnement mobile/A Rendre/TP N°4.docx",
+            "size": "18.5 Ko",
+            "sizeBytes": 18975,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/environnement mobile/A Rendre/TP N°4.docx"
+          },
+          {
+            "name": "TP",
+            "filename": "TP.docx",
+            "url": "/courses/L1/semestre 1/SR/environnement mobile/A Rendre/TP.docx",
+            "size": "17.8 Ko",
+            "sizeBytes": 18210,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/environnement mobile/A Rendre/TP.docx"
+          },
+          {
+            "name": "TRAVAUX PRATIQUES N°2 Environnement mobile",
+            "filename": "TRAVAUX PRATIQUES N°2 Environnement mobile.docx",
+            "url": "/courses/L1/semestre 1/SR/environnement mobile/A Rendre/TRAVAUX PRATIQUES N°2 Environnement mobile.docx",
+            "size": "15.4 Ko",
+            "sizeBytes": 15807,
+            "ext": "DOCX",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/environnement mobile/A Rendre/TRAVAUX PRATIQUES N°2 Environnement mobile.docx"
+          },
+          {
+            "name": "DWMG1142_Séquence 1_Introduction aux Technologies Mobiles",
+            "filename": "DWMG1142_Séquence 1_Introduction aux Technologies Mobiles.pdf",
+            "url": "/courses/L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 1_Introduction aux Technologies Mobiles.pdf",
+            "size": "1012.9 Ko",
+            "sizeBytes": 1037217,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 1_Introduction aux Technologies Mobiles.pdf"
+          },
+          {
+            "name": "DWMG1142_Séquence 2_Généralités sur les Technologies Mobiles",
+            "filename": "DWMG1142_Séquence 2_Généralités sur les Technologies Mobiles.pdf",
+            "url": "/courses/L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 2_Généralités sur les Technologies Mobiles.pdf",
+            "size": "1.8 Mo",
+            "sizeBytes": 1885117,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 2_Généralités sur les Technologies Mobiles.pdf"
+          },
+          {
+            "name": "DWMG1142_Séquence 3_Evolution des périphériques mobiles(1)",
+            "filename": "DWMG1142_Séquence 3_Evolution des périphériques mobiles(1).pdf",
+            "url": "/courses/L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 3_Evolution des périphériques mobiles(1).pdf",
+            "size": "1.19 Mo",
+            "sizeBytes": 1247365,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 3_Evolution des périphériques mobiles(1).pdf"
+          },
+          {
+            "name": "DWMG1142_Séquence 4_Plateformes et Applications mobiles",
+            "filename": "DWMG1142_Séquence 4_Plateformes et Applications mobiles.pdf",
+            "url": "/courses/L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 4_Plateformes et Applications mobiles.pdf",
+            "size": "1.67 Mo",
+            "sizeBytes": 1755081,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 4_Plateformes et Applications mobiles.pdf"
+          },
+          {
+            "name": "DWMG1142_Séquence 5_Approches de développement pour les environnements mobiles",
+            "filename": "DWMG1142_Séquence 5_Approches de développement pour les environnements mobiles.pdf",
+            "url": "/courses/L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 5_Approches de développement pour les environnements mobiles.pdf",
+            "size": "941.6 Ko",
+            "sizeBytes": 964203,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 5_Approches de développement pour les environnements mobiles.pdf"
+          },
+          {
+            "name": "DWMG1142_Séquence 6_Environnements de développement intégré pour le mobile",
+            "filename": "DWMG1142_Séquence 6_Environnements de développement intégré pour le mobile.pdf",
+            "url": "/courses/L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 6_Environnements de développement intégré pour le mobile.pdf",
+            "size": "1.02 Mo",
+            "sizeBytes": 1071499,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/environnement mobile/cours/DWMG1142_Séquence 6_Environnements de développement intégré pour le mobile.pdf"
+          }
+        ],
+        "informatique-bureautique": [
+          {
+            "name": "exicercie à rendre",
+            "filename": "exicercie à rendre.pdf",
+            "url": "/courses/L1/semestre 1/SR/informatique-bureautique/A Rendre/exicercie à rendre.pdf",
+            "size": "667.6 Ko",
+            "sizeBytes": 683583,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/informatique-bureautique/A Rendre/exicercie à rendre.pdf"
+          },
+          {
+            "name": "Chap 1 - Fonctions et protection des données Excel (1)",
+            "filename": "Chap 1 - Fonctions et protection des données Excel (1).pdf",
+            "url": "/courses/L1/semestre 1/SR/informatique-bureautique/cours/Chap 1 - Fonctions et protection des données Excel (1).pdf",
+            "size": "994.2 Ko",
+            "sizeBytes": 1018080,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/informatique-bureautique/cours/Chap 1 - Fonctions et protection des données Excel (1).pdf"
+          },
+          {
+            "name": "Chap 2 -Tableaux croisés dynamiques",
+            "filename": "Chap 2 -Tableaux croisés dynamiques.pdf",
+            "url": "/courses/L1/semestre 1/SR/informatique-bureautique/cours/Chap 2 -Tableaux croisés dynamiques.pdf",
+            "size": "908.4 Ko",
+            "sizeBytes": 930178,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/informatique-bureautique/cours/Chap 2 -Tableaux croisés dynamiques.pdf"
+          },
+          {
+            "name": "Chap 3 - Création de formulaires",
+            "filename": "Chap 3 - Création de formulaires.pdf",
+            "url": "/courses/L1/semestre 1/SR/informatique-bureautique/cours/Chap 3 - Création de formulaires.pdf",
+            "size": "778.1 Ko",
+            "sizeBytes": 796791,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/informatique-bureautique/cours/Chap 3 - Création de formulaires.pdf"
+          },
+          {
+            "name": "COURS WORD INTERMEDIAIRE",
+            "filename": "COURS WORD INTERMEDIAIRE.pdf",
+            "url": "/courses/L1/semestre 1/SR/informatique-bureautique/cours/COURS WORD INTERMEDIAIRE.pdf",
+            "size": "2.77 Mo",
+            "sizeBytes": 2901843,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/informatique-bureautique/cours/COURS WORD INTERMEDIAIRE.pdf"
+          },
+          {
+            "name": "informatique",
+            "filename": "informatique.pdf",
+            "url": "/courses/L1/semestre 1/SR/informatique-bureautique/cours/informatique.pdf",
+            "size": "787.6 Ko",
+            "sizeBytes": 806470,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/informatique-bureautique/cours/informatique.pdf"
+          },
+          {
+            "name": "Initiation à linformatique - Windows",
+            "filename": "Initiation à linformatique - Windows.pdf",
+            "url": "/courses/L1/semestre 1/SR/informatique-bureautique/cours/Initiation à linformatique - Windows.pdf",
+            "size": "2.08 Mo",
+            "sizeBytes": 2183162,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/informatique-bureautique/cours/Initiation à linformatique - Windows.pdf"
+          }
+        ],
+        "initiation au développement mobile": [
+          {
+            "name": "TP N°2",
+            "filename": "TP N°2.docx",
+            "url": "/courses/L1/semestre 1/SR/initiation au développement mobile/A Rendre/TP N°2.docx",
+            "size": "16.2 Ko",
+            "sizeBytes": 16569,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/initiation au développement mobile/A Rendre/TP N°2.docx"
+          },
+          {
+            "name": "DWMG1142_Séquence 5_Approches de développement pour les environnements mobiles",
+            "filename": "DWMG1142_Séquence 5_Approches de développement pour les environnements mobiles.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation au développement mobile/cours/DWMG1142_Séquence 5_Approches de développement pour les environnements mobiles.pdf",
+            "size": "941.6 Ko",
+            "sizeBytes": 964203,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation au développement mobile/cours/DWMG1142_Séquence 5_Approches de développement pour les environnements mobiles.pdf"
+          },
+          {
+            "name": "DWMG1142_Séquence 6_Environnements de développement intégré pour le mobile",
+            "filename": "DWMG1142_Séquence 6_Environnements de développement intégré pour le mobile.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation au développement mobile/cours/DWMG1142_Séquence 6_Environnements de développement intégré pour le mobile.pdf",
+            "size": "1.02 Mo",
+            "sizeBytes": 1071499,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation au développement mobile/cours/DWMG1142_Séquence 6_Environnements de développement intégré pour le mobile.pdf"
+          },
+          {
+            "name": "Sequence 2 Prise de main de androide studio",
+            "filename": "Sequence 2 Prise de main de androide studio.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation au développement mobile/cours/Sequence 2 Prise de main de androide studio.pdf",
+            "size": "2.32 Mo",
+            "sizeBytes": 2434578,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation au développement mobile/cours/Sequence 2 Prise de main de androide studio.pdf"
+          },
+          {
+            "name": "sequence 3 notions essentielle dune application android",
+            "filename": "sequence 3 notions essentielle dune application android.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation au développement mobile/cours/sequence 3 notions essentielle dune application android.pdf",
+            "size": "2.3 Mo",
+            "sizeBytes": 2414251,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation au développement mobile/cours/sequence 3 notions essentielle dune application android.pdf"
+          },
+          {
+            "name": "sequence 4",
+            "filename": "sequence 4.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation au développement mobile/cours/sequence 4.pdf",
+            "size": "1.18 Mo",
+            "sizeBytes": 1232143,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation au développement mobile/cours/sequence 4.pdf"
+          },
+          {
+            "name": "Séquence 1 Initiation au génie logiciel Mobile",
+            "filename": "Séquence 1 Initiation au génie logiciel Mobile.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation au développement mobile/cours/Séquence 1 Initiation au génie logiciel Mobile.pdf",
+            "size": "1.07 Mo",
+            "sizeBytes": 1126416,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation au développement mobile/cours/Séquence 1 Initiation au génie logiciel Mobile.pdf"
+          }
+        ],
+        "initiation à l'algorithmique": [
+          {
+            "name": "TD N°3 Algo",
+            "filename": "TD N°3 Algo.docx",
+            "url": "/courses/L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/TD N°3 Algo.docx",
+            "size": "18.6 Ko",
+            "sizeBytes": 19055,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/TD N°3 Algo.docx"
+          },
+          {
+            "name": "TD N°4 ALGO",
+            "filename": "TD N°4 ALGO.docx",
+            "url": "/courses/L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/TD N°4 ALGO.docx",
+            "size": "14.4 Ko",
+            "sizeBytes": 14762,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/TD N°4 ALGO.docx"
+          },
+          {
+            "name": "TP Algorithme.",
+            "filename": "TP Algorithme..docx",
+            "url": "/courses/L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/TP Algorithme..docx",
+            "size": "14.0 Ko",
+            "sizeBytes": 14355,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/TP Algorithme..docx"
+          },
+          {
+            "name": "~$ Algorithme.",
+            "filename": "~$ Algorithme..docx",
+            "url": "/courses/L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/~$ Algorithme..docx",
+            "size": "0.2 Ko",
+            "sizeBytes": 162,
+            "ext": "DOCX",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/~$ Algorithme..docx"
+          },
+          {
+            "name": "~$ N°3 Algo",
+            "filename": "~$ N°3 Algo.docx",
+            "url": "/courses/L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/~$ N°3 Algo.docx",
+            "size": "0.2 Ko",
+            "sizeBytes": 162,
+            "ext": "DOCX",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/~$ N°3 Algo.docx"
+          },
+          {
+            "name": "~$ N°4 ALGO",
+            "filename": "~$ N°4 ALGO.docx",
+            "url": "/courses/L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/~$ N°4 ALGO.docx",
+            "size": "0.2 Ko",
+            "sizeBytes": 162,
+            "ext": "DOCX",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation à l'algorithmique/A Rendre/~$ N°4 ALGO.docx"
+          },
+          {
+            "name": "Sequence1-Introduction Informatique",
+            "filename": "Sequence1-Introduction Informatique.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation à l'algorithmique/cours/Sequence1-Introduction Informatique.pdf",
+            "size": "1.02 Mo",
+            "sizeBytes": 1066250,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation à l'algorithmique/cours/Sequence1-Introduction Informatique.pdf"
+          },
+          {
+            "name": "Sequence2-Introduction Algo",
+            "filename": "Sequence2-Introduction Algo.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation à l'algorithmique/cours/Sequence2-Introduction Algo.pdf",
+            "size": "997.7 Ko",
+            "sizeBytes": 1021608,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation à l'algorithmique/cours/Sequence2-Introduction Algo.pdf"
+          },
+          {
+            "name": "Sequence3-structure de controle",
+            "filename": "Sequence3-structure de controle.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation à l'algorithmique/cours/Sequence3-structure de controle.pdf",
+            "size": "792.4 Ko",
+            "sizeBytes": 811397,
+            "ext": "PDF",
+            "type": "Examen & Devoir",
+            "relPath": "L1/semestre 1/SR/initiation à l'algorithmique/cours/Sequence3-structure de controle.pdf"
+          },
+          {
+            "name": "Sequence4-Tableau",
+            "filename": "Sequence4-Tableau.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation à l'algorithmique/cours/Sequence4-Tableau.pdf",
+            "size": "800.4 Ko",
+            "sizeBytes": 819651,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation à l'algorithmique/cours/Sequence4-Tableau.pdf"
+          }
+        ],
+        "initiation à la programmation": [
+          {
+            "name": "TP Atelier 1",
+            "filename": "TP Atelier 1.zip",
+            "url": "/courses/L1/semestre 1/SR/initiation à la programmation/A Rendre/TP Atelier 1.zip",
+            "size": "123.7 Ko",
+            "sizeBytes": 126684,
+            "ext": "ZIP",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/initiation à la programmation/A Rendre/TP Atelier 1.zip"
+          },
+          {
+            "name": "4776-scratch-en-technologie",
+            "filename": "4776-scratch-en-technologie.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation à la programmation/cours/4776-scratch-en-technologie.pdf",
+            "size": "2.43 Mo",
+            "sizeBytes": 2552308,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation à la programmation/cours/4776-scratch-en-technologie.pdf"
+          },
+          {
+            "name": "Atelier 1",
+            "filename": "Atelier 1.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation à la programmation/cours/Atelier 1.pdf",
+            "size": "342.3 Ko",
+            "sizeBytes": 350484,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/initiation à la programmation/cours/Atelier 1.pdf"
+          },
+          {
+            "name": "Atelier 2",
+            "filename": "Atelier 2.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation à la programmation/cours/Atelier 2.pdf",
+            "size": "363.6 Ko",
+            "sizeBytes": 372307,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/initiation à la programmation/cours/Atelier 2.pdf"
+          },
+          {
+            "name": "Atelier 3",
+            "filename": "Atelier 3.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation à la programmation/cours/Atelier 3.pdf",
+            "size": "377.1 Ko",
+            "sizeBytes": 386140,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/initiation à la programmation/cours/Atelier 3.pdf"
+          },
+          {
+            "name": "Getting-Started-Guide-Scratch2",
+            "filename": "Getting-Started-Guide-Scratch2.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation à la programmation/cours/Getting-Started-Guide-Scratch2.pdf",
+            "size": "6.35 Mo",
+            "sizeBytes": 6661128,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation à la programmation/cours/Getting-Started-Guide-Scratch2.pdf"
+          },
+          {
+            "name": "Sequence1_A la découverte de la programmation interactive",
+            "filename": "Sequence1_A la découverte de la programmation interactive.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation à la programmation/cours/Sequence1_A la découverte de la programmation interactive.pdf",
+            "size": "7.26 Mo",
+            "sizeBytes": 7614466,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation à la programmation/cours/Sequence1_A la découverte de la programmation interactive.pdf"
+          },
+          {
+            "name": "Sequence2_Programmer avec Scratch2",
+            "filename": "Sequence2_Programmer avec Scratch2.pdf",
+            "url": "/courses/L1/semestre 1/SR/initiation à la programmation/cours/Sequence2_Programmer avec Scratch2.pdf",
+            "size": "2.24 Mo",
+            "sizeBytes": 2344400,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/initiation à la programmation/cours/Sequence2_Programmer avec Scratch2.pdf"
+          }
+        ],
+        "introduction au langage JavaScript": [
+          {
+            "name": "td 1",
+            "filename": "td 1.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au langage JavaScript/A Rendre/td 1.pdf",
+            "size": "352.8 Ko",
+            "sizeBytes": 361280,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction au langage JavaScript/A Rendre/td 1.pdf"
+          },
+          {
+            "name": "td2",
+            "filename": "td2.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au langage JavaScript/A Rendre/td2.pdf",
+            "size": "361.9 Ko",
+            "sizeBytes": 370611,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction au langage JavaScript/A Rendre/td2.pdf"
+          },
+          {
+            "name": "Chapitre1",
+            "filename": "Chapitre1.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au langage JavaScript/cours/Chapitre1.pdf",
+            "size": "954.5 Ko",
+            "sizeBytes": 977438,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction au langage JavaScript/cours/Chapitre1.pdf"
+          },
+          {
+            "name": "Chapitre2",
+            "filename": "Chapitre2.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au langage JavaScript/cours/Chapitre2.pdf",
+            "size": "790.0 Ko",
+            "sizeBytes": 808919,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction au langage JavaScript/cours/Chapitre2.pdf"
+          },
+          {
+            "name": "Chapitre3",
+            "filename": "Chapitre3.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au langage JavaScript/cours/Chapitre3.pdf",
+            "size": "976.1 Ko",
+            "sizeBytes": 999505,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction au langage JavaScript/cours/Chapitre3.pdf"
+          }
+        ],
+        "introduction au web": [
+          {
+            "name": "Travaux Dirigés_2",
+            "filename": "Travaux Dirigés_2.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au web/A Rendre/Travaux Dirigés_2.pdf",
+            "size": "414.0 Ko",
+            "sizeBytes": 423911,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction au web/A Rendre/Travaux Dirigés_2.pdf"
+          },
+          {
+            "name": "Travaux Dirigés_3",
+            "filename": "Travaux Dirigés_3.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au web/A Rendre/Travaux Dirigés_3.pdf",
+            "size": "409.7 Ko",
+            "sizeBytes": 419568,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction au web/A Rendre/Travaux Dirigés_3.pdf"
+          },
+          {
+            "name": "Travaux Dirigés_4",
+            "filename": "Travaux Dirigés_4.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au web/A Rendre/Travaux Dirigés_4.pdf",
+            "size": "415.3 Ko",
+            "sizeBytes": 425297,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction au web/A Rendre/Travaux Dirigés_4.pdf"
+          },
+          {
+            "name": "Travaux Dirigés_5",
+            "filename": "Travaux Dirigés_5.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au web/A Rendre/Travaux Dirigés_5.pdf",
+            "size": "215.8 Ko",
+            "sizeBytes": 220940,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction au web/A Rendre/Travaux Dirigés_5.pdf"
+          },
+          {
+            "name": "Rapport_Observatoire_T2_2016",
+            "filename": "Rapport_Observatoire_T2_2016.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au web/cours/Rapport_Observatoire_T2_2016.pdf",
+            "size": "1.24 Mo",
+            "sizeBytes": 1295760,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction au web/cours/Rapport_Observatoire_T2_2016.pdf"
+          },
+          {
+            "name": "Séquence 1_Réseau informatiqe et internet",
+            "filename": "Séquence 1_Réseau informatiqe et internet.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au web/cours/Séquence 1_Réseau informatiqe et internet.pdf",
+            "size": "1.42 Mo",
+            "sizeBytes": 1490439,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction au web/cours/Séquence 1_Réseau informatiqe et internet.pdf"
+          },
+          {
+            "name": "Séquence 2_Le Web et le concept",
+            "filename": "Séquence 2_Le Web et le concept.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au web/cours/Séquence 2_Le Web et le concept.pdf",
+            "size": "1.64 Mo",
+            "sizeBytes": 1718879,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction au web/cours/Séquence 2_Le Web et le concept.pdf"
+          },
+          {
+            "name": "Séquence 3_Site Web et hébergement",
+            "filename": "Séquence 3_Site Web et hébergement.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au web/cours/Séquence 3_Site Web et hébergement.pdf",
+            "size": "1.76 Mo",
+            "sizeBytes": 1845971,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction au web/cours/Séquence 3_Site Web et hébergement.pdf"
+          },
+          {
+            "name": "Séquence 4_Le webmastering et les autres",
+            "filename": "Séquence 4_Le webmastering et les autres.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au web/cours/Séquence 4_Le webmastering et les autres.pdf",
+            "size": "1.54 Mo",
+            "sizeBytes": 1617373,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction au web/cours/Séquence 4_Le webmastering et les autres.pdf"
+          },
+          {
+            "name": "Séquence 5_Les langages du web",
+            "filename": "Séquence 5_Les langages du web.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au web/cours/Séquence 5_Les langages du web.pdf",
+            "size": "1.25 Mo",
+            "sizeBytes": 1310916,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction au web/cours/Séquence 5_Les langages du web.pdf"
+          },
+          {
+            "name": "Séquence 6_Les noms de domaine",
+            "filename": "Séquence 6_Les noms de domaine.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction au web/cours/Séquence 6_Les noms de domaine.pdf",
+            "size": "1000.9 Ko",
+            "sizeBytes": 1024905,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction au web/cours/Séquence 6_Les noms de domaine.pdf"
+          }
+        ],
+        "introduction aux langages HTML-CSS": [
+          {
+            "name": "TP 01",
+            "filename": "TP 01.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 01.pdf",
+            "size": "666.1 Ko",
+            "sizeBytes": 682057,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 01.pdf"
+          },
+          {
+            "name": "TP 02",
+            "filename": "TP 02.docx",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 02.docx",
+            "size": "273.2 Ko",
+            "sizeBytes": 279751,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 02.docx"
+          },
+          {
+            "name": "TP 02",
+            "filename": "TP 02.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 02.pdf",
+            "size": "591.8 Ko",
+            "sizeBytes": 605975,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 02.pdf"
+          },
+          {
+            "name": "TP 03 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 03 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 03 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "722.5 Ko",
+            "sizeBytes": 739876,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 03 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 04 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 04 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 04 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "575.5 Ko",
+            "sizeBytes": 589273,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 04 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 05 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 05 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 05 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "618.7 Ko",
+            "sizeBytes": 633581,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 05 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 06 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 06 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 06 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "705.2 Ko",
+            "sizeBytes": 722105,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 06 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 07 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 07 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 07 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "522.6 Ko",
+            "sizeBytes": 535170,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 07 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 08 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 08 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 08 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "634.7 Ko",
+            "sizeBytes": 649883,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 08 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 09 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 09 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 09 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "653.4 Ko",
+            "sizeBytes": 669128,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/A Rendre/TP 09 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "Séquence 1 Introduction",
+            "filename": "Séquence 1 Introduction.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 1 Introduction.pdf",
+            "size": "1.53 Mo",
+            "sizeBytes": 1606495,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 1 Introduction.pdf"
+          },
+          {
+            "name": "Séquence 2-LES ELEMENTS ET ATTRIBUTS HTML",
+            "filename": "Séquence 2-LES ELEMENTS ET ATTRIBUTS HTML.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 2-LES ELEMENTS ET ATTRIBUTS HTML.pdf",
+            "size": "1.31 Mo",
+            "sizeBytes": 1377458,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 2-LES ELEMENTS ET ATTRIBUTS HTML.pdf"
+          },
+          {
+            "name": "Séquence 3-JEUX DE CARACTERES, SYMBOLES ET METADONNEES EN HTML ",
+            "filename": "Séquence 3-JEUX DE CARACTERES, SYMBOLES ET METADONNEES EN HTML .pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 3-JEUX DE CARACTERES, SYMBOLES ET METADONNEES EN HTML .pdf",
+            "size": "1.65 Mo",
+            "sizeBytes": 1725691,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 3-JEUX DE CARACTERES, SYMBOLES ET METADONNEES EN HTML .pdf"
+          },
+          {
+            "name": "Séquence 4-LES STYLES ET COULEURS EN HTML",
+            "filename": "Séquence 4-LES STYLES ET COULEURS EN HTML.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 4-LES STYLES ET COULEURS EN HTML.pdf",
+            "size": "1.28 Mo",
+            "sizeBytes": 1338588,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 4-LES STYLES ET COULEURS EN HTML.pdf"
+          },
+          {
+            "name": "Séquence 5- LES FEUILLES DE STYLE CSS",
+            "filename": "Séquence 5- LES FEUILLES DE STYLE CSS.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 5- LES FEUILLES DE STYLE CSS.pdf",
+            "size": "1.24 Mo",
+            "sizeBytes": 1298219,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 5- LES FEUILLES DE STYLE CSS.pdf"
+          },
+          {
+            "name": "Séquence 6-LES ELEMENTS MULTIMEDIAS EN HTML",
+            "filename": "Séquence 6-LES ELEMENTS MULTIMEDIAS EN HTML.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 6-LES ELEMENTS MULTIMEDIAS EN HTML.pdf",
+            "size": "1.38 Mo",
+            "sizeBytes": 1447276,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 6-LES ELEMENTS MULTIMEDIAS EN HTML.pdf"
+          },
+          {
+            "name": "Séquence 7 -Tableau et liste",
+            "filename": "Séquence 7 -Tableau et liste.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 7 -Tableau et liste.pdf",
+            "size": "1.47 Mo",
+            "sizeBytes": 1537993,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 7 -Tableau et liste.pdf"
+          },
+          {
+            "name": "Séquence 8- MISE EN PAGE HTML",
+            "filename": "Séquence 8- MISE EN PAGE HTML.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 8- MISE EN PAGE HTML.pdf",
+            "size": "1.34 Mo",
+            "sizeBytes": 1406616,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 8- MISE EN PAGE HTML.pdf"
+          },
+          {
+            "name": "Séquence 9-FORMULAIRE HTML",
+            "filename": "Séquence 9-FORMULAIRE HTML.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 9-FORMULAIRE HTML.pdf",
+            "size": "1.75 Mo",
+            "sizeBytes": 1838542,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux langages HTML-CSS/cours/Séquence 9-FORMULAIRE HTML.pdf"
+          }
+        ],
+        "introduction aux reseaux": [
+          {
+            "name": "Travaux-Pratiques1-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques1-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques1-IntroductionAuxReseaux.pdf",
+            "size": "723.6 Ko",
+            "sizeBytes": 740986,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques1-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Travaux-Pratiques3-1-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques3-1-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques3-1-IntroductionAuxReseaux.pdf",
+            "size": "430.0 Ko",
+            "sizeBytes": 440318,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques3-1-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Travaux-Pratiques3-2-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques3-2-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques3-2-IntroductionAuxReseaux.pdf",
+            "size": "440.1 Ko",
+            "sizeBytes": 450645,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques3-2-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Travaux-Pratiques4-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques4-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques4-IntroductionAuxReseaux.pdf",
+            "size": "355.2 Ko",
+            "sizeBytes": 363681,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques4-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Chapitre1-IntroductionAuxReseaux",
+            "filename": "Chapitre1-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/cours/Chapitre1-IntroductionAuxReseaux.pdf",
+            "size": "5.44 Mo",
+            "sizeBytes": 5700679,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/cours/Chapitre1-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Chapitre2-IntroductionAuxReseaux",
+            "filename": "Chapitre2-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/cours/Chapitre2-IntroductionAuxReseaux.pdf",
+            "size": "7.14 Mo",
+            "sizeBytes": 7486352,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/cours/Chapitre2-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Chapitre3-InfrastructuresDesReseaux",
+            "filename": "Chapitre3-InfrastructuresDesReseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/cours/Chapitre3-InfrastructuresDesReseaux.pdf",
+            "size": "2.26 Mo",
+            "sizeBytes": 2366994,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/cours/Chapitre3-InfrastructuresDesReseaux.pdf"
+          },
+          {
+            "name": "Chapitre3-IntroductionAuxReseaux",
+            "filename": "Chapitre3-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/cours/Chapitre3-IntroductionAuxReseaux.pdf",
+            "size": "5.11 Mo",
+            "sizeBytes": 5354474,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/cours/Chapitre3-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Chapitre4-IntroductionAuxReseaux",
+            "filename": "Chapitre4-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/cours/Chapitre4-IntroductionAuxReseaux.pdf",
+            "size": "2.1 Mo",
+            "sizeBytes": 2202263,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/cours/Chapitre4-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Les 7 couches réseau OSI expliquées",
+            "filename": "Les 7 couches réseau OSI expliquées.html",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/cours/Les 7 couches réseau OSI expliquées.html",
+            "size": "176.0 Ko",
+            "sizeBytes": 180174,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/cours/Les 7 couches réseau OSI expliquées.html"
+          },
+          {
+            "name": "PriseEnMainPacketTracer",
+            "filename": "PriseEnMainPacketTracer.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/cours/PriseEnMainPacketTracer.pdf",
+            "size": "1.42 Mo",
+            "sizeBytes": 1491925,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/cours/PriseEnMainPacketTracer.pdf"
+          }
+        ],
+        "leadership": [
+          {
+            "name": "Leadership - séquence 1",
+            "filename": "Leadership - séquence 1.pdf",
+            "url": "/courses/L1/semestre 1/SR/leadership/cours/Leadership - séquence 1.pdf",
+            "size": "802.2 Ko",
+            "sizeBytes": 821407,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/leadership/cours/Leadership - séquence 1.pdf"
+          },
+          {
+            "name": "Leadership - séquence 2",
+            "filename": "Leadership - séquence 2.pdf",
+            "url": "/courses/L1/semestre 1/SR/leadership/cours/Leadership - séquence 2.pdf",
+            "size": "999.9 Ko",
+            "sizeBytes": 1023945,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/leadership/cours/Leadership - séquence 2.pdf"
+          },
+          {
+            "name": "Leadership - séquence 4",
+            "filename": "Leadership - séquence 4.pdf",
+            "url": "/courses/L1/semestre 1/SR/leadership/cours/Leadership - séquence 4.pdf",
+            "size": "776.5 Ko",
+            "sizeBytes": 795124,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/leadership/cours/Leadership - séquence 4.pdf"
+          },
+          {
+            "name": "Leadership - séquence 5",
+            "filename": "Leadership - séquence 5.pdf",
+            "url": "/courses/L1/semestre 1/SR/leadership/cours/Leadership - séquence 5.pdf",
+            "size": "837.3 Ko",
+            "sizeBytes": 857352,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/leadership/cours/Leadership - séquence 5.pdf"
+          },
+          {
+            "name": "Leadership-sequence-3-1",
+            "filename": "Leadership-sequence-3-1.pdf",
+            "url": "/courses/L1/semestre 1/SR/leadership/cours/Leadership-sequence-3-1.pdf",
+            "size": "1004.2 Ko",
+            "sizeBytes": 1028348,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/leadership/cours/Leadership-sequence-3-1.pdf"
+          },
+          {
+            "name": "Leadership-sequence-3-2",
+            "filename": "Leadership-sequence-3-2.pdf",
+            "url": "/courses/L1/semestre 1/SR/leadership/cours/Leadership-sequence-3-2.pdf",
+            "size": "1.34 Mo",
+            "sizeBytes": 1407559,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/leadership/cours/Leadership-sequence-3-2.pdf"
+          }
+        ],
+        "Technique de communication en français": [
+          {
+            "name": "exercice de travaux dirigés3",
+            "filename": "exercice de travaux dirigés3.pdf",
+            "url": "/courses/L1/semestre 1/SR/Technique de communication en français/exercice de travaux dirigés3.pdf",
+            "size": "95.9 Ko",
+            "sizeBytes": 98221,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/Technique de communication en français/exercice de travaux dirigés3.pdf"
+          },
+          {
+            "name": "travaux diriges 2",
+            "filename": "travaux diriges 2.pdf",
+            "url": "/courses/L1/semestre 1/SR/Technique de communication en français/A Rendre/travaux diriges 2.pdf",
+            "size": "99.1 Ko",
+            "sizeBytes": 101445,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/Technique de communication en français/A Rendre/travaux diriges 2.pdf"
+          },
+          {
+            "name": "expression communication écrite et orale",
+            "filename": "expression communication écrite et orale.pdf",
+            "url": "/courses/L1/semestre 1/SR/Technique de communication en français/cours/expression communication écrite et orale.pdf",
+            "size": "569.6 Ko",
+            "sizeBytes": 583232,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/Technique de communication en français/cours/expression communication écrite et orale.pdf"
+          },
+          {
+            "name": "TP N°1",
+            "filename": "TP N°1.docx",
+            "url": "/courses/L1/semestre 1/SR/Technique de communication en français/TD/TP N°1.docx",
+            "size": "17.4 Ko",
+            "sizeBytes": 17822,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/Technique de communication en français/TD/TP N°1.docx"
+          },
+          {
+            "name": "TP N°2",
+            "filename": "TP N°2.docx",
+            "url": "/courses/L1/semestre 1/SR/Technique de communication en français/TD/TP N°2.docx",
+            "size": "19.5 Ko",
+            "sizeBytes": 20016,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/Technique de communication en français/TD/TP N°2.docx"
+          },
+          {
+            "name": "TP N°3",
+            "filename": "TP N°3.docx",
+            "url": "/courses/L1/semestre 1/SR/Technique de communication en français/TD/TP N°3.docx",
+            "size": "16.6 Ko",
+            "sizeBytes": 16963,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L1/semestre 1/SR/Technique de communication en français/TD/TP N°3.docx"
+          }
+        ]
+      },
+      "Semestre 5": {
+        "introduction aux reseaux": [
+          {
+            "name": "Travaux-Pratiques5-Introduction aux Reseaux",
+            "filename": "Travaux-Pratiques5-Introduction aux Reseaux.pdf",
+            "url": "/courses/L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques5-Introduction aux Reseaux.pdf",
+            "size": "493.1 Ko",
+            "sizeBytes": 504926,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L1/semestre 1/SR/introduction aux reseaux/A Rendre/Travaux-Pratiques5-Introduction aux Reseaux.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "L2": {
+    "semestres": {
+      "Semestre 3": {
+        "PARTIE TD DE L1 ET L2": [
+          {
+            "name": "Exercices de Travaux Dirigés1 (1)",
+            "filename": "Exercices de Travaux Dirigés1 (1).pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/c/Exercices de Travaux Dirigés1 (1).pdf",
+            "size": "176.5 Ko",
+            "sizeBytes": 180750,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/c/Exercices de Travaux Dirigés1 (1).pdf"
+          },
+          {
+            "name": "TD2.s1",
+            "filename": "TD2.s1.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TD2.s1.pdf",
+            "size": "125.4 Ko",
+            "sizeBytes": 128369,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TD2.s1.pdf"
+          },
+          {
+            "name": "Travaux-Pratiques1-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques1-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques1-IntroductionAuxReseaux.pdf",
+            "size": "723.6 Ko",
+            "sizeBytes": 740986,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques1-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Exercices de Travaux Dirigés1",
+            "filename": "Exercices de Travaux Dirigés1.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/td/Exercices de Travaux Dirigés1.pdf",
+            "size": "303.2 Ko",
+            "sizeBytes": 310438,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/td/Exercices de Travaux Dirigés1.pdf"
+          },
+          {
+            "name": "TD2.s1",
+            "filename": "TD2.s1.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/td/TD2.s1.pdf",
+            "size": "125.4 Ko",
+            "sizeBytes": 128369,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/td/TD2.s1.pdf"
+          }
+        ],
+        "algorithme et structure des données": [
+          {
+            "name": "Algorithme et structure de données_Séquence 1",
+            "filename": "Algorithme et structure de données_Séquence 1.pdf",
+            "url": "/courses/L2/semestres 1/algorithme et structure des données/chapitre 1/Algorithme et structure de données_Séquence 1.pdf",
+            "size": "621.6 Ko",
+            "sizeBytes": 636523,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/algorithme et structure des données/chapitre 1/Algorithme et structure de données_Séquence 1.pdf"
+          },
+          {
+            "name": "TD_Tableaux",
+            "filename": "TD_Tableaux.pdf",
+            "url": "/courses/L2/semestres 1/algorithme et structure des données/chapitre 1/td/TD_Tableaux.pdf",
+            "size": "278.7 Ko",
+            "sizeBytes": 285369,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/algorithme et structure des données/chapitre 1/td/TD_Tableaux.pdf"
+          },
+          {
+            "name": "Algorithme et structure de données_Séquence 2",
+            "filename": "Algorithme et structure de données_Séquence 2.pdf",
+            "url": "/courses/L2/semestres 1/algorithme et structure des données/chapitre 2/Algorithme et structure de données_Séquence 2.pdf",
+            "size": "1.25 Mo",
+            "sizeBytes": 1312019,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/algorithme et structure des données/chapitre 2/Algorithme et structure de données_Séquence 2.pdf"
+          },
+          {
+            "name": "TD",
+            "filename": "TD.pdf",
+            "url": "/courses/L2/semestres 1/algorithme et structure des données/chapitre 2/td/TD.pdf",
+            "size": "221.5 Ko",
+            "sizeBytes": 226858,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/algorithme et structure des données/chapitre 2/td/TD.pdf"
+          },
+          {
+            "name": "sequence 3.",
+            "filename": "sequence 3..pdf",
+            "url": "/courses/L2/semestres 1/algorithme et structure des données/chapitre 3/sequence 3..pdf",
+            "size": "358.3 Ko",
+            "sizeBytes": 366922,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/algorithme et structure des données/chapitre 3/sequence 3..pdf"
+          },
+          {
+            "name": "TD3.",
+            "filename": "TD3..pdf",
+            "url": "/courses/L2/semestres 1/algorithme et structure des données/chapitre 3/td/TD3..pdf",
+            "size": "483.0 Ko",
+            "sizeBytes": 494637,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/algorithme et structure des données/chapitre 3/td/TD3..pdf"
+          }
+        ],
+        "anglais altassia": [
+          {
+            "name": "VocabularyList",
+            "filename": "VocabularyList.pdf",
+            "url": "/courses/L2/semestres 1/anglais altassia/vocabulaire/VocabularyList.pdf",
+            "size": "28.5 Ko",
+            "sizeBytes": 29229,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/anglais altassia/vocabulaire/VocabularyList.pdf"
+          }
+        ],
+        "Comptabilité de gestion": [
+          {
+            "name": "Séquence 1- Introduction au Contrôle de Gestion",
+            "filename": "Séquence 1- Introduction au Contrôle de Gestion.pdf",
+            "url": "/courses/L2/semestres 1/Comptabilité de gestion/chapitre 1/Séquence 1- Introduction au Contrôle de Gestion.pdf",
+            "size": "957.1 Ko",
+            "sizeBytes": 980106,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/Comptabilité de gestion/chapitre 1/Séquence 1- Introduction au Contrôle de Gestion.pdf"
+          },
+          {
+            "name": "Séquence 2- Concept de coûts ",
+            "filename": "Séquence 2- Concept de coûts .pdf",
+            "url": "/courses/L2/semestres 1/Comptabilité de gestion/chapitre 2/Séquence 2- Concept de coûts .pdf",
+            "size": "1.02 Mo",
+            "sizeBytes": 1064754,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/Comptabilité de gestion/chapitre 2/Séquence 2- Concept de coûts .pdf"
+          },
+          {
+            "name": "TD 2 Comptabilité de gestion",
+            "filename": "TD 2 Comptabilité de gestion.docx",
+            "url": "/courses/L2/semestres 1/Comptabilité de gestion/chapitre 2/td/TD 2 Comptabilité de gestion.docx",
+            "size": "14.7 Ko",
+            "sizeBytes": 15016,
+            "ext": "DOCX",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/Comptabilité de gestion/chapitre 2/td/TD 2 Comptabilité de gestion.docx"
+          },
+          {
+            "name": "Séquence 3- La tenue des stocks ",
+            "filename": "Séquence 3- La tenue des stocks .pdf",
+            "url": "/courses/L2/semestres 1/Comptabilité de gestion/chapitre 3/Séquence 3- La tenue des stocks .pdf",
+            "size": "951.0 Ko",
+            "sizeBytes": 973819,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/Comptabilité de gestion/chapitre 3/Séquence 3- La tenue des stocks .pdf"
+          },
+          {
+            "name": "CORRECTION TD SOCIETE SANILUX 4",
+            "filename": "CORRECTION TD SOCIETE SANILUX 4.pdf",
+            "url": "/courses/L2/semestres 1/Comptabilité de gestion/chapitre 4/CORRECTION TD SOCIETE SANILUX 4.pdf",
+            "size": "263.4 Ko",
+            "sizeBytes": 269728,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/Comptabilité de gestion/chapitre 4/CORRECTION TD SOCIETE SANILUX 4.pdf"
+          },
+          {
+            "name": "Séquence 4- La méthode des côuts complets par les centres danalyse",
+            "filename": "Séquence 4- La méthode des côuts complets par les centres danalyse.pdf",
+            "url": "/courses/L2/semestres 1/Comptabilité de gestion/chapitre 4/Séquence 4- La méthode des côuts complets par les centres danalyse.pdf",
+            "size": "1.58 Mo",
+            "sizeBytes": 1656038,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/Comptabilité de gestion/chapitre 4/Séquence 4- La méthode des côuts complets par les centres danalyse.pdf"
+          },
+          {
+            "name": "TD 4 Centres danalyse",
+            "filename": "TD 4 Centres danalyse.pdf",
+            "url": "/courses/L2/semestres 1/Comptabilité de gestion/chapitre 4/td/TD 4 Centres danalyse.pdf",
+            "size": "309.8 Ko",
+            "sizeBytes": 317230,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/Comptabilité de gestion/chapitre 4/td/TD 4 Centres danalyse.pdf"
+          },
+          {
+            "name": "Séquence 5 - La méthode des côuts complets à base dactivités (ABC)",
+            "filename": "Séquence 5 - La méthode des côuts complets à base dactivités (ABC).pdf",
+            "url": "/courses/L2/semestres 1/Comptabilité de gestion/chapitre 5/Séquence 5 - La méthode des côuts complets à base dactivités (ABC).pdf",
+            "size": "927.8 Ko",
+            "sizeBytes": 950118,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/Comptabilité de gestion/chapitre 5/Séquence 5 - La méthode des côuts complets à base dactivités (ABC).pdf"
+          },
+          {
+            "name": "Séquence 5  - TD ",
+            "filename": "Séquence 5  - TD .pdf",
+            "url": "/courses/L2/semestres 1/Comptabilité de gestion/chapitre 5/td/Séquence 5  - TD .pdf",
+            "size": "444.6 Ko",
+            "sizeBytes": 455261,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/Comptabilité de gestion/chapitre 5/td/Séquence 5  - TD .pdf"
+          },
+          {
+            "name": "Séquence 6 - Imputation rationnelle des charges fixes",
+            "filename": "Séquence 6 - Imputation rationnelle des charges fixes.ppt",
+            "url": "/courses/L2/semestres 1/Comptabilité de gestion/chapitre 6/Séquence 6 - Imputation rationnelle des charges fixes.ppt",
+            "size": "1.58 Mo",
+            "sizeBytes": 1658368,
+            "ext": "PPT",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/Comptabilité de gestion/chapitre 6/Séquence 6 - Imputation rationnelle des charges fixes.ppt"
+          },
+          {
+            "name": "Séquence 7 - Les coûts partiels-couts variables _soécifiques",
+            "filename": "Séquence 7 - Les coûts partiels-couts variables _soécifiques.ppt",
+            "url": "/courses/L2/semestres 1/Comptabilité de gestion/chapitre 7/Séquence 7 - Les coûts partiels-couts variables _soécifiques.ppt",
+            "size": "1.56 Mo",
+            "sizeBytes": 1633280,
+            "ext": "PPT",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/Comptabilité de gestion/chapitre 7/Séquence 7 - Les coûts partiels-couts variables _soécifiques.ppt"
+          }
+        ],
+        "framework HTML CSS Javascript": [
+          {
+            "name": "SEQ 01_FRAMEWORKS WEB CÔTE CLIENT",
+            "filename": "SEQ 01_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 1/SEQ 01_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "size": "892.1 Ko",
+            "sizeBytes": 913499,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 1/SEQ 01_FRAMEWORKS WEB CÔTE CLIENT.pdf"
+          },
+          {
+            "name": "TP SEQ 01 - FRAMEWORKS WEB CÔTE CLIENT",
+            "filename": "TP SEQ 01 - FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 1/td/TP SEQ 01 - FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "size": "684.1 Ko",
+            "sizeBytes": 700529,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 1/td/TP SEQ 01 - FRAMEWORKS WEB CÔTE CLIENT.pdf"
+          },
+          {
+            "name": "alert_exple1",
+            "filename": "alert_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/alert_exple1.html",
+            "size": "1.1 Ko",
+            "sizeBytes": 1137,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/alert_exple1.html"
+          },
+          {
+            "name": "alert_exple2_link",
+            "filename": "alert_exple2_link.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/alert_exple2_link.html",
+            "size": "1.2 Ko",
+            "sizeBytes": 1233,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/alert_exple2_link.html"
+          },
+          {
+            "name": "alert_exple3_close",
+            "filename": "alert_exple3_close.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/alert_exple3_close.html",
+            "size": "1.7 Ko",
+            "sizeBytes": 1726,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/alert_exple3_close.html"
+          },
+          {
+            "name": "alert_exple4_animate",
+            "filename": "alert_exple4_animate.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/alert_exple4_animate.html",
+            "size": "1.6 Ko",
+            "sizeBytes": 1671,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/alert_exple4_animate.html"
+          },
+          {
+            "name": "badge_exple1",
+            "filename": "badge_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/badge_exple1.html",
+            "size": "0.8 Ko",
+            "sizeBytes": 865,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/badge_exple1.html"
+          },
+          {
+            "name": "barprog_exple1",
+            "filename": "barprog_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barprog_exple1.html",
+            "size": "0.8 Ko",
+            "sizeBytes": 794,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barprog_exple1.html"
+          },
+          {
+            "name": "barprog_exple2_label",
+            "filename": "barprog_exple2_label.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barprog_exple2_label.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 761,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barprog_exple2_label.html"
+          },
+          {
+            "name": "barprog_exple3_colored",
+            "filename": "barprog_exple3_colored.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barprog_exple3_colored.html",
+            "size": "1.5 Ko",
+            "sizeBytes": 1526,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barprog_exple3_colored.html"
+          },
+          {
+            "name": "barprog_exple3_stripped",
+            "filename": "barprog_exple3_stripped.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barprog_exple3_stripped.html",
+            "size": "1.6 Ko",
+            "sizeBytes": 1628,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barprog_exple3_stripped.html"
+          },
+          {
+            "name": "barprog_exple4_animed",
+            "filename": "barprog_exple4_animed.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barprog_exple4_animed.html",
+            "size": "0.8 Ko",
+            "sizeBytes": 843,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barprog_exple4_animed.html"
+          },
+          {
+            "name": "barrenav_exple1",
+            "filename": "barrenav_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barrenav_exple1.html",
+            "size": "1.0 Ko",
+            "sizeBytes": 1068,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barrenav_exple1.html"
+          },
+          {
+            "name": "barrenav_exple2",
+            "filename": "barrenav_exple2.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barrenav_exple2.html",
+            "size": "1.0 Ko",
+            "sizeBytes": 1029,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barrenav_exple2.html"
+          },
+          {
+            "name": "barrenav_exple3_withdropsownlist",
+            "filename": "barrenav_exple3_withdropsownlist.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barrenav_exple3_withdropsownlist.html",
+            "size": "1.3 Ko",
+            "sizeBytes": 1356,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barrenav_exple3_withdropsownlist.html"
+          },
+          {
+            "name": "barrenav_exple4_righralign",
+            "filename": "barrenav_exple4_righralign.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barrenav_exple4_righralign.html",
+            "size": "1.5 Ko",
+            "sizeBytes": 1538,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barrenav_exple4_righralign.html"
+          },
+          {
+            "name": "barrenav_exple5_form",
+            "filename": "barrenav_exple5_form.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barrenav_exple5_form.html",
+            "size": "1.3 Ko",
+            "sizeBytes": 1327,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/barrenav_exple5_form.html"
+          },
+          {
+            "name": "button_exple1",
+            "filename": "button_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/button_exple1.html",
+            "size": "1.0 Ko",
+            "sizeBytes": 1072,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/button_exple1.html"
+          },
+          {
+            "name": "collapse_exple1",
+            "filename": "collapse_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/collapse_exple1.html",
+            "size": "1.0 Ko",
+            "sizeBytes": 986,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/collapse_exple1.html"
+          },
+          {
+            "name": "container-fluid_exple1",
+            "filename": "container-fluid_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/container-fluid_exple1.html",
+            "size": "0.8 Ko",
+            "sizeBytes": 771,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/container-fluid_exple1.html"
+          },
+          {
+            "name": "container-fluid_explelocal",
+            "filename": "container-fluid_explelocal.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/container-fluid_explelocal.html",
+            "size": "0.6 Ko",
+            "sizeBytes": 657,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/container-fluid_explelocal.html"
+          },
+          {
+            "name": "container_exple1",
+            "filename": "container_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/container_exple1.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 716,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/container_exple1.html"
+          },
+          {
+            "name": "container_exple_local",
+            "filename": "container_exple_local.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/container_exple_local.html",
+            "size": "0.6 Ko",
+            "sizeBytes": 602,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/container_exple_local.html"
+          },
+          {
+            "name": "form_exple1",
+            "filename": "form_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/form_exple1.html",
+            "size": "1.1 Ko",
+            "sizeBytes": 1169,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/form_exple1.html"
+          },
+          {
+            "name": "form_exple2 - horiz",
+            "filename": "form_exple2 - horiz.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/form_exple2 - horiz.html",
+            "size": "1.3 Ko",
+            "sizeBytes": 1323,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/form_exple2 - horiz.html"
+          },
+          {
+            "name": "form_exple3 - with gryphicon",
+            "filename": "form_exple3 - with gryphicon.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/form_exple3 - with gryphicon.html",
+            "size": "2.0 Ko",
+            "sizeBytes": 2042,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/form_exple3 - with gryphicon.html"
+          },
+          {
+            "name": "glyphicon_exple1",
+            "filename": "glyphicon_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/glyphicon_exple1.html",
+            "size": "1.4 Ko",
+            "sizeBytes": 1472,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/glyphicon_exple1.html"
+          },
+          {
+            "name": "grid_exple",
+            "filename": "grid_exple.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/grid_exple.html",
+            "size": "1.0 Ko",
+            "sizeBytes": 1005,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/grid_exple.html"
+          },
+          {
+            "name": "image_exple1",
+            "filename": "image_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/image_exple1.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 767,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/image_exple1.html"
+          },
+          {
+            "name": "image_exple2_responsive",
+            "filename": "image_exple2_responsive.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/image_exple2_responsive.html",
+            "size": "0.8 Ko",
+            "sizeBytes": 787,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/image_exple2_responsive.html"
+          },
+          {
+            "name": "image_exple3_gallery",
+            "filename": "image_exple3_gallery.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/image_exple3_gallery.html",
+            "size": "1.9 Ko",
+            "sizeBytes": 1913,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/image_exple3_gallery.html"
+          },
+          {
+            "name": "jumbotron_exple1",
+            "filename": "jumbotron_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/jumbotron_exple1.html",
+            "size": "0.8 Ko",
+            "sizeBytes": 820,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/jumbotron_exple1.html"
+          },
+          {
+            "name": "label_exple1",
+            "filename": "label_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/label_exple1.html",
+            "size": "0.9 Ko",
+            "sizeBytes": 951,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/label_exple1.html"
+          },
+          {
+            "name": "listgroup_exple1",
+            "filename": "listgroup_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/listgroup_exple1.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 753,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/listgroup_exple1.html"
+          },
+          {
+            "name": "listgroup_exple2_badge",
+            "filename": "listgroup_exple2_badge.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/listgroup_exple2_badge.html",
+            "size": "0.8 Ko",
+            "sizeBytes": 834,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/listgroup_exple2_badge.html"
+          },
+          {
+            "name": "media_exple1_image",
+            "filename": "media_exple1_image.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/media_exple1_image.html",
+            "size": "1.6 Ko",
+            "sizeBytes": 1666,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/media_exple1_image.html"
+          },
+          {
+            "name": "menuderoulant_exple1",
+            "filename": "menuderoulant_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/menuderoulant_exple1.html",
+            "size": "1.1 Ko",
+            "sizeBytes": 1140,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/menuderoulant_exple1.html"
+          },
+          {
+            "name": "ongletpill_exo1",
+            "filename": "ongletpill_exo1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/ongletpill_exo1.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 738,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/ongletpill_exo1.html"
+          },
+          {
+            "name": "ongletpill_exple1",
+            "filename": "ongletpill_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/ongletpill_exple1.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 747,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/ongletpill_exple1.html"
+          },
+          {
+            "name": "ongletpill_exple2",
+            "filename": "ongletpill_exple2.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/ongletpill_exple2.html",
+            "size": "1.0 Ko",
+            "sizeBytes": 1044,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/ongletpill_exple2.html"
+          },
+          {
+            "name": "ongletpill_exple2_dropdownlits",
+            "filename": "ongletpill_exple2_dropdownlits.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/ongletpill_exple2_dropdownlits.html",
+            "size": "1.1 Ko",
+            "sizeBytes": 1090,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/ongletpill_exple2_dropdownlits.html"
+          },
+          {
+            "name": "pager_exple1",
+            "filename": "pager_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/pager_exple1.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 752,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/pager_exple1.html"
+          },
+          {
+            "name": "pagination_exple1",
+            "filename": "pagination_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/pagination_exple1.html",
+            "size": "0.8 Ko",
+            "sizeBytes": 836,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/pagination_exple1.html"
+          },
+          {
+            "name": "plugin_affix_exple1",
+            "filename": "plugin_affix_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_affix_exple1.html",
+            "size": "1.9 Ko",
+            "sizeBytes": 1934,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_affix_exple1.html"
+          },
+          {
+            "name": "plugin_carousel_exple1",
+            "filename": "plugin_carousel_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_carousel_exple1.html",
+            "size": "1.7 Ko",
+            "sizeBytes": 1789,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_carousel_exple1.html"
+          },
+          {
+            "name": "plugin_carousel_exple2_with caption",
+            "filename": "plugin_carousel_exple2_with caption.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_carousel_exple2_with caption.html",
+            "size": "2.1 Ko",
+            "sizeBytes": 2142,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_carousel_exple2_with caption.html"
+          },
+          {
+            "name": "plugin_filter_exple1_table",
+            "filename": "plugin_filter_exple1_table.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_filter_exple1_table.html",
+            "size": "1.8 Ko",
+            "sizeBytes": 1795,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_filter_exple1_table.html"
+          },
+          {
+            "name": "plugin_filter_exple2_list",
+            "filename": "plugin_filter_exple2_list.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_filter_exple2_list.html",
+            "size": "1.2 Ko",
+            "sizeBytes": 1260,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_filter_exple2_list.html"
+          },
+          {
+            "name": "plugin_filter_exple3_dropdownlist",
+            "filename": "plugin_filter_exple3_dropdownlist.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_filter_exple3_dropdownlist.html",
+            "size": "1.7 Ko",
+            "sizeBytes": 1692,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_filter_exple3_dropdownlist.html"
+          },
+          {
+            "name": "plugin_filter_exple4_anything",
+            "filename": "plugin_filter_exple4_anything.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_filter_exple4_anything.html",
+            "size": "1.2 Ko",
+            "sizeBytes": 1208,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_filter_exple4_anything.html"
+          },
+          {
+            "name": "plugin_modal_exple1",
+            "filename": "plugin_modal_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_modal_exple1.html",
+            "size": "1.3 Ko",
+            "sizeBytes": 1378,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_modal_exple1.html"
+          },
+          {
+            "name": "plugin_popover_exple1",
+            "filename": "plugin_popover_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_popover_exple1.html",
+            "size": "0.8 Ko",
+            "sizeBytes": 801,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_popover_exple1.html"
+          },
+          {
+            "name": "plugin_scrollspy_affix_exple1",
+            "filename": "plugin_scrollspy_affix_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_scrollspy_affix_exple1.html",
+            "size": "4.7 Ko",
+            "sizeBytes": 4853,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_scrollspy_affix_exple1.html"
+          },
+          {
+            "name": "plugin_scrollspy_affix_exple2_vert",
+            "filename": "plugin_scrollspy_affix_exple2_vert.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_scrollspy_affix_exple2_vert.html",
+            "size": "3.2 Ko",
+            "sizeBytes": 3232,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_scrollspy_affix_exple2_vert.html"
+          },
+          {
+            "name": "plugin_scrollspy_exple1",
+            "filename": "plugin_scrollspy_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_scrollspy_exple1.html",
+            "size": "4.1 Ko",
+            "sizeBytes": 4166,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_scrollspy_exple1.html"
+          },
+          {
+            "name": "plugin_scrollspy_exple2_vert",
+            "filename": "plugin_scrollspy_exple2_vert.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_scrollspy_exple2_vert.html",
+            "size": "2.7 Ko",
+            "sizeBytes": 2788,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_scrollspy_exple2_vert.html"
+          },
+          {
+            "name": "plugin_tooltip_exple1",
+            "filename": "plugin_tooltip_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_tooltip_exple1.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 744,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/plugin_tooltip_exple1.html"
+          },
+          {
+            "name": "SEQ 02_FRAMEWORKS WEB CÔTE CLIENT",
+            "filename": "SEQ 02_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/SEQ 02_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "size": "1.89 Mo",
+            "sizeBytes": 1980414,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/SEQ 02_FRAMEWORKS WEB CÔTE CLIENT.pdf"
+          },
+          {
+            "name": "table_exple1",
+            "filename": "table_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/table_exple1.html",
+            "size": "1.2 Ko",
+            "sizeBytes": 1192,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/table_exple1.html"
+          },
+          {
+            "name": "type_exple3_textbg",
+            "filename": "type_exple3_textbg.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/type_exple3_textbg.html",
+            "size": "0.9 Ko",
+            "sizeBytes": 954,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/type_exple3_textbg.html"
+          },
+          {
+            "name": "typo_exple1",
+            "filename": "typo_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/typo_exple1.html",
+            "size": "0.8 Ko",
+            "sizeBytes": 780,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/typo_exple1.html"
+          },
+          {
+            "name": "typo_exple2_text",
+            "filename": "typo_exple2_text.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/typo_exple2_text.html",
+            "size": "1.0 Ko",
+            "sizeBytes": 997,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/typo_exple2_text.html"
+          },
+          {
+            "name": "well_exple1",
+            "filename": "well_exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/well_exple1.html",
+            "size": "0.6 Ko",
+            "sizeBytes": 596,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/well_exple1.html"
+          },
+          {
+            "name": "mov_bbb",
+            "filename": "mov_bbb.mp4",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/images/mov_bbb.mp4",
+            "size": "770.0 Ko",
+            "sizeBytes": 788493,
+            "ext": "MP4",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/images/mov_bbb.mp4"
+          },
+          {
+            "name": "albunm",
+            "filename": "albunm.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/albunm.html",
+            "size": "2.6 Ko",
+            "sizeBytes": 2679,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/albunm.html"
+          },
+          {
+            "name": "centre dinteret",
+            "filename": "centre dinteret.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/centre dinteret.html",
+            "size": "1.7 Ko",
+            "sizeBytes": 1788,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/centre dinteret.html"
+          },
+          {
+            "name": "contact",
+            "filename": "contact.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/contact.html",
+            "size": "3.1 Ko",
+            "sizeBytes": 3187,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/contact.html"
+          },
+          {
+            "name": "cv",
+            "filename": "cv.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/cv.html",
+            "size": "1.6 Ko",
+            "sizeBytes": 1669,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/cv.html"
+          },
+          {
+            "name": "Etat civil",
+            "filename": "Etat civil.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/Etat civil.html",
+            "size": "1.6 Ko",
+            "sizeBytes": 1659,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/Etat civil.html"
+          },
+          {
+            "name": "Exo 5",
+            "filename": "Exo 5.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/Exo 5.html",
+            "size": "4.9 Ko",
+            "sizeBytes": 4995,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/Exo 5.html"
+          },
+          {
+            "name": "Experience",
+            "filename": "Experience.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/Experience.html",
+            "size": "1.7 Ko",
+            "sizeBytes": 1737,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/Experience.html"
+          },
+          {
+            "name": "formation",
+            "filename": "formation.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/formation.html",
+            "size": "1.9 Ko",
+            "sizeBytes": 1975,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/formation.html"
+          },
+          {
+            "name": "TP SEQ 02_FRAMEWORKS WEB CÔTE CLIENT",
+            "filename": "TP SEQ 02_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/TP SEQ 02_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "size": "792.5 Ko",
+            "sizeBytes": 811509,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 2/td/TP SEQ 02_FRAMEWORKS WEB CÔTE CLIENT.pdf"
+          },
+          {
+            "name": "SEQ 03_FRAMEWORKS WEB CÔTE CLIENT",
+            "filename": "SEQ 03_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/SEQ 03_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "size": "1.49 Mo",
+            "sizeBytes": 1563725,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/SEQ 03_FRAMEWORKS WEB CÔTE CLIENT.pdf"
+          },
+          {
+            "name": "cssl_exple_addClass",
+            "filename": "cssl_exple_addClass.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/cssl_exple_addClass.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 556,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/cssl_exple_addClass.html"
+          },
+          {
+            "name": "effet_exple2_animate",
+            "filename": "effet_exple2_animate.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple2_animate.html",
+            "size": "0.6 Ko",
+            "sizeBytes": 634,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple2_animate.html"
+          },
+          {
+            "name": "effet_exple_animate",
+            "filename": "effet_exple_animate.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 512,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate.html"
+          },
+          {
+            "name": "effet_exple_animate_chaine",
+            "filename": "effet_exple_animate_chaine.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_chaine.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 519,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_chaine.html"
+          },
+          {
+            "name": "effet_exple_animate_deplace",
+            "filename": "effet_exple_animate_deplace.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_deplace.html",
+            "size": "0.6 Ko",
+            "sizeBytes": 576,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_deplace.html"
+          },
+          {
+            "name": "effet_exple_animate_fileattente",
+            "filename": "effet_exple_animate_fileattente.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_fileattente.html",
+            "size": "0.6 Ko",
+            "sizeBytes": 647,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_fileattente.html"
+          },
+          {
+            "name": "effet_exple_animate_fileattente2",
+            "filename": "effet_exple_animate_fileattente2.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_fileattente2.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 518,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_fileattente2.html"
+          },
+          {
+            "name": "effet_exple_animate_rappel",
+            "filename": "effet_exple_animate_rappel.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_rappel.html",
+            "size": "0.9 Ko",
+            "sizeBytes": 920,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_rappel.html"
+          },
+          {
+            "name": "effet_exple_animate_stop",
+            "filename": "effet_exple_animate_stop.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_stop.html",
+            "size": "0.9 Ko",
+            "sizeBytes": 905,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_stop.html"
+          },
+          {
+            "name": "effet_exple_animate_toggle",
+            "filename": "effet_exple_animate_toggle.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_toggle.html",
+            "size": "0.4 Ko",
+            "sizeBytes": 459,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_animate_toggle.html"
+          },
+          {
+            "name": "effet_exple_fadeToggle",
+            "filename": "effet_exple_fadeToggle.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_fadeToggle.html",
+            "size": "0.6 Ko",
+            "sizeBytes": 609,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_fadeToggle.html"
+          },
+          {
+            "name": "effet_exple_fadin",
+            "filename": "effet_exple_fadin.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_fadin.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 756,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_fadin.html"
+          },
+          {
+            "name": "effet_exple_html",
+            "filename": "effet_exple_html.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_html.html",
+            "size": "0.6 Ko",
+            "sizeBytes": 591,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_html.html"
+          },
+          {
+            "name": "effet_exple_slideToggle",
+            "filename": "effet_exple_slideToggle.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_slideToggle.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 525,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_slideToggle.html"
+          },
+          {
+            "name": "effet_exple_text",
+            "filename": "effet_exple_text.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_text.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 516,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_text.html"
+          },
+          {
+            "name": "effet_exple_toggle",
+            "filename": "effet_exple_toggle.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_toggle.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 521,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_toggle.html"
+          },
+          {
+            "name": "effet_exple_toggle_fast",
+            "filename": "effet_exple_toggle_fast.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_toggle_fast.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 522,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_toggle_fast.html"
+          },
+          {
+            "name": "effet_exple_toggle_slow",
+            "filename": "effet_exple_toggle_slow.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_toggle_slow.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 523,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_exple_toggle_slow.html"
+          },
+          {
+            "name": "effet_show",
+            "filename": "effet_show.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_show.html",
+            "size": "0.6 Ko",
+            "sizeBytes": 606,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/effet_show.html"
+          },
+          {
+            "name": "even_exple1_avec_css",
+            "filename": "even_exple1_avec_css.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/even_exple1_avec_css.html",
+            "size": "0.4 Ko",
+            "sizeBytes": 396,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/even_exple1_avec_css.html"
+          },
+          {
+            "name": "even_exple4_dbclick",
+            "filename": "even_exple4_dbclick.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/even_exple4_dbclick.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 683,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/even_exple4_dbclick.html"
+          },
+          {
+            "name": "even_exple_avec_css",
+            "filename": "even_exple_avec_css.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/even_exple_avec_css.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 759,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/even_exple_avec_css.html"
+          },
+          {
+            "name": "even_exple_mouseenter",
+            "filename": "even_exple_mouseenter.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/even_exple_mouseenter.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 677,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/even_exple_mouseenter.html"
+          },
+          {
+            "name": "even_exple_over",
+            "filename": "even_exple_over.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/even_exple_over.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 758,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/even_exple_over.html"
+          },
+          {
+            "name": "exo3",
+            "filename": "exo3.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/exo3.html",
+            "size": "2.7 Ko",
+            "sizeBytes": 2720,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/exo3.html"
+          },
+          {
+            "name": "exple1",
+            "filename": "exple1.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/exple1.html",
+            "size": "1.0 Ko",
+            "sizeBytes": 1042,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/exple1.html"
+          },
+          {
+            "name": "exple1devoir",
+            "filename": "exple1devoir.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/exple1devoir.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 536,
+            "ext": "HTML",
+            "type": "Examen & Devoir",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/exple1devoir.html"
+          },
+          {
+            "name": "exple2",
+            "filename": "exple2.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/exple2.html",
+            "size": "0.9 Ko",
+            "sizeBytes": 954,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/exple2.html"
+          },
+          {
+            "name": "explesimple",
+            "filename": "explesimple.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/explesimple.html",
+            "size": "1.0 Ko",
+            "sizeBytes": 1008,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/explesimple.html"
+          },
+          {
+            "name": "html_exple_texte",
+            "filename": "html_exple_texte.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/html_exple_texte.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 468,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/html_exple_texte.html"
+          },
+          {
+            "name": "html_exple_val",
+            "filename": "html_exple_val.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/html_exple_val.html",
+            "size": "0.6 Ko",
+            "sizeBytes": 584,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/html_exple_val.html"
+          },
+          {
+            "name": "js_html",
+            "filename": "js_html.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/js_html.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 463,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/js_html.html"
+          },
+          {
+            "name": "moncv2exo3tpjquery",
+            "filename": "moncv2exo3tpjquery.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/moncv2exo3tpjquery.html",
+            "size": "2.8 Ko",
+            "sizeBytes": 2916,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/moncv2exo3tpjquery.html"
+          },
+          {
+            "name": "selecteur_exple2_elt",
+            "filename": "selecteur_exple2_elt.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/selecteur_exple2_elt.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 492,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/selecteur_exple2_elt.html"
+          },
+          {
+            "name": "selecteur_exple3_class",
+            "filename": "selecteur_exple3_class.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/selecteur_exple3_class.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 535,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/selecteur_exple3_class.html"
+          },
+          {
+            "name": "selecteur_exple3_generique",
+            "filename": "selecteur_exple3_generique.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/selecteur_exple3_generique.html",
+            "size": "0.6 Ko",
+            "sizeBytes": 570,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/selecteur_exple3_generique.html"
+          },
+          {
+            "name": "selecteur_exple3_id",
+            "filename": "selecteur_exple3_id.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/selecteur_exple3_id.html",
+            "size": "0.5 Ko",
+            "sizeBytes": 507,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/selecteur_exple3_id.html"
+          },
+          {
+            "name": "selecteur_exple4_generique",
+            "filename": "selecteur_exple4_generique.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/selecteur_exple4_generique.html",
+            "size": "0.7 Ko",
+            "sizeBytes": 683,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/selecteur_exple4_generique.html"
+          },
+          {
+            "name": "test",
+            "filename": "test.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/test.html",
+            "size": "0.3 Ko",
+            "sizeBytes": 260,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/test.html"
+          },
+          {
+            "name": "test2",
+            "filename": "test2.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/test2.html",
+            "size": "0.1 Ko",
+            "sizeBytes": 128,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/test2.html"
+          },
+          {
+            "name": "tp3_exo2",
+            "filename": "tp3_exo2.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp3_exo2.html",
+            "size": "0.8 Ko",
+            "sizeBytes": 855,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp3_exo2.html"
+          },
+          {
+            "name": "tp3_exo2_Q4",
+            "filename": "tp3_exo2_Q4.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp3_exo2_Q4.html",
+            "size": "1.7 Ko",
+            "sizeBytes": 1732,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp3_exo2_Q4.html"
+          },
+          {
+            "name": "tp3_exo3",
+            "filename": "tp3_exo3.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp3_exo3.html",
+            "size": "1.2 Ko",
+            "sizeBytes": 1277,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp3_exo3.html"
+          },
+          {
+            "name": "tp_exo2",
+            "filename": "tp_exo2.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp_exo2.html",
+            "size": "3.2 Ko",
+            "sizeBytes": 3231,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp_exo2.html"
+          },
+          {
+            "name": "tp_exo3",
+            "filename": "tp_exo3.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp_exo3.html",
+            "size": "52.5 Ko",
+            "sizeBytes": 53792,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp_exo3.html"
+          },
+          {
+            "name": "tp_exo4",
+            "filename": "tp_exo4.html",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp_exo4.html",
+            "size": "1.5 Ko",
+            "sizeBytes": 1579,
+            "ext": "HTML",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/sitejquery2019/tp_exo4.html"
+          },
+          {
+            "name": "TP SEQ 03_FRAMEWORKS WEB CÔTE CLIENT",
+            "filename": "TP SEQ 03_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "url": "/courses/L2/semestres 1/framework HTML CSS Javascript/chapitre 3/td/TP SEQ 03_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "size": "908.0 Ko",
+            "sizeBytes": 929755,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/framework HTML CSS Javascript/chapitre 3/td/TP SEQ 03_FRAMEWORKS WEB CÔTE CLIENT.pdf"
+          }
+        ],
+        "framework javascript coté serveur": [
+          {
+            "name": "Chapitre 1",
+            "filename": "Chapitre 1.pdf",
+            "url": "/courses/L2/semestres 1/framework javascript coté serveur/Chapitre 1.pdf",
+            "size": "214.6 Ko",
+            "sizeBytes": 219715,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework javascript coté serveur/Chapitre 1.pdf"
+          },
+          {
+            "name": "Chapitre 2",
+            "filename": "Chapitre 2.pdf",
+            "url": "/courses/L2/semestres 1/framework javascript coté serveur/Chapitre 2.pdf",
+            "size": "155.7 Ko",
+            "sizeBytes": 159407,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework javascript coté serveur/Chapitre 2.pdf"
+          },
+          {
+            "name": "Chapitre 3",
+            "filename": "Chapitre 3.pdf",
+            "url": "/courses/L2/semestres 1/framework javascript coté serveur/Chapitre 3.pdf",
+            "size": "219.4 Ko",
+            "sizeBytes": 224677,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework javascript coté serveur/Chapitre 3.pdf"
+          },
+          {
+            "name": "Chapitre 4",
+            "filename": "Chapitre 4.pdf",
+            "url": "/courses/L2/semestres 1/framework javascript coté serveur/Chapitre 4.pdf",
+            "size": "296.2 Ko",
+            "sizeBytes": 303359,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/framework javascript coté serveur/Chapitre 4.pdf"
+          }
+        ],
+        "langage php": [
+          {
+            "name": "COURS SEQ 01 - LANGAGE PHP DE BASE",
+            "filename": "COURS SEQ 01 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/semestres 1/langage php/chapitre 1/COURS SEQ 01 - LANGAGE PHP DE BASE.pdf",
+            "size": "336.5 Ko",
+            "sizeBytes": 344621,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/langage php/chapitre 1/COURS SEQ 01 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "TP SEQ 01 - LANGAGE PHP DE BASE",
+            "filename": "TP SEQ 01 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/semestres 1/langage php/chapitre 1/td/TP SEQ 01 - LANGAGE PHP DE BASE.pdf",
+            "size": "161.4 Ko",
+            "sizeBytes": 165308,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/langage php/chapitre 1/td/TP SEQ 01 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "SEQ 02 - LANGAGE PHP DE BASE",
+            "filename": "SEQ 02 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/semestres 1/langage php/chapitre 2/SEQ 02 - LANGAGE PHP DE BASE.pdf",
+            "size": "793.2 Ko",
+            "sizeBytes": 812214,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/langage php/chapitre 2/SEQ 02 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "TP SEQ 02 - LANGAGE PHP DE BASE",
+            "filename": "TP SEQ 02 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/semestres 1/langage php/chapitre 2/td/TP SEQ 02 - LANGAGE PHP DE BASE.pdf",
+            "size": "593.7 Ko",
+            "sizeBytes": 607936,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/langage php/chapitre 2/td/TP SEQ 02 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "COURS SEQ 03 - LANGAGE PHP DE BASE",
+            "filename": "COURS SEQ 03 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/semestres 1/langage php/chapitre 3/COURS SEQ 03 - LANGAGE PHP DE BASE.pdf",
+            "size": "241.7 Ko",
+            "sizeBytes": 247546,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/langage php/chapitre 3/COURS SEQ 03 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "TP SEQ 03 - LANGAGE PHP DE BASE",
+            "filename": "TP SEQ 03 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/semestres 1/langage php/chapitre 3/td/TP SEQ 03 - LANGAGE PHP DE BASE.pdf",
+            "size": "590.3 Ko",
+            "sizeBytes": 604458,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/langage php/chapitre 3/td/TP SEQ 03 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "COURS SEQ 04 - LANGAGE PHP DE BASE",
+            "filename": "COURS SEQ 04 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/semestres 1/langage php/chapitre 4/COURS SEQ 04 - LANGAGE PHP DE BASE.pdf",
+            "size": "892.0 Ko",
+            "sizeBytes": 913381,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/langage php/chapitre 4/COURS SEQ 04 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "TP SEQ 04 - LANGAGE PHP DE BASE",
+            "filename": "TP SEQ 04 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/semestres 1/langage php/chapitre 4/td/TP SEQ 04 - LANGAGE PHP DE BASE.pdf",
+            "size": "610.0 Ko",
+            "sizeBytes": 624638,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/langage php/chapitre 4/td/TP SEQ 04 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "COURS SEQ 05 - LANGAGE PHP DE BASE",
+            "filename": "COURS SEQ 05 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/semestres 1/langage php/chapitre 5/COURS SEQ 05 - LANGAGE PHP DE BASE.pdf",
+            "size": "440.0 Ko",
+            "sizeBytes": 450557,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/langage php/chapitre 5/COURS SEQ 05 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "TP SEQ 05 - LANGAGE PHP DE BASE",
+            "filename": "TP SEQ 05 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/semestres 1/langage php/chapitre 5/td/TP SEQ 05 - LANGAGE PHP DE BASE.pdf",
+            "size": "136.0 Ko",
+            "sizeBytes": 139213,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/langage php/chapitre 5/td/TP SEQ 05 - LANGAGE PHP DE BASE.pdf"
+          }
+        ],
+        "langage SQL": [
+          {
+            "name": "cours-sql-sh-",
+            "filename": "cours-sql-sh-.pdf",
+            "url": "/courses/L2/semestres 1/langage SQL/chapitre 1/cours-sql-sh-.pdf",
+            "size": "630.5 Ko",
+            "sizeBytes": 645664,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/langage SQL/chapitre 1/cours-sql-sh-.pdf"
+          },
+          {
+            "name": "langage sql",
+            "filename": "langage sql.pdf",
+            "url": "/courses/L2/semestres 1/langage SQL/chapitre 1/langage sql.pdf",
+            "size": "44.0 Ko",
+            "sizeBytes": 45061,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/langage SQL/chapitre 1/langage sql.pdf"
+          },
+          {
+            "name": "sequence11-Rappel_AlgèbreRelationnelle",
+            "filename": "sequence11-Rappel_AlgèbreRelationnelle.pdf",
+            "url": "/courses/L2/semestres 1/langage SQL/chapitre 1/sequence11-Rappel_AlgèbreRelationnelle.pdf",
+            "size": "975.7 Ko",
+            "sizeBytes": 999148,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/langage SQL/chapitre 1/sequence11-Rappel_AlgèbreRelationnelle.pdf"
+          },
+          {
+            "name": "FicheTPSEQ1",
+            "filename": "FicheTPSEQ1.pdf",
+            "url": "/courses/L2/semestres 1/langage SQL/chapitre 1/td/FicheTPSEQ1.pdf",
+            "size": "205.6 Ko",
+            "sizeBytes": 210534,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/langage SQL/chapitre 1/td/FicheTPSEQ1.pdf"
+          },
+          {
+            "name": "sequence2-SGBD",
+            "filename": "sequence2-SGBD.pdf",
+            "url": "/courses/L2/semestres 1/langage SQL/chapitre 2/sequence2-SGBD.pdf",
+            "size": "890.6 Ko",
+            "sizeBytes": 911952,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/langage SQL/chapitre 2/sequence2-SGBD.pdf"
+          },
+          {
+            "name": "FicheTPSEQ2",
+            "filename": "FicheTPSEQ2.pdf",
+            "url": "/courses/L2/semestres 1/langage SQL/chapitre 2/td/FicheTPSEQ2.pdf",
+            "size": "67.9 Ko",
+            "sizeBytes": 69544,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/langage SQL/chapitre 2/td/FicheTPSEQ2.pdf"
+          },
+          {
+            "name": "sequence33-DML",
+            "filename": "sequence33-DML.pdf",
+            "url": "/courses/L2/semestres 1/langage SQL/chapitre 3/sequence33-DML.pdf",
+            "size": "926.6 Ko",
+            "sizeBytes": 948825,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/langage SQL/chapitre 3/sequence33-DML.pdf"
+          },
+          {
+            "name": "FicheTPSEQ2",
+            "filename": "FicheTPSEQ2.pdf",
+            "url": "/courses/L2/semestres 1/langage SQL/chapitre 3/td/FicheTPSEQ2.pdf",
+            "size": "90.3 Ko",
+            "sizeBytes": 92440,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/langage SQL/chapitre 3/td/FicheTPSEQ2.pdf"
+          }
+        ],
+        "manipulation de données xml": [
+          {
+            "name": "SEQUENCE 1 Rappels des  notions de base de  XML",
+            "filename": "SEQUENCE 1 Rappels des  notions de base de  XML.pdf",
+            "url": "/courses/L2/semestres 1/manipulation de données xml/chapitre 1/SEQUENCE 1 Rappels des  notions de base de  XML.pdf",
+            "size": "1.32 Mo",
+            "sizeBytes": 1387638,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/manipulation de données xml/chapitre 1/SEQUENCE 1 Rappels des  notions de base de  XML.pdf"
+          },
+          {
+            "name": "Travaux Dirigés Séquence 1",
+            "filename": "Travaux Dirigés Séquence 1.pdf",
+            "url": "/courses/L2/semestres 1/manipulation de données xml/chapitre 1/td/Travaux Dirigés Séquence 1.pdf",
+            "size": "529.0 Ko",
+            "sizeBytes": 541710,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/manipulation de données xml/chapitre 1/td/Travaux Dirigés Séquence 1.pdf"
+          },
+          {
+            "name": "Séquence 2 Schéma  dun document  XML",
+            "filename": "Séquence 2 Schéma  dun document  XML.pdf",
+            "url": "/courses/L2/semestres 1/manipulation de données xml/chapitre 2/Séquence 2 Schéma  dun document  XML.pdf",
+            "size": "1.23 Mo",
+            "sizeBytes": 1289749,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/manipulation de données xml/chapitre 2/Séquence 2 Schéma  dun document  XML.pdf"
+          },
+          {
+            "name": "Travaux Dirigés séquence 2 Schéma dun document XML",
+            "filename": "Travaux Dirigés séquence 2 Schéma dun document XML.pdf",
+            "url": "/courses/L2/semestres 1/manipulation de données xml/chapitre 2/td/Travaux Dirigés séquence 2 Schéma dun document XML.pdf",
+            "size": "613.8 Ko",
+            "sizeBytes": 628562,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/manipulation de données xml/chapitre 2/td/Travaux Dirigés séquence 2 Schéma dun document XML.pdf"
+          },
+          {
+            "name": "Séquence 3 - Formatage  dun document XML",
+            "filename": "Séquence 3 - Formatage  dun document XML.pdf",
+            "url": "/courses/L2/semestres 1/manipulation de données xml/chapitre 3/Séquence 3 - Formatage  dun document XML.pdf",
+            "size": "1.29 Mo",
+            "sizeBytes": 1352010,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/manipulation de données xml/chapitre 3/Séquence 3 - Formatage  dun document XML.pdf"
+          },
+          {
+            "name": "Travaux  Dirigés Séquence  3 Formatage d’un document XML",
+            "filename": "Travaux  Dirigés Séquence  3 Formatage d’un document XML.pdf",
+            "url": "/courses/L2/semestres 1/manipulation de données xml/chapitre 3/td/Travaux  Dirigés Séquence  3 Formatage d’un document XML.pdf",
+            "size": "604.2 Ko",
+            "sizeBytes": 618653,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/manipulation de données xml/chapitre 3/td/Travaux  Dirigés Séquence  3 Formatage d’un document XML.pdf"
+          },
+          {
+            "name": "Séquence 4 Mise à jour dun document  XML",
+            "filename": "Séquence 4 Mise à jour dun document  XML.pdf",
+            "url": "/courses/L2/semestres 1/manipulation de données xml/chapitre 4/Séquence 4 Mise à jour dun document  XML.pdf",
+            "size": "930.0 Ko",
+            "sizeBytes": 952348,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/manipulation de données xml/chapitre 4/Séquence 4 Mise à jour dun document  XML.pdf"
+          },
+          {
+            "name": "Travaux Dirigés Séquence 4 Mise à jour dun document XML",
+            "filename": "Travaux Dirigés Séquence 4 Mise à jour dun document XML.pdf",
+            "url": "/courses/L2/semestres 1/manipulation de données xml/chapitre 4/td/Travaux Dirigés Séquence 4 Mise à jour dun document XML.pdf",
+            "size": "587.2 Ko",
+            "sizeBytes": 601252,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/manipulation de données xml/chapitre 4/td/Travaux Dirigés Séquence 4 Mise à jour dun document XML.pdf"
+          }
+        ],
+        "modéllisation de bases de données relationelles": [
+          {
+            "name": "04_SEQUENCE 01 DU COURS DE BASE DE DONNEES",
+            "filename": "04_SEQUENCE 01 DU COURS DE BASE DE DONNEES.pdf",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 1/04_SEQUENCE 01 DU COURS DE BASE DE DONNEES.pdf",
+            "size": "1.09 Mo",
+            "sizeBytes": 1144443,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 1/04_SEQUENCE 01 DU COURS DE BASE DE DONNEES.pdf"
+          },
+          {
+            "name": "localhost _ 127.0.0.1 _ uvs _ phpMyAdmin 5.1.0",
+            "filename": "localhost _ 127.0.0.1 _ uvs _ phpMyAdmin 5.1.0.html",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 1/td/localhost _ 127.0.0.1 _ uvs _ phpMyAdmin 5.1.0.html",
+            "size": "501.6 Ko",
+            "sizeBytes": 513611,
+            "ext": "HTML",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 1/td/localhost _ 127.0.0.1 _ uvs _ phpMyAdmin 5.1.0.html"
+          },
+          {
+            "name": "SEQUENCE 0201 modèles Entité-Association ",
+            "filename": "SEQUENCE 0201 modèles Entité-Association .pdf",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 2/SEQUENCE 0201 modèles Entité-Association .pdf",
+            "size": "1.5 Mo",
+            "sizeBytes": 1577385,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 2/SEQUENCE 0201 modèles Entité-Association .pdf"
+          },
+          {
+            "name": "SEQUENCE 0202 modèle relationnel de données",
+            "filename": "SEQUENCE 0202 modèle relationnel de données.pdf",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 2/SEQUENCE 0202 modèle relationnel de données.pdf",
+            "size": "1.19 Mo",
+            "sizeBytes": 1249727,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 2/SEQUENCE 0202 modèle relationnel de données.pdf"
+          },
+          {
+            "name": "06_TD_TP 01 - Modèle E_A et Modèle relationelle de données",
+            "filename": "06_TD_TP 01 - Modèle E_A et Modèle relationelle de données.pdf",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 2/td/06_TD_TP 01 - Modèle E_A et Modèle relationelle de données.pdf",
+            "size": "734.1 Ko",
+            "sizeBytes": 751738,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 2/td/06_TD_TP 01 - Modèle E_A et Modèle relationelle de données.pdf"
+          },
+          {
+            "name": "SEQUENCE 301 ALGEBRE RELATIONNELLE",
+            "filename": "SEQUENCE 301 ALGEBRE RELATIONNELLE.pdf",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 3/SEQUENCE 301 ALGEBRE RELATIONNELLE.pdf",
+            "size": "1.48 Mo",
+            "sizeBytes": 1552561,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 3/SEQUENCE 301 ALGEBRE RELATIONNELLE.pdf"
+          },
+          {
+            "name": "SEQUENCE 302 LANGAGE SQL",
+            "filename": "SEQUENCE 302 LANGAGE SQL.pdf",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 3/SEQUENCE 302 LANGAGE SQL.pdf",
+            "size": "1.09 Mo",
+            "sizeBytes": 1145448,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 3/SEQUENCE 302 LANGAGE SQL.pdf"
+          },
+          {
+            "name": "Exercices dapplication 3",
+            "filename": "Exercices dapplication 3.pdf",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 3/td/Exercices dapplication 3.pdf",
+            "size": "642.5 Ko",
+            "sizeBytes": 657879,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 3/td/Exercices dapplication 3.pdf"
+          },
+          {
+            "name": "TD 03 - Algèbre relationnelle",
+            "filename": "TD 03 - Algèbre relationnelle.pdf",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 3/td/TD 03 - Algèbre relationnelle.pdf",
+            "size": "671.7 Ko",
+            "sizeBytes": 687858,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 3/td/TD 03 - Algèbre relationnelle.pdf"
+          },
+          {
+            "name": "TD3_TP 01 - Langage SQL",
+            "filename": "TD3_TP 01 - Langage SQL.pdf",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 3/td/TD3_TP 01 - Langage SQL.pdf",
+            "size": "679.0 Ko",
+            "sizeBytes": 695288,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 3/td/TD3_TP 01 - Langage SQL.pdf"
+          },
+          {
+            "name": "SEQUENCE 302 Administration",
+            "filename": "SEQUENCE 302 Administration.pdf",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 4/SEQUENCE 302 Administration.pdf",
+            "size": "1.5 Mo",
+            "sizeBytes": 1575498,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 4/SEQUENCE 302 Administration.pdf"
+          },
+          {
+            "name": "Administration-Exercice dapplicaion",
+            "filename": "Administration-Exercice dapplicaion.pdf",
+            "url": "/courses/L2/semestres 1/modéllisation de bases de données relationelles/chapitre 4/td/Administration-Exercice dapplicaion.pdf",
+            "size": "307.2 Ko",
+            "sizeBytes": 314565,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/modéllisation de bases de données relationelles/chapitre 4/td/Administration-Exercice dapplicaion.pdf"
+          }
+        ],
+        "programmation en langage c": [
+          {
+            "name": "Bibliotheques standards",
+            "filename": "Bibliotheques standards.pdf",
+            "url": "/courses/L2/semestres 1/programmation en langage c/Bibliotheques standards.pdf",
+            "size": "125.8 Ko",
+            "sizeBytes": 128790,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/programmation en langage c/Bibliotheques standards.pdf"
+          },
+          {
+            "name": "Les Tableaux",
+            "filename": "Les Tableaux.pdf",
+            "url": "/courses/L2/semestres 1/programmation en langage c/chapitre 1/Les Tableaux.pdf",
+            "size": "339.3 Ko",
+            "sizeBytes": 347468,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/programmation en langage c/chapitre 1/Les Tableaux.pdf"
+          },
+          {
+            "name": "TD1 Les tableaux",
+            "filename": "TD1 Les tableaux.pdf",
+            "url": "/courses/L2/semestres 1/programmation en langage c/chapitre 1/td/TD1 Les tableaux.pdf",
+            "size": "227.8 Ko",
+            "sizeBytes": 233253,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/programmation en langage c/chapitre 1/td/TD1 Les tableaux.pdf"
+          },
+          {
+            "name": "LANGAGE C",
+            "filename": "LANGAGE C.pdf",
+            "url": "/courses/L2/semestres 1/programmation en langage c/chapitre 2/LANGAGE C.pdf",
+            "size": "386.2 Ko",
+            "sizeBytes": 395459,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/programmation en langage c/chapitre 2/LANGAGE C.pdf"
+          },
+          {
+            "name": "td_Fonctions",
+            "filename": "td_Fonctions.pdf",
+            "url": "/courses/L2/semestres 1/programmation en langage c/chapitre 2/td/td_Fonctions.pdf",
+            "size": "351.0 Ko",
+            "sizeBytes": 359425,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/programmation en langage c/chapitre 2/td/td_Fonctions.pdf"
+          },
+          {
+            "name": "Chapitre 3 Langage C",
+            "filename": "Chapitre 3 Langage C.pdf",
+            "url": "/courses/L2/semestres 1/programmation en langage c/chapitre 3/Chapitre 3 Langage C.pdf",
+            "size": "139.1 Ko",
+            "sizeBytes": 142473,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/programmation en langage c/chapitre 3/Chapitre 3 Langage C.pdf"
+          }
+        ],
+        "recherche documentaire": [
+          {
+            "name": "Recherche documentaire_Séquence 1",
+            "filename": "Recherche documentaire_Séquence 1.pdf",
+            "url": "/courses/L2/semestres 1/recherche documentaire/chapitre 1/Recherche documentaire_Séquence 1.pdf",
+            "size": "784.9 Ko",
+            "sizeBytes": 803747,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/recherche documentaire/chapitre 1/Recherche documentaire_Séquence 1.pdf"
+          },
+          {
+            "name": "Recherche documentaire_TD1",
+            "filename": "Recherche documentaire_TD1.pdf",
+            "url": "/courses/L2/semestres 1/recherche documentaire/chapitre 1/td/Recherche documentaire_TD1.pdf",
+            "size": "497.0 Ko",
+            "sizeBytes": 508971,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/recherche documentaire/chapitre 1/td/Recherche documentaire_TD1.pdf"
+          },
+          {
+            "name": "Recherche documentaire_Séquence 2",
+            "filename": "Recherche documentaire_Séquence 2.pdf",
+            "url": "/courses/L2/semestres 1/recherche documentaire/chapitre 2/Recherche documentaire_Séquence 2.pdf",
+            "size": "1013.0 Ko",
+            "sizeBytes": 1037285,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/recherche documentaire/chapitre 2/Recherche documentaire_Séquence 2.pdf"
+          },
+          {
+            "name": "Recherche documentaire_TD2",
+            "filename": "Recherche documentaire_TD2.pdf",
+            "url": "/courses/L2/semestres 1/recherche documentaire/chapitre 2/td/Recherche documentaire_TD2.pdf",
+            "size": "496.7 Ko",
+            "sizeBytes": 508629,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/recherche documentaire/chapitre 2/td/Recherche documentaire_TD2.pdf"
+          },
+          {
+            "name": "Recherche documentaire_Séquence3",
+            "filename": "Recherche documentaire_Séquence3.pdf",
+            "url": "/courses/L2/semestres 1/recherche documentaire/chapitre 3/Recherche documentaire_Séquence3.pdf",
+            "size": "1017.2 Ko",
+            "sizeBytes": 1041612,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/recherche documentaire/chapitre 3/Recherche documentaire_Séquence3.pdf"
+          },
+          {
+            "name": "Online_Labs_GE_Biology_Project_Description",
+            "filename": "Online_Labs_GE_Biology_Project_Description.pdf",
+            "url": "/courses/L2/semestres 1/recherche documentaire/chapitre 3/td/Online_Labs_GE_Biology_Project_Description.pdf",
+            "size": "385.9 Ko",
+            "sizeBytes": 395192,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/recherche documentaire/chapitre 3/td/Online_Labs_GE_Biology_Project_Description.pdf"
+          },
+          {
+            "name": "Recherche documentaire_TD3",
+            "filename": "Recherche documentaire_TD3.pdf",
+            "url": "/courses/L2/semestres 1/recherche documentaire/chapitre 3/td/Recherche documentaire_TD3.pdf",
+            "size": "510.9 Ko",
+            "sizeBytes": 523115,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/recherche documentaire/chapitre 3/td/Recherche documentaire_TD3.pdf"
+          },
+          {
+            "name": "ROCARE-Senegal_qualite_2003",
+            "filename": "ROCARE-Senegal_qualite_2003.pdf",
+            "url": "/courses/L2/semestres 1/recherche documentaire/chapitre 3/td/ROCARE-Senegal_qualite_2003.pdf",
+            "size": "347.1 Ko",
+            "sizeBytes": 355467,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/recherche documentaire/chapitre 3/td/ROCARE-Senegal_qualite_2003.pdf"
+          },
+          {
+            "name": "Recherche documentaire_Séquence 4",
+            "filename": "Recherche documentaire_Séquence 4.pdf",
+            "url": "/courses/L2/semestres 1/recherche documentaire/chapitre 4/Recherche documentaire_Séquence 4.pdf",
+            "size": "1.07 Mo",
+            "sizeBytes": 1117580,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestres 1/recherche documentaire/chapitre 4/Recherche documentaire_Séquence 4.pdf"
+          },
+          {
+            "name": "Recherche documentaire_TD4",
+            "filename": "Recherche documentaire_TD4.pdf",
+            "url": "/courses/L2/semestres 1/recherche documentaire/chapitre 4/td/Recherche documentaire_TD4.pdf",
+            "size": "320.7 Ko",
+            "sizeBytes": 328419,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestres 1/recherche documentaire/chapitre 4/td/Recherche documentaire_TD4.pdf"
+          }
+        ]
+      },
+      "Semestre 4": {
+        "PARTIE TD DE L1 ET L2": [
+          {
+            "name": "Exercices de Travaux Dirigés2 (2)",
+            "filename": "Exercices de Travaux Dirigés2 (2).pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/c/Exercices de Travaux Dirigés2 (2).pdf",
+            "size": "244.6 Ko",
+            "sizeBytes": 250498,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/c/Exercices de Travaux Dirigés2 (2).pdf"
+          },
+          {
+            "name": "Exercices de Travaux Dirigés2 (1)",
+            "filename": "Exercices de Travaux Dirigés2 (1).pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/Exercices de Travaux Dirigés2 (1).pdf",
+            "size": "163.8 Ko",
+            "sizeBytes": 167725,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/Exercices de Travaux Dirigés2 (1).pdf"
+          },
+          {
+            "name": "Travaux-Pratiques2-1-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques2-1-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques2-1-IntroductionAuxReseaux.pdf",
+            "size": "431.2 Ko",
+            "sizeBytes": 441548,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques2-1-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Travaux-Pratiques2-2-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques2-2-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques2-2-IntroductionAuxReseaux.pdf",
+            "size": "432.7 Ko",
+            "sizeBytes": 443076,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques2-2-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Travaux-Pratiques2-3-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques2-3-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques2-3-IntroductionAuxReseaux.pdf",
+            "size": "573.7 Ko",
+            "sizeBytes": 587461,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques2-3-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Exercices de Travaux Dirigés2 (1)",
+            "filename": "Exercices de Travaux Dirigés2 (1).pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/td/Exercices de Travaux Dirigés2 (1).pdf",
+            "size": "163.8 Ko",
+            "sizeBytes": 167725,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/td/Exercices de Travaux Dirigés2 (1).pdf"
+          },
+          {
+            "name": "Exercices de Travaux Dirigés2",
+            "filename": "Exercices de Travaux Dirigés2.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/td/Exercices de Travaux Dirigés2.pdf",
+            "size": "163.8 Ko",
+            "sizeBytes": 167725,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/td/Exercices de Travaux Dirigés2.pdf"
+          }
+        ],
+        "Framework PHP": [
+          {
+            "name": "sequence1",
+            "filename": "sequence1.pdf",
+            "url": "/courses/L2/semestre 2/Framework PHP/cours/sequence1.pdf",
+            "size": "1003.1 Ko",
+            "sizeBytes": 1027154,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Framework PHP/cours/sequence1.pdf"
+          },
+          {
+            "name": "sequence2",
+            "filename": "sequence2.pdf",
+            "url": "/courses/L2/semestre 2/Framework PHP/cours/sequence2.pdf",
+            "size": "1.09 Mo",
+            "sizeBytes": 1138849,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Framework PHP/cours/sequence2.pdf"
+          },
+          {
+            "name": "sequence3 (1)",
+            "filename": "sequence3 (1).pdf",
+            "url": "/courses/L2/semestre 2/Framework PHP/cours/sequence3 (1).pdf",
+            "size": "868.0 Ko",
+            "sizeBytes": 888852,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Framework PHP/cours/sequence3 (1).pdf"
+          },
+          {
+            "name": "sequence4",
+            "filename": "sequence4.pdf",
+            "url": "/courses/L2/semestre 2/Framework PHP/cours/sequence4.pdf",
+            "size": "1.44 Mo",
+            "sizeBytes": 1509209,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Framework PHP/cours/sequence4.pdf"
+          },
+          {
+            "name": "sequence5",
+            "filename": "sequence5.pdf",
+            "url": "/courses/L2/semestre 2/Framework PHP/cours/sequence5.pdf",
+            "size": "1.52 Mo",
+            "sizeBytes": 1593332,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Framework PHP/cours/sequence5.pdf"
+          },
+          {
+            "name": "TD1 - Laravel",
+            "filename": "TD1 - Laravel.pdf",
+            "url": "/courses/L2/semestre 2/Framework PHP/TD/TD1 - Laravel.pdf",
+            "size": "235.9 Ko",
+            "sizeBytes": 241590,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/Framework PHP/TD/TD1 - Laravel.pdf"
+          },
+          {
+            "name": "td3",
+            "filename": "td3.pdf",
+            "url": "/courses/L2/semestre 2/Framework PHP/TD/td3.pdf",
+            "size": "433.7 Ko",
+            "sizeBytes": 444106,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/Framework PHP/TD/td3.pdf"
+          }
+        ],
+        "gestion de projet": [
+          {
+            "name": "Gestion de projet informatique_SEQ1",
+            "filename": "Gestion de projet informatique_SEQ1.pdf",
+            "url": "/courses/L2/semestre 2/gestion de projet/cours/Gestion de projet informatique_SEQ1.pdf",
+            "size": "2.37 Mo",
+            "sizeBytes": 2489396,
+            "ext": "PDF",
+            "type": "Mini-Projet",
+            "relPath": "L2/semestre 2/gestion de projet/cours/Gestion de projet informatique_SEQ1.pdf"
+          },
+          {
+            "name": "Gestion de projet informatique_SEQ2",
+            "filename": "Gestion de projet informatique_SEQ2.pdf",
+            "url": "/courses/L2/semestre 2/gestion de projet/cours/Gestion de projet informatique_SEQ2.pdf",
+            "size": "1.18 Mo",
+            "sizeBytes": 1237646,
+            "ext": "PDF",
+            "type": "Mini-Projet",
+            "relPath": "L2/semestre 2/gestion de projet/cours/Gestion de projet informatique_SEQ2.pdf"
+          },
+          {
+            "name": "Gestion de projet informatique_SEQ3",
+            "filename": "Gestion de projet informatique_SEQ3.pdf",
+            "url": "/courses/L2/semestre 2/gestion de projet/cours/Gestion de projet informatique_SEQ3.pdf",
+            "size": "1.03 Mo",
+            "sizeBytes": 1084777,
+            "ext": "PDF",
+            "type": "Mini-Projet",
+            "relPath": "L2/semestre 2/gestion de projet/cours/Gestion de projet informatique_SEQ3.pdf"
+          }
+        ],
+        "IHM(interface homme machine)": [
+          {
+            "name": "Sequence 1",
+            "filename": "Sequence 1.pdf",
+            "url": "/courses/L2/semestre 2/IHM(interface homme machine)/cours/Sequence 1.pdf",
+            "size": "1.59 Mo",
+            "sizeBytes": 1668180,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/IHM(interface homme machine)/cours/Sequence 1.pdf"
+          },
+          {
+            "name": "Sequence 2",
+            "filename": "Sequence 2.pdf",
+            "url": "/courses/L2/semestre 2/IHM(interface homme machine)/cours/Sequence 2.pdf",
+            "size": "670.5 Ko",
+            "sizeBytes": 686561,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/IHM(interface homme machine)/cours/Sequence 2.pdf"
+          },
+          {
+            "name": "TD1",
+            "filename": "TD1.pdf",
+            "url": "/courses/L2/semestre 2/IHM(interface homme machine)/td/TD1.pdf",
+            "size": "136.2 Ko",
+            "sizeBytes": 139491,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/IHM(interface homme machine)/td/TD1.pdf"
+          },
+          {
+            "name": "TD1_IHM",
+            "filename": "TD1_IHM.pdf",
+            "url": "/courses/L2/semestre 2/IHM(interface homme machine)/td/TD1_IHM.pdf",
+            "size": "195.2 Ko",
+            "sizeBytes": 199872,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/IHM(interface homme machine)/td/TD1_IHM.pdf"
+          },
+          {
+            "name": "TD2",
+            "filename": "TD2.pdf",
+            "url": "/courses/L2/semestre 2/IHM(interface homme machine)/td/TD2.pdf",
+            "size": "180.2 Ko",
+            "sizeBytes": 184517,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/IHM(interface homme machine)/td/TD2.pdf"
+          }
+        ],
+        "JSP SERVLET": [
+          {
+            "name": "Chapitre 1_Introduction_generale_sur JEE (1)",
+            "filename": "Chapitre 1_Introduction_generale_sur JEE (1).pptx",
+            "url": "/courses/L2/semestre 2/JSP SERVLET/cours/Chapitre 1_Introduction_generale_sur JEE (1).pptx",
+            "size": "1.68 Mo",
+            "sizeBytes": 1762920,
+            "ext": "PPTX",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/JSP SERVLET/cours/Chapitre 1_Introduction_generale_sur JEE (1).pptx"
+          },
+          {
+            "name": "Chapitre 2_developpement_web_JEE_avec_JBoss",
+            "filename": "Chapitre 2_developpement_web_JEE_avec_JBoss.pptx",
+            "url": "/courses/L2/semestre 2/JSP SERVLET/cours/Chapitre 2_developpement_web_JEE_avec_JBoss.pptx",
+            "size": "2.86 Mo",
+            "sizeBytes": 3002343,
+            "ext": "PPTX",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/JSP SERVLET/cours/Chapitre 2_developpement_web_JEE_avec_JBoss.pptx"
+          },
+          {
+            "name": "Chapitre 3_Les servlets",
+            "filename": "Chapitre 3_Les servlets.pptx",
+            "url": "/courses/L2/semestre 2/JSP SERVLET/cours/Chapitre 3_Les servlets.pptx",
+            "size": "1.51 Mo",
+            "sizeBytes": 1587642,
+            "ext": "PPTX",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/JSP SERVLET/cours/Chapitre 3_Les servlets.pptx"
+          },
+          {
+            "name": "Chapitre 4_JSP",
+            "filename": "Chapitre 4_JSP.pptx",
+            "url": "/courses/L2/semestre 2/JSP SERVLET/cours/Chapitre 4_JSP.pptx",
+            "size": "774.7 Ko",
+            "sizeBytes": 793243,
+            "ext": "PPTX",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/JSP SERVLET/cours/Chapitre 4_JSP.pptx"
+          },
+          {
+            "name": "~$Chapitre 1_Introduction_generale_sur JEE (1)",
+            "filename": "~$Chapitre 1_Introduction_generale_sur JEE (1).pptx",
+            "url": "/courses/L2/semestre 2/JSP SERVLET/cours/~$Chapitre 1_Introduction_generale_sur JEE (1).pptx",
+            "size": "0.2 Ko",
+            "sizeBytes": 165,
+            "ext": "PPTX",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/JSP SERVLET/cours/~$Chapitre 1_Introduction_generale_sur JEE (1).pptx"
+          },
+          {
+            "name": "~$Chapitre 2_developpement_web_JEE_avec_JBoss",
+            "filename": "~$Chapitre 2_developpement_web_JEE_avec_JBoss.pptx",
+            "url": "/courses/L2/semestre 2/JSP SERVLET/cours/~$Chapitre 2_developpement_web_JEE_avec_JBoss.pptx",
+            "size": "0.2 Ko",
+            "sizeBytes": 165,
+            "ext": "PPTX",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/JSP SERVLET/cours/~$Chapitre 2_developpement_web_JEE_avec_JBoss.pptx"
+          },
+          {
+            "name": "Travaux Dirigés Séquence 1- Introduction générale sur JEE",
+            "filename": "Travaux Dirigés Séquence 1- Introduction générale sur JEE.pdf",
+            "url": "/courses/L2/semestre 2/JSP SERVLET/td/Travaux Dirigés Séquence 1- Introduction générale sur JEE.pdf",
+            "size": "84.5 Ko",
+            "sizeBytes": 86517,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/JSP SERVLET/td/Travaux Dirigés Séquence 1- Introduction générale sur JEE.pdf"
+          },
+          {
+            "name": "Travaux Dirigés Séquence 2- Développement WEB  avec JEE (Java Enterprise Edition), eclipse  JBOSS 7",
+            "filename": "Travaux Dirigés Séquence 2- Développement WEB  avec JEE (Java Enterprise Edition), eclipse  JBOSS 7.pdf",
+            "url": "/courses/L2/semestre 2/JSP SERVLET/td/Travaux Dirigés Séquence 2- Développement WEB  avec JEE (Java Enterprise Edition), eclipse  JBOSS 7.pdf",
+            "size": "106.2 Ko",
+            "sizeBytes": 108728,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/JSP SERVLET/td/Travaux Dirigés Séquence 2- Développement WEB  avec JEE (Java Enterprise Edition), eclipse  JBOSS 7.pdf"
+          },
+          {
+            "name": "Travaux Dirigés Séquence 3 - Les servlets",
+            "filename": "Travaux Dirigés Séquence 3 - Les servlets.pdf",
+            "url": "/courses/L2/semestre 2/JSP SERVLET/td/Travaux Dirigés Séquence 3 - Les servlets.pdf",
+            "size": "100.3 Ko",
+            "sizeBytes": 102708,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/JSP SERVLET/td/Travaux Dirigés Séquence 3 - Les servlets.pdf"
+          },
+          {
+            "name": "Travaux Dirigés Séquence 4 -  JSP",
+            "filename": "Travaux Dirigés Séquence 4 -  JSP.pdf",
+            "url": "/courses/L2/semestre 2/JSP SERVLET/td/Travaux Dirigés Séquence 4 -  JSP.pdf",
+            "size": "107.5 Ko",
+            "sizeBytes": 110130,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/JSP SERVLET/td/Travaux Dirigés Séquence 4 -  JSP.pdf"
+          }
+        ],
+        "Langage JAVA": [
+          {
+            "name": "Annexe_ChapitreP1_01_Installation_IDE",
+            "filename": "Annexe_ChapitreP1_01_Installation_IDE.pdf",
+            "url": "/courses/L2/semestre 2/Langage JAVA/cours/Annexe_ChapitreP1_01_Installation_IDE.pdf",
+            "size": "1.77 Mo",
+            "sizeBytes": 1853769,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Langage JAVA/cours/Annexe_ChapitreP1_01_Installation_IDE.pdf"
+          },
+          {
+            "name": "Langage Java_SEQ1",
+            "filename": "Langage Java_SEQ1.pdf",
+            "url": "/courses/L2/semestre 2/Langage JAVA/cours/Langage Java_SEQ1.pdf",
+            "size": "1.39 Mo",
+            "sizeBytes": 1455827,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Langage JAVA/cours/Langage Java_SEQ1.pdf"
+          },
+          {
+            "name": "Langage Java_SEQ2",
+            "filename": "Langage Java_SEQ2.pdf",
+            "url": "/courses/L2/semestre 2/Langage JAVA/cours/Langage Java_SEQ2.pdf",
+            "size": "1.43 Mo",
+            "sizeBytes": 1495064,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Langage JAVA/cours/Langage Java_SEQ2.pdf"
+          },
+          {
+            "name": "Langage Java_TD1",
+            "filename": "Langage Java_TD1.pdf",
+            "url": "/courses/L2/semestre 2/Langage JAVA/td/Langage Java_TD1.pdf",
+            "size": "893.4 Ko",
+            "sizeBytes": 914857,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/Langage JAVA/td/Langage Java_TD1.pdf"
+          },
+          {
+            "name": "Langage Java_TD2",
+            "filename": "Langage Java_TD2.pdf",
+            "url": "/courses/L2/semestre 2/Langage JAVA/td/Langage Java_TD2.pdf",
+            "size": "556.2 Ko",
+            "sizeBytes": 569560,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/Langage JAVA/td/Langage Java_TD2.pdf"
+          }
+        ],
+        "Langage UML": [
+          {
+            "name": "SEQ1 INTRODUCTION GENERALE",
+            "filename": "SEQ1 INTRODUCTION GENERALE.pdf",
+            "url": "/courses/L2/semestre 2/Langage UML/cours/SEQ1 INTRODUCTION GENERALE.pdf",
+            "size": "305.1 Ko",
+            "sizeBytes": 312425,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Langage UML/cours/SEQ1 INTRODUCTION GENERALE.pdf"
+          },
+          {
+            "name": "SEQ2 LE CONCEPT ORIENTE OBJET",
+            "filename": "SEQ2 LE CONCEPT ORIENTE OBJET.pdf",
+            "url": "/courses/L2/semestre 2/Langage UML/cours/SEQ2 LE CONCEPT ORIENTE OBJET.pdf",
+            "size": "754.8 Ko",
+            "sizeBytes": 772903,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Langage UML/cours/SEQ2 LE CONCEPT ORIENTE OBJET.pdf"
+          },
+          {
+            "name": "SEQ3 LES SPECIFICATIONS D’UML",
+            "filename": "SEQ3 LES SPECIFICATIONS D’UML.pdf",
+            "url": "/courses/L2/semestre 2/Langage UML/cours/SEQ3 LES SPECIFICATIONS D’UML.pdf",
+            "size": "642.7 Ko",
+            "sizeBytes": 658146,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Langage UML/cours/SEQ3 LES SPECIFICATIONS D’UML.pdf"
+          },
+          {
+            "name": "TD2",
+            "filename": "TD2.pdf",
+            "url": "/courses/L2/semestre 2/Langage UML/td/TD2.pdf",
+            "size": "170.5 Ko",
+            "sizeBytes": 174612,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/Langage UML/td/TD2.pdf"
+          },
+          {
+            "name": "td3",
+            "filename": "td3.pdf",
+            "url": "/courses/L2/semestre 2/Langage UML/td/td3.pdf",
+            "size": "477.2 Ko",
+            "sizeBytes": 488686,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/Langage UML/td/td3.pdf"
+          }
+        ],
+        "PHP avancé": [
+          {
+            "name": "COURS SEQ 01 - LANGAGE PHP AVANCE",
+            "filename": "COURS SEQ 01 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/cours/COURS SEQ 01 - LANGAGE PHP AVANCE.pdf",
+            "size": "809.3 Ko",
+            "sizeBytes": 828721,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/PHP avancé/cours/COURS SEQ 01 - LANGAGE PHP AVANCE.pdf"
+          },
+          {
+            "name": "COURS SEQ 02 - LANGAGE PHP AVANCE",
+            "filename": "COURS SEQ 02 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/cours/COURS SEQ 02 - LANGAGE PHP AVANCE.pdf",
+            "size": "810.5 Ko",
+            "sizeBytes": 829960,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/PHP avancé/cours/COURS SEQ 02 - LANGAGE PHP AVANCE.pdf"
+          },
+          {
+            "name": "COURS SEQ 03 - LANGAGE PHP AVANCE",
+            "filename": "COURS SEQ 03 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/cours/COURS SEQ 03 - LANGAGE PHP AVANCE.pdf",
+            "size": "785.1 Ko",
+            "sizeBytes": 803946,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/PHP avancé/cours/COURS SEQ 03 - LANGAGE PHP AVANCE.pdf"
+          },
+          {
+            "name": "COURS SEQ 04 - LANGAGE PHP AVANCE",
+            "filename": "COURS SEQ 04 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/cours/COURS SEQ 04 - LANGAGE PHP AVANCE.pdf",
+            "size": "840.4 Ko",
+            "sizeBytes": 860613,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/PHP avancé/cours/COURS SEQ 04 - LANGAGE PHP AVANCE.pdf"
+          },
+          {
+            "name": "COURS SEQ 05 - LANGAGE PHP AVANCE",
+            "filename": "COURS SEQ 05 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/cours/COURS SEQ 05 - LANGAGE PHP AVANCE.pdf",
+            "size": "1.05 Mo",
+            "sizeBytes": 1098511,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/PHP avancé/cours/COURS SEQ 05 - LANGAGE PHP AVANCE.pdf"
+          },
+          {
+            "name": "COURS SEQ 06 - LANGAGE PHP AVANCE",
+            "filename": "COURS SEQ 06 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/cours/COURS SEQ 06 - LANGAGE PHP AVANCE.pdf",
+            "size": "760.7 Ko",
+            "sizeBytes": 778958,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/PHP avancé/cours/COURS SEQ 06 - LANGAGE PHP AVANCE.pdf"
+          },
+          {
+            "name": "TP SEQ 01 - LANGAGE PHP AVANCE",
+            "filename": "TP SEQ 01 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/td/TP SEQ 01 - LANGAGE PHP AVANCE.pdf",
+            "size": "131.3 Ko",
+            "sizeBytes": 134402,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/PHP avancé/td/TP SEQ 01 - LANGAGE PHP AVANCE.pdf"
+          },
+          {
+            "name": "TP SEQ 02 - LANGAGE PHP AVANCE",
+            "filename": "TP SEQ 02 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/td/TP SEQ 02 - LANGAGE PHP AVANCE.pdf",
+            "size": "117.3 Ko",
+            "sizeBytes": 120090,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/PHP avancé/td/TP SEQ 02 - LANGAGE PHP AVANCE.pdf"
+          },
+          {
+            "name": "TP SEQ 03 - LANGAGE PHP AVANCE",
+            "filename": "TP SEQ 03 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/td/TP SEQ 03 - LANGAGE PHP AVANCE.pdf",
+            "size": "89.1 Ko",
+            "sizeBytes": 91284,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/PHP avancé/td/TP SEQ 03 - LANGAGE PHP AVANCE.pdf"
+          },
+          {
+            "name": "TP SEQ 04 - LANGAGE PHP AVANCE",
+            "filename": "TP SEQ 04 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/td/TP SEQ 04 - LANGAGE PHP AVANCE.pdf",
+            "size": "101.8 Ko",
+            "sizeBytes": 104202,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/PHP avancé/td/TP SEQ 04 - LANGAGE PHP AVANCE.pdf"
+          },
+          {
+            "name": "TP SEQ 05 - LANGAGE PHP AVANCE",
+            "filename": "TP SEQ 05 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/td/TP SEQ 05 - LANGAGE PHP AVANCE.pdf",
+            "size": "133.5 Ko",
+            "sizeBytes": 136748,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/PHP avancé/td/TP SEQ 05 - LANGAGE PHP AVANCE.pdf"
+          },
+          {
+            "name": "TP SEQ 06 - LANGAGE PHP AVANCE",
+            "filename": "TP SEQ 06 - LANGAGE PHP AVANCE.pdf",
+            "url": "/courses/L2/semestre 2/PHP avancé/td/TP SEQ 06 - LANGAGE PHP AVANCE.pdf",
+            "size": "83.0 Ko",
+            "sizeBytes": 84994,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/PHP avancé/td/TP SEQ 06 - LANGAGE PHP AVANCE.pdf"
+          }
+        ],
+        "programmation mobile android": [
+          {
+            "name": "Projet Android IDA  2022",
+            "filename": "Projet Android IDA  2022.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile android/cours/Projet Android IDA  2022.pdf",
+            "size": "100.0 Ko",
+            "sizeBytes": 102386,
+            "ext": "PDF",
+            "type": "Mini-Projet",
+            "relPath": "L2/semestre 2/programmation mobile android/cours/Projet Android IDA  2022.pdf"
+          },
+          {
+            "name": "Sequence 1 Android",
+            "filename": "Sequence 1 Android.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile android/cours/Sequence 1 Android.pdf",
+            "size": "2.03 Mo",
+            "sizeBytes": 2133481,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/programmation mobile android/cours/Sequence 1 Android.pdf"
+          },
+          {
+            "name": "Sequence 2 Android",
+            "filename": "Sequence 2 Android.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile android/cours/Sequence 2 Android.pdf",
+            "size": "1.49 Mo",
+            "sizeBytes": 1558786,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/programmation mobile android/cours/Sequence 2 Android.pdf"
+          },
+          {
+            "name": "Sequence 3 Android",
+            "filename": "Sequence 3 Android.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile android/cours/Sequence 3 Android.pdf",
+            "size": "1.75 Mo",
+            "sizeBytes": 1829920,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/programmation mobile android/cours/Sequence 3 Android.pdf"
+          },
+          {
+            "name": "Sequence 4 Android",
+            "filename": "Sequence 4 Android.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile android/cours/Sequence 4 Android.pdf",
+            "size": "1.78 Mo",
+            "sizeBytes": 1869394,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/programmation mobile android/cours/Sequence 4 Android.pdf"
+          },
+          {
+            "name": "Sequence 5 Android",
+            "filename": "Sequence 5 Android.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile android/cours/Sequence 5 Android.pdf",
+            "size": "1.26 Mo",
+            "sizeBytes": 1316927,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/programmation mobile android/cours/Sequence 5 Android.pdf"
+          },
+          {
+            "name": "sequence 6 Android",
+            "filename": "sequence 6 Android.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile android/cours/sequence 6 Android.pdf",
+            "size": "1.14 Mo",
+            "sizeBytes": 1193713,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/programmation mobile android/cours/sequence 6 Android.pdf"
+          },
+          {
+            "name": "Programmation mobile avec android_TD3",
+            "filename": "Programmation mobile avec android_TD3.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile android/td/Programmation mobile avec android_TD3.pdf",
+            "size": "499.9 Ko",
+            "sizeBytes": 511888,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/programmation mobile android/td/Programmation mobile avec android_TD3.pdf"
+          },
+          {
+            "name": "Programmation mobile avec android_TD4",
+            "filename": "Programmation mobile avec android_TD4.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile android/td/Programmation mobile avec android_TD4.pdf",
+            "size": "504.3 Ko",
+            "sizeBytes": 516432,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/programmation mobile android/td/Programmation mobile avec android_TD4.pdf"
+          }
+        ],
+        "programmation mobile avec IOS": [
+          {
+            "name": "Sequence 2",
+            "filename": "Sequence 2.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile avec IOS/cours/Sequence 2.pdf",
+            "size": "1.68 Mo",
+            "sizeBytes": 1765486,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/programmation mobile avec IOS/cours/Sequence 2.pdf"
+          },
+          {
+            "name": "Sequence 4",
+            "filename": "Sequence 4.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile avec IOS/cours/Sequence 4.pdf",
+            "size": "1.24 Mo",
+            "sizeBytes": 1302250,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/programmation mobile avec IOS/cours/Sequence 4.pdf"
+          },
+          {
+            "name": "Séquence 1 - Introduction au Développement IOS",
+            "filename": "Séquence 1 - Introduction au Développement IOS.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile avec IOS/cours/Séquence 1 - Introduction au Développement IOS.pdf",
+            "size": "346.7 Ko",
+            "sizeBytes": 355066,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/programmation mobile avec IOS/cours/Séquence 1 - Introduction au Développement IOS.pdf"
+          },
+          {
+            "name": "Séquence 3",
+            "filename": "Séquence 3.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile avec IOS/cours/Séquence 3.pdf",
+            "size": "1.07 Mo",
+            "sizeBytes": 1121664,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/programmation mobile avec IOS/cours/Séquence 3.pdf"
+          },
+          {
+            "name": "TD1 Programmation mobile iOs",
+            "filename": "TD1 Programmation mobile iOs.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile avec IOS/td/TD1 Programmation mobile iOs.pdf",
+            "size": "109.7 Ko",
+            "sizeBytes": 112351,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/programmation mobile avec IOS/td/TD1 Programmation mobile iOs.pdf"
+          },
+          {
+            "name": "TD2 Programmation mobile iOs",
+            "filename": "TD2 Programmation mobile iOs.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile avec IOS/td/TD2 Programmation mobile iOs.pdf",
+            "size": "105.7 Ko",
+            "sizeBytes": 108263,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/programmation mobile avec IOS/td/TD2 Programmation mobile iOs.pdf"
+          },
+          {
+            "name": "TD3 Programmation mobile iOs",
+            "filename": "TD3 Programmation mobile iOs.pdf",
+            "url": "/courses/L2/semestre 2/programmation mobile avec IOS/td/TD3 Programmation mobile iOs.pdf",
+            "size": "129.4 Ko",
+            "sizeBytes": 132494,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/semestre 2/programmation mobile avec IOS/td/TD3 Programmation mobile iOs.pdf"
+          }
+        ],
+        "Programmation sur UE4(unreal engine 4)1": [
+          {
+            "name": "chap_01_Debutez sur UE4",
+            "filename": "chap_01_Debutez sur UE4.pdf",
+            "url": "/courses/L2/semestre 2/Programmation sur UE4(unreal engine 4)1/cours/chap_01_Debutez sur UE4.pdf",
+            "size": "12.9 Mo",
+            "sizeBytes": 13530203,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Programmation sur UE4(unreal engine 4)1/cours/chap_01_Debutez sur UE4.pdf"
+          },
+          {
+            "name": "chap_02_Interface_UE4",
+            "filename": "chap_02_Interface_UE4.pdf",
+            "url": "/courses/L2/semestre 2/Programmation sur UE4(unreal engine 4)1/cours/chap_02_Interface_UE4.pdf",
+            "size": "8.63 Mo",
+            "sizeBytes": 9044169,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Programmation sur UE4(unreal engine 4)1/cours/chap_02_Interface_UE4.pdf"
+          },
+          {
+            "name": "chap_03_Gerer_les_acteurs",
+            "filename": "chap_03_Gerer_les_acteurs.pdf",
+            "url": "/courses/L2/semestre 2/Programmation sur UE4(unreal engine 4)1/cours/chap_03_Gerer_les_acteurs.pdf",
+            "size": "13.11 Mo",
+            "sizeBytes": 13749923,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/semestre 2/Programmation sur UE4(unreal engine 4)1/cours/chap_03_Gerer_les_acteurs.pdf"
+          }
+        ]
+      },
+      "Semestre Général": {
+        "PARTIE TD DE L1 ET L2": [
+          {
+            "name": "FICHE DE TP DE LA SEQUENCE 04",
+            "filename": "FICHE DE TP DE LA SEQUENCE 04.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/FICHE DE TP DE LA SEQUENCE 04.pdf",
+            "size": "408.4 Ko",
+            "sizeBytes": 418181,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/FICHE DE TP DE LA SEQUENCE 04.pdf"
+          },
+          {
+            "name": "Mini projet_sequence1",
+            "filename": "Mini projet_sequence1.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/Mini projet_sequence1.pdf",
+            "size": "345.5 Ko",
+            "sizeBytes": 353796,
+            "ext": "PDF",
+            "type": "Mini-Projet",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/Mini projet_sequence1.pdf"
+          },
+          {
+            "name": "TD 03 - LES NOUVEAUX ELEMENTS SEMANTIQUES DE HTML",
+            "filename": "TD 03 - LES NOUVEAUX ELEMENTS SEMANTIQUES DE HTML.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TD 03 - LES NOUVEAUX ELEMENTS SEMANTIQUES DE HTML.pdf",
+            "size": "662.4 Ko",
+            "sizeBytes": 678293,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TD 03 - LES NOUVEAUX ELEMENTS SEMANTIQUES DE HTML.pdf"
+          },
+          {
+            "name": "TD2.1",
+            "filename": "TD2.1.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TD2.1.pdf",
+            "size": "582.2 Ko",
+            "sizeBytes": 596209,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TD2.1.pdf"
+          },
+          {
+            "name": "TD4",
+            "filename": "TD4.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TD4.pdf",
+            "size": "13.4 Ko",
+            "sizeBytes": 13751,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TD4.pdf"
+          },
+          {
+            "name": "TD_sequence 2",
+            "filename": "TD_sequence 2.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TD_sequence 2.pdf",
+            "size": "671.9 Ko",
+            "sizeBytes": 688061,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TD_sequence 2.pdf"
+          },
+          {
+            "name": "TP 01",
+            "filename": "TP 01.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 01.pdf",
+            "size": "666.1 Ko",
+            "sizeBytes": 682057,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 01.pdf"
+          },
+          {
+            "name": "TP 02",
+            "filename": "TP 02.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 02.pdf",
+            "size": "591.8 Ko",
+            "sizeBytes": 605975,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 02.pdf"
+          },
+          {
+            "name": "TP 03 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 03 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 03 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "722.5 Ko",
+            "sizeBytes": 739876,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 03 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 04 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 04 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 04 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "575.5 Ko",
+            "sizeBytes": 589273,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 04 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 05 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 05 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 05 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "618.7 Ko",
+            "sizeBytes": 633581,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 05 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 06 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 06 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 06 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "705.2 Ko",
+            "sizeBytes": 722105,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 06 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 07 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 07 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 07 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "522.6 Ko",
+            "sizeBytes": 535170,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 07 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 08 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 08 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 08 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "634.7 Ko",
+            "sizeBytes": 649883,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 08 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "TP 09 INTRODUCTION AUX LANGAGES HTML ET CSS",
+            "filename": "TP 09 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 09 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf",
+            "size": "653.4 Ko",
+            "sizeBytes": 669128,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/html/TP 09 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+          },
+          {
+            "name": "js 1",
+            "filename": "js 1.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/js 1.pdf",
+            "size": "292.2 Ko",
+            "sizeBytes": 299226,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/js 1.pdf"
+          },
+          {
+            "name": "js qcm (1)",
+            "filename": "js qcm (1).pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/js qcm (1).pdf",
+            "size": "89.7 Ko",
+            "sizeBytes": 91841,
+            "ext": "PDF",
+            "type": "QCM & Évaluation",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/js qcm (1).pdf"
+          },
+          {
+            "name": "js qcm",
+            "filename": "js qcm.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/js qcm.pdf",
+            "size": "85.7 Ko",
+            "sizeBytes": 87707,
+            "ext": "PDF",
+            "type": "QCM & Évaluation",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/js qcm.pdf"
+          },
+          {
+            "name": "TD1",
+            "filename": "TD1.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/TD1.pdf",
+            "size": "780.4 Ko",
+            "sizeBytes": 799114,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/TD1.pdf"
+          },
+          {
+            "name": "TD2",
+            "filename": "TD2.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/TD2.pdf",
+            "size": "346.2 Ko",
+            "sizeBytes": 354543,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/TD2.pdf"
+          },
+          {
+            "name": "TD3",
+            "filename": "TD3.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/TD3.pdf",
+            "size": "342.2 Ko",
+            "sizeBytes": 350376,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/TD3.pdf"
+          },
+          {
+            "name": "TD4 (1)",
+            "filename": "TD4 (1).pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/TD4 (1).pdf",
+            "size": "370.6 Ko",
+            "sizeBytes": 379445,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/TD4 (1).pdf"
+          },
+          {
+            "name": "TD5",
+            "filename": "TD5.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/TD5.pdf",
+            "size": "384.9 Ko",
+            "sizeBytes": 394131,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/js.td/TD5.pdf"
+          },
+          {
+            "name": "Atelier 1",
+            "filename": "Atelier 1.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/programmation/Atelier 1.pdf",
+            "size": "342.3 Ko",
+            "sizeBytes": 350484,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/programmation/Atelier 1.pdf"
+          },
+          {
+            "name": "Atelier 2",
+            "filename": "Atelier 2.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/programmation/Atelier 2.pdf",
+            "size": "363.6 Ko",
+            "sizeBytes": 372307,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/programmation/Atelier 2.pdf"
+          },
+          {
+            "name": "Atelier 3",
+            "filename": "Atelier 3.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/programmation/Atelier 3.pdf",
+            "size": "377.1 Ko",
+            "sizeBytes": 386140,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/programmation/Atelier 3.pdf"
+          },
+          {
+            "name": "TD_Séquence2",
+            "filename": "TD_Séquence2.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/programmation/TD_Séquence2.pdf",
+            "size": "99.4 Ko",
+            "sizeBytes": 101781,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/programmation/TD_Séquence2.pdf"
+          },
+          {
+            "name": "Travaux Dirigés_3",
+            "filename": "Travaux Dirigés_3.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/programmation/Travaux Dirigés_3.pdf",
+            "size": "409.7 Ko",
+            "sizeBytes": 419568,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/programmation/Travaux Dirigés_3.pdf"
+          },
+          {
+            "name": "Travaux-Pratiques3-1-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques3-1-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques3-1-IntroductionAuxReseaux.pdf",
+            "size": "430.0 Ko",
+            "sizeBytes": 440318,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques3-1-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Travaux-Pratiques3-2-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques3-2-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques3-2-IntroductionAuxReseaux.pdf",
+            "size": "440.1 Ko",
+            "sizeBytes": 450645,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques3-2-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "Travaux-Pratiques4-IntroductionAuxReseaux",
+            "filename": "Travaux-Pratiques4-IntroductionAuxReseaux.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques4-IntroductionAuxReseaux.pdf",
+            "size": "355.2 Ko",
+            "sizeBytes": 363681,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques4-IntroductionAuxReseaux.pdf"
+          },
+          {
+            "name": "TD2.1",
+            "filename": "TD2.1.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/td/TD2.1.pdf",
+            "size": "582.2 Ko",
+            "sizeBytes": 596209,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/td/TD2.1.pdf"
+          },
+          {
+            "name": "TD4",
+            "filename": "TD4.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/td/TD4.pdf",
+            "size": "13.4 Ko",
+            "sizeBytes": 13751,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/td/TD4.pdf"
+          },
+          {
+            "name": "TD_Algorithmes_Basique",
+            "filename": "TD_Algorithmes_Basique.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/td/TD_Algorithmes_Basique.pdf",
+            "size": "2.6 Ko",
+            "sizeBytes": 2688,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/td/TD_Algorithmes_Basique.pdf"
+          },
+          {
+            "name": "TD_seq3_algo_ida",
+            "filename": "TD_seq3_algo_ida.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/td/TD_seq3_algo_ida.pdf",
+            "size": "278.7 Ko",
+            "sizeBytes": 285369,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/td/TD_seq3_algo_ida.pdf"
+          },
+          {
+            "name": "TD seance2",
+            "filename": "TD seance2.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/xml/TD seance2.pdf",
+            "size": "861.2 Ko",
+            "sizeBytes": 881899,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/xml/TD seance2.pdf"
+          },
+          {
+            "name": "td3 (1)",
+            "filename": "td3 (1).pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/xml/td3 (1).pdf",
+            "size": "496.1 Ko",
+            "sizeBytes": 508037,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/xml/td3 (1).pdf"
+          },
+          {
+            "name": "TD",
+            "filename": "TD.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/algorithme/TD.pdf",
+            "size": "221.5 Ko",
+            "sizeBytes": 226858,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/algorithme/TD.pdf"
+          },
+          {
+            "name": "TD3.",
+            "filename": "TD3..pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/algorithme/TD3..pdf",
+            "size": "483.0 Ko",
+            "sizeBytes": 494637,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/algorithme/TD3..pdf"
+          },
+          {
+            "name": "TD_Tableaux",
+            "filename": "TD_Tableaux.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/algorithme/TD_Tableaux.pdf",
+            "size": "278.7 Ko",
+            "sizeBytes": 285369,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/algorithme/TD_Tableaux.pdf"
+          },
+          {
+            "name": "TD1 Les tableaux",
+            "filename": "TD1 Les tableaux.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/C/TD1 Les tableaux.pdf",
+            "size": "227.8 Ko",
+            "sizeBytes": 233253,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/C/TD1 Les tableaux.pdf"
+          },
+          {
+            "name": "td_Fonctions",
+            "filename": "td_Fonctions.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/C/td_Fonctions.pdf",
+            "size": "351.0 Ko",
+            "sizeBytes": 359425,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/C/td_Fonctions.pdf"
+          },
+          {
+            "name": "TP SEQ 01 - FRAMEWORKS WEB CÔTE CLIENT",
+            "filename": "TP SEQ 01 - FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/framwork html.css.js/TP SEQ 01 - FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "size": "684.1 Ko",
+            "sizeBytes": 700529,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/framwork html.css.js/TP SEQ 01 - FRAMEWORKS WEB CÔTE CLIENT.pdf"
+          },
+          {
+            "name": "TP SEQ 02_FRAMEWORKS WEB CÔTE CLIENT",
+            "filename": "TP SEQ 02_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/framwork html.css.js/TP SEQ 02_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "size": "792.5 Ko",
+            "sizeBytes": 811509,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/framwork html.css.js/TP SEQ 02_FRAMEWORKS WEB CÔTE CLIENT.pdf"
+          },
+          {
+            "name": "TP SEQ 03_FRAMEWORKS WEB CÔTE CLIENT",
+            "filename": "TP SEQ 03_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/framwork html.css.js/TP SEQ 03_FRAMEWORKS WEB CÔTE CLIENT.pdf",
+            "size": "908.0 Ko",
+            "sizeBytes": 929755,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/framwork html.css.js/TP SEQ 03_FRAMEWORKS WEB CÔTE CLIENT.pdf"
+          },
+          {
+            "name": "Travaux  Dirigés Séquence  3 Formatage d’un document XML",
+            "filename": "Travaux  Dirigés Séquence  3 Formatage d’un document XML.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/manipulation xml/Travaux  Dirigés Séquence  3 Formatage d’un document XML.pdf",
+            "size": "604.2 Ko",
+            "sizeBytes": 618653,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/manipulation xml/Travaux  Dirigés Séquence  3 Formatage d’un document XML.pdf"
+          },
+          {
+            "name": "Travaux Dirigés Séquence 1",
+            "filename": "Travaux Dirigés Séquence 1.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/manipulation xml/Travaux Dirigés Séquence 1.pdf",
+            "size": "529.0 Ko",
+            "sizeBytes": 541710,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/manipulation xml/Travaux Dirigés Séquence 1.pdf"
+          },
+          {
+            "name": "Travaux Dirigés séquence 2 Schéma dun document XML",
+            "filename": "Travaux Dirigés séquence 2 Schéma dun document XML.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/manipulation xml/Travaux Dirigés séquence 2 Schéma dun document XML.pdf",
+            "size": "613.8 Ko",
+            "sizeBytes": 628562,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/manipulation xml/Travaux Dirigés séquence 2 Schéma dun document XML.pdf"
+          },
+          {
+            "name": "Travaux Dirigés Séquence 4 Mise à jour dun document XML",
+            "filename": "Travaux Dirigés Séquence 4 Mise à jour dun document XML.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/manipulation xml/Travaux Dirigés Séquence 4 Mise à jour dun document XML.pdf",
+            "size": "587.2 Ko",
+            "sizeBytes": 601252,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/manipulation xml/Travaux Dirigés Séquence 4 Mise à jour dun document XML.pdf"
+          },
+          {
+            "name": "TD 03 - Algèbre relationnelle",
+            "filename": "TD 03 - Algèbre relationnelle.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/modelisation du base de donne/TD 03 - Algèbre relationnelle.pdf",
+            "size": "671.7 Ko",
+            "sizeBytes": 687858,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/modelisation du base de donne/TD 03 - Algèbre relationnelle.pdf"
+          },
+          {
+            "name": "TD3_TP 01 - Langage SQL",
+            "filename": "TD3_TP 01 - Langage SQL.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/modelisation du base de donne/TD3_TP 01 - Langage SQL.pdf",
+            "size": "679.0 Ko",
+            "sizeBytes": 695288,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/modelisation du base de donne/TD3_TP 01 - Langage SQL.pdf"
+          },
+          {
+            "name": "TP SEQ 01 - LANGAGE PHP DE BASE",
+            "filename": "TP SEQ 01 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/php/TP SEQ 01 - LANGAGE PHP DE BASE.pdf",
+            "size": "161.4 Ko",
+            "sizeBytes": 165308,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/php/TP SEQ 01 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "TP SEQ 02 - LANGAGE PHP DE BASE",
+            "filename": "TP SEQ 02 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/php/TP SEQ 02 - LANGAGE PHP DE BASE.pdf",
+            "size": "593.7 Ko",
+            "sizeBytes": 607936,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/php/TP SEQ 02 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "TP SEQ 03 - LANGAGE PHP DE BASE",
+            "filename": "TP SEQ 03 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/php/TP SEQ 03 - LANGAGE PHP DE BASE.pdf",
+            "size": "590.3 Ko",
+            "sizeBytes": 604458,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/php/TP SEQ 03 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "TP SEQ 04 - LANGAGE PHP DE BASE",
+            "filename": "TP SEQ 04 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/php/TP SEQ 04 - LANGAGE PHP DE BASE.pdf",
+            "size": "610.0 Ko",
+            "sizeBytes": 624638,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/php/TP SEQ 04 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "TP SEQ 05 - LANGAGE PHP DE BASE",
+            "filename": "TP SEQ 05 - LANGAGE PHP DE BASE.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/php/TP SEQ 05 - LANGAGE PHP DE BASE.pdf",
+            "size": "136.0 Ko",
+            "sizeBytes": 139213,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/php/TP SEQ 05 - LANGAGE PHP DE BASE.pdf"
+          },
+          {
+            "name": "FicheTPSEQ1",
+            "filename": "FicheTPSEQ1.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 2/sql/FicheTPSEQ1.pdf",
+            "size": "205.6 Ko",
+            "sizeBytes": 210534,
+            "ext": "PDF",
+            "type": "Travaux Dirigés (TD/TP)",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 2/sql/FicheTPSEQ1.pdf"
+          }
+        ]
+      },
+      "Semestre 5": {
+        "PARTIE TD DE L1 ET L2": [
+          {
+            "name": "Travaux-Pratiques5-Introduction aux Reseaux",
+            "filename": "Travaux-Pratiques5-Introduction aux Reseaux.pdf",
+            "url": "/courses/L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques5-Introduction aux Reseaux.pdf",
+            "size": "493.1 Ko",
+            "sizeBytes": 504926,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L2/PARTIE TD DE L1 ET L2/td/licence 1/reseau/Travaux-Pratiques5-Introduction aux Reseaux.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "L3": {
+    "semestres": {
+      "Semestre 5": {
+        "Architectures et applications": [
+          {
+            "name": "sequence 1",
+            "filename": "sequence 1.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Architecture Logicielle/sequence 1.pdf",
+            "size": "505.5 Ko",
+            "sizeBytes": 517638,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Architecture Logicielle/sequence 1.pdf"
+          },
+          {
+            "name": "sequence 2",
+            "filename": "sequence 2.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Architecture Logicielle/sequence 2.pdf",
+            "size": "942.3 Ko",
+            "sizeBytes": 964904,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Architecture Logicielle/sequence 2.pdf"
+          },
+          {
+            "name": "sequence 3",
+            "filename": "sequence 3.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Architecture Logicielle/sequence 3.pdf",
+            "size": "457.3 Ko",
+            "sizeBytes": 468311,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Architecture Logicielle/sequence 3.pdf"
+          },
+          {
+            "name": "sequence 1 JavaServer Faces",
+            "filename": "sequence 1 JavaServer Faces.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Framework JSF/sequence 1 JavaServer Faces.pdf",
+            "size": "2.01 Mo",
+            "sizeBytes": 2104072,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Framework JSF/sequence 1 JavaServer Faces.pdf"
+          },
+          {
+            "name": "sequence 2 JavaServer Faces",
+            "filename": "sequence 2 JavaServer Faces.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Framework JSF/sequence 2 JavaServer Faces.pdf",
+            "size": "3.5 Mo",
+            "sizeBytes": 3665588,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Framework JSF/sequence 2 JavaServer Faces.pdf"
+          },
+          {
+            "name": "sequence 3 JavaServer Faces",
+            "filename": "sequence 3 JavaServer Faces.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Framework JSF/sequence 3 JavaServer Faces.pdf",
+            "size": "3.26 Mo",
+            "sizeBytes": 3416345,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Framework JSF/sequence 3 JavaServer Faces.pdf"
+          },
+          {
+            "name": "sequence 4 JavaServer Faces",
+            "filename": "sequence 4 JavaServer Faces.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Framework JSF/sequence 4 JavaServer Faces.pdf",
+            "size": "2.66 Mo",
+            "sizeBytes": 2784708,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Framework JSF/sequence 4 JavaServer Faces.pdf"
+          },
+          {
+            "name": "sequence 5 JavaServer Faces",
+            "filename": "sequence 5 JavaServer Faces.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Framework JSF/sequence 5 JavaServer Faces.pdf",
+            "size": "2.36 Mo",
+            "sizeBytes": 2476973,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Architectures et applications/Framework JSF/sequence 5 JavaServer Faces.pdf"
+          }
+        ],
+        "Développement d’application web 2": [
+          {
+            "name": "Séquence 1 LMS",
+            "filename": "Séquence 1 LMS.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Développement d’application web 2/CMS-LMS/Séquence 1 LMS.pdf",
+            "size": "859.7 Ko",
+            "sizeBytes": 880338,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Développement d’application web 2/CMS-LMS/Séquence 1 LMS.pdf"
+          },
+          {
+            "name": "Séquence 2",
+            "filename": "Séquence 2.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Développement d’application web 2/CMS-LMS/Séquence 2.pdf",
+            "size": "765.0 Ko",
+            "sizeBytes": 783383,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Développement d’application web 2/CMS-LMS/Séquence 2.pdf"
+          }
+        ],
+        "Ouverture et Professionnalisation 5": [
+          {
+            "name": "SEQ 1",
+            "filename": "SEQ 1.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Ouverture et Professionnalisation 5/E-Commerce/SEQ 1.pdf",
+            "size": "975.6 Ko",
+            "sizeBytes": 998984,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Ouverture et Professionnalisation 5/E-Commerce/SEQ 1.pdf"
+          },
+          {
+            "name": "SEQ 2",
+            "filename": "SEQ 2.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Ouverture et Professionnalisation 5/E-Commerce/SEQ 2.pdf",
+            "size": "738.8 Ko",
+            "sizeBytes": 756545,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Ouverture et Professionnalisation 5/E-Commerce/SEQ 2.pdf"
+          },
+          {
+            "name": "SEQ 3",
+            "filename": "SEQ 3.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Ouverture et Professionnalisation 5/E-Commerce/SEQ 3.pdf",
+            "size": "839.9 Ko",
+            "sizeBytes": 860103,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Ouverture et Professionnalisation 5/E-Commerce/SEQ 3.pdf"
+          },
+          {
+            "name": "SEQ 4",
+            "filename": "SEQ 4.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Ouverture et Professionnalisation 5/E-Commerce/SEQ 4.pdf",
+            "size": "844.6 Ko",
+            "sizeBytes": 864893,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Ouverture et Professionnalisation 5/E-Commerce/SEQ 4.pdf"
+          },
+          {
+            "name": "SEQ 5",
+            "filename": "SEQ 5.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Ouverture et Professionnalisation 5/E-Commerce/SEQ 5.pdf",
+            "size": "1.62 Mo",
+            "sizeBytes": 1697895,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Ouverture et Professionnalisation 5/E-Commerce/SEQ 5.pdf"
+          }
+        ],
+        "Sécurité et optimisation": [
+          {
+            "name": "Sécurisation et optimisation des applications mobiles et web_SEQ1",
+            "filename": "Sécurisation et optimisation des applications mobiles et web_SEQ1.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Sécurisation et optimisation des applications mobiles et web/Sécurisation et optimisation des applications mobiles et web_SEQ1.pdf",
+            "size": "1.27 Mo",
+            "sizeBytes": 1328413,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Sécurisation et optimisation des applications mobiles et web/Sécurisation et optimisation des applications mobiles et web_SEQ1.pdf"
+          },
+          {
+            "name": "Sécurisation et optimisation des applications mobiles et web_SEQ2",
+            "filename": "Sécurisation et optimisation des applications mobiles et web_SEQ2.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Sécurisation et optimisation des applications mobiles et web/Sécurisation et optimisation des applications mobiles et web_SEQ2.pdf",
+            "size": "1.24 Mo",
+            "sizeBytes": 1303241,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Sécurisation et optimisation des applications mobiles et web/Sécurisation et optimisation des applications mobiles et web_SEQ2.pdf"
+          },
+          {
+            "name": "Sécurisation et optimisation des applications mobiles et web_SEQ3",
+            "filename": "Sécurisation et optimisation des applications mobiles et web_SEQ3.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Sécurisation et optimisation des applications mobiles et web/Sécurisation et optimisation des applications mobiles et web_SEQ3.pdf",
+            "size": "1.33 Mo",
+            "sizeBytes": 1395290,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Sécurisation et optimisation des applications mobiles et web/Sécurisation et optimisation des applications mobiles et web_SEQ3.pdf"
+          },
+          {
+            "name": "SEQUENCE 02 Techniques de compression avec pertes",
+            "filename": "SEQUENCE 02 Techniques de compression avec pertes.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Techniques de Compression et Utilisation d’Outils Cryptographiques Web et Mobile/SEQUENCE 02 Techniques de compression avec pertes.pdf",
+            "size": "2.81 Mo",
+            "sizeBytes": 2951591,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Techniques de Compression et Utilisation d’Outils Cryptographiques Web et Mobile/SEQUENCE 02 Techniques de compression avec pertes.pdf"
+          },
+          {
+            "name": "SEQUENCE 03 Introduction à la cryptographie",
+            "filename": "SEQUENCE 03 Introduction à la cryptographie.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Techniques de Compression et Utilisation d’Outils Cryptographiques Web et Mobile/SEQUENCE 03 Introduction à la cryptographie.pdf",
+            "size": "2.14 Mo",
+            "sizeBytes": 2242627,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Techniques de Compression et Utilisation d’Outils Cryptographiques Web et Mobile/SEQUENCE 03 Introduction à la cryptographie.pdf"
+          },
+          {
+            "name": "Séquence 1",
+            "filename": "Séquence 1.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Techniques de Compression et Utilisation d’Outils Cryptographiques Web et Mobile/Séquence 1.pdf",
+            "size": "2.29 Mo",
+            "sizeBytes": 2406371,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Techniques de Compression et Utilisation d’Outils Cryptographiques Web et Mobile/Séquence 1.pdf"
+          },
+          {
+            "name": "Séquence 4",
+            "filename": "Séquence 4.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Techniques de Compression et Utilisation d’Outils Cryptographiques Web et Mobile/Séquence 4.pdf",
+            "size": "2.58 Mo",
+            "sizeBytes": 2704220,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Sécurité et optimisation/Techniques de Compression et Utilisation d’Outils Cryptographiques Web et Mobile/Séquence 4.pdf"
+          }
+        ],
+        "Technologie connexes de développement": [
+          {
+            "name": "SEQUENCE 1",
+            "filename": "SEQUENCE 1.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexe de développement web/SEQUENCE 1.pdf",
+            "size": "579.0 Ko",
+            "sizeBytes": 592855,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexe de développement web/SEQUENCE 1.pdf"
+          },
+          {
+            "name": "SEQUENCE 2",
+            "filename": "SEQUENCE 2.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexe de développement web/SEQUENCE 2.pdf",
+            "size": "602.7 Ko",
+            "sizeBytes": 617191,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexe de développement web/SEQUENCE 2.pdf"
+          },
+          {
+            "name": "SEQUENCE 3",
+            "filename": "SEQUENCE 3.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexe de développement web/SEQUENCE 3.pdf",
+            "size": "598.2 Ko",
+            "sizeBytes": 612605,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexe de développement web/SEQUENCE 3.pdf"
+          },
+          {
+            "name": "SEQUENCE 4",
+            "filename": "SEQUENCE 4.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexe de développement web/SEQUENCE 4.pdf",
+            "size": "707.5 Ko",
+            "sizeBytes": 724447,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexe de développement web/SEQUENCE 4.pdf"
+          },
+          {
+            "name": "Sequence 1 IONIC",
+            "filename": "Sequence 1 IONIC.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexes de développement mobile/Sequence 1 IONIC.pdf",
+            "size": "746.9 Ko",
+            "sizeBytes": 764775,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexes de développement mobile/Sequence 1 IONIC.pdf"
+          },
+          {
+            "name": "Sequence 2 IONIC",
+            "filename": "Sequence 2 IONIC.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexes de développement mobile/Sequence 2 IONIC.pdf",
+            "size": "629.5 Ko",
+            "sizeBytes": 644583,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexes de développement mobile/Sequence 2 IONIC.pdf"
+          },
+          {
+            "name": "Séquence 3 IONIC",
+            "filename": "Séquence 3 IONIC.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexes de développement mobile/Séquence 3 IONIC.pdf",
+            "size": "743.0 Ko",
+            "sizeBytes": 760788,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexes de développement mobile/Séquence 3 IONIC.pdf"
+          },
+          {
+            "name": "Séquence 4 IONIC",
+            "filename": "Séquence 4 IONIC.pdf",
+            "url": "/courses/L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexes de développement mobile/Séquence 4 IONIC.pdf",
+            "size": "1.34 Mo",
+            "sizeBytes": 1403174,
+            "ext": "PDF",
+            "type": "Cours",
+            "relPath": "L3/COURS LICENCE 3 SEMESTRE 5/Technologie connexes de développement/Technologie connexes de développement mobile/Séquence 4 IONIC.pdf"
+          }
+        ]
+      }
+    }
+  }
+};

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plateforme d'apprentissage moderne et interactive.">
+  <meta name="keywords" content="cours, apprentissage, vidéos, exercices, pdf, td, tc, forum">
+  <meta name="author" content="IDA COURS">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>FAQ – Bonnes Pratiques UVS et Concours</title>
+  <style>
+    :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --background-color: #f8f9fa;
+        --text-color: #2c3e50;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        color: var(--text-color);
+        margin: 0;
+        padding: 2rem;
+        min-height: 100vh;
+    }
+
+    .faq-container {
+        max-width: 900px;
+        margin: 3rem auto;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+    }
+
+    h2 {
+        text-align: center;
+        color: var(--primary-color);
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+        position: relative;
+        padding-bottom: 1rem;
+    }
+
+    h2::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+        border-radius: 2px;
+    }
+
+    .accordion-item {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.5rem;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .accordion-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .accordion-question {
+        padding: 1.5rem;
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .accordion-question::after {
+        content: '\f107';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        transition: transform 0.3s ease;
+        color: var(--secondary-color);
+    }
+
+    .accordion-item.active .accordion-question::after {
+        transform: rotate(180deg);
+    }
+
+    .accordion-answer {
+        padding: 0 1.5rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        color: #666;
+        line-height: 1.8;
+    }
+
+    .accordion-item.active .accordion-answer {
+        padding: 1.5rem;
+        max-height: 300px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+        .faq-container {
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        .accordion-question {
+            padding: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .accordion-item.active .accordion-answer {
+            padding: 1rem;
+        }
+    }
+    .modern-footer {
+            background: linear-gradient(135deg, #1a1c20 0%, #2c3e50 100%);
+            color: #fff;
+            padding: 60px 0 30px;
+            position: relative;
+            margin-top: 80px;
+        }
+
+        .footer-wave {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%231a1c20" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            z-index: 1;
+            opacity: 0.5;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+
+        }
+
+        .footer-section h3 {
+            color: #3498db;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background: #3498db;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: #ecf0f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 20px;
+
+        }
+
+        .footer-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            font-size: 0.9rem;
+            text-align: left;
+            line-height: 1.8;
+            padding: 5px 0;
+
+        }
+
+        .footer-links a:hover {
+            color: #3498db;
+            transform: translateY(-2px);
+            text-decoration: underline;
+
+        }
+
+        .footer-links i {
+            font-size: 0.8rem;
+            color: #3498db;
+            transition: color 0.3s ease;
+
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            font-size: 0.9rem;
+            text-align: left;
+            line-height: 1.8;
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: #ecf0f1;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            position: relative;
+            z-index: 2;
+            margin: 0 5px;
+
+        }
+
+        .social-icon:hover {
+            background: #3498db;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            color: #fff;
+
+        }
+
+        .footer-bottom {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 0.9rem;
+            color: #bdc3c7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            line-height: 1.8;
+            position: relative;
+            z-index: 2;
+
+        }
+
+        .footer-logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+
+        }
+
+        .footer-contact-info {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #ecf0f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            line-height: 1.8;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+            z-index: 2;
+            padding: 5px 0;
+
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            color: #ecf0f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            font-size: 0.9rem;
+            text-align: left;
+            line-height: 1.8;
+            padding: 5px 0;
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .contact-item i {
+            color: #3498db;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .footer-section {
+                text-align: center;
+            }
+
+            .footer-section h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .footer-social {
+                justify-content: center;
+            }
+
+            .contact-item {
+                justify-content: center;
+            }
+        }
+  </style>
+</head>
+<script>
+    // protection.js - Code de protection contre l'inspection
+document.addEventListener('DOMContentLoaded', function() {
+    'use strict';
+    
+    // Configuration
+    const config = {
+        disableRightClick: true,
+        disableDevTools: true,
+        disableKeyboardShortcuts: true,
+        showWarning: true,
+        warningMessage: "Cette action n'est pas autorisée sur ce site."
+    };
+    
+    // 🔒 Empêcher le clic droit
+    if (config.disableRightClick) {
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            if (config.showWarning) {
+                showWarning(config.warningMessage);
+            }
+            return false;
+        });
+    }
+    
+    // ⌨️ Empêcher les raccourcis clavier
+    if (config.disableKeyboardShortcuts) {
+        document.addEventListener('keydown', function(e) {
+            // F12 - DevTools
+            if (e.key === 'F12' || e.keyCode === 123) {
+                e.preventDefault();
+                if (config.showWarning) {
+                    showWarning("L'ouverture des outils de développement est désactivée.");
+                }
+                return false;
+            }
+            
+            // Ctrl+Shift+I / Cmd+Opt+I
+            if ((e.ctrlKey && e.shiftKey && e.key === 'I') || 
+                (e.metaKey && e.altKey && e.key === 'I')) {
+                e.preventDefault();
+                if (config.showWarning) {
+                    showWarning("L'inspection du code est désactivée.");
+                }
+                return false;
+            }
+            
+            // Ctrl+U / Cmd+U - View Source
+            if ((e.ctrlKey && e.key === 'u') || (e.metaKey && e.key === 'u')) {
+                e.preventDefault();
+                if (config.showWarning) {
+                    showWarning("La visualisation du code source est désactivée.");
+                }
+                return false;
+            }
+            
+            // Ctrl+Shift+C / Cmd+Shift+C - Inspect Element
+            if ((e.ctrlKey && e.shiftKey && e.key === 'C') || 
+                (e.metaKey && e.shiftKey && e.key === 'C')) {
+                e.preventDefault();
+                if (config.showWarning) {
+                    showWarning("L'inspection d'élément est désactivée.");
+                }
+                return false;
+            }
+            
+            // Ctrl+S / Cmd+S - Save Page
+            if ((e.ctrlKey && e.key === 's') || (e.metaKey && e.key === 's')) {
+                e.preventDefault();
+                if (config.showWarning) {
+                    showWarning("La sauvegarde de la page est désactivée.");
+                }
+                return false;
+            }
+        });
+    }
+    
+    // 🛠️ Détection avancée des DevTools
+    if (config.disableDevTools) {
+        detectDevTools();
+    }
+    
+    // Fonction pour afficher les avertissements
+    function showWarning(message) {
+        // Créer ou mettre à jour l'élément d'avertissement
+        let warning = document.getElementById('protection-warning');
+        if (!warning) {
+            warning = document.createElement('div');
+            warning.id = 'protection-warning';
+            warning.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #ff4757;
+                color: white;
+                padding: 15px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                z-index: 10000;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                max-width: 300px;
+                animation: slideIn 0.3s ease;
+            `;
+            document.body.appendChild(warning);
+            
+            // Ajouter l'animation CSS
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes slideIn {
+                    from { transform: translateX(100%); opacity: 0; }
+                    to { transform: translateX(0); opacity: 1; }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+        
+        warning.textContent = message;
+        warning.style.display = 'block';
+        
+        // Masquer après 3 secondes
+        setTimeout(() => {
+            warning.style.display = 'none';
+        }, 3000);
+    }
+    
+    // Fonction de détection des DevTools
+    function detectDevTools() {
+        const threshold = 160;
+        const checkDevTools = function() {
+            const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+            const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+            
+            if (widthThreshold || heightThreshold) {
+                // DevTools détecté
+                document.body.innerHTML = `
+                    <div style="
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: Arial, sans-serif;
+                        text-align: center;
+                        z-index: 9999;
+                    ">
+                        <div>
+                            <h1 style="font-size: 2em; margin-bottom: 20px;">🚫 Accès Restreint</h1>
+                            <p style="font-size: 1.2em; margin-bottom: 30px;">
+                                Les outils de développement sont désactivés sur ce site.<br>
+                                Veuillez fermer les DevTools pour continuer.
+                            </p>
+                            <button onclick="location.reload()" style="
+                                background: white;
+                                color: #667eea;
+                                border: none;
+                                padding: 12px 24px;
+                                border-radius: 5px;
+                                font-size: 1em;
+                                cursor: pointer;
+                                font-weight: bold;
+                            ">
+                                Recharger la page
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+        };
+        
+        // Vérifier périodiquement
+        setInterval(checkDevTools, 1000);
+        
+        // Événement de redimensionnement
+        window.addEventListener('resize', checkDevTools);
+    }
+    
+    // Protection supplémentaire contre la sélection de texte
+    document.addEventListener('selectstart', function(e) {
+        e.preventDefault();
+        return false;
+    });
+    
+    // Protection contre le drag & drop d'images
+    document.addEventListener('dragstart', function(e) {
+        if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+            return false;
+        }
+    });
+    
+    console.log('🔒 Protection activée - IDA Cours');
+});
+
+// Protection avancée contre la console
+(function() {
+    'use strict';
+    
+    // Rediriger la console
+    const originalConsole = {
+        log: console.log,
+        warn: console.warn,
+        error: console.error,
+        info: console.info
+    };
+    
+    // Redéfinir les méthodes de la console
+    ['log', 'warn', 'error', 'info'].forEach(method => {
+        console[method] = function() {
+            // Vous pouvez choisir de ne rien faire ou d'afficher un message
+            originalConsole.log(`🚫 Console.${method} est surveillée - IDA Cours`);
+        };
+    });
+    
+    // Empêcher l'accès aux propriétés sensibles
+    Object.defineProperty(window, 'console', {
+        get: function() {
+            return {
+                log: function() { /* bloqué */ },
+                warn: function() { /* bloqué */ },
+                error: function() { /* bloqué */ },
+                info: function() { /* bloqué */ }
+            };
+        },
+        set: function() { /* bloqué */ }
+    });
+})();
+</script>
+<body>
+    
+  <div class="faq-container">
+    <h2>📘 Foire Aux Questions – Conseils et Bonnes Pratiques</h2>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Comment bien m'organiser pour suivre les cours à l'UVS ?</div>
+      <div class="accordion-answer">Crée un emploi du temps, fixe-toi des objectifs hebdomadaires, et utilise des outils comme Google Agenda ou Trello pour planifier tes sessions d'étude.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Comment rester motivé quand on étudie seul ?</div>
+      <div class="accordion-answer">Fixe-toi des objectifs clairs, rejoins des groupes d'étude, récompense-toi après chaque session, et varie les méthodes d'apprentissage.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Quelle est la meilleure méthode pour réviser efficacement ?</div>
+      <div class="accordion-answer">Utilise des fiches de révision, la méthode Pomodoro, et fais des quiz ou des exercices corrigés. Ne te contente pas de relire : pratique activement.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Dois-je regarder toutes les vidéos de cours d'un coup ?</div>
+      <div class="accordion-answer">Non, il est préférable de diviser le visionnage en petites sessions et de prendre des notes actives. Revois ensuite tes notes et mets-les en pratique.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Comment bien préparer un concours comme l'ENA ou la FASTEF ?</div>
+      <div class="accordion-answer">Prépare-toi tôt, travaille les anciens sujets, fais des tests chronométrés, et maîtrise la lecture rapide et la compréhension des consignes.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Quelle stratégie adopter pour réussir les examens à l'UVS ?</div>
+      <div class="accordion-answer">Relis bien les consignes, gère ton temps efficacement pendant les examens, révise régulièrement et travaille en groupe si possible.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Dois-je créer un compte pour utiliser IDA COURS ?</div>
+      <div class="accordion-answer">Non. La plateforme est 100 % gratuite et ouverte à tous. Aucun compte n'est nécessaire pour accéder aux contenus.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Puis-je utiliser les ressources même sans connexion permanente ?</div>
+      <div class="accordion-answer">Oui. Télécharge les fichiers disponibles (PDF, fiches, résumés) pour les consulter hors ligne. Pratique à l'aide de supports imprimés si nécessaire.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Comment améliorer ma compréhension en informatique ou mathématiques ?</div>
+      <div class="accordion-answer">Commence par les bases, revois les exemples corrigés, suis les vidéos pas à pas, et pose tes questions dans les groupes d'entraide.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Comment gérer efficacement mon temps pendant les périodes d'examens ?</div>
+      <div class="accordion-answer">Établis un planning de révision en avance, respecte des plages horaires fixes, et n'oublie pas de prévoir des pauses pour éviter la surcharge mentale.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Quels outils numériques puis-je utiliser pour mieux apprendre ?</div>
+      <div class="accordion-answer">Tu peux utiliser Notion, Anki, Quizlet, ou encore des plateformes comme IDA COURS pour organiser ton apprentissage et t'entraîner régulièrement.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-question">Comment me préparer aux épreuves orales des concours ?</div>
+      <div class="accordion-answer">Entraîne-toi avec un ami ou devant un miroir, maîtrise ton sujet, travaille ta posture, ta diction, et anticipe les questions classiques.</div>
+    </div>
+  </div>
+
+  
+
+<script>
+document.querySelectorAll('.accordion-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const isActive = item.classList.contains('active');
+        
+        // Ferme tous les items actifs
+        document.querySelectorAll('.accordion-item').forEach(item => {
+            item.classList.remove('active');
+        });
+
+        // Si l'item n'était pas actif, l'active
+        if (!isActive) {
+            item.classList.add('active');
+        }
+    });
+});
+</script>
+ <footer class="modern-footer">
+    <div class="footer-wave"></div>
+    <div class="footer-content">
+        <div class="footer-section">
+            <img src="ASSETS/téléchargement (2).jpg" alt="Logo IDA COURS" class="footer-logo">
+            <p>Votre partenaire de confiance pour une formation en ligne de qualité. Développez vos compétences et construisez votre avenir avec nous.</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/princeseydoubhk" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/Sdbsntech" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/seydou-bakhayokho-864070343" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/channel/UCCZJBOaAPdAoTiD-iJ2ftkg" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/Sdbsntech" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Liens Rapides</h3>
+            <ul class="footer-links">
+                <li><a href="index.html"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                <li><a href="pdftuto.html"><i class="fas fa-chevron-right"></i> Annexe informative</a></li>
+                <li><a href="videos.html"><i class="fas fa-chevron-right"></i> Vidéos</a></li>
+                <li><a href="L1.html"><i class="fas fa-chevron-right"></i> Licence 1</a></li>
+                <li><a href="L2.html"><i class="fas fa-chevron-right"></i> Licence 2</a></li>
+                <li><a href="L3.html"><i class="fas fa-chevron-right"></i> Licence 3</a></li>
+                <li><a href="commentaire.html"><i class="fas fa-chevron-right"></i> Commentaires</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Ressources</h3>
+            <ul class="footer-links">
+                <li><a href="bibliotheques.html"><i class="fas fa-book"></i> Bibliothèque</a></li>
+                <li><a href="#calendrier"><i class="fas fa-calendar-alt"></i> Calendrier</a></li>
+                <li><a href="FAQ.HTML"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                <li><a href="https://grafikart.fr/"><i class="fas fa-user-graduate"></i>Liens-utiles</a></li>
+                <li><a href="formateur.html"><i class="fas fa-chalkboard-teacher"></i> Nos Formateurs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <div class="footer-contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>DAKAR, PIKINE, DALIFORT</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+221 77 362 45 39</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>sdbsntech1@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="legal-links">
+                    <a href="mention_legale.html">mention_legale.</a>
+                    <a href="politique_confidentialite.html">politique_confidentialite</a>
+                    <a href="condition_d'utilisation.html">condition_d'utilisation</a>
+                </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 IDA COURS. Plateforme réalisée par Seydou Bakhayokho.</p>
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
