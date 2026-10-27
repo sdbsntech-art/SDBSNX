@@ -1,0 +1,47 @@
+a{
+	text-decoration: none;
+}
+
+#entete, #footer{
+	background-color: yellow;
+	text-align: center;
+}
+
+#entete, #footer{
+	width: 690px;
+}
+img{
+	width: 120px;
+}
+
+#button{
+	width: 75px;
+	background-color: gray;
+	font-size: 14px;
+}
+
+h1, h3{
+	color: gray;
+}
+body{
+	height: 100px;
+	margin-top: 100px;
+	margin-left: 300px;
+	width: 800px;
+}
+
+container-fluid{
+	overflow-y: scroll;
+}
+
+.table{
+	width:490px;
+	margin-left:0px;
+	margin-bottom: -500px;
+	font-size: 11px;
+}
+
+#experience{
+	margin-top: 510px;
+}
+

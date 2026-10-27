@@ -1,0 +1,27 @@
+img{
+	width:100px;
+	margin-left: 420px;
+	margin-top: -150px;
+}
+
+#entete, #footer{
+	background-color: yellow;
+	color: gray;
+	text-align: center;
+	height: 60px;
+	width: 740px;
+}
+
+#button{
+	background-color: gray;		
+}
+
+body{
+	margin-top: 150px;
+	width: 780px;
+	margin-left: 300px;
+}
+
+#nav-bar{
+	background-color: pink;
+}

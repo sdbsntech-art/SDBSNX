@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact.html</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap-3.4.1/css/bootstrap.min.css">
+		<script src="bootstrap-3.4.1/js/bootstrap.min.js"></script>
+		<script src="jquery/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet" href="contact.css">
+		<style>
+			#nav-bar{
+				height:255px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12" id="entete" style="width:760px;"><h1>CV Yankhoba Monteiro</h1></div>
+					<div class="col-sm-2" id="nav-bar" style="background-color: pink; height:240px;">
+						<p><a href="etatcivil.html">Etat civil</a></p>
+						<p><a href="formation.html">formations</a></p>
+						<p><a href="exp.html">Expériences</a></p>
+						<p><a href="centre.html">Centres d'interet</a></p>
+						<p><a href="#">Contact</a></p>
+						<p class="btn btn-default" id="button"><a href="#" style="color: white; font-size: 15px">album</a></p>
+					</div>
+					<div id="Centres-interet" class="col-sm-4">
+						<ul class="media-heading" style="list-style-type:none; margin-top:30px;">
+							<p style="text-align: center; font-size: 16px;"><strong>Contacts</strong></p>
+							<li><span class="glyphicon glyphicon-home"></span>: Rue Belfort X Malick Sy</li>
+							<li><span class="glyphicon glyphicon-phone"></span>: 77-298-78-60</li>
+							<li><span class="glyphicon glyphicon-send"></span>:yankhoba.monteiro@uvs.edu.sn</li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<img src="imagecv.png" alt="Avatar" class="img-circle" style="margin-left:200px;">
+					</div>
+					<div class="col-sm-5"  style="margin-top:-140px;">
+							<table id="contact">
+						<form method="post" action="traitement.php" class="form-group form-control">
+						<tr>
+							<td><label for="prenom" autocomplete="on">Entrer votre prénom</label><br/>
+							<input type="text" id="prenom" name="prenom" autofocus="autofocus" placeholder="Ex: Yankhoba" required="required"></td><br><br>
+						</tr>
+						<tr>
+							<td><label for="nom">Entrer votre nom</label><br>
+							<input type="text" id="nom" name="nom" autocomplete="autocomplete" placeholder="Ex: Monteiro" required="required"></td><br><br>
+						</div>
+					</tr>
+					<tr>
+						<td><div class="input-group">
+      						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+     						 <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+    					</div></td>
+					</tr>
+					<tr>
+						<td><div class="input-group">
+      						<span class="input-group-addon">message</span>
+      						<input id="msg" type="text" class="form-control" name="msg" placeholder="Additional text">
+   						 </div></td>
+					</tr>
+					<tr>
+							<td><input type="submit" value="Envoyer" class="btn btn-success"></td>
+						</form>
+					</tr>
+					</table>
+					</div>
+						
+				<div class="col-lg-12" id="footer" style="width:760px;"><h3>Copyright@UVS 2019</h3></div>
+			</div>
+		</div>
+	</body>
+</html>

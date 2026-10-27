@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>exo5.html</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.4.1/css/bootstrap.min.css">
+    <script src="bootstrap-3.4.1/js/bootstrap.min.js"></script>
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+     #section1, #section2, #section3, #section4, #section5,#section6{
+      width: 1025px;
+     }
+    body {
+      position: relative;
+      }
+    ul.nav-pills {
+      top: 20px;
+      position: fixed;
+      margin-left: -300px;
+      }
+    div.col-sm-9 div {
+     height: 250px;
+     font-size: 28px;
+     }
+        #section1 {color: #fff; background-color: #1E88E5; margin-left: -200px;}
+        #section2 {color: #fff; background-color: #673ab7;}
+        #section3 {color: #fff; background-color: #ff9800;}
+        #section4 {color: #fff; background-color: #00bcd4;}
+        #section5 {color: #fff; background-color: #009688;}
+        #section6 {color: #fff; background-color:#00ff7f;}
+  
+    @media screen and (max-width: 768px) {
+    #section1, #section2, #section3, #section4, #section5,#section6  {
+      margin-left: 150px;
+     }
+  }
+  h1{
+    color:#fff;
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Etat civil</a></li>
+        <li><a href="#section2">Formations</a></li>
+        <li><a href="#section3">Experiences</a></li>
+         <li><a href="#section4">Centres d'interet</a></li>
+        <li><a href="#section5">Contact</a></li>
+        <li><a href="#section6">Album photo</a></li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1">    
+        <h1>Etat civil</h1>
+        <p style="font-size:18px; margin-left: 30px;">je m'appelle Yankhoba Monteiro, je suis étudiant en <br>
+                        deuxième année en Licence  d'Informatique <br>
+                        Developpement d'Application Web, Mobile et Gaming<br> (IDA) à
+                        l'Université Virtuelle du Sénégal.<br><br>
+                        j'habite à Rebeuss.
+          </p>
+      <div id="section2"> 
+        <h1>Formations</h1>
+         <p>Voici la liste des formations que j'ai effectuées</p>
+         <ul style="font-size:18px; margin-left: 30px;">
+          <li>2009-2010 Entrée en Sixième et Certificat</li>
+          <li>2013-2014 BFEM</li>
+          <li>2016-2017 Baccalauréat serie S2</li>
+          <li>2017-2018 Licence Professionnelle en dev.web</li>
+          <li>2018-2019 Licence Professionnelle en dev.web</li>
+        </ul>
+      </div>        
+      <div id="section3">         
+        <h1>Experiences</h1>
+        <p>Voici la liste de mes experiences professionnelle que j'ai eu</p>
+        <ul style="font-size:18px; margin-left: 30px;">
+          <li>2014-2016 Commerçe</li>
+          <li>2015-2016 Coatching</li>
+          <li>2014-2018 Tutorats à domicile</li>
+          <li>2018-2019 Maintenancier logiciel de pc</li>
+        </ul>
+      </div>
+      <div id="section4">         
+        <h1>Centres d'interet</h1>
+        <p>Voici la liste de mes activités de prédilections</p>
+        <table id="centre-interet" style="font-size: 18px; margin-left: 30px;">
+          <ol type="A">
+              <tr>
+                <td><li>Footing</li></td> 
+              </tr>
+              <tr>
+                <td><li>Football</li></td>
+              </tr>
+              <tr>
+                <td><li>Mouvement scoutisme</li></td>
+              </tr>
+              <tr>
+                <td><li>Informatique</li></td>
+              </tr>
+              <tr>
+                <td><li>Documentaires scientifique</li></td>
+              </tr>
+          </ol>
+            </table>
+      </div>      
+      <div id="section5">         
+        <h1>Contact</h1>
+        <p>Si vous etes interessés par mon profil de développeur voici mes contacts </p>
+        <ul class="media-heading" style="list-style-type:none; margin-left: 30px; font-size: 16px;">
+              <li><span class="glyphicon glyphicon-home"></span>: Villa 105 Touba Ouakam</li>
+              <li><span class="glyphicon glyphicon-phone"></span>: 775984012</li>
+              <li><span class="glyphicon glyphicon-phone-alt"></span>: 338414217</li>
+              <li><span class="glyphicon glyphicon-send"></span>:Oumarou.diallo@uvs.edu.sn</li>
+            </ul>
+      </div>
+        <div id="section6">         
+        <h1>Album photo</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
