@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#div1{
+	position:relative;
+	width:100px;
+	height:100px;
+	background-color:yellow;
+}
+</style>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#start").click(function(){
+		var div = $("#div1");
+		div.animate({left: '300px'}, 3000);
+		div.animate({fontSize: '3em'}, "slow",function(){alert("ok");});
+		
+	}); 
+	$("#stop").click(function(){
+		$("#div1").stop();
+		
+	});
+	
+	$("#stopAll").click(function(){
+		$("#div1").stop(true);
+	});
+	
+	$("#stopAllFinish").click(function(){
+		$("#div1").stop(true,true);
+	});
+});
+</script>
+</head>
+<body>
+<button id="start">Start</button> 
+<button id="stop">Stop</button>
+<button id="stopAll">Stop All</button>
+<button id="stopAllFinish">Stop All and finish</button><br><br>
+
+<div id="div1">
+Contenu du div
+</div>
+<br>
+</body>
+</html>

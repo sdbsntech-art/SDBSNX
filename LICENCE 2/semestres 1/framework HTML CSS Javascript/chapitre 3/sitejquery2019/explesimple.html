@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
+</head>
+
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){//ça permet d'attendre que le tout le doc se charge avec d'executer le code
+	$("#btn").click(//SI on clique sur l'élément d'id = btn, on appel la fonction ci-dessous
+		function(){ 
+			$("#p1").hide(); //Elle cache tous les éléments p
+		});
+
+	$("#btn2").hover(//SI on clique sur l'élément d'id = btn, on appel la fonction ci-dessous
+		function(){ 
+			$(".c1").hide(); //Elle cache tous les éléments p
+		});
+});
+</script>
+</head>
+<body>
+<p id="p1" class="c1">Le contenu du paragraphe d'id=p1.</p>
+<div id="p1" class="c1">Le contenu du paragraphe d'id=p1.</div>
+<p>Cliquez sur moi et je disparais.</p>
+<button id="btn">Cachez le document</button><br>
+<button id="btn2">Cachez les éléments de classe c1</button>
+</body>
+</html>
+</body>
+</html>

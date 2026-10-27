@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="jquery/jquery-3.3.1.min.js"></script> 
+<script> 
+$(document).ready(function(){
+	 $("#flip1").click(function(){
+		 $("#cint").slideUp(1000);  
+	 $("#etciv").slideDown(5000); 
+	}); 
+	  $("#flip2").click(function(){ 
+        $("#etciv").slideUp(1000);
+	 $("#cint").slideDown(5000); 
+	}); 
+ });
+</script>
+<style>
+  #etciv,#cint{ 
+	  
+	 display: none;
+  } 
+</style>
+</head> 
+<body> 
+<div  class="container-fluid">
+<button id="flip1" style="width:385px">Etat civil</button><br>
+
+
+<div id="etciv">
+  <div class="row">
+    <div class="col-sm-4" style="width:400px;background-color:#F9F;height:160px;">
+    <div class="media">
+    <div class="media-body">
+      <h2 class="media-heading">Etat Civil</h2>
+      <p>Je m'appelle Fallou Séne.</br>Je suis etudiant en licence 2 de génie informatique</br> à l'université Gaston Berger de Saint-Louis.je suis domicilié à ngallèle dans la ville de Saint-Louis</br></p>
+    </div>
+    <div class="media-right">
+      <img src="images/photo1.png" class="img-circle" style="width:80px;height:80px">
+    </div>
+  </div>  
+    </div>   
+  </div> 
+</div>
+
+<button id="flip2" style="width:385px">Formations</button><br>
+<button id="flip2" style="width:385px">Experiences professionnelles</button><br>
+<button id="flip2" style="width:385px">Centres d'intérêts</button>
+<div id="cint">
+  <h1>activités et centres d'interets</h1>
+  <div class="row">
+    <div class="col-sm-12" style="width:800px;height:220px border:1px;background-color:#3FF">
+    <table >
+  <tr>
+    <td>
+    <ul class="list-group">
+  <h3>mesactivités</h3>
+    <li class="list-group-item">encadrement d'eleves ((6éme à la 3éme) en français et en informatique</li>
+    <li class="list-group-item">Sport(karaté) </li>
+    <li class="list-group-item">Lecture, culture générale</li>
+    <li class="list-group-item">Déterminée, disciplinée, rigoureuse, empathique, sociable, grande capacité    d’adaptation </li>
+  </ul>
+  <ul class="list-group">
+  <h3>langues</h3>
+    <li class="list-group-item">Français : Lu, écrit, parlé(bon niveau) </li>
+    <li class="list-group-item">Français : Lu, écrit, parlé(bon niveau) </li>
+    <li class="list-group-item">pular : parlé(couramment)</li>
+    <li class="list-group-item">wolof : parlé(couramment </li>
+  </ul></td>
+  </tr>
+</table>
+
+  
+  </div>
+  </div> 
+</div>
+
+</div>
+
+</body> 
+</html>
+
+
+
+
+
+
+

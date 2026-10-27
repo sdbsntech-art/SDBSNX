@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#div1{
+	position:relative;
+	width:100px;
+	height:100px;
+	background-color:yellow;
+}
+</style>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#start").click(function(){
+		$("#div1")
+		.css("color", "red")
+		.slideUp(2000)
+		.slideDown(2000);
+		
+	}); 
+
+});
+</script>
+</head>
+<body>
+<button id="start">Start</button> 
+
+
+<div id="div1">
+Contenu du div
+</div>
+<br>
+</body>
+</html>

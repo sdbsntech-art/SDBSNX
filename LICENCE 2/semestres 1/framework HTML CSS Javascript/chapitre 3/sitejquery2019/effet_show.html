@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
+</head>
+
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(
+		function(){ 
+			$("p").hide(1000); 
+		});
+	$("#btn2").click(
+		function(){ 
+			$("p").show(1000); 
+		});
+});
+</script>
+</head>
+<body>
+<p>Cliquez sur moi et je disparais.</p>
+<p>Cliquez sur moi!</p>
+<p>Cliquez sur moi aussi!</p>
+<button id="btn1">Cachez</button> <button id="btn2">Montrer</button>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+      $("tr:odd").hide();
+	}); 
+	
+   $("#btn2").click(function(){
+      $("tr:even").hide();
+	}); 
+
+
+});
+</script>
+</head>
+<body>
+<table width="200" border="1">
+  <tr>
+    <th scope="col">id</th>
+    <th scope="col">Prenom</th>
+    <th scope="col">Nom</th>
+    <th scope="col">Adresse</th>
+    <th scope="col">Telephone</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Ali</td>
+    <td>Fall</td>
+    <td>Madina</td>
+    <td>7777777</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Cheikh</td>
+    <td>Sambe</td>
+    <td>Fass</td>
+    <td>88888</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Saddam</td>
+    <td>Oussman</td>
+    <td>Madina</td>
+    <td>99999</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Thierno</td>
+    <td>Sergin</td>
+    <td>Touba</td>
+    <td>2222</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Ami</td>
+    <td>ley</td>
+    <td>Fass</td>
+    <td>555</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Borris</td>
+    <td>Benin</td>
+    <td>Wagadougou</td>
+    <td>11111</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Rama</td>
+    <td>togo</td>
+    <td>thies</td>
+    <td>33333</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>bobo</td>
+    <td>momo</td>
+    <td>Fass</td>
+    <td>666</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Ndiga</td>
+    <td>Thoub</td>
+    <td>TOUBA</td>
+    <td>44444</td>
+  </tr>
+</table> 
+<br><br><br>
+<button id="btn1">Cacher les lignes impaires </button>
+<br><br><br>
+<button id="btn2">Cacher les lignes paires </button>
+
+
+
+
+
+
+
+</body>
+</html>

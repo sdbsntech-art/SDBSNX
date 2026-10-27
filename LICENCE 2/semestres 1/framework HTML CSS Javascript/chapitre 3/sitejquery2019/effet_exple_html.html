@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#div1{
+	position:relative;
+	width:100px;
+	height:100px;
+	background-color:yellow;
+}
+</style>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn").click(function(){
+		/*var elt = document.getElementById("div1");
+		alert(elt.innerHTML);*/
+		var ctn = $("#div1").html();
+		alert(ctn);	
+	}); 
+
+});
+</script>
+</head>
+<body>
+<button id="btn">Tester</button> 
+
+
+<div id="div1">
+Contenu <span style="color:green">du div</span>
+</div>
+<br>
+</body>
+</html>

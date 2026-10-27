@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#div1{
+	position:relative;
+	width:50px;
+	height:50px;}
+</style>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		var div = $("#div1");
+		div.animate({left: '300px'}, "slow");
+		div.animate({top: '300px'}, "slow");
+		div.animate({left: '0px'}, "slow");
+		div.animate({top: '0px'}, "slow");
+	});
+});
+</script>
+</head>
+<body>
+<button>SlideToggle</button><br><br>
+
+<img id="div1" src="images/voiture.png" width="100">
+<br>
+</body>
+</html>

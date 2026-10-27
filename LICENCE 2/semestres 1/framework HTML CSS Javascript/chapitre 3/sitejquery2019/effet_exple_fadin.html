@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		$("#div1").fadeOut();
+		$("#div2").fadeOut("slow");
+		$("#div3").fadeOut(5000);
+	});
+	$("#btn2").click(function(){
+		$("#div1").fadeIn();
+		$("#div2").fadeIn("slow");
+		$("#div3").fadeIn(5000);
+	});
+});
+</script>
+<style>
+#div1{background-color:yellow}
+#div2{background-color:grey}
+#div3{background-color:blue}
+</style>
+</head>
+<body>
+<div id="div1">Contenu du paragraphe 1</div>
+<br>
+<div id="div2">Contenu du paragraphe 2</div>
+<br>
+<div id="div3">Contenu du paragraphe 3</div>
+<br>
+<button id="btn1">FadeOut</button>
+<button id="btn2">FadeIn</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("#div1").fadeToggle();
+		$("#div2").fadeToggle("slow");
+		$("#div3").fadeToggle(5000);
+	});
+
+});
+</script>
+<style>
+#div1{background-color:yellow}
+#div2{background-color:grey}
+#div3{background-color:blue}
+</style>
+</head>
+<body>
+<div id="div1">Contenu du paragraphe 1</div>
+<br>
+<div id="div2">Contenu du paragraphe 2</div>
+<br>
+<div id="div3">Contenu du paragraphe 3</div>
+<br>
+<button>FadeToggle</button>
+
+</body>
+</html>

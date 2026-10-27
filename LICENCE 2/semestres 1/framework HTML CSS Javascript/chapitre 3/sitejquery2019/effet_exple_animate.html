@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#div1{
+	position:relative;
+	width:150px;
+	height:150px;
+	background-color:blue}
+</style>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("#div1").animate({
+			left:'250px',
+			opacity:'0.5',
+			height:'0px',
+			width:'0px',
+			fontSize:'1px'
+		});
+	});
+});
+</script>
+</head>
+<body>
+<button>SlideToggle</button><br><br>
+<div id="div1">Ok
+</div>
+<br>
+</body>
+</html>

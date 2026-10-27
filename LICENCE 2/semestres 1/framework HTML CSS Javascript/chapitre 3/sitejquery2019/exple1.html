@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
+</head>
+
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(
+		function(){ 
+			$("p").hide(2000); 
+		});
+	$("#btnm").click(
+		function(){ 
+			$("p").show(2000); 
+		});
+	$("#btn2").click(
+		function(){ 
+			$(".p2").hide(); 
+		});
+	$("#btn3").click(
+		function(){ 
+			$("body").css("background-color","yellow"); 
+		});
+});
+</script>
+</head>
+<body>
+<p id="p1">Cliquez sur moi et je disparais.</p>
+<p class="p2" style="background-color:yellow">Cliquez sur moi!</p>
+<p>Contenu du paragraphe</p>
+<p class="p2" style="background-color:yellow">Cliquez sur moi aussi!</p>
+<button id="btn1">Cachez tous les p</button><br><br>
+<button id="btnm">Montrez tous les p</button><br><br>
+<button id="btn2">Cachez tous les p de classe p2</button>
+<br><br>
+<button id="btn3">Cachez le document</button>
+</body>
+</html>
+</body>
+</html>

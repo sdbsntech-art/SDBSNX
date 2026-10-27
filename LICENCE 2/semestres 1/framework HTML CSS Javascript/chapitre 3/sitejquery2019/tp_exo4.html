@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		$("#dv2").slideUp("slow");
+		$("#dv3").slideUp("slow");
+		$("#dv4").slideUp("slow");
+		$("#dv1").slideDown("slow");
+			
+	}); 
+	$("#btn2").click(function(){
+		$("#dv1").slideUp("slow");
+		$("#dv3").slideUp("slow");
+		$("#dv4").slideUp("slow");
+		$("#dv2").slideDown("slow");
+			
+	}); 
+	$("#btn3").click(function(){
+		$("#dv2").slideUp("slow");
+		$("#dv1").slideUp("slow");
+		$("#dv4").slideUp("slow");
+		$("#dv3").slideDown("slow");
+			
+	}); 
+	$("#btn4").click(function(){
+		$("#dv2").slideUp("slow");
+		$("#dv3").slideUp("slow");
+		$("#dv1").slideUp("slow");
+		$("#dv4").slideDown("slow");
+			
+	}); 
+
+});
+</script>
+</head>
+<body>
+
+<button id="btn1" style="width:100%">Etat civil</button><br>
+<div id="dv1" style="display:none">
+<h1>Etat Civil</h1>
+<p>Nom</p>
+<p>Prenom</p>
+<p>Adresse</p>
+</div>
+<button id="btn2" style="width:100%">Formations</button><br>
+<div id="dv2" style="display:none">
+<h1>Etat Civil</h1>
+<p>Nom</p>
+<p>Prenom</p>
+<p>Adresse</p>
+</div>
+<button id="btn3" style="width:100%">Experiences professionnelles</button><br>
+<div id="dv3" style="display:none">
+<h1>Etat Civil</h1>
+<p>Nom</p>
+<p>Prenom</p>
+<p>Adresse</p>
+</div>
+<button id="btn4" style="width:100%">Centres d'interets</button><br>
+<div id="dv4" style="display:none">
+<h1>Etat Civil</h1>
+<p>Nom</p>
+<p>Prenom</p>
+<p>Adresse</p>
+</div>
+
+</body>
+</html>

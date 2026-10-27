@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#div1{
+	position:relative;
+	width:100px;
+	height:100px;
+	background-color:yellow;
+}
+</style>
+<script>
+function changeContent(){
+	var elt = document.getElementById("div1");
+	elt.innerHTML = "Nouveau contenu";	
+}
+</script>
+</head>
+<body>
+
+<div id="div1">
+Contenu du div
+</div>
+
+<br>
+<button id="btn" onClick="changeContent">Changer le contenu</button> 
+<br>
+</body>
+</html>

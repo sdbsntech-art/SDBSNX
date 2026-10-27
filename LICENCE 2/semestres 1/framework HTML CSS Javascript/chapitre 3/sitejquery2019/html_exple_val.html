@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#div1{
+	position:relative;
+	width:100px;
+	height:100px;
+	background-color:yellow;
+}
+</style>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn").click(function(){
+		/*var elt = document.getElementById("div1");
+		alert(elt.innerHTML);*/
+		var nom = $("#nom").val();
+		alert(nom);	
+	}); 
+
+});
+</script>
+</head>
+<body>
+<button id="btn">Tester</button> 
+
+<form action="" method="get">
+	<input id="nom" type="text">
+</form>
+<br>
+</body>
+</html>
