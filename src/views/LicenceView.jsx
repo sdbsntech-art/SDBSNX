@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, TextInput, StyleSheet, useWindowDimensions } from 'react-native';
 import { useApp } from '../context/AppContext';
 import { COURSES_DATA } from '../data/coursesData';
 import { REAL_COURSES_INDEX } from '../data/realCoursesIndex';
@@ -28,6 +28,9 @@ import {
 import confetti from 'canvas-confetti';
 
 export default function LicenceView() {
+  const { width: viewportWidth } = useWindowDimensions();
+  const isMobile = viewportWidth < 640;
+  const isVerySmall = viewportWidth < 380;
   const { 
     selectedCycle, 
     setSelectedCycle, 
@@ -207,15 +210,23 @@ export default function LicenceView() {
         </View>
 
         {/* Cycle Switcher Tabs */}
-        <View style={[styles.cycleTabsBar, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
+        <View style={[
+          styles.cycleTabsBar, 
+          { backgroundColor: theme.bgElevated, borderColor: theme.border },
+          isMobile && styles.cycleTabsBarMobile
+        ]}>
           {['L1', 'L2', 'L3'].map((key) => {
             const isSelected = selectedCycle === key;
-            const docCount = key === 'L1' ? '170 supports' : key === 'L2' ? '333 supports' : '30 supports';
+            const fullDocCount = key === 'L1' ? '170 supports' : key === 'L2' ? '333 supports' : '30 supports';
+            const shortDocCount = key === 'L1' ? '170' : key === 'L2' ? '333' : '30';
+            const docCount = isVerySmall ? shortDocCount : (isMobile ? `${shortDocCount} sup.` : fullDocCount);
+
             return (
               <TouchableOpacity
                 key={key}
                 style={[
                   styles.cycleTabBtn,
+                  isMobile && styles.cycleTabBtnMobile,
                   isSelected && { backgroundColor: theme.primary, boxShadow: '0 4px 14px rgba(30, 91, 69, 0.24)' }
                 ]}
                 onPress={() => {
@@ -225,11 +236,31 @@ export default function LicenceView() {
                 }}
                 activeOpacity={0.8}
               >
-                <Text style={[styles.cycleTabLabel, { color: isSelected ? '#FFFFFF' : theme.textMuted }]}>
-                  {COURSES_DATA[key].cycle}
+                <Text 
+                  numberOfLines={1} 
+                  style={[
+                    styles.cycleTabLabel, 
+                    isMobile && styles.cycleTabLabelMobile, 
+                    { color: isSelected ? '#FFFFFF' : theme.textMuted }
+                  ]}
+                >
+                  {isVerySmall ? key : (isMobile ? COURSES_DATA[key].cycle.replace('Licence', 'L.') : COURSES_DATA[key].cycle)}
                 </Text>
-                <View style={[styles.tabCountPill, { backgroundColor: isSelected ? 'rgba(255,255,255,0.2)' : theme.bgCard }]}>
-                  <Text style={[styles.tabCountText, { color: isSelected ? '#FFFFFF' : theme.textDim }]}>{docCount}</Text>
+                <View style={[
+                  styles.tabCountPill, 
+                  isMobile && styles.tabCountPillMobile,
+                  { backgroundColor: isSelected ? 'rgba(255,255,255,0.2)' : theme.bgCard }
+                ]}>
+                  <Text 
+                    numberOfLines={1}
+                    style={[
+                      styles.tabCountText, 
+                      isMobile && styles.tabCountTextMobile,
+                      { color: isSelected ? '#FFFFFF' : theme.textDim }
+                    ]}
+                  >
+                    {docCount}
+                  </Text>
                 </View>
               </TouchableOpacity>
             );
@@ -789,6 +820,11 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     gap: 6,
   },
+  cycleTabsBarMobile: {
+    padding: 4,
+    gap: 4,
+    borderRadius: 14,
+  },
   cycleTabBtn: {
     flex: 1,
     flexDirection: 'row',
@@ -798,18 +834,35 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     borderRadius: 12,
   },
+  cycleTabBtnMobile: {
+    paddingVertical: 9,
+    paddingHorizontal: 4,
+    gap: 5,
+    borderRadius: 10,
+  },
   cycleTabLabel: {
     fontSize: 14,
     fontWeight: '800',
+  },
+  cycleTabLabelMobile: {
+    fontSize: 12,
   },
   tabCountPill: {
     paddingHorizontal: 7,
     paddingVertical: 2,
     borderRadius: 10,
   },
+  tabCountPillMobile: {
+    paddingHorizontal: 5,
+    paddingVertical: 1.5,
+    borderRadius: 8,
+  },
   tabCountText: {
     fontSize: 11,
     fontWeight: '700',
+  },
+  tabCountTextMobile: {
+    fontSize: 10,
   },
   categorySeparationBar: {
     alignItems: 'center',

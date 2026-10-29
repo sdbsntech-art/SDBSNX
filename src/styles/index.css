@@ -476,7 +476,6 @@ h1, h2, h3, h4, h5, h6 {
   .breadcrumb-category,
   .breadcrumb-active {
     min-width: 0;
-    max-width: 100%;
     flex-shrink: 1;
   }
 
@@ -484,5 +483,6 @@ h1, h2, h3, h4, h5, h6 {
   .breadcrumb-active {
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
