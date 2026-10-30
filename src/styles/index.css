@@ -1018,6 +1018,21 @@ html, body, #root {
   .app-main-content {
     font-size: 13.5px;
   }
+
+  /* Fix footer legal links to prevent vertical stacking */
+  .legalLinksRow,
+  .legal-links,
+  .footer-links {
+    white-space: nowrap !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .legalLink,
+  .legal-links a,
+  .footer-links a {
+    white-space: nowrap !important;
+  }
 }
 
 /* ---- Tablet and below (< 768px): Stack grids, shrink padding ---- */
@@ -1027,9 +1042,24 @@ html, body, #root {
   .footer-inner {
     flex-direction: column !important;
   }
-  
+
   .footer-inner > [style*="flex: 1"] {
     min-width: 100% !important;
+  }
+
+  /* Prevent text wrapping issues in footer links */
+  .legalLinksRow,
+  .legal-links,
+  .footer-links {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+  }
+
+  .legalLink,
+  .legal-links a,
+  .footer-links a {
+    white-space: nowrap !important;
   }
 }
 

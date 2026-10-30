@@ -81,6 +81,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
+        white-space: nowrap;
     }
     .legal-links a {
         color: #666;
@@ -850,9 +851,11 @@ footer {
   }
 
   .legal-links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
     font-size: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   h1 {
@@ -889,6 +892,17 @@ footer {
 
   .logo-nav {
     font-size: 1rem;
+  }
+
+  /* Prevent text wrapping issues */
+  .legal-links a, .footer-links a {
+    white-space: nowrap;
+  }
+
+  /* Ensure footer content doesn't overflow */
+  footer, .footer-content, .footer-inner {
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 }
 

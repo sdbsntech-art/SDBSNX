@@ -371,9 +371,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
     flexWrap: 'wrap',
+    justifyContent: 'center',
   },
   legalLink: {
     fontSize: 12,
+    whiteSpace: 'nowrap',
   }
 });
 
