@@ -236,7 +236,7 @@ export default function HeaderNav() {
           aria-label="SDBSNX IDA — Accueil"
         >
           <img src="/sdbsnx-logo.png" alt="SDBSNX" className="site-brand-logo" />
-          <img src="/force-n-logo.png" alt="FORCE-N" className="site-brand-partner-logo" />
+          <img src="/unchk-uvs-logo.png" alt="UNCHK" className="site-brand-partner-logo site-brand-partner-logo-small" />
           <span className="site-brand-copy">
             <span className="site-brand-name" style={{ color: theme.text }}>
               SDBSNX <span style={{ color: theme.primary }}>•</span> IDA

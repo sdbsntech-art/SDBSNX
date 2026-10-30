@@ -167,9 +167,16 @@ export default function Footer() {
 
       <View style={[styles.bottomBar, { borderTopColor: theme.border }]}>
         <View style={styles.bottomBarInner}>
-          <Text style={[styles.copyrightText, { color: theme.textDim }]}>
-            © {new Date().getFullYear()} SDBSNX • IDA COURS. Remerciements aux créateurs et formateurs dont les ressources contribuent à l'apprentissage.
-          </Text>
+          <View style={styles.copyrightWrap}>
+            <img
+              src="/force-n-logo.png"
+              alt="FORCE-N"
+              style={styles.copyrightLogo}
+            />
+            <Text style={[styles.copyrightText, { color: theme.textDim }]}>
+              © {new Date().getFullYear()} SDBSNX • IDA COURS. Remerciements aux créateurs et formateurs dont les ressources contribuent à l'apprentissage.
+            </Text>
+          </View>
 
           <View style={styles.legalLinksRow}>
             <TouchableOpacity onPress={() => setActiveLegal('mentions')}>
@@ -338,13 +345,32 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     gap: 14,
   },
+  copyrightWrap: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    flexWrap: 'wrap',
+    flex: 1,
+    minWidth: 0,
+  },
+  copyrightLogo: {
+    width: 22,
+    height: 22,
+    objectFit: 'contain',
+    borderRadius: 6,
+    backgroundColor: '#FFFFFF',
+    padding: 2,
+  },
   copyrightText: {
     fontSize: 12,
+    lineHeight: 18,
+    flexShrink: 1,
   },
   legalLinksRow: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
+    flexWrap: 'wrap',
   },
   legalLink: {
     fontSize: 12,

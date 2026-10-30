@@ -231,7 +231,7 @@ export default function DocumentAdmin({ open, onClose }) {
             <View style={[styles.notice, { backgroundColor: theme.primaryGlow }]}>
               <LockKeyhole size={18} color={theme.primary} />
               <Text style={[styles.bodyText, { color: theme.textMuted }]}>
-                Accès réservé. Connexion locale de démonstration active.
+                Connexion administrateur.
               </Text>
             </View>
             <TextInput
