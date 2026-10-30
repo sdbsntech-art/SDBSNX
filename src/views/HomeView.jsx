@@ -603,9 +603,11 @@ export default function HomeView() {
                 }} 
               />
             </View>
-            <View style={[styles.forceNTag, { backgroundColor: theme.primaryGlow }]}>
+            <View style={[styles.forceNTag, { backgroundColor: theme.primaryGlow }, isCompactMobile && styles.forceNTagMobile]}>
               <Award size={14} color={theme.primary} />
-              <Text style={[styles.forceNTagText, { color: theme.primary }]}>PROGRAMME NATIONAL DE FORMATION & EMPLOI</Text>
+              <Text style={[styles.forceNTagText, { color: theme.primary }, isCompactMobile && styles.forceNTagTextMobile]}>
+                PROGRAMME NATIONAL DE FORMATION & EMPLOI
+              </Text>
             </View>
           </View>
 
@@ -1302,12 +1304,19 @@ const styles = StyleSheet.create({
   forceNTag: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     gap: 6,
     paddingHorizontal: 12,
     paddingVertical: 5,
     borderRadius: 20,
     maxWidth: '100%',
     flexShrink: 1,
+    alignSelf: 'center',
+  },
+  forceNTagMobile: {
+    width: '100%',
+    maxWidth: 420,
+    alignSelf: 'center',
   },
   forceNTagText: {
     fontSize: 10,
@@ -1316,6 +1325,13 @@ const styles = StyleSheet.create({
     lineHeight: 14,
     flexShrink: 1,
     maxWidth: '100%',
+    textAlign: 'center',
+  },
+  forceNTagTextMobile: {
+    fontSize: 8.6,
+    lineHeight: 12,
+    letterSpacing: 0.15,
+    textAlign: 'center',
   },
   forceNTitle: {
     fontSize: 22,
@@ -1373,6 +1389,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
+    textAlign: 'center',
   },
   forceNBtn: {
     flexDirection: 'row',
@@ -1384,6 +1401,7 @@ const styles = StyleSheet.create({
     borderRadius: 14,
     width: 'auto',
     maxWidth: '100%',
+    alignSelf: 'center',
   },
   forceNBtnMobile: {
     width: '100%',
@@ -1399,15 +1417,18 @@ const styles = StyleSheet.create({
   forceNMetaNote: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     gap: 8,
     flexWrap: 'wrap',
     flexShrink: 1,
     maxWidth: '100%',
+    width: '100%',
   },
   forceNMetaNoteMobile: {
     width: '100%',
     justifyContent: 'center',
     textAlign: 'center',
+    alignSelf: 'center',
   },
   forceNMetaText: {
     fontSize: 11,
@@ -1415,10 +1436,14 @@ const styles = StyleSheet.create({
     lineHeight: 18,
     flexShrink: 1,
     maxWidth: '100%',
+    minWidth: 0,
+    overflowWrap: 'anywhere',
   },
   forceNMetaTextMobile: {
     textAlign: 'center',
     width: '100%',
+    minWidth: 0,
+    overflowWrap: 'anywhere',
   },
   opportunityGrid: {
     display: 'grid',

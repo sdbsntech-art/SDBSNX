@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
 import { useApp } from '../context/AppContext';
 import { X, ShieldCheck, Scale, FileText } from 'lucide-react';
 
 export default function LegalModal() {
   const { activeLegal, setActiveLegal, theme } = useApp();
+
+  useEffect(() => {
+    if (!activeLegal) return;
+
+    const previousOverflow = document.body.style.overflow;
+    const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+    window.scrollTo({ top: 0, behavior: 'auto' });
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.scrollBehavior = 'auto';
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+    };
+  }, [activeLegal]);
 
   if (!activeLegal) return null;
 
@@ -129,9 +144,11 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     zIndex: 9999,
-    justifyContent: 'center',
+    display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
     padding: 12,
+    pointerEvents: 'auto',
   },
   backdrop: {
     position: 'absolute',
@@ -141,8 +158,10 @@ const styles = StyleSheet.create({
     bottom: 0,
     backgroundColor: 'rgba(0, 0, 0, 0.75)',
     backdropFilter: 'blur(8px)',
+    WebkitBackdropFilter: 'blur(8px)',
   },
   modalBox: {
+    position: 'relative',
     width: '100%',
     maxWidth: 640,
     maxHeight: '85vh',

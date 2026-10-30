@@ -1,5 +1,27 @@
+# robots.txt pour SDBSNX IDA
+# Permettre l'indexation de tout le site
+
 User-agent: *
 Allow: /
 
-# Direct indexing of sitemap
+# Interdire l'accès aux fichiers de configuration et aux scripts
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /scripts/
+Disallow: /dist/
+Disallow: /*.js$
+Disallow: /*.jsx$
+Disallow: /*.ts$
+Disallow: /*.tsx$
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /admin
+Disallow: /private
+
+# Sitemap
 Sitemap: https://ida-cours.netlify.app/sitemap.xml
+
+# Crawl-delay pour éviter de surcharger le serveur
+Crawl-delay: 1
