@@ -162,9 +162,10 @@ const styles = StyleSheet.create({
   },
   modalBox: {
     position: 'relative',
-    width: '100%',
+    width: 'min(92vw, 640px)',
     maxWidth: 640,
-    maxHeight: '85vh',
+    maxHeight: '82vh',
+    minWidth: 0,
     borderRadius: 20,
     borderWidth: 1,
     overflow: 'hidden',
@@ -179,6 +180,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderBottomWidth: 1,
     gap: 10,
+    flexWrap: 'wrap',
   },
   headerTitleWrap: {
     flexDirection: 'row',
@@ -186,6 +188,7 @@ const styles = StyleSheet.create({
     gap: 10,
     flex: 1,
     minWidth: 0,
+    flexWrap: 'wrap',
   },
   iconWrap: {
     width: 34,
@@ -199,6 +202,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     flex: 1,
     minWidth: 0,
+    lineHeight: 22,
   },
   closeBtn: {
     width: 32,
@@ -207,6 +211,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    flexShrink: 0,
   },
   scrollArea: {
     maxHeight: 460,
@@ -214,6 +219,7 @@ const styles = StyleSheet.create({
   scrollContent: {
     padding: 20,
     gap: 18,
+    paddingBottom: 28,
   },
   secItem: {
     gap: 6,
@@ -221,9 +227,11 @@ const styles = StyleSheet.create({
   secHeading: {
     fontSize: 15,
     fontWeight: '700',
+    lineHeight: 22,
   },
   secText: {
     fontSize: 13,
     lineHeight: 20,
+    overflowWrap: 'anywhere',
   }
 });
