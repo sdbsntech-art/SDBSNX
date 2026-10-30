@@ -31,6 +31,7 @@ import {
 
 export default function HomeView() {
   const { width: viewportWidth } = useWindowDimensions();
+  const isCompactMobile = viewportWidth < 460;
   const { 
     theme, 
     setCurrentTab, 
@@ -660,9 +661,9 @@ export default function HomeView() {
           </View>
 
           {/* Action Row */}
-          <View style={styles.forceNActionRow}>
+          <View style={[styles.forceNActionRow, isCompactMobile && styles.forceNActionRowMobile]}>
             <TouchableOpacity
-              style={[styles.forceNBtn, { backgroundColor: theme.primary }]}
+              style={[styles.forceNBtn, { backgroundColor: theme.primary }, isCompactMobile && styles.forceNBtnMobile]}
               onPress={() => window.open('https://force-n.sn', '_blank')}
               activeOpacity={0.8}
             >
@@ -670,9 +671,9 @@ export default function HomeView() {
               <ExternalLink size={16} color="#FFFFFF" />
             </TouchableOpacity>
 
-            <View style={styles.forceNMetaNote}>
+            <View style={[styles.forceNMetaNote, isCompactMobile && styles.forceNMetaNoteMobile]}>
               <CheckCircle2 size={16} color={theme.emerald} />
-              <Text style={[styles.forceNMetaText, { color: theme.textMuted }]}>
+              <Text style={[styles.forceNMetaText, { color: theme.textMuted }, isCompactMobile && styles.forceNMetaTextMobile]}>
                 Inscriptions ouvertes • Certifications gratuites UNCHK & Fondation Mastercard
               </Text>
             </View>
@@ -1367,6 +1368,12 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: 'rgba(255, 255, 255, 0.08)',
   },
+  forceNActionRowMobile: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+  },
   forceNBtn: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -1375,11 +1382,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 13,
     borderRadius: 14,
+    width: 'auto',
+    maxWidth: '100%',
+  },
+  forceNBtnMobile: {
+    width: '100%',
+    maxWidth: 420,
+    alignSelf: 'center',
   },
   forceNBtnText: {
     color: '#FFFFFF',
     fontSize: 14,
     fontWeight: '700',
+    textAlign: 'center',
   },
   forceNMetaNote: {
     flexDirection: 'row',
@@ -1389,12 +1404,21 @@ const styles = StyleSheet.create({
     flexShrink: 1,
     maxWidth: '100%',
   },
+  forceNMetaNoteMobile: {
+    width: '100%',
+    justifyContent: 'center',
+    textAlign: 'center',
+  },
   forceNMetaText: {
     fontSize: 11,
     fontWeight: '600',
     lineHeight: 18,
     flexShrink: 1,
     maxWidth: '100%',
+  },
+  forceNMetaTextMobile: {
+    textAlign: 'center',
+    width: '100%',
   },
   opportunityGrid: {
     display: 'grid',
