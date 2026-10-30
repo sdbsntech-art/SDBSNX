@@ -1,25 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { View, Text, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
 import { useApp } from '../context/AppContext';
 import { X, ShieldCheck, Scale, FileText } from 'lucide-react';
 
 export default function LegalModal() {
   const { activeLegal, setActiveLegal, theme } = useApp();
-
-  useEffect(() => {
-    if (!activeLegal) return;
-
-    const previousOverflow = document.body.style.overflow;
-    const previousScrollBehavior = document.documentElement.style.scrollBehavior;
-    window.scrollTo({ top: 0, behavior: 'auto' });
-    document.body.style.overflow = 'hidden';
-    document.documentElement.style.scrollBehavior = 'auto';
-
-    return () => {
-      document.body.style.overflow = previousOverflow;
-      document.documentElement.style.scrollBehavior = previousScrollBehavior;
-    };
-  }, [activeLegal]);
 
   if (!activeLegal) return null;
 
@@ -144,11 +129,9 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     zIndex: 9999,
-    display: 'flex',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
     padding: 12,
-    pointerEvents: 'auto',
   },
   backdrop: {
     position: 'absolute',
@@ -158,14 +141,11 @@ const styles = StyleSheet.create({
     bottom: 0,
     backgroundColor: 'rgba(0, 0, 0, 0.75)',
     backdropFilter: 'blur(8px)',
-    WebkitBackdropFilter: 'blur(8px)',
   },
   modalBox: {
-    position: 'relative',
-    width: 'min(92vw, 640px)',
+    width: '100%',
     maxWidth: 640,
-    maxHeight: '82vh',
-    minWidth: 0,
+    maxHeight: '85vh',
     borderRadius: 20,
     borderWidth: 1,
     overflow: 'hidden',
@@ -180,7 +160,6 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderBottomWidth: 1,
     gap: 10,
-    flexWrap: 'wrap',
   },
   headerTitleWrap: {
     flexDirection: 'row',
@@ -188,7 +167,6 @@ const styles = StyleSheet.create({
     gap: 10,
     flex: 1,
     minWidth: 0,
-    flexWrap: 'wrap',
   },
   iconWrap: {
     width: 34,
@@ -202,7 +180,6 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     flex: 1,
     minWidth: 0,
-    lineHeight: 22,
   },
   closeBtn: {
     width: 32,
@@ -211,7 +188,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    flexShrink: 0,
   },
   scrollArea: {
     maxHeight: 460,
@@ -219,7 +195,6 @@ const styles = StyleSheet.create({
   scrollContent: {
     padding: 20,
     gap: 18,
-    paddingBottom: 28,
   },
   secItem: {
     gap: 6,
@@ -227,11 +202,9 @@ const styles = StyleSheet.create({
   secHeading: {
     fontSize: 15,
     fontWeight: '700',
-    lineHeight: 22,
   },
   secText: {
     fontSize: 13,
     lineHeight: 20,
-    overflowWrap: 'anywhere',
   }
 });
