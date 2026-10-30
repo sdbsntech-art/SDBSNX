@@ -13,7 +13,15 @@
 				height:255px;
 			}
 		</style>
-	</head>
+	  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: *.google.com *.googleapis.com *.gstatic.com *.youtube.com *.doubleclick.net; img-src 'self' https: data:; font-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: *.google.com *.googleapis.com *.gstatic.com *.youtube.com *.doubleclick.net; style-src 'self' 'unsafe-inline' https: *.googleapis.com; frame-src 'self' https: *.youtube.com;" />
+
+</head>
 	<body>
 		<div class="container-fluid">
 			<div class="row">
@@ -71,5 +79,105 @@
 				<div class="col-lg-12" id="footer" style="width:760px;"><h3>Copyright@UVS 2019</h3></div>
 			</div>
 		</div>
-	</body>
+	
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Bloquer le clic droit
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+    });
+
+    // Bloquer la sélection de texte
+    document.addEventListener('selectstart', function(e) {
+        e.preventDefault();
+        return false;
+    });
+
+    // Bloquer copier/coller/couper
+    ['copy', 'cut', 'paste'].forEach(function(evt) {
+        document.addEventListener(evt, function(e) {
+            e.preventDefault();
+            return false;
+        });
+    });
+
+    // Bloquer raccourcis DevTools et code source
+    document.addEventListener('keydown', function(e) {
+        // F12
+        if (e.key === 'F12' || e.keyCode === 123) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+Shift+I / Cmd+Opt+I
+        if ((e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') ||
+            (e.metaKey && e.altKey && e.key.toLowerCase() === 'i')) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+Shift+J / Cmd+Opt+J
+        if ((e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'j') ||
+            (e.metaKey && e.altKey && e.key.toLowerCase() === 'j')) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+Shift+C / Cmd+Opt+C
+        if ((e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'c') ||
+            (e.metaKey && e.altKey && e.key.toLowerCase() === 'c')) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+U / Cmd+U
+        if ((e.ctrlKey && e.key.toLowerCase() === 'u') ||
+            (e.metaKey && e.key.toLowerCase() === 'u')) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+S / Cmd+S
+        if ((e.ctrlKey && e.key.toLowerCase() === 's') ||
+            (e.metaKey && e.key.toLowerCase() === 's')) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+P / Cmd+P
+        if ((e.ctrlKey && e.key.toLowerCase() === 'p') ||
+            (e.metaKey && e.key.toLowerCase() === 'p')) {
+            e.preventDefault();
+            return false;
+        }
+        // Ctrl+F / Cmd+F
+        if ((e.ctrlKey && e.key.toLowerCase() === 'f') ||
+            (e.metaKey && e.key.toLowerCase() === 'f')) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    // Détection DevTools par resize
+    setInterval(function() {
+        if (window.outerWidth - window.innerWidth > 160 ||
+            window.outerHeight - window.innerHeight > 160) {
+            document.body.innerHTML = '<h1 style="color:red;text-align:center;margin-top:20vh;">Accès restreint : DevTools détecté !</h1>';
+        }
+    }, 1000);
+
+    // Désactiver le drag and drop des images
+    document.addEventListener('dragstart', function(e) {
+        if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    // Empêcher l'ouverture d'images dans un nouvel onglet
+    document.addEventListener('click', function(e) {
+        if (e.target.tagName === 'IMG' && e.button === 0) {
+            e.preventDefault();
+            return false;
+        }
+    });
+});
+</script>
+
+</body>
 </html>

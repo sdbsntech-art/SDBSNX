@@ -21,12 +21,9 @@ html, body {
   min-height: 100vh;
   font-family: var(--font-body);
   overflow-x: hidden;
-  overflow-y: auto;
   position: relative;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
 }
 
 #root {
@@ -861,32 +858,12 @@ h1, h2, h3, h4, h5, h6 {
 img, svg, video, canvas, iframe, object {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 /* Global text wrapping defense to eliminate unwanted horizontal overflow */
-p, span, h1, h2, h3, h4, h5, h6, a, button, label, input, textarea, div {
+p, span, h1, h2, h3, h4, h5, h6, a, button, label, input, textarea {
   overflow-wrap: break-word;
   word-break: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
-}
-
-/* Force max-width on all containers to prevent overflow */
-* {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-/* Fix for navigation elements that might overflow */
-.nav-link, .drawer-item-btn, .site-brand {
-  flex-shrink: 0;
-}
-
-@media (max-width: 768px) {
-  .nav-link, .drawer-item-btn, .site-brand {
-    flex-shrink: 1;
-  }
 }
 
 /* Fluid responsive titles */
@@ -1072,125 +1049,7 @@ html, body, #root {
   width: 100%;
   border-radius: 2px;
   background-color: currentColor;
-}
-
-/* ---- Improved Mobile Text Centering & Overflow Prevention ---- */
-@media (max-width: 768px) {
-  /* Centrer tout le texte sur mobile pour une meilleure lisibilité */
-  .site-brand-name,
-  .site-brand-subtitle,
-  .drawer-title,
-  .drawer-sub,
-  .hero-title,
-  .hero-slogan,
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center !important;
-  }
-
-  /* Améliorer le centrage des cartes et conteneurs */
-  .video-card,
-  .quiz-card,
-  .module-card,
-  .partner-card,
-  .exercise-card,
-  .form-card {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    max-width: 100% !important;
-  }
-
-  /* Améliorer l'espacement sur mobile */
-  .section {
-    padding: 1.5rem 1rem !important;
-  }
-
-  /* Empêcher le débordement horizontal des conteneurs */
-  .container-nav,
-  .site-header-inner,
-  .footer-inner,
-  .app-main-content {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding-left: 0.75rem !important;
-    padding-right: 0.75rem !important;
-  }
-
-  /* Améliorer l'affichage des logos sur mobile */
-  .site-brand-logo,
-  .site-brand-partner-logo {
-    flex-shrink: 0;
-  }
-
-  /* Centrer le contenu des boutons */
-  .btn-cta,
-  .header-install-button,
-  .drawer-action-btn {
-    justify-content: center !important;
-    text-align: center !important;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Optimisations pour petits écrans */
-  .site-header-inner {
-    padding-left: 0.5rem !important;
-    padding-right: 0.5rem !important;
-  }
-
-  .section {
-    padding: 1rem 0.75rem !important;
-  }
-
-  /* Réduire la taille des titres sur très petits écrans */
-  h1 {
-    font-size: clamp(1.5rem, 6vw, 2rem) !important;
-  }
-
-  h2 {
-    font-size: clamp(1.25rem, 5vw, 1.75rem) !important;
-  }
-
-  h3 {
-    font-size: clamp(1rem, 4vw, 1.5rem) !important;
-  }
-
-  /* S'assurer que le texte ne déborde pas */
-  p, span, a, button {
-    max-width: 100% !important;
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-  }
-}
-
-/* ---- Force Proper Text Alignment ---- */
-.text-center-mobile {
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .text-center-mobile {
-    text-align: center !important;
-  }
-}
-
-/* ---- Improved Container Sizing ---- */
-.content-wrapper {
-  width: 100%;
-  max-width: 1380px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-@media (max-width: 768px) {
-  .content-wrapper {
-    padding: 0 0.75rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .content-wrapper {
-    padding: 0 0.5rem;
-  }
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.18s ease;
 }
 
 .hamburger-animated.open .line-1 {
