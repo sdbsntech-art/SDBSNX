@@ -104,7 +104,7 @@ console.log(saluerEtudiant("Développeur IDA"));`
           />
           <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX × UNCHK • QUIZ & CODE</Text>
         </View>
-        <Text style={[styles.pageTitle, { color: theme.text }]}>
+        <Text style={[styles.pageTitle, { color: theme.text }]} className="fluid-page-title">
           Exercices Corrigés & Quiz Interactifs
         </Text>
         <Text style={[styles.pageDesc, { color: theme.textMuted }]}>
@@ -323,11 +323,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 5,
     borderRadius: 20,
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    maxWidth: '100%',
   },
   headerBadgeText: {
     fontSize: 11,
     fontWeight: '700',
     letterSpacing: 0.5,
+    flexShrink: 1,
   },
   pageTitle: {
     fontSize: 32,
@@ -389,19 +393,17 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   exercisesGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 24,
-    justifyContent: 'center',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 340px), 1fr))',
+    gap: 22,
+    width: '100%',
     marginBottom: 50,
   },
   exerciseCard: {
-    flex: 1,
-    minWidth: 320,
-    maxWidth: 480,
+    width: '100%',
     borderRadius: 20,
     borderWidth: 1,
-    padding: 22,
+    padding: 18,
     gap: 14,
     boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
   },
@@ -468,14 +470,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
     flex: 1,
+    minWidth: 0,
   },
   optionIndex: {
     fontSize: 13,
     fontWeight: '800',
+    flexShrink: 0,
   },
   optionText: {
     fontSize: 13,
     flex: 1,
+    minWidth: 0,
   },
   explanationBox: {
     padding: 14,

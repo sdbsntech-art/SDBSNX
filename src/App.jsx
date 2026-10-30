@@ -20,6 +20,7 @@ import EntrepreneuriatView from './views/EntrepreneuriatView';
 import FormateursView from './views/FormateursView';
 import ForumCommentsView from './views/ForumCommentsView';
 import FAQView from './views/FAQView';
+import AdminAuthView from './views/AdminAuthView';
 
 export default function App() {
   const { currentTab, theme } = useApp();
@@ -44,6 +45,8 @@ export default function App() {
         return <ForumCommentsView />;
       case 'faq':
         return <FAQView />;
+      case 'admin':
+        return <AdminAuthView />;
       default:
         return <HomeView />;
     }
@@ -55,7 +58,7 @@ export default function App() {
       <HeaderNav />
 
       {/* Main View Area */}
-      <View style={styles.mainContent}>
+      <View style={styles.mainContent} className="app-main-content">
         {renderActiveView()}
       </View>
 

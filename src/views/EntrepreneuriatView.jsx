@@ -24,7 +24,7 @@ import {
 } from 'lucide-react';
 
 export default function EntrepreneuriatView() {
-  const { theme, triggerToast } = useApp();
+  const { theme, triggerToast, setActivePdfPreview } = useApp();
   const { documents: adminDocuments, error: adminDocumentsError } = useAdminDocuments('entrepreneurship');
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
@@ -149,7 +149,7 @@ export default function EntrepreneuriatView() {
           <View style={styles.metricsRow}>
             <View style={[styles.metricCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
               <Briefcase size={18} color={theme.primary} />
-              <View>
+              <View style={styles.metricTextCol}>
                 <Text style={[styles.metricVal, { color: theme.text }]}>4 Pôles Clés</Text>
                 <Text style={[styles.metricSub, { color: theme.textDim }]}>Juridique, BMC, Pitch & Fonds</Text>
               </View>
@@ -157,7 +157,7 @@ export default function EntrepreneuriatView() {
 
             <View style={[styles.metricCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
               <Building2 size={18} color={theme.primary} />
-              <View>
+              <View style={styles.metricTextCol}>
                 <Text style={[styles.metricVal, { color: theme.text }]}>Sénégal & UEMOA</Text>
                 <Text style={[styles.metricSub, { color: theme.textDim }]}>Conforme APIX, NINEA & RCCM</Text>
               </View>
@@ -165,7 +165,7 @@ export default function EntrepreneuriatView() {
 
             <View style={[styles.metricCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
               <DollarSign size={18} color={theme.secondary} />
-              <View>
+              <View style={styles.metricTextCol}>
                 <Text style={[styles.metricVal, { color: theme.text }]}>Financement</Text>
                 <Text style={[styles.metricSub, { color: theme.textDim }]}>DER/FJ, Force-N & Incubateurs</Text>
               </View>
@@ -279,8 +279,20 @@ export default function EntrepreneuriatView() {
               )}
               <TouchableOpacity
                 style={[styles.docItemRow, { backgroundColor: theme.bgCard, borderColor: theme.border }]}
-                onPress={() => window.open(document.downloadUrl, '_blank', 'noopener,noreferrer')}
-                accessibilityRole="link"
+                onPress={() => {
+                  if (document.downloadUrl && (document.format === 'PDF' || document.downloadUrl.toLowerCase().endsWith('.pdf'))) {
+                    setActivePdfPreview({
+                      name: document.title,
+                      url: document.downloadUrl,
+                      ext: document.format || 'PDF',
+                      size: document.size
+                    });
+                  } else {
+                    window.open(document.downloadUrl, '_blank', 'noopener,noreferrer');
+                  }
+                }}
+                accessibilityRole="button"
+                accessibilityLabel={`Consulter ${document.title}`}
               >
                 <FileText size={15} color={theme.primary} />
                 <Text style={[styles.docItemName, { color: theme.text }]} numberOfLines={1}>
@@ -363,12 +375,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    paddingHorizontal: 16,
+    paddingHorizontal: 12,
     paddingVertical: 12,
     borderRadius: 14,
     borderWidth: 1,
     flex: 1,
-    minWidth: 220,
+    minWidth: 140,
+    maxWidth: '100%',
+  },
+  metricTextCol: {
+    flex: 1,
+    minWidth: 0,
   },
   metricVal: {
     fontSize: 14,
@@ -376,6 +393,7 @@ const styles = StyleSheet.create({
   },
   metricSub: {
     fontSize: 12,
+    lineHeight: 16,
   },
   filterSection: {
     gap: 14,
@@ -412,7 +430,7 @@ const styles = StyleSheet.create({
   },
   modulesGrid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
     gap: 18,
   },
   moduleCard: {
@@ -482,11 +500,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 8,
     flex: 1,
+    minWidth: 0,
   },
   docItemName: {
     fontSize: 12,
     fontWeight: '600',
     flex: 1,
+    minWidth: 0,
   },
   docItemRight: {
     flexDirection: 'row',
@@ -526,7 +546,8 @@ const styles = StyleSheet.create({
   },
   uploadTextCol: {
     flex: 1,
-    minWidth: 260,
+    minWidth: 0,
+    width: '100%',
     gap: 4,
   },
   uploadTitle: {

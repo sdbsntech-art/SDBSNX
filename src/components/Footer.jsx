@@ -14,9 +14,21 @@ export default function Footer() {
 
   return (
     <>
-    <View style={[styles.footerContainer, { backgroundColor: theme.bgSecondary, borderTopColor: theme.border }]}>
-      <View style={styles.footerInner}>
-        {/* Col 1: Dual Brand & Mission */}
+    <View className="site-footer" style={[styles.footerContainer, { backgroundColor: theme.bgSecondary, borderTopColor: theme.border }]}>
+      <View className="footer-inner" style={styles.footerInner}>
+        <View style={[styles.footerTopBand, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+          <View style={styles.footerTopBandText}>
+            <Text style={[styles.footerBadge, { color: theme.primary, backgroundColor: theme.primaryGlow }]}>Accès gratuit</Text>
+            <Text style={[styles.footerTopTitle, { color: theme.text }]}>Cours, TD, examens, vidéos et ressources de qualité.</Text>
+          </View>
+          <TouchableOpacity
+            onPress={() => handleNav('licence', 'L1')}
+            style={[styles.footerCta, { backgroundColor: theme.primary }]}
+          >
+            <Text style={styles.footerCtaText}>Explorer les cours</Text>
+          </TouchableOpacity>
+        </View>
+
         <View style={styles.colBrand}>
           <View style={styles.dualLogosWrap}>
             <img 
@@ -26,10 +38,10 @@ export default function Footer() {
                 height: 38,
                 width: 'auto',
                 objectFit: 'contain',
-                borderRadius: 6,
+                borderRadius: 8,
                 background: '#FFFFFF',
                 padding: '2px 6px',
-                boxShadow: '0 1px 4px rgba(0,0,0,0.06)'
+                boxShadow: '0 1px 6px rgba(0,0,0,0.06)'
               }} 
             />
             <View style={[styles.logoDivider, { backgroundColor: theme.border }]} />
@@ -40,10 +52,24 @@ export default function Footer() {
                 height: 38,
                 width: 'auto',
                 objectFit: 'contain',
-                borderRadius: 6,
+                borderRadius: 8,
                 background: '#FFFFFF',
                 padding: '2px 6px',
-                boxShadow: '0 1px 4px rgba(0,0,0,0.06)'
+                boxShadow: '0 1px 6px rgba(0,0,0,0.06)'
+              }} 
+            />
+            <View style={[styles.logoDivider, { backgroundColor: theme.border }]} />
+            <img 
+              src="/force-n-logo.png" 
+              alt="FORCE-N • Université Numérique Cheikh Hamidou Kane" 
+              style={{
+                height: 38,
+                width: 'auto',
+                objectFit: 'contain',
+                borderRadius: 8,
+                background: '#FFFFFF',
+                padding: '2px 6px',
+                boxShadow: '0 1px 6px rgba(0,0,0,0.06)'
               }} 
             />
           </View>
@@ -54,7 +80,7 @@ export default function Footer() {
           </View>
 
           <Text style={[styles.brandDesc, { color: theme.textMuted }]}>
-            Ressources en informatique et développement d’applications pour les étudiants.
+            Ressources pédagogiques universitaires, supports PDF, vidéos HD et contenus de référence pour mieux apprendre et progresser.
           </Text>
 
           <View style={styles.socialsRow}>
@@ -79,7 +105,6 @@ export default function Footer() {
           </View>
         </View>
 
-        {/* Col 2: Cycles */}
         <View style={styles.colLinks}>
           <Text style={[styles.colHeading, { color: theme.text }]}>Cycles d'Études</Text>
           <TouchableOpacity onPress={() => handleNav('licence', 'L1')} style={styles.linkItem}>
@@ -96,7 +121,6 @@ export default function Footer() {
           </TouchableOpacity>
         </View>
 
-        {/* Col 3: Pôles Spécialisés & Hub */}
         <View style={styles.colLinks}>
           <Text style={[styles.colHeading, { color: theme.text }]}>Pôles & Ressources</Text>
           <TouchableOpacity onPress={() => handleNav('cybersecurite')} style={styles.linkItem}>
@@ -111,6 +135,9 @@ export default function Footer() {
           <TouchableOpacity onPress={() => handleNav('formateurs')} style={styles.linkItem}>
             <Text style={[styles.linkText, { color: theme.textMuted }]}>Écosystème & Formateurs</Text>
           </TouchableOpacity>
+          <TouchableOpacity onPress={() => window.open('https://force-n.sn', '_blank')} style={styles.linkItem}>
+            <Text style={[styles.linkText, { color: theme.primary, fontWeight: '700' }]}>FORCE-N • Certifications & Emploi ↗</Text>
+          </TouchableOpacity>
           <TouchableOpacity onPress={() => handleNav('forum')} style={styles.linkItem}>
             <Text style={[styles.linkText, { color: theme.textMuted }]}>Discussion & Communauté</Text>
           </TouchableOpacity>
@@ -119,7 +146,6 @@ export default function Footer() {
           </TouchableOpacity>
         </View>
 
-        {/* Col 4: Campus & Institution */}
         <View style={styles.colLinks}>
           <Text style={[styles.colHeading, { color: theme.text }]}>Campus & Contact</Text>
           <View style={styles.contactItem}>
@@ -139,7 +165,6 @@ export default function Footer() {
         </View>
       </View>
 
-      {/* Bottom Bar: Legal links */}
       <View style={[styles.bottomBar, { borderTopColor: theme.border }]}>
         <View style={styles.bottomBarInner}>
           <Text style={[styles.copyrightText, { color: theme.textDim }]}>
@@ -170,8 +195,8 @@ const styles = StyleSheet.create({
   footerContainer: {
     borderTopWidth: 1,
     marginTop: 60,
-    paddingTop: 44,
-    paddingBottom: 36,
+    paddingTop: 28,
+    paddingBottom: 30,
   },
   footerInner: {
     maxWidth: 1320,
@@ -180,30 +205,73 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 36,
+    gap: 28,
     justifyContent: 'space-between',
+  },
+  footerTopBand: {
+    width: '100%',
+    borderWidth: 1,
+    borderRadius: 18,
+    padding: 16,
+    marginBottom: 8,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 16,
+  },
+  footerTopBandText: {
+    flex: 1,
+    minWidth: 200,
+    gap: 8,
+  },
+  footerBadge: {
+    alignSelf: 'flex-start',
+    fontSize: 11,
+    fontWeight: '800',
+    letterSpacing: 0.5,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 999,
+  },
+  footerTopTitle: {
+    fontSize: 15,
+    fontWeight: '800',
+    lineHeight: 22,
+  },
+  footerCta: {
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    borderRadius: 12,
+  },
+  footerCtaText: {
+    color: '#FFFFFF',
+    fontSize: 13,
+    fontWeight: '800',
   },
   colBrand: {
     flex: 1,
-    minWidth: 280,
+    minWidth: 240,
     maxWidth: 380,
     gap: 12,
+    width: '100%',
   },
   dualLogosWrap: {
     flexDirection: 'row',
     alignItems: 'center',
+    flexWrap: 'wrap',
     gap: 10,
   },
   logoDivider: {
     width: 1,
-    height: 24,
+    height: 30,
   },
   brandTitleCol: {
     gap: 2,
   },
   brandTitle: {
-    fontSize: 16,
-    fontWeight: '800',
+    fontSize: 18,
+    fontWeight: '900',
     letterSpacing: -0.3,
   },
   brandSub: {
@@ -221,21 +289,22 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   socialBtn: {
-    width: 32,
-    height: 32,
-    borderRadius: 8,
+    width: 34,
+    height: 34,
+    borderRadius: 10,
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   colLinks: {
     flex: 1,
-    minWidth: 180,
+    minWidth: 140,
     gap: 10,
+    width: '100%',
   },
   colHeading: {
     fontSize: 14,
-    fontWeight: '700',
+    fontWeight: '800',
     marginBottom: 4,
   },
   linkItem: {
@@ -255,8 +324,8 @@ const styles = StyleSheet.create({
   },
   bottomBar: {
     borderTopWidth: 1,
-    marginTop: 36,
-    paddingTop: 20,
+    marginTop: 24,
+    paddingTop: 18,
   },
   bottomBarInner: {
     maxWidth: 1320,
@@ -281,3 +350,4 @@ const styles = StyleSheet.create({
     fontSize: 12,
   }
 });
+

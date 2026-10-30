@@ -32,7 +32,7 @@ export default function FormateursView() {
           />
           <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX × UNCHK • ÉCOSYSTÈME FORMATEURS</Text>
         </View>
-        <Text style={[styles.pageTitle, { color: theme.text }]}>
+        <Text style={[styles.pageTitle, { color: theme.text }]} className="fluid-page-title">
           Nos Formateurs & Partenaires d'Excellence
         </Text>
         <Text style={[styles.pageDesc, { color: theme.textMuted }]}>
@@ -152,14 +152,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 5,
     borderRadius: 20,
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    maxWidth: '100%',
   },
   headerBadgeText: {
     fontSize: 11,
     fontWeight: '700',
     letterSpacing: 0.5,
+    flexShrink: 1,
   },
   pageTitle: {
-    fontSize: 32,
+    fontSize: 26,
     fontWeight: '900',
     letterSpacing: -0.5,
     textAlign: 'center',
@@ -171,7 +175,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   grafikartHonorCard: {
-    padding: 28,
+    padding: 20,
     borderRadius: 20,
     borderWidth: 1.5,
     gap: 14,
@@ -205,7 +209,7 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   honorTitle: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: '900',
   },
   honorMessage: {
@@ -245,16 +249,14 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   partnersGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 320px), 1fr))',
     gap: 22,
-    justifyContent: 'center',
+    width: '100%',
   },
   partnerCard: {
-    flex: 1,
-    minWidth: 300,
-    maxWidth: 380,
-    padding: 24,
+    width: '100%',
+    padding: 20,
     borderRadius: 20,
     borderWidth: 1,
     gap: 10,

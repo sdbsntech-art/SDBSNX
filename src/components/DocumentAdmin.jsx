@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { FileText, LockKeyhole, LogOut, Trash2, Upload, X } from 'lucide-react';
 import { useApp } from '../context/AppContext';
-import { DOCUMENT_BUCKET, isSupabaseConfigured, supabase } from '../lib/supabase';
 
 const SECTION_OPTIONS = [
   { id: 'library', label: 'Bibliothèque', categories: ['Web', 'Algorithmique', 'Bases de Données', 'Langage C', 'Sécurité', 'Mobile', 'Autre'] },
@@ -10,6 +9,11 @@ const SECTION_OPTIONS = [
   { id: 'entrepreneurship', label: 'Entrepreneuriat', categories: ['creation', 'business', 'financement', 'documents'] },
   { id: 'courses', label: 'Cours Licence', categories: ['L1', 'L2', 'L3'] },
 ];
+
+const STORAGE_KEY = 'sdbsnx_local_documents';
+const SESSION_KEY = 'sdbsnx_local_admin_session';
+const ADMIN_EMAIL = 'seydoubakhayokho1@gmail.com';
+const ADMIN_PASSWORD = 'sdbsnx@@00';
 const ALLOWED_EXTENSIONS = new Set(['pdf', 'doc', 'docx', 'ppt', 'pptx', 'zip']);
 const MAX_FILE_SIZE = 30 * 1024 * 1024;
 const MIME_TYPES = {
@@ -21,12 +25,36 @@ const MIME_TYPES = {
   zip: 'application/zip',
 };
 
-const readableError = (error) => {
-  if (error?.message?.includes('Failed to fetch')) {
-    return 'Connexion à Supabase impossible. Vérifiez la configuration réseau du projet.';
+const readDocuments = () => {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch {
+    return [];
   }
-  return error?.message || 'Une erreur est survenue. Veuillez réessayer.';
 };
+
+const saveDocuments = (documents) => {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(documents));
+};
+
+const readSession = () => {
+  try {
+    const raw = localStorage.getItem(SESSION_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+};
+
+const readFileAsDataUrl = (file) => new Promise((resolve, reject) => {
+  const reader = new FileReader();
+  reader.onload = () => resolve(String(reader.result));
+  reader.onerror = () => reject(new Error('Impossible de lire le fichier local.'));
+  reader.readAsDataURL(file);
+});
+
+const readableError = (error) => error?.message || 'Une erreur est survenue. Veuillez réessayer.';
 
 export default function DocumentAdmin({ open, onClose }) {
   const { theme } = useApp();
@@ -46,84 +74,47 @@ export default function DocumentAdmin({ open, onClose }) {
   const selectedSection = SECTION_OPTIONS.find((option) => option.id === section);
 
   useEffect(() => {
-    if (!open || !supabase) return undefined;
-    let active = true;
-
-    supabase.auth.getSession().then(async ({ data, error }) => {
-      if (error) throw error;
-      if (!active || !data.session) return;
-      await verifyAdministrator(data.session.user, active);
-    }).catch((error) => {
-      if (active) setErrorMessage(readableError(error));
-    });
-
-    return () => {
-      active = false;
-    };
+    if (!open) return;
+    const session = readSession();
+    if (session) {
+      setUser(session);
+    }
+    setDocuments(readDocuments());
   }, [open]);
 
-  useEffect(() => {
-    if (!open || !user || !supabase) return undefined;
-    let active = true;
-
-    supabase
-      .from('documents')
-      .select('id, section, category, title, description, file_name, file_size, created_at, storage_path')
-      .order('created_at', { ascending: false })
-      .then(({ data, error }) => {
-        if (!active) return;
-        if (error) throw error;
-        setDocuments(data);
-      })
-      .catch((error) => {
-        if (active) setErrorMessage(readableError(error));
-      });
-
-    return () => {
-      active = false;
-    };
-  }, [open, user, successMessage]);
-
-  const verifyAdministrator = async (authUser, active = true) => {
-    const { data, error } = await supabase
-      .from('document_admins')
-      .select('user_id')
-      .eq('user_id', authUser.id)
-      .maybeSingle();
-
-    if (error) throw error;
-    if (!data) {
-      await supabase.auth.signOut();
-      if (active) {
-        setErrorMessage('Ce compte n’a pas les droits administrateur. Ajoutez son utilisateur à la liste des administrateurs Supabase.');
-      }
-      return false;
-    }
-
-    if (active) {
-      setUser(authUser);
-      setErrorMessage('');
-    }
-    return true;
-  };
-
   const signIn = async () => {
-    if (!supabase || !email.trim() || !password) {
+    if (!email.trim() || !password) {
       setErrorMessage('Saisissez votre adresse e-mail et votre mot de passe.');
+      return;
+    }
+
+    const normalizedEmail = email.trim().toLowerCase();
+    if (normalizedEmail !== ADMIN_EMAIL || password !== ADMIN_PASSWORD) {
+      setErrorMessage('Identifiants invalides. Vérifiez vos informations puis réessayez.');
       return;
     }
 
     setLoading(true);
     setErrorMessage('');
     setSuccessMessage('');
+
+    const session = { id: 'local-admin', email: ADMIN_EMAIL };
+    localStorage.setItem(SESSION_KEY, JSON.stringify(session));
+    setUser(session);
+    setPassword('');
+    setSuccessMessage('Connexion locale réussie.');
+    setLoading(false);
+  };
+
+  const signOut = async () => {
+    setLoading(true);
+    setErrorMessage('');
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email: email.trim(),
-        password,
-      });
-      if (error) throw error;
-      const isAdministrator = await verifyAdministrator(data.user);
-      if (isAdministrator) setPassword('');
+      localStorage.removeItem(SESSION_KEY);
+      setUser(null);
+      setDocuments(readDocuments());
+      setPassword('');
+      setSuccessMessage('Déconnexion locale réussie.');
     } catch (error) {
       setErrorMessage(readableError(error));
     } finally {
@@ -132,7 +123,7 @@ export default function DocumentAdmin({ open, onClose }) {
   };
 
   const uploadDocument = async () => {
-    if (!supabase || !user || !title.trim() || !file) {
+    if (!user || !title.trim() || !file) {
       setErrorMessage('Renseignez le titre et sélectionnez un document.');
       return;
     }
@@ -142,52 +133,44 @@ export default function DocumentAdmin({ open, onClose }) {
       setErrorMessage('Formats acceptés : PDF, DOC, DOCX, PPT, PPTX et ZIP.');
       return;
     }
+
     if (file.size === 0 || file.size > MAX_FILE_SIZE) {
       setErrorMessage('Le fichier doit peser entre 1 octet et 30 Mo.');
       return;
     }
 
-    const safeFileName = file.name.normalize('NFKD').replace(/[^\w.-]+/g, '-');
-    const storagePath = `${section}/${crypto.randomUUID()}-${safeFileName}`;
     setLoading(true);
     setErrorMessage('');
     setSuccessMessage('');
 
     try {
-      const { error: uploadError } = await supabase.storage
-        .from(DOCUMENT_BUCKET)
-        .upload(storagePath, file, {
-          cacheControl: '3600',
-          contentType: MIME_TYPES[extension],
-          upsert: false,
-        });
-      if (uploadError) throw uploadError;
-
-      const { error: insertError } = await supabase.from('documents').insert({
+      const dataUrl = await readFileAsDataUrl(file);
+      const safeFileName = file.name.normalize('NFKD').replace(/[^\w.-]+/g, '-');
+      const documentId = `local-${Date.now()}-${crypto.randomUUID()}`;
+      const entry = {
+        id: documentId,
         section,
         category,
         title: title.trim(),
         description: description.trim(),
-        storage_path: storagePath,
         file_name: file.name,
         file_size: file.size,
         content_type: MIME_TYPES[extension],
-        created_by: user.id,
-      });
-      if (insertError) {
-        const { error: cleanupError } = await supabase.storage
-          .from(DOCUMENT_BUCKET)
-          .remove([storagePath]);
-        if (cleanupError) {
-          throw new Error(`L’enregistrement a échoué et le fichier temporaire n’a pas pu être supprimé : ${insertError.message}`);
-        }
-        throw insertError;
-      }
+        created_at: new Date().toISOString(),
+        storage_path: `${section}/${documentId}-${safeFileName}`,
+        downloadUrl: dataUrl,
+        format: extension.toUpperCase(),
+        size: `${(file.size / (1024 * 1024)).toFixed(1)} Mo`,
+      };
 
+      const currentDocuments = readDocuments();
+      const nextDocuments = [entry, ...currentDocuments];
+      saveDocuments(nextDocuments);
+      setDocuments(nextDocuments);
       setTitle('');
       setDescription('');
       setFile(null);
-      setSuccessMessage('Document ajouté. Il sera visible dans la rubrique choisie après actualisation.');
+      setSuccessMessage('Document enregistré localement et disponible dans la rubrique choisie.');
       window.dispatchEvent(new CustomEvent('admin-documents-changed'));
     } catch (error) {
       setErrorMessage(readableError(error));
@@ -197,45 +180,18 @@ export default function DocumentAdmin({ open, onClose }) {
   };
 
   const deleteDocument = async (document) => {
-    if (!supabase || !window.confirm(`Supprimer « ${document.title} » ?`)) return;
+    if (!window.confirm(`Supprimer « ${document.title} » ?`)) return;
+
     setLoading(true);
     setErrorMessage('');
     setSuccessMessage('');
 
     try {
-      const { error: deleteError } = await supabase
-        .from('documents')
-        .delete()
-        .eq('id', document.id);
-      if (deleteError) throw deleteError;
-      setDocuments((currentDocuments) => currentDocuments.filter((item) => item.id !== document.id));
+      const currentDocuments = readDocuments().filter((item) => item.id !== document.id);
+      saveDocuments(currentDocuments);
+      setDocuments(currentDocuments);
       window.dispatchEvent(new CustomEvent('admin-documents-changed'));
-
-      const { error: storageError } = await supabase.storage
-        .from(DOCUMENT_BUCKET)
-        .remove([document.storage_path]);
-      if (storageError) {
-        throw new Error(`La fiche a été retirée, mais son fichier n’a pas pu être supprimé du stockage : ${storageError.message}`);
-      }
-      setSuccessMessage('Document supprimé.');
-    } catch (error) {
-      setErrorMessage(readableError(error));
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const signOut = async () => {
-    if (!supabase) return;
-    setLoading(true);
-    setErrorMessage('');
-    try {
-      const { error } = await supabase.auth.signOut();
-      if (error) throw error;
-      setUser(null);
-      setDocuments([]);
-      setPassword('');
-      setSuccessMessage('');
+      setSuccessMessage('Document supprimé de la mémoire locale.');
     } catch (error) {
       setErrorMessage(readableError(error));
     } finally {
@@ -270,19 +226,12 @@ export default function DocumentAdmin({ open, onClose }) {
           </TouchableOpacity>
         </View>
 
-        {!isSupabaseConfigured ? (
-          <View style={[styles.notice, { backgroundColor: theme.primaryGlow }]}>
-            <Text style={[styles.noticeTitle, { color: theme.text }]}>Configuration Supabase requise</Text>
-            <Text style={[styles.bodyText, { color: theme.textMuted }]}>
-              Renseignez VITE_SUPABASE_URL et VITE_SUPABASE_ANON_KEY dans le fichier .env, puis exécutez supabase/schema.sql dans l’éditeur SQL de votre projet Supabase.
-            </Text>
-          </View>
-        ) : !user ? (
+        {!user ? (
           <View className="admin-login-form">
             <View style={[styles.notice, { backgroundColor: theme.primaryGlow }]}>
               <LockKeyhole size={18} color={theme.primary} />
               <Text style={[styles.bodyText, { color: theme.textMuted }]}>
-                Accès réservé aux comptes autorisés dans Supabase.
+                Accès réservé. Connexion locale de démonstration active.
               </Text>
             </View>
             <TextInput
@@ -441,7 +390,11 @@ export default function DocumentAdmin({ open, onClose }) {
           </Text>
         )}
         {!!successMessage && (
-          <Text className="admin-success-message" style={[styles.successMessage, { color: theme.primary }]} accessibilityRole="status">
+          <Text
+            className="admin-success-message"
+            style={[styles.successMessage, { color: theme.primary, backgroundColor: `${theme.primary}12` }]}
+            accessibilityRole="status"
+          >
             {successMessage}
           </Text>
         )}
@@ -454,76 +407,154 @@ const styles = {
   overlay: {
     position: 'fixed',
     inset: 0,
-    zIndex: 11000,
+    zIndex: 1300,
+    backgroundColor: 'rgba(15, 23, 18, 0.42)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 16,
-    backgroundColor: 'rgba(12, 21, 16, 0.62)',
   },
   dialog: {
-    width: '100%',
-    maxWidth: 720,
-    maxHeight: '90vh',
+    width: 'min(900px, 100%)',
+    maxHeight: '86vh',
     overflowY: 'auto',
-    padding: 22,
-    borderRadius: 16,
+    borderRadius: 20,
     borderWidth: 1,
-    boxShadow: '0 24px 70px rgba(0,0,0,0.28)',
-    gap: 16,
+    padding: 20,
+    boxShadow: '0 18px 50px rgba(0, 0, 0, 0.18)',
   },
-  heading: { fontSize: 20, fontWeight: '800' },
-  subheading: { fontSize: 12, marginTop: 3 },
-  notice: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    gap: 10,
-    padding: 12,
-    borderRadius: 10,
+  heading: {
+    fontSize: 24,
+    fontWeight: '800',
+    letterSpacing: -0.4,
   },
-  noticeTitle: { fontSize: 14, fontWeight: '700' },
-  bodyText: { fontSize: 12, lineHeight: 18, flexShrink: 1 },
-  input: {
-    minHeight: 42,
-    paddingHorizontal: 12,
-    paddingVertical: 9,
-    borderWidth: 1,
-    borderRadius: 9,
+  subheading: {
     fontSize: 13,
-    outlineStyle: 'none',
+    marginTop: 2,
   },
-  descriptionInput: { minHeight: 68, textAlignVertical: 'top' },
-  primaryButton: {
-    minHeight: 40,
+  notice: {
+    padding: 12,
+    borderRadius: 12,
+    display: 'flex',
     flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    marginBottom: 12,
+  },
+  compactInfo: {
+    fontSize: 12,
+    marginBottom: 10,
+  },
+  bodyText: {
+    fontSize: 13,
+    lineHeight: 18,
+  },
+  input: {
+    width: '100%',
+    minHeight: 44,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    borderWidth: 1,
+    borderRadius: 10,
+    fontSize: 14,
+    marginBottom: 10,
+  },
+  descriptionInput: {
+    minHeight: 96,
+    textAlignVertical: 'top',
+  },
+  primaryButton: {
+    minHeight: 42,
+    borderRadius: 10,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 7,
-    paddingHorizontal: 14,
-    borderWidth: 0,
-    borderRadius: 9,
+    flexDirection: 'row',
+    gap: 8,
   },
-  primaryButtonText: { color: '#FFFFFF', fontSize: 13, fontWeight: '700' },
-  sectionHeading: { fontSize: 14, fontWeight: '800', marginBottom: 8 },
-  fieldLabel: { fontSize: 11, fontWeight: '700', marginBottom: 5 },
-  fieldHint: { fontSize: 11 },
-  uploadButton: { flexShrink: 0 },
-  documentRow: {
-    minHeight: 54,
+  primaryButtonText: {
+    color: '#FFFFFF',
+    fontWeight: '700',
+    fontSize: 13,
+  },
+  signOutButton: {
+    display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
+    gap: 6,
+    borderRadius: 8,
     paddingHorizontal: 10,
     paddingVertical: 8,
     borderWidth: 1,
-    borderRadius: 9,
+    borderColor: 'rgba(128,128,128,0.25)',
   },
-  documentCopy: { flex: 1, minWidth: 0, gap: 3 },
-  documentTitle: { fontSize: 12, fontWeight: '700' },
-  documentMeta: { fontSize: 10 },
-  deleteButton: { padding: 8 },
-  signOutButton: { flexDirection: 'row', alignItems: 'center', gap: 5 },
-  signOutText: { fontSize: 11, fontWeight: '600' },
-  errorMessage: { fontSize: 12, lineHeight: 18 },
-  successMessage: { fontSize: 12, lineHeight: 18, fontWeight: '600' },
+  signOutText: {
+    fontSize: 12,
+    fontWeight: '700',
+  },
+  sectionHeading: {
+    fontSize: 16,
+    fontWeight: '800',
+    marginBottom: 8,
+  },
+  fieldLabel: {
+    fontSize: 12,
+    marginBottom: 6,
+    fontWeight: '700',
+  },
+  fieldHint: {
+    fontSize: 11,
+    marginTop: 4,
+  },
+  errorMessage: {
+    marginTop: 12,
+    padding: 10,
+    borderRadius: 10,
+    fontSize: 12,
+    lineHeight: 18,
+  },
+  successMessage: {
+    marginTop: 12,
+    padding: 10,
+    borderRadius: 10,
+    fontSize: 12,
+    lineHeight: 18,
+  },
+  documentRow: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    borderWidth: 1,
+    borderRadius: 12,
+    padding: 10,
+    marginBottom: 8,
+  },
+  documentCopy: {
+    flex: 1,
+    minWidth: 0,
+  },
+  documentTitle: {
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  documentMeta: {
+    fontSize: 11,
+    marginTop: 4,
+  },
+  deleteButton: {
+    width: 34,
+    height: 34,
+    borderRadius: 9,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: 'rgba(128,128,128,0.25)',
+  },
+  uploadButton: {
+    flex: 0,
+  },
 };

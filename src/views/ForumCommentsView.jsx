@@ -109,7 +109,7 @@ export default function ForumCommentsView() {
           />
           <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX × UNCHK • COMMUNAUTÉ</Text>
         </View>
-        <Text style={[styles.pageTitle, { color: theme.text }]}>
+        <Text style={[styles.pageTitle, { color: theme.text }]} className="fluid-page-title">
           Communauté & Discussions Étudiantes
         </Text>
         <Text style={[styles.pageDesc, { color: theme.textMuted }]}>
@@ -201,12 +201,12 @@ export default function ForumCommentsView() {
                         {item.author.charAt(0).toUpperCase()}
                       </Text>
                     </View>
-                    <View>
-                      <Text style={[styles.commentAuthor, { color: theme.text }]}>{item.author}</Text>
+                    <View style={{ flex: 1, minWidth: 0 }}>
+                      <Text style={[styles.commentAuthor, { color: theme.text }]} numberOfLines={1}>{item.author}</Text>
                       <Text style={[styles.commentCycle, { color: theme.secondary }]}>{item.cycle}</Text>
                     </View>
                   </View>
-                  <Text style={[styles.commentDate, { color: theme.textDim }]}>{item.date}</Text>
+                  <Text style={[styles.commentDate, { color: theme.textDim, flexShrink: 0 }]}>{item.date}</Text>
                 </View>
 
                 <Text style={[styles.commentBody, { color: theme.textMuted }]}>{item.content}</Text>
@@ -256,20 +256,21 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 5,
     borderRadius: 20,
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    maxWidth: '100%',
   },
   headerBadgeText: {
     fontSize: 11,
     fontWeight: '700',
     letterSpacing: 0.5,
+    flexShrink: 1,
   },
   pageTitle: {
-    fontSize: 32,
+    fontSize: 26,
     fontWeight: '800',
     letterSpacing: -0.5,
     textAlign: 'center',
-    '@media (max-width: 640px)': {
-      fontSize: 24,
-    }
   },
   pageDesc: {
     fontSize: 15,
@@ -278,15 +279,14 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
   layoutCols: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 360px), 1fr))',
     gap: 30,
+    width: '100%',
   },
   formCard: {
-    flex: 1,
-    minWidth: 320,
-    maxWidth: 480,
-    padding: 24,
+    width: '100%',
+    padding: 20,
     borderRadius: 20,
     borderWidth: 1,
     gap: 16,
@@ -352,7 +352,8 @@ const styles = StyleSheet.create({
   },
   feedCol: {
     flex: 2,
-    minWidth: 320,
+    width: '100%',
+    minWidth: 0,
     gap: 16,
   },
   feedHeading: {
@@ -378,6 +379,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
+    flex: 1,
+    minWidth: 0,
   },
   avatarCircle: {
     width: 40,

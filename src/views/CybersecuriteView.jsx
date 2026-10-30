@@ -23,7 +23,7 @@ import {
 } from 'lucide-react';
 
 export default function CybersecuriteView() {
-  const { theme, triggerToast } = useApp();
+  const { theme, triggerToast, setActivePdfPreview } = useApp();
   const { documents: adminDocuments, error: adminDocumentsError } = useAdminDocuments('cybersecurity');
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
@@ -149,7 +149,7 @@ export default function CybersecuriteView() {
           <View style={styles.metricsRow}>
             <View style={[styles.metricCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
               <Terminal size={18} color={theme.primary} />
-              <View>
+              <View style={styles.metricTextCol}>
                 <Text style={[styles.metricVal, { color: theme.text }]}>Offensive & Defensive</Text>
                 <Text style={[styles.metricSub, { color: theme.textDim }]}>OWASP, Wireshark, Nmap, Kali</Text>
               </View>
@@ -157,7 +157,7 @@ export default function CybersecuriteView() {
 
             <View style={[styles.metricCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
               <GlobeLock size={18} color={theme.primary} />
-              <View>
+              <View style={styles.metricTextCol}>
                 <Text style={[styles.metricVal, { color: theme.text }]}>Conformité CDP</Text>
                 <Text style={[styles.metricSub, { color: theme.textDim }]}>Législation sénégalaise & RGPD</Text>
               </View>
@@ -165,7 +165,7 @@ export default function CybersecuriteView() {
 
             <View style={[styles.metricCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
               <Lock size={18} color={theme.secondary} />
-              <View>
+              <View style={styles.metricTextCol}>
                 <Text style={[styles.metricVal, { color: theme.text }]}>Cryptographie</Text>
                 <Text style={[styles.metricSub, { color: theme.textDim }]}>PKI, SSL/TLS, SHA & AES</Text>
               </View>
@@ -279,8 +279,20 @@ export default function CybersecuriteView() {
               )}
               <TouchableOpacity
                 style={[styles.docItemRow, { backgroundColor: theme.bgCard, borderColor: theme.border }]}
-                onPress={() => window.open(document.downloadUrl, '_blank', 'noopener,noreferrer')}
-                accessibilityRole="link"
+                onPress={() => {
+                  if (document.downloadUrl && (document.format === 'PDF' || document.downloadUrl.toLowerCase().endsWith('.pdf'))) {
+                    setActivePdfPreview({
+                      name: document.title,
+                      url: document.downloadUrl,
+                      ext: document.format || 'PDF',
+                      size: document.size
+                    });
+                  } else {
+                    window.open(document.downloadUrl, '_blank', 'noopener,noreferrer');
+                  }
+                }}
+                accessibilityRole="button"
+                accessibilityLabel={`Consulter ${document.title}`}
               >
                 <FileText size={15} color={theme.primary} />
                 <Text style={[styles.docItemName, { color: theme.text }]} numberOfLines={1}>
@@ -362,12 +374,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    paddingHorizontal: 16,
+    paddingHorizontal: 12,
     paddingVertical: 12,
     borderRadius: 14,
     borderWidth: 1,
     flex: 1,
-    minWidth: 220,
+    minWidth: 140,
+    maxWidth: '100%',
+  },
+  metricTextCol: {
+    flex: 1,
+    minWidth: 0,
   },
   metricVal: {
     fontSize: 14,
@@ -375,6 +392,7 @@ const styles = StyleSheet.create({
   },
   metricSub: {
     fontSize: 12,
+    lineHeight: 16,
   },
   filterSection: {
     gap: 14,
@@ -411,7 +429,7 @@ const styles = StyleSheet.create({
   },
   modulesGrid: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
     gap: 18,
   },
   moduleCard: {
@@ -481,11 +499,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 8,
     flex: 1,
+    minWidth: 0,
   },
   docItemName: {
     fontSize: 12,
     fontWeight: '600',
     flex: 1,
+    minWidth: 0,
   },
   docItemRight: {
     flexDirection: 'row',
@@ -525,7 +545,8 @@ const styles = StyleSheet.create({
   },
   uploadTextCol: {
     flex: 1,
-    minWidth: 260,
+    minWidth: 0,
+    width: '100%',
     gap: 4,
   },
   uploadTitle: {

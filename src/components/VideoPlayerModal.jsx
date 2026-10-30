@@ -7,6 +7,13 @@ export default function VideoPlayerModal() {
   const { activeVideo, setActiveVideo, theme, bookmarkedVideos, toggleBookmarkVideo, triggerToast } = useApp();
   const [note, setNote] = useState('');
   const [isWatched, setIsWatched] = useState(false);
+  const [isCompact, setIsCompact] = useState(typeof window !== 'undefined' ? window.innerWidth <= 640 : false);
+
+  useEffect(() => {
+    const handleResize = () => setIsCompact(window.innerWidth <= 640);
+    window.addEventListener('resize', handleResize, { passive: true });
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (activeVideo) {
@@ -219,6 +226,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 12,
     flex: 1,
+    minWidth: 0,
     marginRight: 12,
   },
   badgePill: {
@@ -226,6 +234,7 @@ const styles = StyleSheet.create({
     paddingVertical: 4,
     borderRadius: 20,
     borderWidth: 1,
+    flexShrink: 0,
   },
   badgeText: {
     fontSize: 12,
@@ -235,6 +244,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '700',
     flex: 1,
+    minWidth: 0,
   },
   closeBtn: {
     width: 34,

@@ -106,24 +106,52 @@ export default function LicenceView() {
   const filteredRealDocs = useMemo(() => {
     const q = searchFilter.trim().toLowerCase();
     return allRealDocsForCycle.filter((doc) => {
-      // Semester filter
       if (activeSemestre !== 'all' && doc.semestreName !== activeSemestre) {
         return false;
       }
-      // Document Category filter (cours vs td vs examen)
       if (docCategoryTab === 'cours' && doc.type !== 'Cours') return false;
       if (docCategoryTab === 'td' && doc.type !== 'Travaux Dirigés (TD/TP)') return false;
       if (docCategoryTab === 'examen' && !['Examen & Devoir', 'QCM & Évaluation', 'Mini-Projet'].includes(doc.type)) return false;
 
-      // Search query
       if (q) {
         const matchTitle = doc.name.toLowerCase().includes(q);
         const matchMod = doc.moduleName.toLowerCase().includes(q);
         return matchTitle || matchMod;
       }
       return true;
+    }).sort((a, b) => {
+      const semOrder = (a.semestreName || '').localeCompare(b.semestreName || '');
+      if (semOrder !== 0) return semOrder;
+      return (a.moduleName || '').localeCompare(b.moduleName || '');
     });
   }, [allRealDocsForCycle, activeSemestre, docCategoryTab, searchFilter]);
+
+  const groupedRealDocs = useMemo(() => {
+    const groups = {};
+
+    filteredRealDocs.forEach((doc) => {
+      const semestreKey = doc.semestreName || 'Autre';
+      const moduleKey = doc.moduleName || 'Autre';
+
+      if (!groups[semestreKey]) {
+        groups[semestreKey] = {};
+      }
+
+      if (!groups[semestreKey][moduleKey]) {
+        groups[semestreKey][moduleKey] = [];
+      }
+
+      groups[semestreKey][moduleKey].push(doc);
+    });
+
+    return Object.entries(groups).map(([semestreName, modules]) => ({
+      semestreName,
+      modules: Object.entries(modules).map(([moduleName, docs]) => ({
+        moduleName,
+        docs: docs.sort((a, b) => a.name.localeCompare(b.name))
+      }))
+    }));
+  }, [filteredRealDocs]);
 
   // Filter modules for Curriculum mode
   const filteredSemestres = useMemo(() => {
@@ -201,7 +229,7 @@ export default function LicenceView() {
             />
             <Text style={[styles.cycleTagText, { color: theme.primary }]}>SDBSNX × UNCHK • PROGRAMME ACADÉMIQUE</Text>
           </View>
-          <Text style={[styles.pageTitle, { color: theme.text }]}>
+          <Text style={[styles.pageTitle, { color: theme.text }]} className="fluid-page-title">
             {cycleData.fullName}
           </Text>
           <Text style={[styles.pageDesc, { color: theme.textMuted }]}>
@@ -236,25 +264,25 @@ export default function LicenceView() {
                 }}
                 activeOpacity={0.8}
               >
-                <Text 
-                  numberOfLines={1} 
+                <Text
+                  numberOfLines={1}
                   style={[
-                    styles.cycleTabLabel, 
-                    isMobile && styles.cycleTabLabelMobile, 
+                    styles.cycleTabLabel,
+                    isMobile && styles.cycleTabLabelMobile,
                     { color: isSelected ? '#FFFFFF' : theme.textMuted }
                   ]}
                 >
                   {isVerySmall ? key : (isMobile ? COURSES_DATA[key].cycle.replace('Licence', 'L.') : COURSES_DATA[key].cycle)}
                 </Text>
                 <View style={[
-                  styles.tabCountPill, 
+                  styles.tabCountPill,
                   isMobile && styles.tabCountPillMobile,
                   { backgroundColor: isSelected ? 'rgba(255,255,255,0.2)' : theme.bgCard }
                 ]}>
-                  <Text 
+                  <Text
                     numberOfLines={1}
                     style={[
-                      styles.tabCountText, 
+                      styles.tabCountText,
                       isMobile && styles.tabCountTextMobile,
                       { color: isSelected ? '#FFFFFF' : theme.textDim }
                     ]}
@@ -461,9 +489,10 @@ export default function LicenceView() {
                     <View
                       key={document.id}
                       style={{
-                        minWidth: 250,
+                        minWidth: 0,
                         maxWidth: 420,
                         flex: 1,
+                        width: '100%',
                         padding: 14,
                         borderRadius: 12,
                         borderWidth: 1,
@@ -650,7 +679,6 @@ export default function LicenceView() {
           ))}
         </View>
       ) : (
-        /* MODE 2: EXPLORATEUR DE DOCUMENTS RÉELS (530+) */
         <View style={styles.explorerWrapper}>
           <View style={styles.explorerSummaryRow}>
             <Text style={[styles.explorerSummaryText, { color: theme.textDim }]}>
@@ -677,85 +705,101 @@ export default function LicenceView() {
               </TouchableOpacity>
             </View>
           ) : (
-            <View style={styles.realDocsGrid}>
-              {filteredRealDocs.map((doc, i) => (
-                <View 
-                  key={i} 
-                  style={[styles.realDocCard, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}
-                >
-                  <View style={styles.realDocTopRow}>
-                    <View style={[
-                      styles.docTypeBadge, 
-                      { 
-                        backgroundColor: doc.type === 'Cours' 
-                          ? theme.primaryGlow
-                          : doc.type === 'Travaux Dirigés (TD/TP)' 
-                            ? theme.primaryGlow
-                            : theme.secondary + '22'
-                      }
-                    ]}>
-                      <Text style={[
-                        styles.docTypeBadgeText, 
-                        { 
-                          color: doc.type === 'Cours' 
-                            ? theme.primary
-                            : doc.type === 'Travaux Dirigés (TD/TP)' 
-                              ? theme.primary
-                              : theme.secondary
-                        }
-                      ]}>
-                        {doc.type}
+            <View style={styles.groupedExplorerContainer}>
+              {groupedRealDocs.map((semestre) => (
+                <View key={semestre.semestreName} style={[styles.semesterExplorerGroup, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
+                  <View style={[styles.semesterExplorerHeader, { borderBottomColor: theme.border }]}>
+                    <Layers size={16} color={theme.primary} />
+                    <Text style={[styles.semesterExplorerTitle, { color: theme.text }]}>{semestre.semestreName}</Text>
+                    <View style={[styles.semesterExplorerBadge, { backgroundColor: theme.primaryGlow }]}>
+                      <Text style={[styles.semesterExplorerBadgeText, { color: theme.primary }]}>
+                        {semestre.modules.reduce((sum, mod) => sum + mod.docs.length, 0)} fichiers
                       </Text>
                     </View>
-                    <View style={styles.extAndSizeRow}>
-                      <Text style={[styles.extLabel, { color: theme.primary }]}>{doc.ext}</Text>
-                      <Text style={[styles.sizeLabel, { color: theme.textDim }]}>• {doc.size}</Text>
-                    </View>
                   </View>
 
-                  <Text style={[styles.realDocTitle, { color: theme.text }]} numberOfLines={2}>
-                    {doc.name}
-                  </Text>
+                  <View style={styles.semesterModuleList}>
+                    {semestre.modules.map((module) => (
+                      <View key={`${semestre.semestreName}-${module.moduleName}`} style={styles.moduleExplorerBlock}>
+                        <Text style={[styles.moduleExplorerTitle, { color: theme.text }]}>{module.moduleName}</Text>
+                        <View style={styles.realDocsGrid}>
+                          {module.docs.map((doc, index) => (
+                            <View 
+                              key={`${semestre.semestreName}-${module.moduleName}-${doc.name}-${index}`} 
+                              style={[styles.realDocCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}
+                            >
+                              <View style={styles.realDocTopRow}>
+                                <View style={[
+                                  styles.docTypeBadge,
+                                  {
+                                    backgroundColor: doc.type === 'Cours'
+                                      ? theme.primaryGlow
+                                      : doc.type === 'Travaux Dirigés (TD/TP)'
+                                        ? theme.primaryGlow
+                                        : theme.secondary + '22'
+                                  }
+                                ]}>
+                                  <Text style={[
+                                    styles.docTypeBadgeText,
+                                    {
+                                      color: doc.type === 'Cours'
+                                        ? theme.primary
+                                        : doc.type === 'Travaux Dirigés (TD/TP)'
+                                          ? theme.primary
+                                          : theme.secondary
+                                    }
+                                  ]}>
+                                    {doc.type}
+                                  </Text>
+                                </View>
+                                <View style={styles.extAndSizeRow}>
+                                  <Text style={[styles.extLabel, { color: theme.primary }]}>{doc.ext}</Text>
+                                  <Text style={[styles.sizeLabel, { color: theme.textDim }]}>• {doc.size}</Text>
+                                </View>
+                              </View>
 
-                  <View style={styles.moduleMetaRow}>
-                    <BookOpen size={12} color={theme.textDim} />
-                    <Text style={[styles.realDocModuleText, { color: theme.textMuted }]} numberOfLines={1}>
-                      {doc.moduleName} ({doc.semestreName})
-                    </Text>
-                  </View>
+                              <Text style={[styles.realDocTitle, { color: theme.text }]} numberOfLines={2}>
+                                {doc.name}
+                              </Text>
 
-                  <View style={styles.realDocActionsRow}>
-                    <TouchableOpacity
-                      style={[styles.previewDocBtn, { backgroundColor: theme.primary }]}
-                      onPress={() => handleOpenPdfPreview(doc.name, doc.url, doc.ext, doc.size)}
-                      activeOpacity={0.8}
-                    >
-                      <Eye size={13} color="#FFFFFF" />
-                      <Text style={styles.previewDocBtnText}>Aperçu direct</Text>
-                    </TouchableOpacity>
+                              <View style={styles.realDocActionsRow}>
+                                <TouchableOpacity
+                                  style={[styles.previewDocBtn, { backgroundColor: theme.primary }]}
+                                  onPress={() => handleOpenPdfPreview(doc.name, doc.url, doc.ext, doc.size)}
+                                  activeOpacity={0.8}
+                                >
+                                  <Eye size={13} color="#FFFFFF" />
+                                  <Text style={styles.previewDocBtnText}>Aperçu</Text>
+                                </TouchableOpacity>
 
-                    <a
-                      href={doc.url}
-                      download
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        textDecoration: 'none',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        padding: '8px 12px',
-                        borderRadius: 10,
-                        backgroundColor: theme.bgCard,
-                        border: `1px solid ${theme.border}`,
-                        color: theme.text,
-                        fontSize: 12,
-                        fontWeight: 600
-                      }}
-                      title="Télécharger le fichier"
-                    >
-                      <Download size={13} color={theme.text} />
-                    </a>
+                                <a
+                                  href={doc.url}
+                                  download
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style={{
+                                    textDecoration: 'none',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    padding: '8px 12px',
+                                    borderRadius: 10,
+                                    backgroundColor: theme.bgElevated,
+                                    border: `1px solid ${theme.border}`,
+                                    color: theme.text,
+                                    fontSize: 12,
+                                    fontWeight: 600
+                                  }}
+                                  title="Télécharger le fichier"
+                                >
+                                  <Download size={13} color={theme.text} />
+                                </a>
+                              </View>
+                            </View>
+                          ))}
+                        </View>
+                      </View>
+                    ))}
                   </View>
                 </View>
               ))}
@@ -799,7 +843,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0.5,
   },
   pageTitle: {
-    fontSize: 32,
+    fontSize: 26,
     fontWeight: '900',
     letterSpacing: -0.5,
     textAlign: 'center',
@@ -830,9 +874,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 8,
-    paddingVertical: 12,
+    gap: 6,
+    paddingVertical: 10,
+    paddingHorizontal: 6,
     borderRadius: 12,
+    minWidth: 0,
   },
   cycleTabBtnMobile: {
     paddingVertical: 9,
@@ -947,10 +993,12 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 12,
     borderWidth: 1,
+    maxWidth: '100%',
   },
   modeBtnText: {
     fontSize: 13,
     fontWeight: '700',
+    flexShrink: 1,
   },
   toolbarRow: {
     flexDirection: 'row',
@@ -963,7 +1011,7 @@ const styles = StyleSheet.create({
   },
   searchBox: {
     flex: 1,
-    minWidth: 260,
+    minWidth: 0,
     maxWidth: 480,
     flexDirection: 'row',
     alignItems: 'center',
@@ -972,6 +1020,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 12,
     borderWidth: 1,
+    width: '100%',
   },
   searchInput: {
     flex: 1,
@@ -1002,16 +1051,18 @@ const styles = StyleSheet.create({
   semestreHeader: {
     flexDirection: 'row',
     alignItems: 'center',
+    flexWrap: 'wrap',
     gap: 12,
-    paddingHorizontal: 18,
-    paddingVertical: 14,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
     borderRadius: 14,
     borderWidth: 1,
   },
   semestreTitle: {
-    fontSize: 17,
+    fontSize: 15,
     fontWeight: '800',
     flex: 1,
+    minWidth: 0,
   },
   moduleCountBadge: {
     paddingHorizontal: 10,
@@ -1028,14 +1079,13 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   modulesGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 340px), 1fr))',
     gap: 20,
+    width: '100%',
   },
   moduleCard: {
-    flex: 1,
-    minWidth: 320,
-    maxWidth: 420,
+    width: '100%',
     borderRadius: 18,
     borderWidth: 1,
     overflow: 'hidden',
@@ -1080,9 +1130,11 @@ const styles = StyleSheet.create({
   },
   checkboxBtn: {
     padding: 2,
+    flexShrink: 0,
   },
   lessonTitleCol: {
     flex: 1,
+    minWidth: 0,
     gap: 2,
   },
   lessonTitle: {
@@ -1102,10 +1154,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 6,
+    flexShrink: 0,
   },
   smallActionBtn: {
-    width: 28,
-    height: 28,
+    width: 32,
+    height: 32,
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
@@ -1123,16 +1176,57 @@ const styles = StyleSheet.create({
   explorerSummaryText: {
     fontSize: 13,
   },
-  realDocsGrid: {
+  groupedExplorerContainer: {
+    gap: 18,
+  },
+  semesterExplorerGroup: {
+    borderWidth: 1,
+    borderRadius: 18,
+    overflow: 'hidden',
+  },
+  semesterExplorerHeader: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
+    alignItems: 'center',
+    gap: 10,
+    paddingHorizontal: 18,
+    paddingVertical: 14,
+    borderBottomWidth: 1,
+  },
+  semesterExplorerTitle: {
+    fontSize: 15,
+    fontWeight: '800',
+    flex: 1,
+    minWidth: 0,
+  },
+  semesterExplorerBadge: {
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 10,
+  },
+  semesterExplorerBadgeText: {
+    fontSize: 11,
+    fontWeight: '700',
+  },
+  semesterModuleList: {
+    padding: 16,
+    gap: 18,
+  },
+  moduleExplorerBlock: {
+    gap: 10,
+  },
+  moduleExplorerTitle: {
+    fontSize: 14,
+    fontWeight: '800',
+  },
+  realDocsGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))',
     gap: 16,
+    width: '100%',
   },
   realDocCard: {
-    flex: 1,
-    minWidth: 280,
-    maxWidth: 360,
-    padding: 18,
+    width: '100%',
+    padding: 16,
     borderRadius: 16,
     borderWidth: 1,
     gap: 10,

@@ -15,7 +15,16 @@ export default function BottomTabBar() {
   ];
 
   return (
-    <View style={[styles.bottomBarWrapper, { backgroundColor: theme.glassNav, borderTopColor: theme.border }]}>
+    <View 
+      className="bottom-tab-bar"
+      style={[
+        styles.bottomBarWrapper, 
+        { 
+          backgroundColor: theme.glassNav, 
+          borderTopColor: theme.border 
+        }
+      ]}
+    >
       <View style={styles.tabsRow}>
         {tabs.map((tab) => {
           const isActive = currentTab === tab.id;
@@ -51,20 +60,8 @@ export default function BottomTabBar() {
 
 const styles = StyleSheet.create({
   bottomBarWrapper: {
-    display: 'none',
-    '@media (max-width: 960px)': {
-      display: 'flex',
-    },
-    position: 'fixed',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    borderTopWidth: 1,
-    backdropFilter: 'blur(20px)',
-    WebkitBackdropFilter: 'blur(20px)',
-    zIndex: 990,
-    paddingBottom: 'env(safe-area-inset-bottom, 8px)',
-    paddingTop: 6,
+    width: '100%',
+    maxWidth: '100vw',
   },
   tabsRow: {
     flexDirection: 'row',

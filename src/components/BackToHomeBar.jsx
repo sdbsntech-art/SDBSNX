@@ -17,16 +17,14 @@ export default function BackToHomeBar({ currentPageTitle, breadcrumbCategory }) 
   return (
     <View style={styles.barWrap}>
       <View style={[
-        styles.innerContainer, 
+        styles.innerContainer,
         { backgroundColor: theme.bgElevated, borderColor: theme.border },
         isMobile && styles.innerContainerMobile
       ]}>
-        {/* Top line on mobile / Left group on desktop */}
         <View style={[styles.topRow, isMobile && styles.topRowMobile]}>
-          {/* Back to Home Main Button */}
           <TouchableOpacity
             style={[
-              styles.backBtn, 
+              styles.backBtn,
               { backgroundColor: theme.primaryGlow, borderColor: theme.borderHover },
               isMobile && styles.backBtnMobile
             ]}
@@ -40,14 +38,12 @@ export default function BackToHomeBar({ currentPageTitle, breadcrumbCategory }) 
             </Text>
           </TouchableOpacity>
 
-          {/* Academic tag (visible alongside back button on mobile) */}
           <View style={[styles.academicPill, { backgroundColor: theme.bgCard }]}>
             <Sparkles size={11} color={theme.accent} />
             <Text style={[styles.academicPillText, { color: theme.textMuted }]}>SDBSNX • IDA</Text>
           </View>
         </View>
 
-        {/* Breadcrumb Trail */}
         <View style={[styles.breadcrumbsRow, isMobile && styles.breadcrumbsRowMobile]} className="breadcrumb-trail">
           <TouchableOpacity onPress={handleBackToHome} style={styles.crumbItem} className="breadcrumb-home">
             <Text style={[styles.crumbTextMuted, { color: theme.textDim }]}>Accueil</Text>
@@ -57,9 +53,9 @@ export default function BackToHomeBar({ currentPageTitle, breadcrumbCategory }) 
 
           {breadcrumbCategory && (
             <>
-              <Text 
-                style={[styles.crumbTextMuted, styles.crumbCategory, { color: theme.textDim }]} 
-                numberOfLines={1} 
+              <Text
+                style={[styles.crumbTextMuted, styles.crumbCategory, { color: theme.textDim }]}
+                numberOfLines={1}
                 className="breadcrumb-category"
               >
                 {breadcrumbCategory}
@@ -68,9 +64,9 @@ export default function BackToHomeBar({ currentPageTitle, breadcrumbCategory }) 
             </>
           )}
 
-          <Text 
-            style={[styles.crumbTextActive, { color: theme.text }]} 
-            numberOfLines={isMobile ? 1 : 2} 
+          <Text
+            style={[styles.crumbTextActive, { color: theme.text }]}
+            numberOfLines={isMobile ? 1 : 2}
             className="breadcrumb-active"
           >
             {currentPageTitle || 'Page'}
@@ -142,6 +138,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 6,
     minWidth: 0,
+    flexShrink: 1,
   },
   breadcrumbsRowMobile: {
     width: '100%',

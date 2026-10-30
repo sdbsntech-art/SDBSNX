@@ -25,7 +25,8 @@ import {
   ShieldCheck,
   FileText,
   Shield,
-  Rocket
+  Rocket,
+  Briefcase
 } from 'lucide-react';
 
 export default function HomeView() {
@@ -50,6 +51,21 @@ export default function HomeView() {
     { id: 'angular', title: 'Angular Enterprise', desc: 'Applications d\'entreprise robustes avec TypeScript et RxJS.', icon: Award, color: theme.primary, vidCount: 11 }
   ];
 
+  const revisionTracks = [
+    { semester: 'Semestre 1', focus: 'Maths, langage, bases du web', badge: 'S1', color: theme.primary },
+    { semester: 'Semestre 2', focus: 'Algorithmique, C, réseaux de base', badge: 'S2', color: theme.secondary },
+    { semester: 'Semestre 3', focus: 'Programmation avancée et bases de données', badge: 'S3', color: theme.accent },
+    { semester: 'Semestre 4', focus: 'JavaScript, PHP, sécurité web', badge: 'S4', color: theme.emerald },
+    { semester: 'Semestre 5', focus: 'Architecture, IA, projets tutorés', badge: 'S5', color: theme.primary },
+    { semester: 'Semestre 6', focus: 'Stage, mémoire, cybersécurité & carrière', badge: 'S6', color: theme.secondary },
+  ];
+
+  const opportunityFeed = [
+    { title: 'Appels à projets', text: 'Stagiaires et étudiants actifs : opportunités de projets startups, hackathons et défis technologiques.', icon: Rocket },
+    { title: 'Formations certifiantes', text: 'Certifications FORCE-N, cybersécurité, gestion de projet et entrepreneuriat numérique.', icon: Award },
+    { title: 'Révisions de semestre', text: 'Sujets clés, annales, fiches de synthèse et plan de révision par niveau.', icon: BookOpen },
+  ];
+
   return (
     <View style={styles.container}>
       {/* 1. Hero Section - Ultra Chic & Welcoming */}
@@ -59,18 +75,18 @@ export default function HomeView() {
         <View style={[styles.glowOrbSecondary, { backgroundColor: theme.secondary }]} />
 
         <View style={styles.heroContent}>
-          {/* Dual SDBSNX & UNCHK Academic Partnership Showcase */}
+          {/* Tri-Emblem Showcase: SDBSNX, UNCHK & FORCE-N */}
           <View style={styles.dualEmblemPill}>
             <img 
               src="/sdbsnx-logo.png" 
               alt="SDBSNX - CODE • TECH • IMPACT" 
               style={{
-                height: 42,
+                height: 38,
                 width: 'auto',
                 objectFit: 'contain',
                 borderRadius: 8,
                 background: '#FFFFFF',
-                padding: '3px 8px',
+                padding: '2px 7px',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
               }} 
             />
@@ -79,12 +95,26 @@ export default function HomeView() {
               src="/unchk-uvs-logo.png" 
               alt="Université Numérique Cheikh Hamidou Kane (ex UVS)" 
               style={{
-                height: 42,
+                height: 38,
                 width: 'auto',
                 objectFit: 'contain',
                 borderRadius: 8,
                 background: '#FFFFFF',
-                padding: '3px 8px',
+                padding: '2px 7px',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
+              }} 
+            />
+            <View style={[styles.emblemDivider, { backgroundColor: theme.border }]} />
+            <img 
+              src="/force-n-logo.png" 
+              alt="FORCE-N • Université Numérique Cheikh Hamidou Kane" 
+              style={{
+                height: 38,
+                width: 'auto',
+                objectFit: 'contain',
+                borderRadius: 8,
+                background: '#FFFFFF',
+                padding: '2px 7px',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
               }} 
             />
@@ -100,7 +130,7 @@ export default function HomeView() {
           </View>
 
           {/* Headline */}
-          <Text style={[styles.heroHeading, { color: theme.text }]}>
+          <Text style={[styles.heroHeading, { color: theme.text }]} className="fluid-hero-title">
             L'Excellence en{' '}
             <Text style={{ color: theme.primary }}>Informatique</Text> &{' '}
             <Text style={{ color: theme.primary }}>Développement Web</Text>
@@ -145,22 +175,22 @@ export default function HomeView() {
           </View>
 
           {/* Stats Bar */}
-          <View style={[styles.statsGrid, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+          <View style={[styles.statsGrid, { backgroundColor: theme.bgCard, borderColor: theme.border }]} className="mobile-stats-grid">
             <View style={styles.statItem}>
               <Text style={[styles.statNumber, { color: theme.primary }]}>530+</Text>
-              <Text style={[styles.statLabel, { color: theme.textMuted }]}>Supports & Cours Réels</Text>
+              <Text style={[styles.statLabel, { color: theme.textMuted }]}>Supports & Cours</Text>
             </View>
-            <View style={[styles.statDivider, { backgroundColor: theme.border }]} />
+            <View style={[styles.statDivider, { backgroundColor: theme.border }]} className="mobile-hide-divider" />
             <View style={styles.statItem}>
               <Text style={[styles.statNumber, { color: theme.primary }]}>123</Text>
-              <Text style={[styles.statLabel, { color: theme.textMuted }]}>Tutoriels Vidéos HD</Text>
+              <Text style={[styles.statLabel, { color: theme.textMuted }]}>Tutoriels Vidéos</Text>
             </View>
-            <View style={[styles.statDivider, { backgroundColor: theme.border }]} />
+            <View style={[styles.statDivider, { backgroundColor: theme.border }]} className="mobile-hide-divider" />
             <View style={styles.statItem}>
               <Text style={[styles.statNumber, { color: theme.accent }]}>3 Niveaux</Text>
               <Text style={[styles.statLabel, { color: theme.textMuted }]}>Licence 1 • L2 • L3</Text>
             </View>
-            <View style={[styles.statDivider, { backgroundColor: theme.border }]} />
+            <View style={[styles.statDivider, { backgroundColor: theme.border }]} className="mobile-hide-divider" />
             <View style={styles.statItem}>
               <Text style={[styles.statNumber, { color: theme.emerald }]}>100%</Text>
               <Text style={[styles.statLabel, { color: theme.textMuted }]}>Libre & Ouvert</Text>
@@ -274,7 +304,7 @@ export default function HomeView() {
           </Text>
         </View>
 
-        <View style={styles.cyclesGrid}>
+        <View style={styles.cyclesGrid} className="cycles-responsive-grid">
           {[
             { key: 'L1', docCount: '170 documents', color: theme.primary, label: 'L1 • Fondations & Web' },
             { key: 'L2', docCount: '333 documents', color: theme.secondary, label: 'L2 • Backend & Mobile' },
@@ -286,6 +316,7 @@ export default function HomeView() {
             return (
               <View 
                 key={cycleKey} 
+                className="responsive-card"
                 style={[
                   styles.cycleCard, 
                   { backgroundColor: theme.bgElevated, borderColor: theme.border }
@@ -424,7 +455,55 @@ export default function HomeView() {
         </View>
       </View>
 
-      {/* 4. Technologies & Vidéothèque Phares */}
+      {/* 4. Révisions & Opportunités */}
+      <View style={styles.sectionWrap}>
+        <View style={styles.sectionHeader}>
+          <View style={[styles.secTag, { backgroundColor: theme.primaryGlow }]}>
+            <CheckCircle2 size={15} color={theme.primary} />
+            <Text style={[styles.secTagText, { color: theme.primary }]}>RÉVISIONS • OPPORTUNITÉS • FORMATION</Text>
+          </View>
+          <Text style={[styles.sectionTitle, { color: theme.text }]}>Préparez vos semestres avec un plan clair</Text>
+          <Text style={[styles.sectionSubtitle, { color: theme.textMuted }]}>
+            Structures de cours, révisions de semestre, formations certifiantes FORCE-N et alertes d’opportunités pour l’insertion professionnelle.
+          </Text>
+        </View>
+
+        <View style={styles.opportunityGrid}>
+          {opportunityFeed.map(({ title, text, icon: Icon }) => (
+            <View key={title} style={[styles.opportunityCard, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
+              <View style={[styles.forceNIconCircle, { backgroundColor: theme.primaryGlow }]}>
+                <Icon size={18} color={theme.primary} />
+              </View>
+              <Text style={[styles.pillarTitle, { color: theme.text }]}>{title}</Text>
+              <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>{text}</Text>
+            </View>
+          ))}
+        </View>
+
+        <View style={styles.revisionGrid}>
+          {revisionTracks.map(({ semester, focus, badge, color }) => (
+            <View key={semester} style={[styles.revisionCard, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
+              <View style={[styles.revisionBadge, { backgroundColor: `${color}22`, borderColor: color }]}>
+                <Text style={[styles.revisionBadgeText, { color }]}>{badge}</Text>
+              </View>
+              <Text style={[styles.revisionTitle, { color: theme.text }]}>{semester}</Text>
+              <Text style={[styles.revisionFocus, { color: theme.textMuted }]}>{focus}</Text>
+              <TouchableOpacity
+                style={[styles.revisionCta, { backgroundColor: color }]}
+                onPress={() => navigateToLicence(
+                  semester === 'Semestre 1' || semester === 'Semestre 2' ? 'L1' :
+                  semester === 'Semestre 3' || semester === 'Semestre 4' ? 'L2' : 'L3'
+                )}
+                activeOpacity={0.8}
+              >
+                <Text style={styles.revisionCtaText}>Voir les cours</Text>
+              </TouchableOpacity>
+            </View>
+          ))}
+        </View>
+      </View>
+
+      {/* 5. Technologies & Vidéothèque Phares */}
       <View style={styles.sectionWrap}>
         <View style={styles.sectionHeader}>
           <View style={[styles.secTag, { backgroundColor: theme.secondary + '22' }]}>
@@ -499,6 +578,103 @@ export default function HomeView() {
                 <CheckCircle2 size={16} color={theme.emerald} />
                 <Text style={[styles.pointText, { color: theme.text }]}>Espaces Numériques Ouverts (ENO) dans toutes les régions</Text>
               </View>
+            </View>
+          </View>
+        </View>
+      </View>
+
+      {/* 5.bis FORCE-N Certification & Career Acceleration Showcase */}
+      <View style={styles.sectionWrap}>
+        <View style={[styles.forceNCard, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
+          <View style={styles.forceNHeaderRow}>
+            <View style={styles.forceNLogoBadge}>
+              <img 
+                src="/force-n-logo.png" 
+                alt="FORCE-N • Université Numérique Cheikh Hamidou Kane" 
+                style={{
+                  height: 48,
+                  width: 'auto',
+                  objectFit: 'contain',
+                  borderRadius: 10,
+                  background: '#FFFFFF',
+                  padding: '3px 10px',
+                  boxShadow: '0 2px 10px rgba(0,0,0,0.08)'
+                }} 
+              />
+            </View>
+            <View style={[styles.forceNTag, { backgroundColor: theme.primaryGlow }]}>
+              <Award size={14} color={theme.primary} />
+              <Text style={[styles.forceNTagText, { color: theme.primary }]}>PROGRAMME NATIONAL DE FORMATION & EMPLOI</Text>
+            </View>
+          </View>
+
+          <Text style={[styles.forceNTitle, { color: theme.text }]}>
+            FORCE-N : Formations Certifiantes & Insertion Professionnelle
+          </Text>
+
+          <Text style={[styles.forceNDesc, { color: theme.textMuted }]}>
+            Initié par l'<Text style={{ fontWeight: '700', color: theme.text }}>Université Numérique Cheikh Hamidou Kane (UNCHK)</Text> avec l'appui de la <Text style={{ fontWeight: '700', color: theme.text }}>Fondation Mastercard</Text>, le programme <Text style={{ fontWeight: '700', color: theme.primary }}>FORCE-N</Text> offre aux étudiants et professionnels des opportunités exceptionnelles d'acquérir des compétences numériques de pointe, d'obtenir des certifications internationales reconnues et de faciliter leur insertion professionnelle et entrepreneuriale.
+          </Text>
+
+          {/* 4 Feature Pillars Grid */}
+          <View style={styles.forceNPillarsGrid}>
+            <View style={[styles.forceNPillarItem, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+              <View style={[styles.forceNIconCircle, { backgroundColor: theme.primaryGlow }]}>
+                <Award size={18} color={theme.primary} />
+              </View>
+              <Text style={[styles.pillarTitle, { color: theme.text }]}>Certifications Métiers</Text>
+              <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>
+                Parcours certifiants en Développement Web/Mobile, IA, Cloud, Cybersécurité et Marketing Digital.
+              </Text>
+            </View>
+
+            <View style={[styles.forceNPillarItem, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+              <View style={[styles.forceNIconCircle, { backgroundColor: theme.secondary + '22' }]}>
+                <Briefcase size={18} color={theme.secondary} />
+              </View>
+              <Text style={[styles.pillarTitle, { color: theme.text }]}>Insertion & Emploi</Text>
+              <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>
+                Accompagnement personnalisé vers le marché du travail, préparation aux entretiens et accès direct aux stages.
+              </Text>
+            </View>
+
+            <View style={[styles.forceNPillarItem, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+              <View style={[styles.forceNIconCircle, { backgroundColor: theme.accent + '22' }]}>
+                <Rocket size={18} color={theme.accent} />
+              </View>
+              <Text style={[styles.pillarTitle, { color: theme.text }]}>Entrepreneuriat Tech</Text>
+              <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>
+                Coaching pour transformer vos idées en startups viables et orientation vers les guichets de financement.
+              </Text>
+            </View>
+
+            <View style={[styles.forceNPillarItem, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+              <View style={[styles.forceNIconCircle, { backgroundColor: theme.emerald + '22' }]}>
+                <GraduationCap size={18} color={theme.emerald} />
+              </View>
+              <Text style={[styles.pillarTitle, { color: theme.text }]}>100% Gratuit & Ouvert</Text>
+              <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>
+                Dispositif national accessible à tous les jeunes et professionnels en quête d'excellence numérique.
+              </Text>
+            </View>
+          </View>
+
+          {/* Action Row */}
+          <View style={styles.forceNActionRow}>
+            <TouchableOpacity
+              style={[styles.forceNBtn, { backgroundColor: theme.primary }]}
+              onPress={() => window.open('https://force-n.sn', '_blank')}
+              activeOpacity={0.8}
+            >
+              <Text style={styles.forceNBtnText}>Rejoindre le programme FORCE-N</Text>
+              <ExternalLink size={16} color="#FFFFFF" />
+            </TouchableOpacity>
+
+            <View style={styles.forceNMetaNote}>
+              <CheckCircle2 size={16} color={theme.emerald} />
+              <Text style={[styles.forceNMetaText, { color: theme.textMuted }]}>
+                Inscriptions ouvertes • Certifications gratuites UNCHK & Fondation Mastercard
+              </Text>
             </View>
           </View>
         </View>
@@ -600,7 +776,9 @@ const styles = StyleSheet.create({
   dualEmblemPill: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    gap: 10,
     marginBottom: 20,
     paddingHorizontal: 12,
     paddingVertical: 6,
@@ -635,16 +813,16 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
   heroHeading: {
-    fontSize: 44,
-    lineHeight: 52,
+    fontSize: 32,
+    lineHeight: 40,
     fontWeight: '900',
     marginBottom: 20,
     textAlign: 'center',
     letterSpacing: -1,
   },
   heroSubtitle: {
-    fontSize: 17,
-    lineHeight: 28,
+    fontSize: 15,
+    lineHeight: 24,
     maxWidth: 780,
     marginBottom: 32,
     textAlign: 'center',
@@ -660,41 +838,50 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
-    paddingHorizontal: 22,
+    paddingHorizontal: 20,
     paddingVertical: 14,
     borderRadius: 14,
     boxShadow: '0 8px 24px rgba(30, 91, 69, 0.24)',
+    maxWidth: '100%',
   },
   btnPrimaryText: {
     color: '#FFFFFF',
     fontSize: 15,
     fontWeight: '700',
+    flexShrink: 1,
+    textAlign: 'center',
   },
   btnSecondary: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
-    paddingHorizontal: 20,
+    paddingHorizontal: 18,
     paddingVertical: 14,
     borderRadius: 14,
     borderWidth: 1,
+    maxWidth: '100%',
   },
   btnSecondaryText: {
     fontSize: 14,
     fontWeight: '600',
+    flexShrink: 1,
+    textAlign: 'center',
   },
   btnPwaHero: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
-    paddingHorizontal: 18,
+    paddingHorizontal: 16,
     paddingVertical: 14,
     borderRadius: 14,
     borderWidth: 1,
+    maxWidth: '100%',
   },
   btnPwaText: {
     fontSize: 14,
     fontWeight: '700',
+    flexShrink: 1,
+    textAlign: 'center',
   },
   statsGrid: {
     flexDirection: 'row',
@@ -759,7 +946,7 @@ const styles = StyleSheet.create({
   },
   grafikartBannerCard: {
     position: 'relative',
-    padding: 34,
+    padding: 22,
     borderRadius: 24,
     borderWidth: 1.5,
     boxShadow: '0 18px 45px rgba(30, 91, 69, 0.12)',
@@ -811,9 +998,10 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   grafikartTitle: {
-    fontSize: 26,
+    fontSize: 22,
     fontWeight: '900',
     letterSpacing: -0.5,
+    lineHeight: 30,
   },
   quoteBox: {
     padding: 20,
@@ -834,19 +1022,19 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
   grafikartLinksGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
     gap: 16,
     marginTop: 6,
+    width: '100%',
   },
   grafikartLinkCard: {
-    flex: 1,
-    minWidth: 280,
-    padding: 20,
+    width: '100%',
+    padding: 16,
     borderRadius: 18,
     borderWidth: 1,
     flexDirection: 'row',
-    gap: 16,
+    gap: 12,
     alignItems: 'flex-start',
     boxShadow: '0 4px 15px rgba(0, 0, 0, 0.05)',
   },
@@ -915,7 +1103,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0.5,
   },
   sectionTitle: {
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: '800',
     marginBottom: 8,
     textAlign: 'center',
@@ -928,20 +1116,19 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
   cyclesGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 24,
-    justifyContent: 'center',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))',
+    gap: 20,
+    width: '100%',
   },
   cycleCard: {
-    flex: 1,
-    minWidth: 280,
-    maxWidth: 380,
-    padding: 24,
+    padding: 20,
     borderRadius: 20,
     borderWidth: 1,
     gap: 14,
     boxShadow: '0 8px 30px rgba(0, 0, 0, 0.08)',
+    width: '100%',
+    boxSizing: 'border-box',
   },
   cycleBadge: {
     alignSelf: 'flex-start',
@@ -992,16 +1179,14 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   techGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))',
     gap: 18,
-    justifyContent: 'center',
+    width: '100%',
   },
   techCard: {
-    flex: 1,
-    minWidth: 260,
-    maxWidth: 360,
-    padding: 20,
+    width: '100%',
+    padding: 18,
     borderRadius: 18,
     borderWidth: 1,
     gap: 10,
@@ -1051,7 +1236,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   unchkCard: {
-    padding: 36,
+    padding: 20,
     borderRadius: 24,
     borderWidth: 1,
     boxShadow: '0 15px 40px rgba(0, 0, 0, 0.1)',
@@ -1074,7 +1259,7 @@ const styles = StyleSheet.create({
     fontWeight: '800',
   },
   unchkTitle: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: '800',
     letterSpacing: -0.5,
   },
@@ -1095,17 +1280,179 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: '600',
   },
-  formateursGrid: {
+  forceNCard: {
+    padding: 24,
+    borderRadius: 24,
+    borderWidth: 1,
+    gap: 16,
+    boxShadow: '0 15px 40px rgba(0, 0, 0, 0.08)',
+    width: '100%',
+  },
+  forceNHeaderRow: {
     flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     flexWrap: 'wrap',
-    gap: 20,
+    gap: 12,
+  },
+  forceNLogoBadge: {
+    alignSelf: 'flex-start',
+  },
+  forceNTag: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    paddingHorizontal: 12,
+    paddingVertical: 5,
+    borderRadius: 20,
+  },
+  forceNTagText: {
+    fontSize: 11,
+    fontWeight: '800',
+    letterSpacing: 0.4,
+  },
+  forceNTitle: {
+    fontSize: 22,
+    fontWeight: '800',
+    letterSpacing: -0.5,
+    lineHeight: 28,
+  },
+  forceNDesc: {
+    fontSize: 14,
+    lineHeight: 23,
+    maxWidth: 880,
+  },
+  forceNPillarsGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 250px), 1fr))',
+    gap: 16,
+    marginTop: 6,
+    width: '100%',
+  },
+  forceNPillarItem: {
+    padding: 18,
+    borderRadius: 16,
+    borderWidth: 1,
+    gap: 10,
+    width: '100%',
+  },
+  forceNIconCircle: {
+    width: 36,
+    height: 36,
+    borderRadius: 10,
+    alignItems: 'center',
     justifyContent: 'center',
   },
+  pillarTitle: {
+    fontSize: 15,
+    fontWeight: '800',
+  },
+  pillarDesc: {
+    fontSize: 13,
+    lineHeight: 19,
+  },
+  forceNActionRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    flexWrap: 'wrap',
+    gap: 14,
+    marginTop: 8,
+    paddingTop: 16,
+    borderTopWidth: 1,
+    borderTopColor: 'rgba(255, 255, 255, 0.08)',
+  },
+  forceNBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+    paddingHorizontal: 20,
+    paddingVertical: 13,
+    borderRadius: 14,
+  },
+  forceNBtnText: {
+    color: '#FFFFFF',
+    fontSize: 14,
+    fontWeight: '700',
+  },
+  forceNMetaNote: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  forceNMetaText: {
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  opportunityGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))',
+    gap: 16,
+    marginBottom: 26,
+    width: '100%',
+  },
+  opportunityCard: {
+    padding: 18,
+    borderRadius: 18,
+    borderWidth: 1,
+    gap: 10,
+    width: '100%',
+  },
+  revisionGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 180px), 1fr))',
+    gap: 16,
+    width: '100%',
+  },
+  revisionCard: {
+    width: '100%',
+    padding: 16,
+    borderRadius: 18,
+    borderWidth: 1,
+    gap: 10,
+    boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)',
+  },
+  revisionBadge: {
+    alignSelf: 'flex-start',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 10,
+    borderWidth: 1,
+  },
+  revisionBadgeText: {
+    fontSize: 11,
+    fontWeight: '800',
+  },
+  revisionTitle: {
+    fontSize: 16,
+    fontWeight: '800',
+  },
+  revisionFocus: {
+    fontSize: 12,
+    lineHeight: 18,
+  },
+  revisionCta: {
+    marginTop: 4,
+    paddingVertical: 10,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  revisionCtaText: {
+    color: '#FFFFFF',
+    fontSize: 12,
+    fontWeight: '700',
+  },
+  formateursGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))',
+    gap: 20,
+    width: '100%',
+  },
   partnerCard: {
-    flex: 1,
-    minWidth: 260,
-    maxWidth: 340,
-    padding: 22,
+    width: '100%',
+    padding: 20,
     borderRadius: 18,
     borderWidth: 1,
     gap: 8,

@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     zIndex: 9999,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 20,
+    padding: 12,
   },
   backdrop: {
     position: 'absolute',
@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
   modalBox: {
     width: '100%',
     maxWidth: 640,
-    maxHeight: '80vh',
+    maxHeight: '85vh',
     borderRadius: 20,
     borderWidth: 1,
     overflow: 'hidden',
@@ -156,14 +156,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 20,
-    paddingVertical: 16,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
     borderBottomWidth: 1,
+    gap: 10,
   },
   headerTitleWrap: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
+    gap: 10,
+    flex: 1,
+    minWidth: 0,
   },
   iconWrap: {
     width: 34,
@@ -173,8 +176,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: '700',
+    flex: 1,
+    minWidth: 0,
   },
   closeBtn: {
     width: 32,

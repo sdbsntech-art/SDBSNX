@@ -187,20 +187,21 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 5,
     borderRadius: 20,
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    maxWidth: '100%',
   },
   headerBadgeText: {
     fontSize: 11,
     fontWeight: '700',
     letterSpacing: 0.5,
+    flexShrink: 1,
   },
   pageTitle: {
-    fontSize: 32,
+    fontSize: 26,
     fontWeight: '800',
     letterSpacing: -0.5,
     textAlign: 'center',
-    '@media (max-width: 640px)': {
-      fontSize: 24,
-    }
   },
   pageDesc: {
     fontSize: 15,
@@ -259,6 +260,7 @@ const styles = StyleSheet.create({
   },
   questionCol: {
     flex: 1,
+    minWidth: 0,
     gap: 6,
   },
   categoryTag: {

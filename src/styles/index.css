@@ -7,7 +7,7 @@
   --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -17,10 +17,23 @@
 
 html, body {
   width: 100%;
+  max-width: 100vw;
   min-height: 100vh;
   font-family: var(--font-body);
   overflow-x: hidden;
+  position: relative;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+#root {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Custom Scrollbar */
@@ -153,6 +166,20 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 9px;
   background: #fff;
   padding: 3px 6px;
+}
+
+.site-brand-partner-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 9px;
+  background: #fff;
+  padding: 3px 6px;
+  box-shadow: 0 4px 12px rgba(30, 91, 69, 0.08);
+}
+
+.header-admin-button {
+  box-shadow: 0 10px 18px rgba(30, 91, 69, 0.08);
 }
 
 .site-brand-copy {
@@ -393,8 +420,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.mobile-menu-button,
-.mobile-nav-panel {
+.mobile-menu-button {
   display: none;
 }
 
@@ -404,64 +430,349 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .mobile-menu-button {
-    display: inline-flex;
-  }
-
-  .mobile-nav-panel {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px 18px;
-    padding: 14px max(14px, calc((100% - 680px) / 2)) 18px;
-    border-top: 1px solid;
-  }
-
-  .mobile-nav-section {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-  }
-
-  .mobile-nav-heading {
-    padding: 8px 10px 4px;
-    font: 700 10px var(--font-body);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  .mobile-nav-item {
-    min-height: 38px;
-    display: flex;
+    display: inline-flex !important;
+    min-width: 38px;
+    height: 38px;
+    padding: 0 8px;
     align-items: center;
-    gap: 9px;
-    padding: 0 10px;
-    border: 0;
-    border-radius: 8px;
-    font: 500 13px var(--font-body);
-    text-align: left;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid;
     cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .site-header-inner {
-    width: calc(100% - 28px);
-    min-height: 60px;
-    gap: 12px;
+    width: calc(100% - 24px);
+    min-height: 58px;
+    gap: 8px;
+  }
+
+  .site-brand-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .site-brand-name {
+    font-size: 13.5px;
   }
 
   .search-text-label,
   .header-install-button {
-    display: none;
+    display: none !important;
   }
-
 }
 
-@media (max-width: 380px) {
-  .site-brand-subtitle {
-    display: none;
-  }
+/* =========================================================
+   LUXURY OFF-CANVAS BURGER MENU DRAWER
+   ========================================================= */
 
-  .mobile-nav-panel {
-    grid-template-columns: 1fr;
-  }
+.mobile-drawer-root {
+  position: fixed;
+  inset: 0;
+  z-index: 2500;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 14, 11, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 2501;
+  animation: fadeInDrawerOverlay 0.22s ease-out;
+}
+
+@keyframes fadeInDrawerOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.mobile-drawer-sheet {
+  position: relative;
+  width: min(100vw, 390px);
+  max-width: 100vw;
+  height: 100dvh;
+  z-index: 2502;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-left: 1px solid;
+  animation: slideInDrawerSheet 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideInDrawerSheet {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  border-bottom: 1px solid;
+  flex-shrink: 0;
+}
+
+.drawer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.drawer-logo {
+  height: 28px;
+  width: auto;
+  border-radius: 6px;
+  background: #FFF;
+  padding: 2px 5px;
+}
+
+.drawer-partner-logo {
+  height: 28px;
+  width: auto;
+  border-radius: 6px;
+  background: #FFF;
+  padding: 2px 5px;
+}
+
+.drawer-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.drawer-title {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+.drawer-sub {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.drawer-close-btn {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+
+.drawer-close-btn:hover {
+  transform: scale(1.05);
+}
+
+.drawer-quick-actions {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid;
+  flex-shrink: 0;
+}
+
+.drawer-search-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid;
+  font: 600 13px var(--font-body);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.16s ease;
+}
+
+.drawer-search-trigger span:first-of-type {
+  flex: 1;
+}
+
+.search-chip {
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.drawer-theme-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.drawer-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px solid;
+  font: 700 12px var(--font-body);
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+
+.drawer-admin-button {
+  width: 100%;
+}
+
+.drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 16px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.drawer-nav-item.home-featured {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.18s ease;
+}
+
+.drawer-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.drawer-item-title {
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.drawer-item-desc {
+  font-size: 11px;
+}
+
+.drawer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.drawer-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 4px 4px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+.drawer-section-items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.drawer-item-btn {
+  width: 100%;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.16s ease;
+}
+
+.drawer-item-btn:hover {
+  transform: translateX(3px);
+}
+
+.drawer-icon-box {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.drawer-item-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.drawer-item-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.drawer-item-name {
+  font-size: 13px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.drawer-badge {
+  padding: 1px 6px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.drawer-item-sub {
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.drawer-active-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.drawer-footer {
+  padding: 14px 18px;
+  border-top: 1px solid;
+  flex-shrink: 0;
+}
+
+.drawer-footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-align: center;
 }
 
 @media (max-width: 640px) {
@@ -486,3 +797,326 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
   }
 }
+
+/* =========================================================
+   SENIOR MOBILE RESPONSIVENESS & ZERO-OVERFLOW ENGINE
+   ========================================================= */
+
+/* Ensure all images, canvases, and embeds never exceed their parent container */
+img, svg, video, canvas, iframe, object {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Global text wrapping defense to eliminate unwanted horizontal overflow */
+p, span, h1, h2, h3, h4, h5, h6, a, button, label, input, textarea {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Fluid responsive titles */
+.fluid-hero-title {
+  font-size: clamp(1.75rem, 5vw + 0.5rem, 3.25rem) !important;
+  line-height: 1.15 !important;
+}
+
+.fluid-page-title {
+  font-size: clamp(1.4rem, 4vw + 0.2rem, 2.25rem) !important;
+  line-height: 1.2 !important;
+}
+
+.fluid-section-title {
+  font-size: clamp(1.2rem, 3vw + 0.2rem, 1.75rem) !important;
+  line-height: 1.25 !important;
+}
+
+/* Mobile Bottom Tab Bar (Bulletproof CSS media query) */
+.bottom-tab-bar {
+  display: none !important;
+}
+
+@media (max-width: 960px) {
+  .bottom-tab-bar {
+    display: flex !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100vw;
+    border-top: 1px solid;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 990;
+    padding-bottom: env(safe-area-inset-bottom, 8px);
+    padding-top: 6px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Add safety spacing on mobile so bottom tab bar never masks buttons/content */
+  .app-main-content {
+    padding-bottom: calc(76px + env(safe-area-inset-bottom, 12px)) !important;
+  }
+
+  .site-footer {
+    padding-bottom: calc(84px + env(safe-area-inset-bottom, 12px)) !important;
+  }
+}
+
+/* General Mobile Breakpoint (< 640px) Grid and Card Optimizations */
+@media (max-width: 640px) {
+  /* Prevent fixed min-widths from blowing out screens smaller than 360-400px */
+  .responsive-card,
+  .module-card,
+  .partner-card,
+  .exercise-card,
+  .feed-col,
+  .form-card,
+  .specialization-card {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Compact responsive padding on cards */
+  .compact-mobile-padding {
+    padding: 16px !important;
+  }
+
+  /* Stats grid 2-columns on mobile instead of long broken flex */
+  .mobile-stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .mobile-hide-divider {
+    display: none !important;
+  }
+}
+
+/* =========================================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS — SENIOR LEVEL
+   Targets: all views, grids, cards, typography, footer
+   ========================================================= */
+
+/* ---- Global Mobile Text & Container Overflow Protection ---- */
+html, body, #root {
+  overflow-x: clip !important;
+  max-width: 100vw !important;
+}
+
+/* React Native Web text & container safety */
+[dir="auto"] {
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+/* Fluid responsive titles */
+.fluid-page-title {
+  font-size: clamp(20px, 5.5vw, 28px) !important;
+  line-height: 1.25 !important;
+}
+
+/* ---- Small phones (< 520px) ---- */
+@media (max-width: 520px) {
+  /* Prevent major page wrappers from overflowing the viewport width without breaking flex children */
+  .app-main-content,
+  .site-footer,
+  .footer-inner,
+  .header-nav,
+  main,
+  section {
+    max-width: 100% !important;
+  }
+
+  /* Academic pill hidden on mobile breadcrumb to prevent overflow */
+  .breadcrumb-academic-pill {
+    display: none !important;
+  }
+
+  .breadcrumb-active {
+    max-width: 130px !important;
+  }
+
+  /* Search modal logos hidden on narrow screens to maximize search input width */
+  .search-modal-logos {
+    display: none !important;
+  }
+
+  /* Page titles clamp safely */
+  h1, h2, [style*="fontSize: 26"], [style*="fontSize: 32"] {
+    font-size: clamp(19px, 5.5vw, 25px) !important;
+    line-height: 1.25 !important;
+  }
+
+  /* Hero action buttons full width on small screens */
+  .hero-btn-group > * {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Licence tab count pill hidden on small mobile to give room to label */
+  .tab-count-pill-mobile {
+    display: none !important;
+  }
+
+  /* Reduce section spacing on small phones */
+  .site-footer,
+  .app-main-content {
+    font-size: 13.5px;
+  }
+}
+
+/* ---- Tablet and below (< 768px): Stack grids, shrink padding ---- */
+@media (max-width: 768px) {
+  /* Ensure footer elements wrap and stack cleanly */
+  .site-footer,
+  .footer-inner {
+    flex-direction: column !important;
+  }
+  
+  .footer-inner > [style*="flex: 1"] {
+    min-width: 100% !important;
+  }
+}
+
+/* ---- Smooth Animated Hamburger & Accessibility ---- */
+.hamburger-animated {
+  width: 18px;
+  height: 14px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: currentColor;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.18s ease;
+}
+
+.hamburger-animated.open .line-1 {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger-animated.open .line-2 {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger-animated.open .line-3 {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hamburger-animated .hamburger-line {
+    transition: none !important;
+  }
+}
+
+/* =========================================================
+   PRO PDF VIEWER MODAL STYLES (SPEED, INTUITIVE & RESPONSIVE)
+   ========================================================= */
+
+.pdf-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(8, 15, 12, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  animation: fadeInModal 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.pdf-modal-container {
+  width: 100%;
+  max-width: 1100px;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.pdf-header-label {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .pdf-modal-overlay {
+    padding: 0 !important;
+    background: rgba(10, 12, 14, 0.88);
+  }
+
+  .pdf-modal-container {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .pdf-modal-container > header {
+    gap: 8px !important;
+    align-items: flex-start !important;
+    flex-wrap: wrap !important;
+  }
+
+  .pdf-modal-container > header > div:first-child {
+    width: 100% !important;
+    min-width: 0 !important;
+    flex: 1 1 100% !important;
+  }
+
+  .pdf-modal-container > header > div:last-child {
+    width: 100% !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+  }
+
+  .pdf-header-label {
+    display: none !important;
+  }
+
+  .pdf-modal-container button,
+  .pdf-modal-container a {
+    min-height: 36px !important;
+  }
+}
+
+/* Shimmer skeleton for instant fast load */
+@keyframes pdfPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.pdf-skeleton-pulse {
+  animation: pdfPulse 1.8s infinite ease-in-out;
+}
+

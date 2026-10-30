@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 
 export default function LibraryView() {
-  const { theme, triggerToast } = useApp();
+  const { theme, triggerToast, setActivePdfPreview } = useApp();
   const { documents: adminDocuments, error: adminDocumentsError } = useAdminDocuments('library');
   const [filterCat, setFilterCat] = useState('all');
   const [searchDoc, setSearchDoc] = useState('');
@@ -41,9 +41,19 @@ export default function LibraryView() {
   });
 
   const handleDownload = (doc) => {
-    triggerToast(`Ouverture du document : ${doc.title}`, 'info');
     if (doc.downloadUrl && doc.downloadUrl !== '#') {
-      window.open(doc.downloadUrl, '_blank', 'noopener,noreferrer');
+      const isPdfDoc = doc.format === 'PDF' || doc.downloadUrl.toLowerCase().endsWith('.pdf');
+      if (isPdfDoc) {
+        setActivePdfPreview({
+          name: doc.title,
+          url: doc.downloadUrl,
+          ext: doc.format || 'PDF',
+          size: doc.size || ''
+        });
+      } else {
+        triggerToast(`Ouverture du document : ${doc.title}`, 'info');
+        window.open(doc.downloadUrl, '_blank', 'noopener,noreferrer');
+      }
     } else {
       triggerToast('Ce document n’a pas encore de fichier associé.', 'info');
     }
@@ -73,7 +83,7 @@ export default function LibraryView() {
           />
           <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX × UNCHK • BIBLIOTHÈQUE</Text>
         </View>
-        <Text style={[styles.pageTitle, { color: theme.text }]}>
+        <Text style={[styles.pageTitle, { color: theme.text }]} className="fluid-page-title">
           Manuels de Référence & Fiches Mémento
         </Text>
         <Text style={[styles.pageDesc, { color: theme.textMuted }]}>
@@ -187,20 +197,21 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 5,
     borderRadius: 20,
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    maxWidth: '100%',
   },
   headerBadgeText: {
     fontSize: 11,
     fontWeight: '700',
     letterSpacing: 0.5,
+    flexShrink: 1,
   },
   pageTitle: {
-    fontSize: 32,
+    fontSize: 26,
     fontWeight: '800',
     letterSpacing: -0.5,
     textAlign: 'center',
-    '@media (max-width: 640px)': {
-      fontSize: 24,
-    }
   },
   pageDesc: {
     fontSize: 15,
@@ -243,16 +254,14 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   docsGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 24,
-    justifyContent: 'center',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))',
+    gap: 20,
+    width: '100%',
   },
   docCard: {
-    flex: 1,
-    minWidth: 280,
-    maxWidth: 380,
-    padding: 22,
+    width: '100%',
+    padding: 18,
     borderRadius: 20,
     borderWidth: 1,
     gap: 12,

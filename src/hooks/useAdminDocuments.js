@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import { DOCUMENT_BUCKET, supabase } from '../lib/supabase';
 
 const formatFileSize = (bytes) => {
   if (!bytes) return 'Document';
   return `${(bytes / (1024 * 1024)).toFixed(1)} Mo`;
 };
+
+const STORAGE_KEY = 'sdbsnx_local_documents';
 
 export default function useAdminDocuments(section) {
   const [documents, setDocuments] = useState([]);
@@ -16,44 +17,30 @@ export default function useAdminDocuments(section) {
     const refreshDocuments = () => setRefreshKey((key) => key + 1);
     window.addEventListener('admin-documents-changed', refreshDocuments);
 
-    if (!supabase) {
-      setDocuments([]);
-      setError('');
-      return () => {
-        active = false;
-        window.removeEventListener('admin-documents-changed', refreshDocuments);
-      };
-    }
+    try {
+      const rawDocuments = localStorage.getItem(STORAGE_KEY);
+      const savedDocuments = rawDocuments ? JSON.parse(rawDocuments) : [];
+      const filtered = savedDocuments
+        .filter((document) => document.section === section)
+        .sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0))
+        .map((document) => ({
+          ...document,
+          format: document.content_type === 'application/pdf'
+            ? 'PDF'
+            : (document.file_name || 'DOC').split('.').pop()?.toUpperCase() || 'DOC',
+          size: formatFileSize(document.file_size),
+          downloadUrl: document.downloadUrl || '#',
+        }));
 
-    const loadDocuments = async () => {
-      const { data, error: queryError } = await supabase
-        .from('documents')
-        .select('id, section, category, title, description, storage_path, file_name, file_size, content_type, created_at')
-        .eq('section', section)
-        .order('created_at', { ascending: false });
-
-      if (!active) return;
-      if (queryError) {
-        setError('Les nouveaux documents ne sont pas disponibles pour le moment.');
-        return;
+      if (active) {
+        setDocuments(filtered);
+        setError('');
       }
-
-      setError('');
-      setDocuments(data.map((document) => ({
-        ...document,
-        format: document.content_type === 'application/pdf'
-          ? 'PDF'
-          : document.file_name.split('.').pop()?.toUpperCase() || 'DOC',
-        size: formatFileSize(document.file_size),
-        downloadUrl: supabase.storage
-          .from(DOCUMENT_BUCKET)
-          .getPublicUrl(document.storage_path).data.publicUrl,
-      })));
-    };
-
-    loadDocuments().catch(() => {
-      if (active) setError('Les nouveaux documents ne sont pas disponibles pour le moment.');
-    });
+    } catch {
+      if (active) {
+        setError('Les documents locaux ne sont pas disponibles pour le moment.');
+      }
+    }
 
     return () => {
       active = false;

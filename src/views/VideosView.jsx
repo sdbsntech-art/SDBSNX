@@ -92,7 +92,7 @@ export default function VideosView() {
           <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX × UNCHK • VIDÉOTHÈQUE OFFICIELLE</Text>
         </View>
 
-        <Text style={[styles.pageTitle, { color: theme.text }]}>
+        <Text style={[styles.pageTitle, { color: theme.text }]} className="fluid-page-title">
           123 Tutoriels & Formations Vidéos HD
         </Text>
         <Text style={[styles.pageDesc, { color: theme.textMuted }]}>
@@ -367,11 +367,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 5,
     borderRadius: 20,
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    maxWidth: '100%',
   },
   headerBadgeText: {
     fontSize: 11,
     fontWeight: '700',
     letterSpacing: 0.5,
+    flexShrink: 1,
   },
   pageTitle: {
     fontSize: 32,
@@ -445,7 +449,7 @@ const styles = StyleSheet.create({
   },
   searchBox: {
     flex: 1,
-    minWidth: 260,
+    minWidth: 0,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
@@ -453,6 +457,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 12,
     borderWidth: 1,
+    width: '100%',
   },
   searchInput: {
     flex: 1,
@@ -495,16 +500,13 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   videosGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 20,
-    justifyContent: 'center',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))',
+    gap: 22,
     width: '100%',
   },
   videoCard: {
-    flex: 1,
-    minWidth: 270,
-    maxWidth: 340,
+    width: '100%',
     borderRadius: 18,
     borderWidth: 1,
     overflow: 'hidden',
@@ -513,7 +515,7 @@ const styles = StyleSheet.create({
   thumbnailWrapper: {
     position: 'relative',
     width: '100%',
-    height: 170,
+    aspectRatio: 16 / 9,
     backgroundColor: '#0F172A',
     overflow: 'hidden',
   },

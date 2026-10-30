@@ -145,7 +145,7 @@ export default function QuickSearchModal() {
       <View style={[styles.modalBox, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
         {/* Search Header */}
         <View style={[styles.searchBar, { borderBottomColor: theme.border }]}>
-          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+          <View className="search-modal-logos" style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
             <img 
               src="/sdbsnx-logo.png" 
               alt="SDBSNX" 
@@ -160,7 +160,7 @@ export default function QuickSearchModal() {
           </View>
           <TextInput
             style={[styles.searchInput, { color: theme.text }]}
-            placeholder="Rechercher sur SDBSNX (ex: JavaScript, SQL, L2, PHP)..."
+            placeholder="Rechercher sur SDBSNX..."
             placeholderTextColor={theme.textDim}
             value={query}
             onChangeText={setQuery}
@@ -174,8 +174,9 @@ export default function QuickSearchModal() {
           <TouchableOpacity 
             style={[styles.closeEscBadge, { borderColor: theme.border, backgroundColor: theme.bgCard }]}
             onPress={() => setIsSearchOpen(false)}
+            aria-label="Fermer la recherche"
           >
-            <Text style={[styles.closeEscText, { color: theme.textDim }]}>ESC</Text>
+            <X size={15} color={theme.textMuted} />
           </TouchableOpacity>
         </View>
 
@@ -249,8 +250,8 @@ const styles = StyleSheet.create({
     zIndex: 9999,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    paddingTop: 80,
-    paddingHorizontal: 16,
+    paddingTop: 30,
+    paddingHorizontal: 12,
   },
   backdrop: {
     position: 'absolute',
@@ -281,6 +282,7 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     flex: 1,
+    minWidth: 0,
     fontSize: 16,
     outlineStyle: 'none',
   },
@@ -347,6 +349,7 @@ const styles = StyleSheet.create({
   },
   resultTextCol: {
     flex: 1,
+    minWidth: 0,
   },
   resultTitle: {
     fontSize: 14,
