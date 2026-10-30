@@ -81,14 +81,14 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
-        white-space: nowrap;
     }
     .legal-links a {
         color: #666;
         text-decoration: none;
         margin: 0;
         transition: color 0.3s;
-        white-space: nowrap;
+        word-break: break-word;
+        overflow-wrap: break-word;
     }
     .legal-links a:hover {
         color: #e6e5eb;
@@ -771,6 +771,13 @@ footer {
     flex-direction: column;
     gap: 0.7rem;
   }
+
+  /* Global text wrapping for mobile */
+  p, span, h1, h2, h3, h4, h5, h6, a, button, label, input, textarea, div {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
 }
 
 @media (max-width: 700px) {
@@ -858,6 +865,11 @@ footer {
     flex-wrap: wrap;
   }
 
+  .legal-links a {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
   h1 {
     font-size: 1.5rem;
     padding: 0 1rem;
@@ -865,6 +877,13 @@ footer {
 
   main {
     padding: 0 0.5rem 2rem 0.5rem;
+  }
+
+  /* Ensure all text wraps properly */
+  p, span, h1, h2, h3, h4, h5, h6, a, button, label, input, textarea, div {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 }
 
@@ -894,9 +913,10 @@ footer {
     font-size: 1rem;
   }
 
-  /* Prevent text wrapping issues */
+  /* Allow text wrapping on mobile to prevent truncation */
   .legal-links a, .footer-links a {
-    white-space: nowrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   /* Ensure footer content doesn't overflow */

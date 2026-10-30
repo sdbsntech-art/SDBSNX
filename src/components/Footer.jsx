@@ -375,7 +375,6 @@ const styles = StyleSheet.create({
   },
   legalLink: {
     fontSize: 12,
-    whiteSpace: 'nowrap',
   }
 });
 
