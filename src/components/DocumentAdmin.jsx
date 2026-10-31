@@ -11,9 +11,6 @@ const SECTION_OPTIONS = [
 ];
 
 const STORAGE_KEY = 'sdbsnx_local_documents';
-const SESSION_KEY = 'sdbsnx_local_admin_session';
-const ADMIN_EMAIL = 'seydoubakhayokho1@gmail.com';
-const ADMIN_PASSWORD = 'sdbsnx@@00';
 const ALLOWED_EXTENSIONS = new Set(['pdf', 'doc', 'docx', 'ppt', 'pptx', 'zip']);
 const MAX_FILE_SIZE = 30 * 1024 * 1024;
 const MIME_TYPES = {
@@ -38,15 +35,6 @@ const saveDocuments = (documents) => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(documents));
 };
 
-const readSession = () => {
-  try {
-    const raw = localStorage.getItem(SESSION_KEY);
-    return raw ? JSON.parse(raw) : null;
-  } catch {
-    return null;
-  }
-};
-
 const readFileAsDataUrl = (file) => new Promise((resolve, reject) => {
   const reader = new FileReader();
   reader.onload = () => resolve(String(reader.result));
@@ -68,6 +56,7 @@ export default function DocumentAdmin({ open, onClose }) {
   const [file, setFile] = useState(null);
   const [documents, setDocuments] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [authChecking, setAuthChecking] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
@@ -75,11 +64,35 @@ export default function DocumentAdmin({ open, onClose }) {
 
   useEffect(() => {
     if (!open) return;
-    const session = readSession();
-    if (session) {
-      setUser(session);
-    }
+    let active = true;
     setDocuments(readDocuments());
+
+    const checkSession = async () => {
+      setAuthChecking(true);
+      setErrorMessage('');
+      try {
+        const response = await fetch('/api/admin/session', { credentials: 'same-origin' });
+        const result = await response.json();
+        if (!response.ok) {
+          throw new Error(result.error || 'Impossible de vérifier la session administrateur.');
+        }
+        if (active) {
+          setUser(result.authenticated ? { email: result.email } : null);
+        }
+      } catch (error) {
+        if (active) {
+          setUser(null);
+          setErrorMessage(readableError(error));
+        }
+      } finally {
+        if (active) setAuthChecking(false);
+      }
+    };
+
+    checkSession();
+    return () => {
+      active = false;
+    };
   }, [open]);
 
   const signIn = async () => {
@@ -88,33 +101,49 @@ export default function DocumentAdmin({ open, onClose }) {
       return;
     }
 
-    const normalizedEmail = email.trim().toLowerCase();
-    if (normalizedEmail !== ADMIN_EMAIL || password !== ADMIN_PASSWORD) {
-      setErrorMessage('Identifiants invalides. Vérifiez vos informations puis réessayez.');
-      return;
-    }
-
     setLoading(true);
     setErrorMessage('');
     setSuccessMessage('');
 
-    const session = { id: 'local-admin', email: ADMIN_EMAIL };
-    localStorage.setItem(SESSION_KEY, JSON.stringify(session));
-    setUser(session);
-    setPassword('');
-    setSuccessMessage('Connexion locale réussie.');
-    setLoading(false);
+    try {
+      const response = await fetch('/api/admin/login', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
+      });
+      const result = await response.json();
+      if (!response.ok) {
+        throw new Error(result.error || 'La connexion a échoué. Veuillez réessayer.');
+      }
+
+      setUser({ email: result.email });
+      setPassword('');
+      setSuccessMessage('Connexion administrateur réussie.');
+    } catch (error) {
+      setErrorMessage(readableError(error));
+    } finally {
+      setLoading(false);
+    }
   };
 
   const signOut = async () => {
     setLoading(true);
     setErrorMessage('');
     try {
-      localStorage.removeItem(SESSION_KEY);
+      const response = await fetch('/api/admin/logout', {
+        method: 'POST',
+        credentials: 'same-origin',
+      });
+      const result = await response.json();
+      if (!response.ok) {
+        throw new Error(result.error || 'La déconnexion a échoué. Veuillez réessayer.');
+      }
+
       setUser(null);
       setDocuments(readDocuments());
       setPassword('');
-      setSuccessMessage('Déconnexion locale réussie.');
+      setSuccessMessage('Déconnexion réussie.');
     } catch (error) {
       setErrorMessage(readableError(error));
     } finally {
@@ -231,7 +260,7 @@ export default function DocumentAdmin({ open, onClose }) {
             <View style={[styles.notice, { backgroundColor: theme.primaryGlow }]}>
               <LockKeyhole size={18} color={theme.primary} />
               <Text style={[styles.bodyText, { color: theme.textMuted }]}>
-                Connexion administrateur.
+                {authChecking ? 'Vérification de la session administrateur…' : 'Authentification sécurisée par le serveur.'}
               </Text>
             </View>
             <TextInput
@@ -259,10 +288,10 @@ export default function DocumentAdmin({ open, onClose }) {
             <TouchableOpacity
               style={[styles.primaryButton, { backgroundColor: theme.primary }]}
               onPress={signIn}
-              disabled={loading}
+              disabled={loading || authChecking}
               accessibilityRole="button"
             >
-              <Text style={styles.primaryButtonText}>{loading ? 'Connexion…' : 'Se connecter'}</Text>
+              <Text style={styles.primaryButtonText}>{loading ? 'Connexion…' : authChecking ? 'Vérification…' : 'Se connecter'}</Text>
             </TouchableOpacity>
           </View>
         ) : (
