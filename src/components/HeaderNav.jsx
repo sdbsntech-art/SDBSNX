@@ -12,7 +12,6 @@ import {
   Rocket,
   Search,
   Shield,
-  ShieldCheck,
   Sun,
   Users,
   Video,
@@ -300,20 +299,6 @@ export default function HeaderNav() {
 
           <button
             type="button"
-            className="header-install-button header-admin-button"
-            style={{
-              backgroundColor: theme.primaryGlow,
-              color: theme.primary,
-              borderColor: theme.border,
-            }}
-            onClick={() => handleNav('admin')}
-          >
-            <ShieldCheck size={14} aria-hidden="true" />
-            <span>Admin</span>
-          </button>
-
-          <button
-            type="button"
             className="header-install-button"
             style={{ backgroundColor: theme.primary }}
             onClick={triggerInstallPwa}
@@ -452,22 +437,6 @@ export default function HeaderNav() {
                 </button>
               </div>
 
-              <button
-                type="button"
-                className="drawer-action-btn drawer-admin-button"
-                style={{
-                  backgroundColor: theme.primaryGlow,
-                  borderColor: theme.border,
-                  color: theme.primary,
-                }}
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  handleNav('admin');
-                }}
-              >
-                <ShieldCheck size={15} color={theme.primary} />
-                <span>Admin</span>
-              </button>
             </div>
 
             {/* Scrollable Navigation List */}

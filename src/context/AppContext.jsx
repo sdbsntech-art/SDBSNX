@@ -16,7 +16,6 @@ const PAGE_ROUTES = [
   { path: '/formateurs', tab: 'formateurs' },
   { path: '/communaute', tab: 'forum' },
   { path: '/faq', tab: 'faq' },
-  { path: '/admin', tab: 'admin' },
 ];
 
 const LEGACY_HASH_TABS = new Set(PAGE_ROUTES.map(({ tab }) => tab));
@@ -234,10 +233,6 @@ export function AppProvider({ children }) {
         title: "FAQ et conseils pour apprendre l’informatique | SDBSNX",
         desc: "Réponses aux questions fréquentes sur les cours, les révisions et l’utilisation de SDBSNX."
       },
-      admin: {
-        title: "Espace administrateur SDBSNX | Gestion des cours et ressources",
-        desc: "Authentification de l’administrateur SDBSNX pour gérer les cours, les révisions, les opportunités et les ressources FORCE-N."
-      }
     };
 
     const currentSeo = seoMeta[currentTab] || seoMeta.home;
