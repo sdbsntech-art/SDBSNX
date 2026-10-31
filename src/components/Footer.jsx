@@ -86,19 +86,22 @@ export default function Footer() {
           <View style={styles.socialsRow}>
             <TouchableOpacity 
               style={[styles.socialBtn, { borderColor: theme.border, backgroundColor: theme.bgCard }]}
-              onPress={() => window.open('https://www.youtube.com/channel/UCCZJBOaAPdAoTiD-iJ2ftkg', '_blank')}
+              onPress={() => window.open('https://www.youtube.com/@unchk_sn', '_blank', 'noopener,noreferrer')}
+              accessibilityLabel="Chaîne YouTube de l’UNCHK"
             >
               <Youtube size={15} color={theme.textMuted} />
             </TouchableOpacity>
             <TouchableOpacity 
               style={[styles.socialBtn, { borderColor: theme.border, backgroundColor: theme.bgCard }]}
-              onPress={() => window.open('https://github.com/sdbsntech-art/sdbsn-ida.code', '_blank')}
+              onPress={() => window.open('https://github.com/sdbsntech-art', '_blank', 'noopener,noreferrer')}
+              accessibilityLabel="GitHub SDBSNX"
             >
               <Github size={15} color={theme.text} />
             </TouchableOpacity>
             <TouchableOpacity 
               style={[styles.socialBtn, { borderColor: theme.border, backgroundColor: theme.bgCard }]}
-              onPress={() => window.open('https://grafikart.fr', '_blank')}
+              onPress={() => window.open('https://www.unchk.sn/', '_blank', 'noopener,noreferrer')}
+              accessibilityLabel="Site officiel de l’UNCHK"
             >
               <Globe size={15} color={theme.primary} />
             </TouchableOpacity>
@@ -174,7 +177,7 @@ export default function Footer() {
               style={styles.copyrightLogo}
             />
             <Text nativeID="footer-copyright-text" style={[styles.copyrightText, { color: theme.textDim }]}>
-              © {new Date().getFullYear()} SDBSNX • IDA COURS. Remerciements aux créateurs et formateurs dont les ressources contribuent à l'apprentissage.
+              © {new Date().getFullYear()} SDBSNX • IDA COURS. Merci à l’UNCHK pour son engagement dans la formation universitaire, à FORCE-N pour ses formations complémentaires et certifiantes, ainsi qu’à Grafikart et au Fab Lab Solidarity (ODC) pour leurs ressources et initiatives pédagogiques.
             </Text>
           </View>
 
