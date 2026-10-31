@@ -18,7 +18,6 @@ import {
   Award,
   Zap,
   Globe,
-  Star,
   Heart,
   Youtube,
   ExternalLink,
@@ -200,92 +199,40 @@ export default function HomeView() {
         </View>
       </View>
 
-      {/* 2. Flagship Tribute & Gratitude Section to Grafikart */}
+      {/* Remerciements aux partenaires de formation et aux ressources vidéo */}
       <View style={styles.sectionWrap}>
         <View style={[styles.grafikartBannerCard, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
-          {/* Ambient subtle glow */}
           <View style={[styles.tributeGlow, { backgroundColor: theme.primary }]} />
 
           <View style={styles.grafikartContent}>
-            {/* Top Badge */}
             <View style={styles.tributeHeaderRow}>
               <View style={[styles.tributeBadge, { backgroundColor: theme.primaryGlow, borderColor: theme.border }]}>
-                <Star size={14} color={theme.accent} fill={theme.accent} />
-                <Text style={styles.tributeBadgeText}>HOMMAGE & REMERCIEMENTS SPÉCIAUX</Text>
+                <Heart size={14} color={theme.accent} fill={theme.accent} />
+                <Text style={styles.tributeBadgeText}>REMERCIEMENTS</Text>
               </View>
               <View style={[styles.authorChip, { backgroundColor: theme.primaryGlow }]}>
-                <Heart size={13} color={theme.accent} fill={theme.accent} />
-                <Text style={{ fontSize: 12, fontWeight: '700', color: theme.text }}>Reconnaissance Pédagogique</Text>
+                <GraduationCap size={13} color={theme.accent} />
+                <Text style={{ fontSize: 12, fontWeight: '700', color: theme.text }}>Partenaires de formation</Text>
               </View>
             </View>
 
-            {/* Title */}
             <Text style={[styles.grafikartTitle, { color: theme.text }]}>
-            Merci à <Text style={{ color: theme.primary }}>Grafikart (Jonathan Boyer)</Text>, Formateur d'Exception
+              Merci à l’<Text style={{ color: theme.primary }}>UNCHK</Text> et à <Text style={{ color: theme.primary }}>FORCE-N</Text>
             </Text>
 
-            {/* Author Testimonial / Personal Message */}
             <View style={[styles.quoteBox, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
               <Text style={[styles.quoteText, { color: theme.text }]}>
-                « Je tiens à exprimer ma plus sincère gratitude et mes profonds remerciements à                 <Text style={{ fontWeight: '800', color: theme.primary }}>Jonathan Boyer (Grafikart)</Text>. 
-                Il est l'un des formateurs exceptionnels dont la passion, la bienveillance et la remarquable clarté pédagogique m'ont permis d'apprendre pas à pas et de <Text style={{ fontWeight: '800', color: theme.emerald }}>devenir développeur aujourd'hui</Text>.
-                Merci infiniment à lui de m'avoir accordé l'autorisation d'intégrer ses vidéos au sein de la plateforme IDA COURS, afin de permettre à toute notre communauté d'étudiants de bénéficier de cours de très haut niveau. »
+                Nous remercions l’<Text style={{ fontWeight: '800', color: theme.primary }}>Université Numérique Cheikh Hamidou Kane (UNCHK)</Text> pour son engagement en faveur de la formation universitaire, ainsi que <Text style={{ fontWeight: '800', color: theme.primary }}>FORCE-N</Text> pour ses formations complémentaires et certifiantes.
               </Text>
               <Text style={[styles.quoteSignature, { color: theme.textMuted }]}>
-                — Fondateur & Développeur de SDBSNX • IDA COURS
+                — SDBSNX • IDA COURS
               </Text>
             </View>
 
-            {/* Direct Links to Grafikart Platform & YouTube */}
-            <View style={styles.grafikartLinksGrid}>
-              {/* Card 1: Official Website */}
-              <TouchableOpacity
-                style={[styles.grafikartLinkCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}
-                onPress={() => window.open('https://grafikart.fr', '_blank')}
-                activeOpacity={0.8}
-              >
-                <View style={[styles.iconBoxGrafikart, { backgroundColor: theme.primaryGlow }]}>
-                  <Globe size={24} color={theme.primary} />
-                </View>
-                <View style={styles.linkInfoCol}>
-                  <View style={styles.linkTitleRow}>
-                    <Text style={[styles.linkCardTitle, { color: theme.text }]}>Site Officiel Grafikart.fr</Text>
-                    <ExternalLink size={15} color={theme.primary} />
-                  </View>
-                  <Text style={[styles.linkCardDesc, { color: theme.textMuted }]}>
-                    Plus de 1000 tutoriels et formations gratuites : HTML, CSS, JavaScript, PHP, Vue.js, Laravel, Git et bonnes pratiques professionnelles.
-                  </Text>
-                  <Text style={styles.linkActionPrompt}>Visiter grafikart.fr →</Text>
-                </View>
-              </TouchableOpacity>
-
-              {/* Card 2: YouTube Channel */}
-              <TouchableOpacity
-                style={[styles.grafikartLinkCard, { backgroundColor: theme.bgCard, borderColor: theme.border }]}
-                onPress={() => window.open('https://www.youtube.com/@grafikart', '_blank')}
-                activeOpacity={0.8}
-              >
-                <View style={[styles.iconBoxGrafikart, { backgroundColor: theme.primaryGlow }]}>
-                  <Youtube size={24} color={theme.primary} />
-                </View>
-                <View style={styles.linkInfoCol}>
-                  <View style={styles.linkTitleRow}>
-                    <Text style={[styles.linkCardTitle, { color: theme.text }]}>Chaîne YouTube @grafikart</Text>
-                    <ExternalLink size={15} color={theme.primary} />
-                  </View>
-                  <Text style={[styles.linkCardDesc, { color: theme.textMuted }]}>
-                    Une communauté de plus de 350 000 passionnés de code. Vidéos gratuites, lives de programmation et astuces de développeur.
-                  </Text>
-                  <Text style={[styles.linkActionPrompt, { color: theme.primary }]}>Accéder à la chaîne YouTube →</Text>
-                </View>
-              </TouchableOpacity>
-            </View>
-
-            {/* Gratitude to other educators & UNCHK */}
             <View style={[styles.otherMentorsRow, { borderTopColor: theme.border }]}>
-              <Users size={16} color={theme.emerald} />
+              <Youtube size={16} color={theme.emerald} />
               <Text style={[styles.otherMentorsText, { color: theme.textMuted }]}>
-                <Text style={{ fontWeight: '700', color: theme.text }}>Remerciements chaleureux également</Text> à tous les enseignants, professeurs et tuteurs de l'Université Numérique Cheikh Hamidou Kane (UNCHK), aux formateurs de Force-N, d'Orange Digital Center, et à l'ensemble des créateurs de la communauté francophone & internationale du logiciel libre.
+                Mention spéciale à <Text style={{ fontWeight: '700', color: theme.text }}>Grafikart</Text> pour ses vidéos pédagogiques, qui complètent les ressources proposées aux apprenants.
               </Text>
             </View>
           </View>
