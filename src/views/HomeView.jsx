@@ -222,7 +222,7 @@ export default function HomeView() {
 
             <View style={[styles.quoteBox, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
               <Text style={[styles.quoteText, { color: theme.text }]}>
-                Nous remercions l’<Text style={{ fontWeight: '800', color: theme.primary }}>Université Numérique Cheikh Hamidou Kane (UNCHK)</Text> pour son engagement en faveur de la formation universitaire, ainsi que <Text style={{ fontWeight: '800', color: theme.primary }}>FORCE-N</Text> pour ses formations complémentaires et certifiantes.
+                Nous remercions l’<Text style={{ fontWeight: '800', color: theme.primary }}>Université Numérique Cheikh Hamidou Kane (UNCHK)</Text> pour son engagement en faveur de la formation universitaire, ainsi que <Text style={{ fontWeight: '800', color: theme.primary }}>FORCE-N</Text> pour ses formations complémentaires et certifiantes. J’exprime également ma gratitude envers <Text style={{ fontWeight: '800', color: theme.primary }}>LUCAD</Text>, où j’ai bénéficié d’une solide formation en Python, qui m’a permis d’acquérir les connaissances nécessaires et de me préparer pleinement à la suite de mon parcours.
               </Text>
               <Text style={[styles.quoteSignature, { color: theme.textMuted }]}>
                 — SDBSNX • IDA COURS
