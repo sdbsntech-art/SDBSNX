@@ -125,6 +125,60 @@ h1, h2, h3, h4, h5, h6 {
   scrollbar-width: none;
 }
 
+#footer-legal-links,
+#footer-legal-links *,
+#footer-copyright-text {
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+  transform: none !important;
+}
+
+@media (max-width: 768px) {
+  #footer-bottom-bar-inner {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 12px !important;
+  }
+
+  #footer-copyright {
+    width: 100% !important;
+    flex: 0 0 auto !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+  }
+
+  #footer-copyright img {
+    flex: 0 0 22px !important;
+  }
+
+  #footer-copyright-text {
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    word-break: normal !important;
+    overflow-wrap: anywhere !important;
+    white-space: normal !important;
+  }
+
+  #footer-legal-links {
+    width: 100% !important;
+    flex: 0 0 auto !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    gap: 6px 10px !important;
+  }
+
+  #footer-legal-links > div {
+    flex: 0 0 auto !important;
+  }
+
+  #footer-legal-links > div > div {
+    white-space: nowrap !important;
+  }
+}
+
 /* Responsive layout for the primary navigation. */
 .site-header {
   position: sticky;
@@ -1216,4 +1270,3 @@ html, body, #root {
 .pdf-skeleton-pulse {
   animation: pdfPulse 1.8s infinite ease-in-out;
 }
-

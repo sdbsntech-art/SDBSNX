@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
     <>
-    <View className="site-footer" style={[styles.footerContainer, { backgroundColor: theme.bgSecondary, borderTopColor: theme.border }]}>
+    <View nativeID="site-footer" style={[styles.footerContainer, { backgroundColor: theme.bgSecondary, borderTopColor: theme.border }]}>
       <View className="footer-inner" style={styles.footerInner}>
         <View style={[styles.footerTopBand, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
           <View style={styles.footerTopBandText}>
@@ -165,28 +165,28 @@ export default function Footer() {
         </View>
       </View>
 
-      <View style={[styles.bottomBar, { borderTopColor: theme.border }]}>
-        <View style={styles.bottomBarInner}>
-          <View style={styles.copyrightWrap}>
+      <View nativeID="footer-bottom-bar" style={[styles.bottomBar, { borderTopColor: theme.border }]}>
+        <View nativeID="footer-bottom-bar-inner" style={styles.bottomBarInner}>
+          <View nativeID="footer-copyright" style={styles.copyrightWrap}>
             <img
               src="/force-n-logo.png"
               alt="FORCE-N"
               style={styles.copyrightLogo}
             />
-            <Text style={[styles.copyrightText, { color: theme.textDim }]}>
+            <Text nativeID="footer-copyright-text" style={[styles.copyrightText, { color: theme.textDim }]}>
               © {new Date().getFullYear()} SDBSNX • IDA COURS. Remerciements aux créateurs et formateurs dont les ressources contribuent à l'apprentissage.
             </Text>
           </View>
 
-          <View style={styles.legalLinksRow}>
+          <View nativeID="footer-legal-links" style={styles.legalLinksRow}>
             <TouchableOpacity onPress={() => setActiveLegal('mentions')}>
               <Text style={[styles.legalLink, { color: theme.textMuted }]}>Mentions Légales</Text>
             </TouchableOpacity>
-            <Text style={{ color: theme.border }}>•</Text>
+            <Text style={{ color: theme.border, writingMode: 'horizontal-tb', textOrientation: 'mixed' }}>•</Text>
             <TouchableOpacity onPress={() => setActiveLegal('politique')}>
               <Text style={[styles.legalLink, { color: theme.textMuted }]}>Confidentialité</Text>
             </TouchableOpacity>
-            <Text style={{ color: theme.border }}>•</Text>
+            <Text style={{ color: theme.border, writingMode: 'horizontal-tb', textOrientation: 'mixed' }}>•</Text>
             <TouchableOpacity onPress={() => setActiveLegal('conditions')}>
               <Text style={[styles.legalLink, { color: theme.textMuted }]}>Conditions</Text>
             </TouchableOpacity>
@@ -371,10 +371,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
     flexWrap: 'wrap',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
+    writingMode: 'horizontal-tb',
+    textOrientation: 'mixed',
   },
   legalLink: {
     fontSize: 12,
+    lineHeight: 18,
+    textAlign: 'left',
+    writingMode: 'horizontal-tb',
+    textOrientation: 'mixed',
+    whiteSpace: 'normal',
   }
 });
-
