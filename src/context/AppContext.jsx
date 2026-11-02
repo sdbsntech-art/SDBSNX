@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { theme } from '../styles/theme';
 
 const AppContext = createContext();
-const SITE_ORIGIN = 'https://ida-cours.netlify.app';
+const SITE_ORIGIN = 'https://sdbsnx.vercel.app';
 
 const PAGE_ROUTES = [
   { path: '/', tab: 'home', cycle: 'L1' },
@@ -198,8 +198,8 @@ export function AppProvider({ children }) {
   useEffect(() => {
     const seoMeta = {
       home: {
-        title: "SDBSNX | Cours d’informatique au Sénégal",
-        desc: "SDBSNX propose des ressources gratuites en informatique et développement d’applications : cours, TD, examens et vidéos pour les niveaux L1, L2 et L3."
+        title: "SDBSNX | IDA Cours d’informatique au Sénégal",
+        desc: "SDBSNX (SDBSN), IDA Cours : cours gratuits d’informatique, TD, examens et vidéos pour les étudiants de l’UNCHK (ex-UVS) et les apprenants au Sénégal."
       },
       licence: {
         title: `Cours Licence ${selectedCycle} Informatique & Développement | SDBSNX`,

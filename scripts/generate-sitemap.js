@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const rootDirectory = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputDirectory = path.join(rootDirectory, "dist");
-const siteOrigin = new URL(process.env.SITE_URL || "https://ida-cours.netlify.app").origin;
+const siteOrigin = new URL(process.env.SITE_URL || "https://sdbsnx.vercel.app").origin;
 const urls = new Map([[`${siteOrigin}/`, null]]);
 const indexablePages = [
   "cours/licence-1",

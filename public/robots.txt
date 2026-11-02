@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Direct indexing of sitemap
-Sitemap: https://ida-cours.netlify.app/sitemap.xml
+Sitemap: https://sdbsnx.vercel.app/sitemap.xml
