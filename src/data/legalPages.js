@@ -28,16 +28,15 @@ export const LEGAL_PAGES = {
         heading: 'Éditeur',
         paragraphs: [
           'Nom du projet : SDBSNX — IDA Cours.',
-          'Éditeur ou personne responsable : [À COMPLÉTER].',
-          'Statut juridique : [À COMPLÉTER].',
-          'Adresse de contact ou siège : [À COMPLÉTER].',
-          'E-mail : sdbsntech@gmail.com.'
+          'Éditeur ou personne responsable : Seydou Bakhayokho.',
+          'Statut juridique : non communiqué par l’éditeur et à confirmer avant publication définitive.',
+          'Adresse postale : non communiquée. Contact : sdbsntech@gmail.com.'
         ]
       },
       {
         heading: 'Hébergement',
         paragraphs: [
-          'Le dépôt contient une configuration de déploiement Vercel. L’entité contractante, les coordonnées de l’hébergeur, la région de traitement et les modalités exactes d’hébergement sont à confirmer : [À COMPLÉTER].'
+          'Le déploiement de la plateforme est réalisé sur Vercel. Le domaine est géré auprès de LWS. Les entités contractantes, les services éventuellement hébergés chez chaque prestataire, les coordonnées contractuelles et les régions de traitement restent à confirmer.'
         ]
       },
       {
@@ -72,7 +71,7 @@ export const LEGAL_PAGES = {
       {
         heading: 'Sous-traitants et services tiers',
         paragraphs: [
-          'Hébergement : Vercel est la cible de déploiement configurée dans le dépôt ; les conditions applicables, l’entité, la région et les durées des journaux restent à vérifier.',
+          'Déploiement : Vercel est la cible de déploiement configurée dans le dépôt ; le domaine est géré chez LWS. Les rôles exacts de chaque prestataire, entités contractantes, régions de traitement et durées des journaux restent à vérifier.',
           'Supabase : service utilisé pour l’authentification des comptes d’administration et, lorsque configuré, la lecture et la gestion des cours, ressources, annonces, éléments de bibliothèque, profils et journaux d’audit. Le propriétaire du projet, la région de traitement, les paramètres contractuels, les durées et les politiques de suppression doivent être confirmés.',
           'Les vidéos ne sont pas intégrées dans la page : un clic ouvre le site YouTube dans un nouvel onglet. Aucun outil d’analytique ou pixel publicitaire n’a été identifié dans le code examiné.'
         ]
@@ -80,7 +79,7 @@ export const LEGAL_PAGES = {
       {
         heading: 'Durée et suppression',
         paragraphs: [
-          'Les données enregistrées localement restent dans le navigateur jusqu’à leur suppression par l’utilisateur ou par le navigateur. Les durées de conservation des journaux d’hébergement sont à vérifier auprès de l’hébergeur.',
+          'Les données enregistrées localement restent dans le navigateur jusqu’à leur suppression par l’utilisateur ou par le navigateur. Les durées de conservation des journaux de Vercel et des éventuels services LWS utilisés restent à vérifier auprès des prestataires.',
           'Vous pouvez supprimer les préférences, notes, favoris, progression, score et commentaires locaux avec le bouton ci-dessous. Ce bouton ne supprime ni une session Supabase, ni les données enregistrées dans le projet Supabase ; déconnectez-vous de l’administration et adressez toute demande relative au compte ou aux données côté serveur à sdbsntech@gmail.com. Pour supprimer aussi les documents locaux éventuels, une ancienne inscription de service worker ou les données en cache du navigateur, effacez les données du site dans les réglages de votre navigateur. Les durées de conservation des données côté Supabase et des journaux d’hébergement restent à confirmer.'
         ]
       },
