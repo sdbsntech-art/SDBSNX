@@ -140,6 +140,17 @@ test('login screen is readable and has no horizontal page overflow across tested
       expect(dimensions.document, `${colorScheme} login at ${width}px`).toBeLessThanOrEqual(dimensions.viewport);
       expect(dimensions.body, `${colorScheme} login at ${width}px`).toBeLessThanOrEqual(dimensions.viewport);
       await page.screenshot({ path: `test-results/login-${colorScheme}-${width}.png`, fullPage: true });
+
+      await page.getByRole('button', { name: 'Créer un compte' }).click();
+      await expect(page.getByRole('heading', { name: 'Créer un compte' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'S’inscrire avec Google' })).toBeVisible();
+      const signupDimensions = await page.evaluate(() => ({
+        viewport: window.innerWidth,
+        document: document.documentElement.scrollWidth,
+        body: document.body.scrollWidth,
+      }));
+      expect(signupDimensions.document, `${colorScheme} signup at ${width}px`).toBeLessThanOrEqual(signupDimensions.viewport);
+      expect(signupDimensions.body, `${colorScheme} signup at ${width}px`).toBeLessThanOrEqual(signupDimensions.viewport);
     }
   }
 });

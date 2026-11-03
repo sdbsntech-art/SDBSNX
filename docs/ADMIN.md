@@ -72,7 +72,14 @@ VITE_SUPABASE_ANON_KEY=
 
 Pour le développement local, renseignez-les dans `.env` ou `.env.local`, ignoré par Git. Dans Vercel, définissez la nouvelle URL et la nouvelle clé dans **Project → Settings → Environment Variables** pour les environnements utilisés, puis redéployez. `VITE_SUPABASE_ANON_KEY` doit être une clé `publishable` du nouveau projet. Le client refuse les URL avec `/rest/v1` et les clés d’un autre format. N’utilisez jamais `service_role` ou une clé `secret` côté navigateur.
 
-Dans Supabase Auth, activez Google dans **Authentication → Providers → Google**, puis renseignez les identifiants OAuth fournis par Google Cloud. Ajoutez l’URL de callback affichée par Supabase comme URI de redirection autorisée dans Google Cloud. Dans **Authentication → URL Configuration**, réglez le Site URL sur le domaine canonique et autorisez les redirections vers `/` et `/connexion`, ainsi que les origines de développement nécessaires. La configuration Google côté Supabase n’est pas effectuée par ce dépôt.
+Pour activer l’inscription/connexion Google :
+
+1. Dans **Supabase → Authentication → Providers → Google**, activez le fournisseur et copiez l’URI de callback affichée.
+2. Dans Google Cloud, créez un identifiant OAuth de type application Web, ajoutez les domaines du site aux origines autorisées et l’URI de callback Supabase copiée aux URI de redirection autorisées.
+3. Renseignez le Client ID et le Client Secret Google dans les paramètres du fournisseur Google dans Supabase uniquement (jamais dans le code ou `.env` frontend).
+4. Dans **Supabase → Authentication → URL Configuration**, indiquez `https://www.sdbsnx.site` comme Site URL et ajoutez aux redirections autorisées `https://www.sdbsnx.site/**`, `https://sdbsnx.site/**`, `http://localhost:3000/**` et `http://127.0.0.1:4173/**`. Vérifiez aussi l’activation du fournisseur Email pour les inscriptions par mot de passe.
+
+La configuration Google côté Supabase/Google Cloud reste à effectuer par le propriétaire ; le bouton du site commencera à fonctionner après cette configuration.
 
 Vérifications locales : `npm run build` passe ; `npm run test:e2e -- --workers=1` passe (7 scénarios, incluant la redirection des visiteurs non connectés, l’inscription par e-mail, le parcours Google simulé, la connexion étudiant et les mesures responsive aux largeurs 360, 390, 768, 1024 et 1440 px, en thèmes clair et sombre). Il n’existe pas de script lint dans `package.json`. Les tests E2E simulent Supabase et ne remplacent pas une validation des permissions réelles. L’administration et son CSS sont chargés à la demande ; l’ancienne présentation des documents locaux reste indépendante et conservée.
 
