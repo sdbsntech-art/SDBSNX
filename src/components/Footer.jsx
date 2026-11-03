@@ -3,14 +3,31 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useApp } from '../context/AppContext';
 import { Mail, Youtube, Github, Globe } from 'lucide-react';
 import { navigateToPath } from '../lib/navigation';
+import { useAuth } from '../context/AuthContext';
 
 export default function Footer() {
   const { theme, setCurrentTab, setSelectedCycle, navigateToLegalPage } = useApp();
+  const { signOut, role } = useAuth();
 
   const handleNav = (tab, cycle = null) => {
     setCurrentTab(tab);
     if (cycle) setSelectedCycle(cycle);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleSignOut = async () => {
+    try {
+      const { error } = await signOut();
+      if (error) {
+        if (import.meta.env.DEV) console.error('Sign-out failed:', error);
+        window.alert('Impossible de fermer la session. Réessayez.');
+        return;
+      }
+      navigateToPath('/connexion', { replace: true });
+    } catch (error) {
+      if (import.meta.env.DEV) console.error('Sign-out failed:', error);
+      window.alert('Impossible de fermer la session. Réessayez.');
+    }
   };
 
   return (
@@ -19,7 +36,7 @@ export default function Footer() {
       <View className="footer-inner" style={styles.footerInner}>
         <View style={[styles.footerTopBand, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
           <View style={styles.footerTopBandText}>
-            <Text style={[styles.footerBadge, { color: theme.primary, backgroundColor: theme.primaryGlow }]}>Accès gratuit</Text>
+            <Text style={[styles.footerBadge, { color: theme.primary, backgroundColor: theme.primaryGlow }]}>Inscription gratuite</Text>
             <Text style={[styles.footerTopTitle, { color: theme.text }]}>Programmes indicatifs, outils de révision et liens vers des sources externes.</Text>
           </View>
           <TouchableOpacity
@@ -71,8 +88,13 @@ export default function Footer() {
               <Globe size={15} color={theme.primary} />
             </TouchableOpacity>
           </View>
-          <TouchableOpacity onPress={() => navigateToPath('/connexion')} style={styles.adminFooterLink}>
-            <Text style={[styles.legalLink, { color: theme.textMuted }]}>Espace administration</Text>
+          {role === 'admin' && (
+            <TouchableOpacity onPress={() => navigateToPath('/admin')} style={styles.adminFooterLink}>
+              <Text style={[styles.legalLink, { color: theme.textMuted }]}>Espace administration</Text>
+            </TouchableOpacity>
+          )}
+          <TouchableOpacity onPress={handleSignOut} style={styles.adminFooterLink}>
+            <Text style={[styles.legalLink, { color: theme.textMuted }]}>Déconnexion</Text>
           </TouchableOpacity>
         </View>
 

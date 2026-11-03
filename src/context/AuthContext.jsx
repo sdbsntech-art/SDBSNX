@@ -120,6 +120,29 @@ export function AuthProvider({ children }) {
     });
   }, [supabase]);
 
+  const signUpWithPassword = useCallback(async (email, password) => {
+    const client = supabase || await getSupabaseClient();
+    const result = await client.auth.signUp({
+      email,
+      password,
+      options: { emailRedirectTo: `${window.location.origin}/connexion` },
+    });
+    if (!result.error && result.data.session && result.data.user) {
+      setSession(result.data.session);
+      sessionUserId.current = result.data.user.id;
+      await loadRole(client, result.data.user.id);
+    }
+    return result;
+  }, [loadRole, supabase]);
+
+  const signInWithGoogle = useCallback(async () => {
+    const client = supabase || await getSupabaseClient();
+    return client.auth.signInWithOAuth({
+      provider: 'google',
+      options: { redirectTo: `${window.location.origin}/` },
+    });
+  }, [supabase]);
+
   const signOut = useCallback(async () => {
     const client = supabase || await getSupabaseClient();
     const result = await client.auth.signOut();
@@ -142,8 +165,22 @@ export function AuthProvider({ children }) {
     isStaff: role === 'admin' || role === 'editor',
     signInWithPassword,
     signInWithMagicLink,
+    signUpWithPassword,
+    signInWithGoogle,
     signOut,
-  }), [session, role, loading, roleError, configurationError, supabase, signInWithPassword, signInWithMagicLink, signOut]);
+  }), [
+    session,
+    role,
+    loading,
+    roleError,
+    configurationError,
+    supabase,
+    signInWithPassword,
+    signInWithMagicLink,
+    signUpWithPassword,
+    signInWithGoogle,
+    signOut,
+  ]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }

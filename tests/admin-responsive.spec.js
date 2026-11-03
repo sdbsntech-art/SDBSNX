@@ -111,19 +111,7 @@ test('admin layout has no page overflow at supported viewport sizes in light and
 
   mockData.user_roles[0].role = 'editor';
   await page.goto('/admin');
-  await expect(page.getByRole('heading', { name: 'Vue d’ensemble' })).toBeVisible();
-  await page.getByRole('button', { name: /Voir les cours/ }).click();
-  await expect(page.getByRole('heading', { name: 'Cours' }).last()).toBeVisible();
-  await expect(page.getByRole('button', { name: /Supprimer/ })).toHaveCount(0);
-  await expect(page.getByRole('button', { name: 'Utilisateurs' })).toHaveCount(0);
-  await expect(page.getByRole('button', { name: 'Journal d’audit' })).toHaveCount(0);
-  await page.getByRole('button', { name: 'Ouvrir le menu' }).click();
-  await expect(page.getByRole('navigation', { name: 'Navigation administration' }).getByRole('button', { name: 'Cours', exact: true })).toBeVisible();
-  await page.keyboard.press('Escape');
-  await expect(page.getByRole('button', { name: 'Ouvrir le menu' })).toHaveAttribute('aria-expanded', 'false');
-  await page.getByRole('button', { name: 'Ouvrir le menu' }).click();
-  await page.getByRole('navigation', { name: 'Navigation administration' }).getByRole('button', { name: 'Cours', exact: true }).click();
-  await expect(page.getByRole('heading', { name: 'Cours' }).last()).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Accès refusé' })).toBeVisible();
   expect(pageErrors).toEqual([]);
 
   await page.evaluate(() => sessionStorage.setItem('skip-auth-seed', '1'));
@@ -142,6 +130,8 @@ test('login screen is readable and has no horizontal page overflow across tested
       await expect(page.getByLabel('Adresse e-mail')).toBeVisible();
       await expect(page.getByLabel('Mot de passe')).toBeVisible();
       await expect(page.getByRole('button', { name: /Recevoir un lien de connexion/ })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Continuer avec Google' })).toBeVisible();
+      await expect(page.getByRole('button', { name: 'Créer un compte' })).toBeVisible();
       const dimensions = await page.evaluate(() => ({
         viewport: window.innerWidth,
         document: document.documentElement.scrollWidth,
@@ -152,6 +142,126 @@ test('login screen is readable and has no horizontal page overflow across tested
       await page.screenshot({ path: `test-results/login-${colorScheme}-${width}.png`, fullPage: true });
     }
   }
+});
+
+test('email signup requests account creation and shows email confirmation guidance', async ({ page }) => {
+  let signupPayload;
+  await page.route('**/auth/v1/signup**', async (route) => {
+    if (route.request().method() === 'OPTIONS') {
+      await route.fulfill({
+        status: 204,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST,OPTIONS',
+          'Access-Control-Allow-Headers': 'apikey,authorization,content-type,x-client-info',
+        },
+      });
+      return;
+    }
+    signupPayload = route.request().postDataJSON();
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      headers: { 'Access-Control-Allow-Origin': '*' },
+      body: JSON.stringify({
+        id: testUserId,
+        aud: 'authenticated',
+        role: 'authenticated',
+        email: signupPayload.email,
+        app_metadata: { provider: 'email', providers: ['email'] },
+        user_metadata: {},
+        created_at: now,
+      }),
+    });
+  });
+
+  await page.goto('/connexion');
+  await page.getByRole('button', { name: 'Créer un compte' }).click();
+  await expect(page.getByRole('heading', { name: 'Créer un compte' })).toBeVisible();
+  await page.getByLabel('Adresse e-mail').fill('nouveau@example.test');
+  await page.getByLabel('Mot de passe').fill('motdepasse-test-123');
+  await page.getByRole('button', { name: 'Créer mon compte' }).click();
+
+  await expect(page.getByRole('status')).toContainText('Vérifiez votre boîte e-mail');
+  expect(signupPayload).toMatchObject({
+    email: 'nouveau@example.test',
+    password: 'motdepasse-test-123',
+  });
+});
+
+test('student password login opens the learning menu instead of administration', async ({ page }) => {
+  await page.route('**/auth/v1/token**', async (route) => {
+    if (route.request().method() === 'OPTIONS') {
+      await route.fulfill({
+        status: 204,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST,OPTIONS',
+          'Access-Control-Allow-Headers': 'apikey,authorization,content-type,x-client-info',
+        },
+      });
+      return;
+    }
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      headers: { 'Access-Control-Allow-Origin': '*' },
+      body: JSON.stringify({
+        access_token: 'test-access-token',
+        token_type: 'bearer',
+        expires_in: 3600,
+        refresh_token: 'test-refresh-token',
+        user: {
+          id: testUserId,
+          aud: 'authenticated',
+          role: 'authenticated',
+          email: 'student@example.test',
+          app_metadata: { provider: 'email', providers: ['email'] },
+          user_metadata: {},
+          created_at: now,
+        },
+      }),
+    });
+  });
+  await page.route('**/rest/v1/**', async (route) => {
+    const table = new URL(route.request().url()).pathname.split('/').pop();
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      headers: { 'Access-Control-Allow-Origin': '*', 'Content-Range': '*/0' },
+      body: JSON.stringify(table === 'user_roles' ? [{ role: 'student' }] : []),
+    });
+  });
+
+  await page.goto('/connexion');
+  await page.getByLabel('Adresse e-mail').fill('student@example.test');
+  await page.getByLabel('Mot de passe').fill('motdepasse-test-123');
+  await page.getByRole('button', { name: 'Se connecter' }).click();
+
+  await expect(page).toHaveURL(/\/$/);
+  await expect(page.getByRole('navigation', { name: 'Navigation principale' })).toBeVisible();
+  await expect(page.getByRole('button', { name: /Explorer/ })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Vue d’ensemble' })).toHaveCount(0);
+  await expect(page.getByText('Espace administration')).toHaveCount(0);
+});
+
+test('Google OAuth starts with the learning site homepage as callback', async ({ page }) => {
+  let authorizationUrl;
+  await page.route('**/auth/v1/authorize**', async (route) => {
+    authorizationUrl = new URL(route.request().url());
+    await route.fulfill({
+      status: 200,
+      contentType: 'text/html',
+      headers: { 'Access-Control-Allow-Origin': '*' },
+      body: '<title>OAuth redirect mocked</title>',
+    });
+  });
+
+  await page.goto('/connexion');
+  await page.getByRole('button', { name: 'Continuer avec Google' }).click();
+  await expect(page).toHaveURL(/auth\/v1\/authorize/);
+  expect(authorizationUrl.searchParams.get('provider')).toBe('google');
+  expect(authorizationUrl.searchParams.get('redirect_to')).toBe('http://127.0.0.1:4173/');
 });
 
 test('public pages require authentication before showing published content', async ({ page }) => {

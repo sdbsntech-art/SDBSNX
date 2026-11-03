@@ -5,7 +5,17 @@ import { navigateToPath } from '../lib/navigation';
 import '../styles/admin.css';
 
 export default function LoginView() {
-  const { signInWithPassword, signInWithMagicLink, configurationError, user, role, loading } = useAuth();
+  const {
+    signInWithPassword,
+    signInWithMagicLink,
+    signUpWithPassword,
+    signInWithGoogle,
+    configurationError,
+    user,
+    role,
+    loading,
+  } = useAuth();
+  const [mode, setMode] = useState('login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [submitting, setSubmitting] = useState(false);
@@ -14,7 +24,7 @@ export default function LoginView() {
 
   React.useEffect(() => {
     if (!loading && user && !submitting) {
-      navigateToPath(role === 'admin' || role === 'editor' ? '/admin' : '/', { replace: true });
+      navigateToPath(role === 'admin' ? '/admin' : '/', { replace: true });
     }
   }, [loading, role, submitting, user]);
 
@@ -24,15 +34,28 @@ export default function LoginView() {
     setError('');
     setMessage('');
     try {
-      const result = await signInWithPassword(email.trim(), password);
-      if (result.error) {
-        setError('Connexion impossible. Vérifiez vos informations ou réessayez plus tard.');
+      if (mode === 'signup') {
+        const { data, error: signUpError } = await signUpWithPassword(email.trim(), password);
+        if (signUpError) {
+          setError('Inscription impossible. Vérifiez vos informations ou réessayez plus tard.');
+        } else if (data.session) {
+          navigateToPath('/', { replace: true });
+        } else {
+          setMessage('Inscription enregistrée. Vérifiez votre boîte e-mail pour confirmer votre adresse avant de vous connecter.');
+        }
       } else {
-        navigateToPath(result.role === 'admin' || result.role === 'editor' ? '/admin' : '/', { replace: true });
+        const result = await signInWithPassword(email.trim(), password);
+        if (result.error) {
+          setError('Connexion impossible. Vérifiez vos informations ou réessayez plus tard.');
+        } else {
+          navigateToPath(result.role === 'admin' ? '/admin' : '/', { replace: true });
+        }
       }
-    } catch (signInError) {
-      if (import.meta.env.DEV) console.error('Password sign-in failed:', signInError);
-      setError('Connexion impossible. Vérifiez vos informations ou réessayez plus tard.');
+    } catch (authError) {
+      if (import.meta.env.DEV) console.error('Email authentication failed:', authError);
+      setError(mode === 'signup'
+        ? 'Inscription impossible. Vérifiez vos informations ou réessayez plus tard.'
+        : 'Connexion impossible. Vérifiez vos informations ou réessayez plus tard.');
     } finally {
       setSubmitting(false);
     }
@@ -58,26 +81,65 @@ export default function LoginView() {
     }
   };
 
+  const handleGoogleSignIn = async () => {
+    setSubmitting(true);
+    setError('');
+    setMessage('');
+    try {
+      const { error: googleError } = await signInWithGoogle();
+      if (googleError) {
+        if (import.meta.env.DEV) console.error('Google sign-in failed:', googleError);
+        setError('Connexion Google indisponible. Réessayez plus tard.');
+        setSubmitting(false);
+      }
+    } catch (googleError) {
+      if (import.meta.env.DEV) console.error('Google sign-in failed:', googleError);
+      setError('Connexion Google indisponible. Vérifiez la configuration Supabase puis réessayez.');
+      setSubmitting(false);
+    }
+  };
+
+  const switchMode = () => {
+    setMode((currentMode) => currentMode === 'login' ? 'signup' : 'login');
+    setError('');
+    setMessage('');
+  };
+
   return (
     <main className="admin-login-page">
       <div className="admin-back-link"><ShieldCheck size={17} /> Accès sécurisé</div>
       <section className="admin-login-card">
         <div className="admin-login-mark"><ShieldCheck size={26} /></div>
-        <p className="admin-eyebrow">SDBSNX · espace privé</p>
-        <h1>Connexion</h1>
-        <p className="admin-muted">Connectez-vous pour accéder au site et à son espace de gestion.</p>
+        <p className="admin-eyebrow">SDBSNX · espace apprenant</p>
+        <h1>{mode === 'signup' ? 'Créer un compte' : 'Connexion'}</h1>
+        <p className="admin-muted">
+          {mode === 'signup'
+            ? 'Inscrivez-vous pour accéder aux cours, révisions et ressources.'
+            : 'Connectez-vous pour retrouver les cours et ressources du site.'}
+        </p>
         {configurationError && (
           <p className="admin-alert admin-alert-error" role="alert">
             Le service de connexion n’est pas disponible. Vérifiez la configuration Supabase côté déploiement.
           </p>
         )}
 
+        <button
+          className="admin-button admin-button-secondary admin-button-full"
+          type="button"
+          disabled={submitting}
+          onClick={handleGoogleSignIn}
+        >
+          <span className="admin-google-mark" aria-hidden="true">G</span>
+          {mode === 'signup' ? 'S’inscrire avec Google' : 'Continuer avec Google'}
+        </button>
+
+        <div className="admin-login-divider"><span>ou avec votre e-mail</span></div>
         <form className="admin-form" onSubmit={handlePasswordSubmit}>
           <label htmlFor="admin-email">Adresse e-mail</label>
           <input
             id="admin-email"
             type="email"
-            autoComplete="username"
+            autoComplete="email"
             required
             maxLength={254}
             value={email}
@@ -88,8 +150,9 @@ export default function LoginView() {
           <input
             id="admin-password"
             type="password"
-            autoComplete="current-password"
+            autoComplete={mode === 'signup' ? 'new-password' : 'current-password'}
             required
+            minLength={8}
             maxLength={128}
             value={password}
             onChange={(event) => setPassword(event.target.value)}
@@ -99,21 +162,34 @@ export default function LoginView() {
           {message && <p className="admin-alert admin-alert-success" role="status">{message}</p>}
 
           <button className="admin-button admin-button-primary admin-button-full" type="submit" disabled={submitting}>
-            <KeyRound size={17} /> {submitting ? 'Connexion…' : 'Se connecter'}
+            <KeyRound size={17} />
+            {submitting
+              ? (mode === 'signup' ? 'Création…' : 'Connexion…')
+              : (mode === 'signup' ? 'Créer mon compte' : 'Se connecter')}
           </button>
         </form>
 
-        <div className="admin-login-divider"><span>ou</span></div>
-        <button
-          className="admin-button admin-button-secondary admin-button-full"
-          type="button"
-          disabled={submitting || !email.trim()}
-          onClick={handleMagicLink}
-        >
-          <Mail size={17} /> Recevoir un lien de connexion
-        </button>
-        <p className="admin-login-footnote">L’accès dépend du rôle attribué à votre compte dans Supabase.</p>
-        <p className="admin-login-footnote">Le compte doit exister dans le nouveau projet Supabase. L’accès à l’administration nécessite le rôle `admin` ou `editor` dans `user_roles`.</p>
+        {mode === 'login' && (
+          <>
+            <div className="admin-login-divider"><span>ou</span></div>
+            <button
+              className="admin-button admin-button-secondary admin-button-full"
+              type="button"
+              disabled={submitting || !email.trim()}
+              onClick={handleMagicLink}
+            >
+              <Mail size={17} /> Recevoir un lien de connexion
+            </button>
+          </>
+        )}
+
+        <p className="admin-login-footnote">
+          {mode === 'signup' ? 'Déjà inscrit ?' : 'Pas encore de compte ?'}{' '}
+          <button type="button" className="admin-text-button" onClick={switchMode} disabled={submitting}>
+            {mode === 'signup' ? 'Se connecter' : 'Créer un compte'}
+          </button>
+        </p>
+        <p className="admin-login-footnote">L’accès à l’administration est réservé aux comptes auxquels un rôle autorisé a été attribué.</p>
       </section>
     </main>
   );

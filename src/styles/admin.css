@@ -774,6 +774,32 @@
   text-align: center;
 }
 
+.admin-google-mark {
+  display: inline-grid;
+  width: 18px;
+  height: 18px;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font: 700 12px Arial, sans-serif;
+}
+
+.admin-text-button {
+  padding: 0;
+  border: 0;
+  color: var(--admin-primary);
+  background: transparent;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.admin-text-button:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
 .admin-back-link {
   position: absolute;
   top: 22px;

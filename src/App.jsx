@@ -37,7 +37,7 @@ export default function App() {
   if (window.location.pathname === '/admin') {
     return (
       <Suspense fallback={<div className="admin-gate">Chargement…</div>}>
-        <RequireRole roles={['admin', 'editor']}>
+        <RequireRole roles={['admin']}>
           <AdminView />
         </RequireRole>
       </Suspense>

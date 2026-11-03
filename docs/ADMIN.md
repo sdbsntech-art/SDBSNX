@@ -6,15 +6,16 @@
 - Connexion : `https://sdbsnx.site/connexion`
 - Administration : `https://sdbsnx.site/admin`
 
-Une authentification est requise avant d’accéder aux pages du site. Il n’y a pas d’inscription depuis le site : les comptes sont créés dans le nouveau projet Supabase. La connexion accepte un mot de passe ou un lien magique par e-mail. Pour administrer le site, le compte doit aussi avoir un rôle `admin` ou `editor` dans `user_roles`.
+Une authentification est requise avant d’accéder aux pages du site. Après connexion, les utilisateurs arrivent sur l’accueil et peuvent utiliser le menu de cours, révisions et ressources. L’inscription est disponible par e-mail/mot de passe et par Google OAuth; les liens magiques restent disponibles pour la connexion. La déconnexion se trouve en bas du site.
 
 ## Rôles
 
 | Rôle | Permissions de l’interface |
 |---|---|
 | `student` | Aucun accès au panneau d’administration. |
-| `editor` | Consulter, créer, modifier et publier des cours, ressources, éléments de bibliothèque et annonces ; pas de suppression ni d’accès aux fonctions réservées à l’administration. |
-| `admin` | Toutes les permissions d’éditeur, suppression, consultation des utilisateurs et du journal d’audit, changement du rôle des autres utilisateurs. Un administrateur ne peut pas changer son propre rôle. |
+| `student` ou compte sans rôle | Accès au contenu du site après connexion; aucun accès à `/admin`. |
+| `editor` | Aucun accès au panneau; les opérations d’édition sont désactivées dans l’interface actuelle. |
+| `admin` | Seul rôle pouvant accéder au panneau et à ses fonctions d’administration. |
 
 Le contrôle de rôle dans le navigateur sert à guider l’interface ; la sécurité repose sur les politiques RLS de Supabase. Ne désactivez pas RLS pour contourner une erreur d’accès.
 
@@ -36,7 +37,7 @@ Le panneau ne crée pas ces tables et ne change pas la base distante. Les rôles
 
 ### Créer le compte administrateur dans le nouveau projet
 
-Les utilisateurs et mots de passe de l’ancien projet Supabase ne sont pas transférés au nouveau projet. Dans **le nouveau projet → Authentication → Users**, créez l’utilisateur avec l’adresse souhaitée et définissez son mot de passe, puis copiez son UUID. Dans **SQL Editor**, attribuez-lui le rôle :
+Les utilisateurs et mots de passe de l’ancien projet Supabase ne sont pas transférés au nouveau projet. Les utilisateurs peuvent s’inscrire depuis `/connexion`; l’administrateur doit être créé dans **le nouveau projet → Authentication → Users**, puis son UUID reçoit le rôle `admin` dans `user_roles` :
 
 ```sql
 insert into public.user_roles (user_id, role)
@@ -71,9 +72,9 @@ VITE_SUPABASE_ANON_KEY=
 
 Pour le développement local, renseignez-les dans `.env` ou `.env.local`, ignoré par Git. Dans Vercel, définissez la nouvelle URL et la nouvelle clé dans **Project → Settings → Environment Variables** pour les environnements utilisés, puis redéployez. `VITE_SUPABASE_ANON_KEY` doit être une clé `publishable` du nouveau projet. Le client refuse les URL avec `/rest/v1` et les clés d’un autre format. N’utilisez jamais `service_role` ou une clé `secret` côté navigateur.
 
-Dans Supabase Auth, vérifiez l’URL du site et ajoutez `https://sdbsnx.site/connexion` aux URL de redirection autorisées pour les liens magiques. En production, ajoutez aussi l’URL de connexion effective si le domaine ou le protocole change.
+Dans Supabase Auth, activez Google dans **Authentication → Providers → Google**, puis renseignez les identifiants OAuth fournis par Google Cloud. Ajoutez l’URL de callback affichée par Supabase comme URI de redirection autorisée dans Google Cloud. Dans **Authentication → URL Configuration**, réglez le Site URL sur le domaine canonique et autorisez les redirections vers `/` et `/connexion`, ainsi que les origines de développement nécessaires. La configuration Google côté Supabase n’est pas effectuée par ce dépôt.
 
-Vérifications locales : `npm run build` passe ; `npm run test:e2e -- --workers=1` passe (4 scénarios, incluant la redirection des visiteurs non connectés et les mesures responsive aux largeurs 360, 390, 768, 1024 et 1440 px, en thèmes clair et sombre). Il n’existe pas de script lint dans `package.json`. Les tests E2E simulent Supabase et ne remplacent pas une validation des permissions réelles. L’administration et son CSS sont chargés à la demande ; l’ancienne présentation des documents locaux reste indépendante et conservée.
+Vérifications locales : `npm run build` passe ; `npm run test:e2e -- --workers=1` passe (7 scénarios, incluant la redirection des visiteurs non connectés, l’inscription par e-mail, le parcours Google simulé, la connexion étudiant et les mesures responsive aux largeurs 360, 390, 768, 1024 et 1440 px, en thèmes clair et sombre). Il n’existe pas de script lint dans `package.json`. Les tests E2E simulent Supabase et ne remplacent pas une validation des permissions réelles. L’administration et son CSS sont chargés à la demande ; l’ancienne présentation des documents locaux reste indépendante et conservée.
 
 ## Limites de vérification
 
