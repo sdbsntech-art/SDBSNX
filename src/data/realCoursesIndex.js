@@ -1,4 +1,4 @@
-// Index officiel des 530+ supports de cours réels
+// Index local de supports ; les fichiers ne sont pas publiés sans autorisation documentée.
 export const REAL_COURSES_INDEX = {
   "L1": {
     "semestres": {

@@ -1,11 +1,14 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { theme } from '../styles/theme';
+import { LEGAL_PAGES } from '../data/legalPages';
 
 const AppContext = createContext();
-const SITE_ORIGIN = 'https://sdbsnx.vercel.app';
+const SITE_ORIGIN = 'https://sdbsnx.site';
 
 const PAGE_ROUTES = [
   { path: '/', tab: 'home', cycle: 'L1' },
+  { path: '/connexion', tab: 'auth' },
+  { path: '/admin', tab: 'admin' },
   { path: '/cours/licence-1', tab: 'licence', cycle: 'L1' },
   { path: '/cours/licence-2', tab: 'licence', cycle: 'L2' },
   { path: '/cours/licence-3', tab: 'licence', cycle: 'L3' },
@@ -16,6 +19,11 @@ const PAGE_ROUTES = [
   { path: '/formateurs', tab: 'formateurs' },
   { path: '/communaute', tab: 'forum' },
   { path: '/faq', tab: 'faq' },
+  ...Object.entries(LEGAL_PAGES).map(([legalPage, page]) => ({
+    path: page.path,
+    tab: 'legal',
+    legalPage,
+  })),
 ];
 
 const LEGACY_HASH_TABS = new Set(PAGE_ROUTES.map(({ tab }) => tab));
@@ -32,8 +40,12 @@ function getCurrentPageRoute() {
   return PAGE_ROUTES[0];
 }
 
-function getRouteForTab(tab, cycle) {
-  return PAGE_ROUTES.find((route) => route.tab === tab && (!route.cycle || route.cycle === cycle))
+function getRouteForTab(tab, cycle, legalPage) {
+  return PAGE_ROUTES.find((route) => (
+    route.tab === tab
+    && (!route.cycle || route.cycle === cycle)
+    && (!route.legalPage || route.legalPage === legalPage)
+  ))
     || PAGE_ROUTES[0];
 }
 
@@ -41,6 +53,7 @@ export function AppProvider({ children }) {
   // Navigation & View
   const [currentTab, setCurrentTab] = useState(() => getCurrentPageRoute().tab);
   const [selectedCycle, setSelectedCycle] = useState(() => getCurrentPageRoute().cycle || 'L1');
+  const [legalPage, setLegalPage] = useState(() => getCurrentPageRoute().legalPage || 'about');
 
   // Start in the light theme while preserving the user's saved preference.
   const [isDark, setIsDark] = useState(() => {
@@ -73,9 +86,6 @@ export function AppProvider({ children }) {
   // PDF Preview Modal
   const [activePdfPreview, setActivePdfPreview] = useState(null);
 
-  // Legal Modal
-  const [activeLegal, setActiveLegal] = useState(null); // 'mentions' | 'politique' | 'conditions' | null
-
   // Fast Navigation Helpers
   const navigateToVideos = (category = 'all') => {
     setSelectedVideoCategory(category);
@@ -86,6 +96,15 @@ export function AppProvider({ children }) {
   const navigateToLicence = (cycle = 'L1') => {
     setSelectedCycle(cycle);
     setCurrentTab('licence');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const navigateToLegalPage = (page) => {
+    if (!LEGAL_PAGES[page]) {
+      throw new Error(`Unknown legal information page: ${page}`);
+    }
+    setLegalPage(page);
+    setCurrentTab('legal');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -197,9 +216,17 @@ export function AppProvider({ children }) {
   // Keep each navigable section directly addressable and provide unique search metadata.
   useEffect(() => {
     const seoMeta = {
+      auth: {
+        title: 'Connexion | SDBSNX',
+        desc: 'Connexion sécurisée à l’espace de gestion SDBSNX.'
+      },
+      admin: {
+        title: 'Administration | SDBSNX',
+        desc: 'Espace privé de gestion de la plateforme SDBSNX.'
+      },
       home: {
         title: "SDBSNX | IDA Cours d’informatique au Sénégal",
-        desc: "SDBSNX (SDBSN), IDA Cours : cours gratuits d’informatique, TD, examens et vidéos pour les étudiants de l’UNCHK (ex-UVS) et les apprenants au Sénégal."
+        desc: "SDBSNX / IDA Cours : plateforme indépendante de révision en informatique et liens vers des ressources externes au Sénégal."
       },
       licence: {
         title: `Cours Licence ${selectedCycle} Informatique & Développement | SDBSNX`,
@@ -223,7 +250,7 @@ export function AppProvider({ children }) {
       },
       formateurs: {
         title: "Ressources et formateurs en informatique au Sénégal | SDBSNX",
-        desc: "Découvrez des ressources et références de formation en informatique, notamment autour de l’UNCHK (ex-UVS), de l’UCAD et de Force-N. SDBSNX reste indépendant."
+        desc: "Découvrez des créateurs et organismes externes liés à l’informatique. SDBSNX est indépendant et n’est affilié à aucune organisation présentée."
       },
       forum: {
         title: "Communauté et entraide en informatique au Sénégal | SDBSNX",
@@ -235,8 +262,13 @@ export function AppProvider({ children }) {
       },
     };
 
-    const currentSeo = seoMeta[currentTab] || seoMeta.home;
-    const route = getRouteForTab(currentTab, selectedCycle);
+    const currentSeo = currentTab === 'legal'
+      ? {
+          title: `${LEGAL_PAGES[legalPage]?.title || LEGAL_PAGES.about.title} | SDBSNX`,
+          desc: LEGAL_PAGES[legalPage]?.description || LEGAL_PAGES.about.description,
+        }
+      : (seoMeta[currentTab] || seoMeta.home);
+    const route = getRouteForTab(currentTab, selectedCycle, legalPage);
     const canonicalUrl = new URL(route.path, SITE_ORIGIN).href;
     document.title = currentSeo.title;
 
@@ -263,13 +295,14 @@ export function AppProvider({ children }) {
       const historyMethod = isLegacyRoute ? 'replaceState' : 'pushState';
       window.history[historyMethod]({}, '', route.path);
     }
-  }, [currentTab, selectedCycle]);
+  }, [currentTab, selectedCycle, legalPage]);
 
   // Restore the active section when users navigate with the browser history.
   useEffect(() => {
     const syncRouteFromLocation = () => {
       const route = getCurrentPageRoute();
       setSelectedCycle(route.cycle || 'L1');
+      setLegalPage(route.legalPage || 'about');
       setCurrentTab(route.tab);
     };
 
@@ -291,7 +324,6 @@ export function AppProvider({ children }) {
       if (e.key === 'Escape') {
         setIsSearchOpen(false);
         setActiveVideo(null);
-        setActiveLegal(null);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -316,8 +348,8 @@ export function AppProvider({ children }) {
         setActiveVideo,
         activePdfPreview,
         setActivePdfPreview,
-        activeLegal,
-        setActiveLegal,
+        legalPage,
+        navigateToLegalPage,
         navigateToVideos,
         navigateToLicence,
         completedLessons,

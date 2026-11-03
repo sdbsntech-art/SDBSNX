@@ -1,28 +1,48 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
 import { useApp } from './context/AppContext';
 import HeaderNav from './components/HeaderNav';
 import Footer from './components/Footer';
 import BottomTabBar from './components/BottomTabBar';
-import QuickSearchModal from './components/QuickSearchModal';
 import VideoPlayerModal from './components/VideoPlayerModal';
-import PdfViewerModal from './components/PdfViewerModal';
 import Toast from './components/Toast';
-import LegalModal from './views/LegalModal';
-
-import HomeView from './views/HomeView';
-import LicenceView from './views/LicenceView';
-import VideosView from './views/VideosView';
-
-import LibraryView from './views/LibraryView';
-import CybersecuriteView from './views/CybersecuriteView';
-import EntrepreneuriatView from './views/EntrepreneuriatView';
-import FormateursView from './views/FormateursView';
-import ForumCommentsView from './views/ForumCommentsView';
-import FAQView from './views/FAQView';
+const LoginView = lazy(() => import('./views/LoginView'));
+const AdminView = lazy(() => import('./views/AdminView'));
+const RequireRole = lazy(() => import('./components/RequireRole'));
+const RequireAuthentication = lazy(() => import('./components/RequireAuthentication'));
+const PdfViewerModal = lazy(() => import('./components/PdfViewerModal'));
+const QuickSearchModal = lazy(() => import('./components/QuickSearchModal'));
+const HomeView = lazy(() => import('./views/HomeView'));
+const LicenceView = lazy(() => import('./views/LicenceView'));
+const VideosView = lazy(() => import('./views/VideosView'));
+const LibraryView = lazy(() => import('./views/LibraryView'));
+const CybersecuriteView = lazy(() => import('./views/CybersecuriteView'));
+const EntrepreneuriatView = lazy(() => import('./views/EntrepreneuriatView'));
+const FormateursView = lazy(() => import('./views/FormateursView'));
+const ForumCommentsView = lazy(() => import('./views/ForumCommentsView'));
+const FAQView = lazy(() => import('./views/FAQView'));
+const LegalPagesView = lazy(() => import('./views/LegalPagesView'));
 
 export default function App() {
-  const { currentTab, theme } = useApp();
+  const { currentTab, activePdfPreview, isSearchOpen, theme } = useApp();
+
+  if (window.location.pathname === '/connexion') {
+    return (
+      <Suspense fallback={<div className="admin-gate">Chargement…</div>}>
+        <LoginView />
+      </Suspense>
+    );
+  }
+
+  if (window.location.pathname === '/admin') {
+    return (
+      <Suspense fallback={<div className="admin-gate">Chargement…</div>}>
+        <RequireRole roles={['admin', 'editor']}>
+          <AdminView />
+        </RequireRole>
+      </Suspense>
+    );
+  }
 
   const renderActiveView = () => {
     switch (currentTab) {
@@ -44,19 +64,25 @@ export default function App() {
         return <ForumCommentsView />;
       case 'faq':
         return <FAQView />;
+      case 'legal':
+        return <LegalPagesView />;
       default:
         return <HomeView />;
     }
   };
 
   return (
-    <View style={[styles.appRoot, { backgroundColor: theme.bg, color: theme.text }]}>
+    <Suspense fallback={<div className="admin-gate">Vérification de la session…</div>}>
+      <RequireAuthentication>
+        <View style={[styles.appRoot, { backgroundColor: theme.bg, color: theme.text }]}>
       {/* Top Sticky Header */}
       <HeaderNav />
 
       {/* Main View Area */}
       <View style={styles.mainContent} className="app-main-content">
-        {renderActiveView()}
+        <Suspense fallback={<div className="admin-gate">Chargement…</div>}>
+          {renderActiveView()}
+        </Suspense>
       </View>
 
       {/* Footer */}
@@ -66,12 +92,21 @@ export default function App() {
       <BottomTabBar />
 
       {/* Modals & Overlays */}
-      <QuickSearchModal />
+      {isSearchOpen && (
+        <Suspense fallback={null}>
+          <QuickSearchModal />
+        </Suspense>
+      )}
       <VideoPlayerModal />
-      <PdfViewerModal />
-      <LegalModal />
+      {activePdfPreview && (
+        <Suspense fallback={null}>
+          <PdfViewerModal />
+        </Suspense>
+      )}
       <Toast />
-    </View>
+        </View>
+      </RequireAuthentication>
+    </Suspense>
   );
 }
 

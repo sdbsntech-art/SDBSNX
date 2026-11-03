@@ -19,10 +19,11 @@ import {
   Eye
 } from 'lucide-react';
 import * as pdfjsLib from 'pdfjs-dist/build/pdf';
+import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.js?url';
 
 // Configure PDF.js worker
 if (typeof window !== 'undefined' && pdfjsLib && pdfjsLib.GlobalWorkerOptions) {
-  pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version || '3.11.174'}/pdf.worker.min.js`;
+  pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
 }
 
 export default function PdfViewerModal() {
@@ -117,7 +118,7 @@ export default function PdfViewerModal() {
       try {
         const loadingTask = pdfjsLib.getDocument({
           url: fileUrl,
-          cMapUrl: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/cmaps/',
+          cMapUrl: '/pdfjs/cmaps/',
           cMapPacked: true,
         });
 
@@ -241,7 +242,7 @@ export default function PdfViewerModal() {
         setIsFullscreen(false);
       }
     } catch {
-      window.open(fileUrl, '_blank');
+      window.open(fileUrl, '_blank', 'noopener,noreferrer');
     }
   };
 
@@ -621,7 +622,7 @@ export default function PdfViewerModal() {
               </span>
               <button
                 type="button"
-                onClick={() => window.open(fileUrl, '_blank')}
+                onClick={() => window.open(fileUrl, '_blank', 'noopener,noreferrer')}
                 style={{
                   background: theme.primary,
                   color: '#FFF',
@@ -861,7 +862,7 @@ export default function PdfViewerModal() {
 
                 <button
                   type="button"
-                  onClick={() => window.open(fileUrl, '_blank')}
+                  onClick={() => window.open(fileUrl, '_blank', 'noopener,noreferrer')}
                   style={{
                     display: 'flex',
                     alignItems: 'center',

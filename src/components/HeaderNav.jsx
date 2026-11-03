@@ -53,7 +53,7 @@ const menuGroups = [
     icon: Users,
     activeTabs: ['formateurs', 'forum', 'faq'],
     items: [
-      { tab: 'formateurs', label: 'Nos formateurs', subLabel: 'Mentors & Partenaires', icon: Users },
+      { tab: 'formateurs', label: 'Ressources externes', subLabel: 'Liens utiles', icon: Users },
       { tab: 'forum', label: 'Discussion & Forum', subLabel: 'Entraide entre étudiants', icon: MessageSquare },
       { tab: 'faq', label: 'Aide & FAQ', subLabel: 'Questions fréquentes', icon: HelpCircle },
     ],
@@ -235,13 +235,12 @@ export default function HeaderNav() {
           aria-label="SDBSNX IDA — Accueil"
         >
           <img src="/sdbsnx-logo.png" alt="SDBSNX" className="site-brand-logo" />
-          <img src="/unchk-uvs-logo.png" alt="UNCHK" className="site-brand-partner-logo site-brand-partner-logo-small" />
           <span className="site-brand-copy">
             <span className="site-brand-name" style={{ color: theme.text }}>
               SDBSNX <span style={{ color: theme.primary }}>•</span> IDA
             </span>
             <span className="site-brand-subtitle" style={{ color: theme.textDim }}>
-              FORCE-N • UNCHK
+              Projet indépendant
             </span>
           </span>
         </button>
@@ -361,10 +360,9 @@ export default function HeaderNav() {
             >
               <div className="drawer-brand-row">
                 <img src="/sdbsnx-logo.png" alt="SDBSNX" className="drawer-logo" />
-                <img src="/unchk-uvs-logo.png" alt="UNCHK" className="drawer-partner-logo" />
                 <div className="drawer-brand-text">
                   <span className="drawer-title" style={{ color: theme.text }}>SDBSNX IDA</span>
-                  <span className="drawer-sub" style={{ color: theme.textDim }}>UNCHK SÉNÉGAL</span>
+                  <span className="drawer-sub" style={{ color: theme.textDim }}>Plateforme indépendante</span>
                 </div>
               </div>
 
@@ -541,10 +539,10 @@ export default function HeaderNav() {
             >
               <div className="drawer-footer-info">
                 <span style={{ color: theme.text, fontWeight: 700, fontSize: 12 }}>
-                  SDBSNX × UNCHK • SÉNÉGAL
+                  SDBSNX • PROJET INDÉPENDANT
                 </span>
                 <span style={{ color: theme.textDim, fontSize: 11 }}>
-                  Plateforme Pédagogique Officielle IDA v2.0
+                  Plateforme éducative indépendante
                 </span>
               </div>
             </div>

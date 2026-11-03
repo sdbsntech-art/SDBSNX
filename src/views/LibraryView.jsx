@@ -4,6 +4,7 @@ import { useApp } from '../context/AppContext';
 import { LIBRARY_DATA } from '../data/libraryData';
 import BackToHomeBar from '../components/BackToHomeBar';
 import useAdminDocuments from '../hooks/useAdminDocuments';
+import PublishedLibraryItems from '../components/PublishedLibraryItems';
 import { 
   BookOpen, 
   Search, 
@@ -66,6 +67,7 @@ export default function LibraryView() {
         currentPageTitle="Bibliothèque Numérique • E-books & Références" 
         breadcrumbCategory="Ressources d'Étude" 
       />
+      <PublishedLibraryItems />
 
       {/* Header */}
       <View style={styles.headerArea}>
@@ -75,19 +77,13 @@ export default function LibraryView() {
             alt="SDBSNX" 
             style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
           />
-          <View style={{ width: 1, height: 14, backgroundColor: theme.border }} />
-          <img 
-            src="/unchk-uvs-logo.png" 
-            alt="UNCHK" 
-            style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
-          />
-          <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX × UNCHK • BIBLIOTHÈQUE</Text>
+          <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX • BIBLIOTHÈQUE</Text>
         </View>
         <Text style={[styles.pageTitle, { color: theme.text }]} className="fluid-page-title">
           Manuels de Référence & Fiches Mémento
         </Text>
         <Text style={[styles.pageDesc, { color: theme.textMuted }]}>
-          Retrouvez les guides essentiels, aides-mémoires de syntaxe, livres blancs et cours théoriques au format PDF téléchargeable.
+          Retrouvez des références et guides d’étude sélectionnés. Les fichiers non couverts par une autorisation de diffusion ne sont pas publiés.
         </Text>
 
         {/* Search */}

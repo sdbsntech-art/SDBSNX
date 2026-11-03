@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, useWindowDimensions } from 'react-native';
 import { useApp } from '../context/AppContext';
 import { COURSES_DATA } from '../data/coursesData';
@@ -27,6 +27,8 @@ import {
   Rocket,
   Briefcase
 } from 'lucide-react';
+
+const PublicAnnouncements = lazy(() => import('../components/PublicAnnouncements'));
 
 export default function HomeView() {
   const { width: viewportWidth } = useWindowDimensions();
@@ -62,7 +64,7 @@ export default function HomeView() {
 
   const opportunityFeed = [
     { title: 'Appels à projets', text: 'Stagiaires et étudiants actifs : opportunités de projets startups, hackathons et défis technologiques.', icon: Rocket },
-    { title: 'Formations certifiantes', text: 'Certifications FORCE-N, cybersécurité, gestion de projet et entrepreneuriat numérique.', icon: Award },
+    { title: 'Ressources externes', text: 'Liens vers des programmes et formations à vérifier auprès de leurs éditeurs.', icon: Award },
     { title: 'Révisions de semestre', text: 'Sujets clés, annales, fiches de synthèse et plan de révision par niveau.', icon: BookOpen },
   ];
 
@@ -75,7 +77,7 @@ export default function HomeView() {
         <View style={[styles.glowOrbSecondary, { backgroundColor: theme.secondary }]} />
 
         <View style={styles.heroContent}>
-          {/* Tri-Emblem Showcase: SDBSNX, UNCHK & FORCE-N */}
+          {/* Project identity and links to external sources */}
           <View style={styles.dualEmblemPill}>
             <img 
               src="/sdbsnx-logo.png" 
@@ -90,34 +92,12 @@ export default function HomeView() {
                 boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
               }} 
             />
-            <View style={[styles.emblemDivider, { backgroundColor: theme.border }]} />
-            <img 
-              src="/unchk-uvs-logo.png" 
-              alt="Université Numérique Cheikh Hamidou Kane (ex UVS)" 
-              style={{
-                height: 38,
-                width: 'auto',
-                objectFit: 'contain',
-                borderRadius: 8,
-                background: '#FFFFFF',
-                padding: '2px 7px',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
-              }} 
-            />
-            <View style={[styles.emblemDivider, { backgroundColor: theme.border }]} />
-            <img 
-              src="/force-n-logo.png" 
-              alt="FORCE-N • Université Numérique Cheikh Hamidou Kane" 
-              style={{
-                height: 38,
-                width: 'auto',
-                objectFit: 'contain',
-                borderRadius: 8,
-                background: '#FFFFFF',
-                padding: '2px 7px',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
-              }} 
-            />
+            <TouchableOpacity onPress={() => window.open('https://www.unchk.sn/', '_blank', 'noopener,noreferrer')}>
+              <Text style={{ color: theme.textMuted, fontSize: 12, fontWeight: '700' }}>Site UN-CHK ↗</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => window.open('https://force-n.sn', '_blank', 'noopener,noreferrer')}>
+              <Text style={{ color: theme.textMuted, fontSize: 12, fontWeight: '700' }}>Site FORCE-N ↗</Text>
+            </TouchableOpacity>
           </View>
 
           {/* Version badge */}
@@ -199,7 +179,7 @@ export default function HomeView() {
         </View>
       </View>
 
-      {/* Remerciements aux partenaires de formation et aux ressources vidéo */}
+      {/* Independent presentation of external learning resources */}
       <View style={styles.sectionWrap}>
         <View style={[styles.grafikartBannerCard, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
           <View style={[styles.tributeGlow, { backgroundColor: theme.primary }]} />
@@ -212,17 +192,17 @@ export default function HomeView() {
               </View>
               <View style={[styles.authorChip, { backgroundColor: theme.primaryGlow }]}>
                 <GraduationCap size={13} color={theme.accent} />
-                <Text style={{ fontSize: 12, fontWeight: '700', color: theme.text }}>Partenaires de formation</Text>
+                <Text style={{ fontSize: 12, fontWeight: '700', color: theme.text }}>Sources externes</Text>
               </View>
             </View>
 
             <Text style={[styles.grafikartTitle, { color: theme.text }]}>
-              Merci à l’<Text style={{ color: theme.primary }}>UNCHK</Text> et à <Text style={{ color: theme.primary }}>FORCE-N</Text>
+              Des ressources externes, sans affiliation
             </Text>
 
             <View style={[styles.quoteBox, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
               <Text style={[styles.quoteText, { color: theme.text }]}>
-                Nous remercions l’<Text style={{ fontWeight: '800', color: theme.primary }}>Université Numérique Cheikh Hamidou Kane (UNCHK)</Text> pour son engagement en faveur de la formation universitaire, ainsi que <Text style={{ fontWeight: '800', color: theme.primary }}>FORCE-N</Text> pour ses formations complémentaires et certifiantes. J’exprime également ma gratitude envers <Text style={{ fontWeight: '800', color: theme.primary }}>LUCAD</Text>, où j’ai bénéficié d’une solide formation en Python, qui m’a permis d’acquérir les connaissances nécessaires et de me préparer pleinement à la suite de mon parcours.
+                Les organismes, créateurs et marques mentionnés sont des sources indépendantes. Leur présence sur ce site ne signifie ni partenariat, ni soutien, ni affiliation.
               </Text>
               <Text style={[styles.quoteSignature, { color: theme.textMuted }]}>
                 — SDBSNX • IDA COURS
@@ -232,7 +212,7 @@ export default function HomeView() {
             <View style={[styles.otherMentorsRow, { borderTopColor: theme.border }]}>
               <Youtube size={16} color={theme.emerald} />
               <Text style={[styles.otherMentorsText, { color: theme.textMuted }]}>
-                Mention spéciale à <Text style={{ fontWeight: '700', color: theme.text }}>Grafikart</Text> pour ses vidéos pédagogiques, qui complètent les ressources proposées aux apprenants.
+                Les liens vidéo mènent aux pages publiées par leurs créateurs et ne sont ouverts qu’après votre clic.
               </Text>
             </View>
           </View>
@@ -248,15 +228,15 @@ export default function HomeView() {
           </View>
           <Text style={[styles.sectionTitle, { color: theme.text }]}>Explorez Votre Niveau de Licence</Text>
           <Text style={[styles.sectionSubtitle, { color: theme.textMuted }]}>
-            Plus de 530 supports officiels (cours magistraux, fiches TD, TP et examens) directement accessibles.
+            Programmes indicatifs de révision par cycle. Les supports de cours locaux sont retirés de la publication pendant la vérification des droits.
           </Text>
         </View>
 
         <View style={styles.cyclesGrid} className="cycles-responsive-grid">
           {[
-            { key: 'L1', docCount: '170 documents', color: theme.primary, label: 'L1 • Fondations & Web' },
-            { key: 'L2', docCount: '333 documents', color: theme.secondary, label: 'L2 • Backend & Mobile' },
-            { key: 'L3', docCount: '30 documents', color: theme.accent, label: 'L3 • Architecture & Sécurité' }
+            { key: 'L1', docCount: 'Programme', color: theme.primary, label: 'L1 • Fondations & Web' },
+            { key: 'L2', docCount: 'Programme', color: theme.secondary, label: 'L2 • Backend & Mobile' },
+            { key: 'L3', docCount: 'Programme', color: theme.accent, label: 'L3 • Architecture & Sécurité' }
           ].map((item) => {
             const cycleKey = item.key;
             const data = COURSES_DATA[cycleKey];
@@ -281,12 +261,12 @@ export default function HomeView() {
                   <View style={styles.metaBadge}>
                     <FileText size={14} color={item.color} />
                     <Text style={[styles.metaBadgeText, { color: theme.text, fontWeight: '700' }]}>
-                      {item.docCount} en ligne
+                      {item.docCount} indicatif
                     </Text>
                   </View>
                   <View style={styles.metaBadge}>
                     <CheckCircle2 size={14} color={theme.emerald} />
-                    <Text style={[styles.metaBadgeText, { color: theme.text }]}>PDFs & TD Disponibles</Text>
+                    <Text style={[styles.metaBadgeText, { color: theme.text }]}>Supports à vérifier</Text>
                   </View>
                 </View>
 
@@ -416,6 +396,10 @@ export default function HomeView() {
           </Text>
         </View>
 
+        <Suspense fallback={null}>
+          <PublicAnnouncements />
+        </Suspense>
+
         <View style={styles.opportunityGrid}>
           {opportunityFeed.map(({ title, text, icon: Icon }) => (
             <View key={title} style={[styles.opportunityCard, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
@@ -498,7 +482,7 @@ export default function HomeView() {
         </View>
       </View>
 
-      {/* 5. University Vision & UNCHK Banner */}
+      {/* External institution reference */}
       <View style={styles.sectionWrap}>
         <View style={[styles.unchkCard, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
           <View style={styles.unchkContent}>
@@ -507,137 +491,68 @@ export default function HomeView() {
               <Text style={[styles.unchkBadgeText, { color: theme.accent }]}>VISION ACADÉMIQUE SÉNÉGAL</Text>
             </View>
             <Text style={[styles.unchkTitle, { color: theme.text }]}>
-              L'Excellence Numérique à l'UNCHK (ex-UVS)
+              Université Numérique Cheikh Hamidou Kane (UN-CHK)
             </Text>
             <Text style={[styles.unchkText, { color: theme.textMuted }]}>
-              L'Université Numérique Cheikh Hamidou Kane offre une opportunité historique de démocratiser le savoir technologique de haut niveau. 
-              Grâce à la formation à distance, apprenez à votre rythme tout en développant une rigueur et une autonomie indispensables aux grands ingénieurs logiciels de demain.
+              Pour les informations sur les formations et services de l’université, consultez son site officiel. Cette plateforme indépendante ne représente pas l’UN-CHK.
             </Text>
             <View style={styles.unchkPoints}>
               <View style={styles.unchkPointItem}>
                 <CheckCircle2 size={16} color={theme.emerald} />
-                <Text style={[styles.pointText, { color: theme.text }]}>Diplômes universitaires reconnus par le CAMES</Text>
+                <Text style={[styles.pointText, { color: theme.text }]}>Informations et formations : consulter le site officiel</Text>
               </View>
               <View style={styles.unchkPointItem}>
                 <CheckCircle2 size={16} color={theme.emerald} />
-                <Text style={[styles.pointText, { color: theme.text }]}>Flexibilité totale pour étudiants et professionnels</Text>
+                <Text style={[styles.pointText, { color: theme.text }]}>Les conditions et programmes peuvent évoluer</Text>
               </View>
               <View style={styles.unchkPointItem}>
                 <CheckCircle2 size={16} color={theme.emerald} />
-                <Text style={[styles.pointText, { color: theme.text }]}>Espaces Numériques Ouverts (ENO) dans toutes les régions</Text>
+                <Text style={[styles.pointText, { color: theme.text }]}>Lien externe, sans affiliation ni partenariat</Text>
               </View>
             </View>
           </View>
         </View>
       </View>
 
-      {/* 5.bis FORCE-N Certification & Career Acceleration Showcase */}
+      {/* External programme reference */}
       <View style={styles.sectionWrap}>
         <View style={[styles.forceNCard, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
           <View style={styles.forceNHeaderRow}>
-            <View style={styles.forceNLogoBadge}>
-              <img 
-                src="/force-n-logo.png" 
-                alt="FORCE-N • Université Numérique Cheikh Hamidou Kane" 
-                style={{
-                  height: 48,
-                  width: 'auto',
-                  objectFit: 'contain',
-                  borderRadius: 10,
-                  background: '#FFFFFF',
-                  padding: '3px 10px',
-                  boxShadow: '0 2px 10px rgba(0,0,0,0.08)'
-                }} 
-              />
-            </View>
+            <Text style={[styles.forceNTitle, { color: theme.text }]}>FORCE-N</Text>
             <View style={[styles.forceNTag, { backgroundColor: theme.primaryGlow }, isCompactMobile && styles.forceNTagMobile]}>
               <Award size={14} color={theme.primary} />
               <Text style={[styles.forceNTagText, { color: theme.primary }, isCompactMobile && styles.forceNTagTextMobile]}>
-                PROGRAMME NATIONAL DE FORMATION & EMPLOI
+                SOURCE EXTERNE
               </Text>
             </View>
           </View>
-
-          <Text style={[styles.forceNTitle, { color: theme.text }]}>
-            FORCE-N : Formations Certifiantes & Insertion Professionnelle
-          </Text>
 
           <Text style={[styles.forceNDesc, { color: theme.textMuted }]}>
-            Initié par l'<Text style={{ fontWeight: '700', color: theme.text }}>Université Numérique Cheikh Hamidou Kane (UNCHK)</Text> avec l'appui de la <Text style={{ fontWeight: '700', color: theme.text }}>Fondation Mastercard</Text>, le programme <Text style={{ fontWeight: '700', color: theme.primary }}>FORCE-N</Text> offre aux étudiants et professionnels des opportunités exceptionnelles d'acquérir des compétences numériques de pointe, d'obtenir des certifications internationales reconnues et de faciliter leur insertion professionnelle et entrepreneuriale.
+            Consultez le site officiel de FORCE-N pour connaître les programmes, opportunités et conditions en vigueur. SDBSNX est indépendant et ne délivre aucune certification FORCE-N.
           </Text>
 
-          {/* 4 Feature Pillars Grid */}
-          <View style={styles.forceNPillarsGrid}>
-            <View style={[styles.forceNPillarItem, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-              <View style={[styles.forceNIconCircle, { backgroundColor: theme.primaryGlow }]}>
-                <Award size={18} color={theme.primary} />
-              </View>
-              <Text style={[styles.pillarTitle, { color: theme.text }]}>Certifications Métiers</Text>
-              <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>
-                Parcours certifiants en Développement Web/Mobile, IA, Cloud, Cybersécurité et Marketing Digital.
-              </Text>
-            </View>
-
-            <View style={[styles.forceNPillarItem, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-              <View style={[styles.forceNIconCircle, { backgroundColor: theme.secondary + '22' }]}>
-                <Briefcase size={18} color={theme.secondary} />
-              </View>
-              <Text style={[styles.pillarTitle, { color: theme.text }]}>Insertion & Emploi</Text>
-              <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>
-                Accompagnement personnalisé vers le marché du travail, préparation aux entretiens et accès direct aux stages.
-              </Text>
-            </View>
-
-            <View style={[styles.forceNPillarItem, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-              <View style={[styles.forceNIconCircle, { backgroundColor: theme.accent + '22' }]}>
-                <Rocket size={18} color={theme.accent} />
-              </View>
-              <Text style={[styles.pillarTitle, { color: theme.text }]}>Entrepreneuriat Tech</Text>
-              <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>
-                Coaching pour transformer vos idées en startups viables et orientation vers les guichets de financement.
-              </Text>
-            </View>
-
-            <View style={[styles.forceNPillarItem, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
-              <View style={[styles.forceNIconCircle, { backgroundColor: theme.emerald + '22' }]}>
-                <GraduationCap size={18} color={theme.emerald} />
-              </View>
-              <Text style={[styles.pillarTitle, { color: theme.text }]}>100% Gratuit & Ouvert</Text>
-              <Text style={[styles.pillarDesc, { color: theme.textMuted }]}>
-                Dispositif national accessible à tous les jeunes et professionnels en quête d'excellence numérique.
-              </Text>
-            </View>
-          </View>
-
-          {/* Action Row */}
           <View style={[styles.forceNActionRow, isCompactMobile && styles.forceNActionRowMobile]}>
             <TouchableOpacity
               style={[styles.forceNBtn, { backgroundColor: theme.primary }, isCompactMobile && styles.forceNBtnMobile]}
-              onPress={() => window.open('https://force-n.sn', '_blank')}
+              onPress={() => window.open('https://force-n.sn', '_blank', 'noopener,noreferrer')}
               activeOpacity={0.8}
             >
-              <Text style={styles.forceNBtnText}>Rejoindre le programme FORCE-N</Text>
+              <Text style={styles.forceNBtnText}>Visiter le site officiel</Text>
               <ExternalLink size={16} color="#FFFFFF" />
             </TouchableOpacity>
 
-            <View style={[styles.forceNMetaNote, isCompactMobile && styles.forceNMetaNoteMobile]}>
-              <CheckCircle2 size={16} color={theme.emerald} />
-              <Text style={[styles.forceNMetaText, { color: theme.textMuted }, isCompactMobile && styles.forceNMetaTextMobile]}>
-                Inscriptions ouvertes • Certifications gratuites UNCHK & Fondation Mastercard
-              </Text>
-            </View>
           </View>
         </View>
       </View>
 
-      {/* 6. Formateurs & Partenaires Preview */}
+      {/* External resources preview */}
       <View style={styles.sectionWrap}>
         <View style={styles.sectionHeader}>
           <View style={[styles.secTag, { backgroundColor: theme.emerald + '22' }]}>
             <Users size={15} color={theme.emerald} />
             <Text style={[styles.secTagText, { color: theme.emerald }]}>ÉCOSYSTÈME DE FORMATION</Text>
           </View>
-          <Text style={[styles.sectionTitle, { color: theme.text }]}>Nos Références & Partenaires Pédagogiques</Text>
+          <Text style={[styles.sectionTitle, { color: theme.text }]}>Ressources et créateurs externes</Text>
           <Text style={[styles.sectionSubtitle, { color: theme.textMuted }]}>
             Des ressources conçues avec le meilleur de la pédagogie francophone et internationale.
           </Text>
@@ -657,7 +572,7 @@ export default function HomeView() {
               <Text style={[styles.partnerDesc, { color: theme.textMuted }]} numberOfLines={3}>{f.description}</Text>
               <TouchableOpacity 
                 style={styles.partnerLink}
-                onPress={() => window.open(f.url, '_blank')}
+                onPress={() => window.open(f.url, '_blank', 'noopener,noreferrer')}
               >
                 <Text style={[styles.partnerLinkText, { color: theme.primary }]}>En savoir plus</Text>
                 <ArrowRight size={13} color={theme.primary} />
@@ -671,7 +586,7 @@ export default function HomeView() {
             style={[styles.btnOutline, { borderColor: theme.border, backgroundColor: theme.bgCard }]}
             onPress={() => setCurrentTab('formateurs')}
           >
-            <Text style={[styles.btnOutlineText, { color: theme.text }]}>Découvrir tous nos formateurs et partenaires</Text>
+            <Text style={[styles.btnOutlineText, { color: theme.text }]}>Voir les ressources externes</Text>
             <ArrowRight size={16} color={theme.primary} />
           </TouchableOpacity>
         </View>

@@ -1,4 +1,4 @@
-// Vidéothèque officielle IDA COURS - Formations par Grafikart & Équipe Pédagogique
+// Répertoire de liens vidéo externes ; aucun partenariat n'est revendiqué.
 export const VIDEOS_DATA = [
   {
     "id": "oEAuNzWXRjM",
@@ -7,9 +7,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/oEAuNzWXRjM/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=oEAuNzWXRjM",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/oEAuNzWXRjM?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -21,9 +19,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/XRoFTzGcCsw/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=XRoFTzGcCsw",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/XRoFTzGcCsw?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -35,9 +31,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/Kd4jtZq2x0I/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Kd4jtZq2x0I",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/Kd4jtZq2x0I?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -49,9 +43,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/yr0xmQ9vezo/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=yr0xmQ9vezo",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/yr0xmQ9vezo?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -63,9 +55,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/AH-LTjLCXXI/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=AH-LTjLCXXI",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/AH-LTjLCXXI?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -77,9 +67,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/Iu8YpBnhWm4/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Iu8YpBnhWm4",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/Iu8YpBnhWm4?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -91,9 +79,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/LkZ-KqxgVQ4/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=LkZ-KqxgVQ4",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/LkZ-KqxgVQ4?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -105,9 +91,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/gJ_G-gxQRRk/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=gJ_G-gxQRRk",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/gJ_G-gxQRRk?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -119,9 +103,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/7T9H-P45REg/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=7T9H-P45REg",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/7T9H-P45REg?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -133,9 +115,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/g_u3U2BtK88/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=g_u3U2BtK88",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/g_u3U2BtK88?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -147,9 +127,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/BURRD_nWJh0/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=BURRD_nWJh0",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/BURRD_nWJh0?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -161,9 +139,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/M34IhS0Pfj8/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=M34IhS0Pfj8",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/M34IhS0Pfj8?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -175,9 +151,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/VXNw-elEFlo/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=VXNw-elEFlo",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/VXNw-elEFlo?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -189,9 +163,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/oV964Z6P9_c/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=oV964Z6P9_c",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/oV964Z6P9_c?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -203,9 +175,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/r-X7DutXeIY/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=r-X7DutXeIY",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/r-X7DutXeIY?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -217,9 +187,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/vj-5-_h_E8w/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=vj-5-_h_E8w",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/vj-5-_h_E8w?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -231,9 +199,7 @@ export const VIDEOS_DATA = [
     "matiere": "html",
     "matiereLabel": "HTML5 & Sémantique",
     "color": "#E44D26",
-    "thumbnail": "https://img.youtube.com/vi/0AqDNXDd_Mk/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=0AqDNXDd_Mk",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/0AqDNXDd_Mk?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -245,9 +211,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/PE8FQ6zihhw/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=PE8FQ6zihhw",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/PE8FQ6zihhw?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -259,9 +223,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/EM8UlPeBfuk/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=EM8UlPeBfuk",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/EM8UlPeBfuk?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -273,9 +235,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/k1ID41O4FNM/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=k1ID41O4FNM",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/k1ID41O4FNM?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -287,9 +247,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/-uuk57Tu9ds/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=-uuk57Tu9ds",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/-uuk57Tu9ds?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -301,9 +259,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/e-GTdjI6vC4/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=e-GTdjI6vC4",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/e-GTdjI6vC4?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -315,9 +271,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/UA1bPCEEo8M/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=UA1bPCEEo8M",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/UA1bPCEEo8M?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -329,9 +283,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/YGm1T7bVmJQ/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=YGm1T7bVmJQ",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/YGm1T7bVmJQ?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -343,9 +295,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/hfykeYvwZXs/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=hfykeYvwZXs",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/hfykeYvwZXs?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -357,9 +307,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/LNqBKTeeiWo/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=LNqBKTeeiWo",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/LNqBKTeeiWo?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -371,9 +319,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/OV0bOifr8AE/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=OV0bOifr8AE",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/OV0bOifr8AE?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -385,9 +331,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/uCJxtO5b7Mw/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=uCJxtO5b7Mw",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/uCJxtO5b7Mw?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -399,9 +343,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/T7U_WuaeVaQ/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=T7U_WuaeVaQ",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/T7U_WuaeVaQ?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -413,9 +355,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/4T4vRdhkCxw/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=4T4vRdhkCxw",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/4T4vRdhkCxw?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -427,9 +367,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/iZe6211H14w/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=iZe6211H14w",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/iZe6211H14w?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -441,9 +379,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/rEMVFPyoxDY/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=rEMVFPyoxDY",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/rEMVFPyoxDY?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -455,9 +391,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/89TfBQd3dII/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=89TfBQd3dII",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/89TfBQd3dII?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -469,9 +403,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/jQG3hAbXQVY/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=jQG3hAbXQVY",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/jQG3hAbXQVY?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -483,9 +415,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/JOBlm6kWsMM/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=JOBlm6kWsMM",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/JOBlm6kWsMM?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -497,9 +427,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/wu1Sk8iOPnE/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=wu1Sk8iOPnE",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/wu1Sk8iOPnE?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -511,9 +439,7 @@ export const VIDEOS_DATA = [
     "matiere": "css",
     "matiereLabel": "CSS3 & Flexbox/Grid",
     "color": "#264DE4",
-    "thumbnail": "https://img.youtube.com/vi/h7KjDZLeSRY/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=h7KjDZLeSRY",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/h7KjDZLeSRY?autoplay=1",
     "duration": "15-25 min",
     "level": "Débutant à Intermédiaire",
     "author": "Grafikart.fr"
@@ -525,9 +451,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/asToYAq0F-I/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=asToYAq0F-I",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/asToYAq0F-I?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -539,9 +463,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/gUYfRJ-v_1Y/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=gUYfRJ-v_1Y",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/gUYfRJ-v_1Y?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -553,9 +475,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/GU8kxJ3P67I/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=GU8kxJ3P67I",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/GU8kxJ3P67I?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -567,9 +487,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/zwLmRotDdu8/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=zwLmRotDdu8",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/zwLmRotDdu8?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -581,9 +499,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/qYuvcK8QU4c/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=qYuvcK8QU4c",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/qYuvcK8QU4c?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -595,9 +511,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/kLdQAsrcyvk/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=kLdQAsrcyvk",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/kLdQAsrcyvk?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -609,9 +523,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/EvHAiskwHvE/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=EvHAiskwHvE",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/EvHAiskwHvE?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -623,9 +535,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/wVuJTS8aQyA/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=wVuJTS8aQyA",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/wVuJTS8aQyA?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -637,9 +547,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/2HAPViIAYjc/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=2HAPViIAYjc",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/2HAPViIAYjc?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -651,9 +559,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/6tC4tv9MlkI/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=6tC4tv9MlkI",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/6tC4tv9MlkI?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -665,9 +571,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/OSHPfiuDbqM/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=OSHPfiuDbqM",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/OSHPfiuDbqM?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -679,9 +583,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/ZocfMM0qofA/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=ZocfMM0qofA",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/ZocfMM0qofA?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -693,9 +595,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/Qvr6Nh7rtAI/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Qvr6Nh7rtAI",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/Qvr6Nh7rtAI?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -707,9 +607,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/kwcFfskBaag/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=kwcFfskBaag",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/kwcFfskBaag?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -721,9 +619,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/05mKXSdkCJg/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=05mKXSdkCJg",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/05mKXSdkCJg?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -735,9 +631,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/z9pcgJX1DdY/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=z9pcgJX1DdY",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/z9pcgJX1DdY?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -749,9 +643,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/DJewHNOFqD0/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=DJewHNOFqD0",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/DJewHNOFqD0?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -763,9 +655,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/9U-RgCzN9mI/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=9U-RgCzN9mI",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/9U-RgCzN9mI?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -777,9 +667,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/AD28PddTwEE/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=AD28PddTwEE",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/AD28PddTwEE?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -791,9 +679,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/O41U3fOOhvA/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=O41U3fOOhvA",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/O41U3fOOhvA?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -805,9 +691,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/Kh0drIcQ2UI/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Kh0drIcQ2UI",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/Kh0drIcQ2UI?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -819,9 +703,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/sXwPfnsKGiE/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=sXwPfnsKGiE",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/sXwPfnsKGiE?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -833,9 +715,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/Rm8kxBf5Eoc/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Rm8kxBf5Eoc",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/Rm8kxBf5Eoc?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -847,9 +727,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/55EXq7ZjL4Q/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=55EXq7ZjL4Q",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/55EXq7ZjL4Q?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -861,9 +739,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/TicxcEDiP3U/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=TicxcEDiP3U",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/TicxcEDiP3U?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -875,9 +751,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/7e4EMDOeiYE/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=7e4EMDOeiYE",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/7e4EMDOeiYE?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -889,9 +763,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/PmrHg7q5raw/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=PmrHg7q5raw",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/PmrHg7q5raw?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -903,9 +775,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/9AdBFTM2lVM/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=9AdBFTM2lVM",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/9AdBFTM2lVM?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -917,9 +787,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/rcShQM00mIM/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=rcShQM00mIM",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/rcShQM00mIM?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -931,9 +799,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/p2UW7Wptlow/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=p2UW7Wptlow",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/p2UW7Wptlow?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -945,9 +811,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/N3l-kV4nczo/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=N3l-kV4nczo",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/N3l-kV4nczo?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -959,9 +823,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/3Hrhuz8-w2M/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=3Hrhuz8-w2M",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/3Hrhuz8-w2M?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -973,9 +835,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/__3lzaZS3yc/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=__3lzaZS3yc",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/__3lzaZS3yc?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -987,9 +847,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/1hHVvuShsGo/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=1hHVvuShsGo",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/1hHVvuShsGo?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1001,9 +859,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/WXaDeTmZTgk/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=WXaDeTmZTgk",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/WXaDeTmZTgk?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1015,9 +871,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/eBiNsThWR70/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=eBiNsThWR70",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/eBiNsThWR70?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1029,9 +883,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/jAYyeRjQJdQ/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=jAYyeRjQJdQ",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/jAYyeRjQJdQ?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1043,9 +895,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/o5UAtZUx7l0/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=o5UAtZUx7l0",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/o5UAtZUx7l0?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1057,9 +907,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/bunBbhY4da4/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=bunBbhY4da4",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/bunBbhY4da4?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1071,9 +919,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/g01qBs1CpAc/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=g01qBs1CpAc",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/g01qBs1CpAc?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1085,9 +931,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/cT6b6_XzFmI/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=cT6b6_XzFmI",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/cT6b6_XzFmI?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1099,9 +943,7 @@ export const VIDEOS_DATA = [
     "matiere": "js",
     "matiereLabel": "JavaScript ES6+",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/O2v_ghJlVAA/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=O2v_ghJlVAA",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/O2v_ghJlVAA?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1113,9 +955,7 @@ export const VIDEOS_DATA = [
     "matiere": "php",
     "matiereLabel": "PHP & Backend",
     "color": "#777BB4",
-    "thumbnail": "https://img.youtube.com/vi/QYDHjY18CQg/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=QYDHjY18CQg",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/QYDHjY18CQg?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Pentiminax"
@@ -1127,9 +967,7 @@ export const VIDEOS_DATA = [
     "matiere": "php",
     "matiereLabel": "PHP & Backend",
     "color": "#777BB4",
-    "thumbnail": "https://img.youtube.com/vi/qZ2U-tHyieU/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=qZ2U-tHyieU",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/qZ2U-tHyieU?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Pentiminax"
@@ -1141,9 +979,7 @@ export const VIDEOS_DATA = [
     "matiere": "php",
     "matiereLabel": "PHP & Backend",
     "color": "#777BB4",
-    "thumbnail": "https://img.youtube.com/vi/kO765hqvlYA/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=kO765hqvlYA",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/kO765hqvlYA?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Pentiminax"
@@ -1155,9 +991,7 @@ export const VIDEOS_DATA = [
     "matiere": "php",
     "matiereLabel": "PHP & Backend",
     "color": "#777BB4",
-    "thumbnail": "https://img.youtube.com/vi/EI475KTOTsg/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=EI475KTOTsg",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/EI475KTOTsg?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Pentiminax"
@@ -1169,9 +1003,7 @@ export const VIDEOS_DATA = [
     "matiere": "php",
     "matiereLabel": "PHP & Backend",
     "color": "#777BB4",
-    "thumbnail": "https://img.youtube.com/vi/l9DP1roPHxw/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=l9DP1roPHxw",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/l9DP1roPHxw?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Pentiminax"
@@ -1183,9 +1015,7 @@ export const VIDEOS_DATA = [
     "matiere": "php",
     "matiereLabel": "PHP & Backend",
     "color": "#777BB4",
-    "thumbnail": "https://img.youtube.com/vi/KN7COUTTUYs/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=KN7COUTTUYs",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/KN7COUTTUYs?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Pentiminax"
@@ -1197,9 +1027,7 @@ export const VIDEOS_DATA = [
     "matiere": "python",
     "matiereLabel": "Python & Algorithmes",
     "color": "#3776AB",
-    "thumbnail": "https://img.youtube.com/vi/oUJolR5bX6g/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=oUJolR5bX6g",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/oUJolR5bX6g?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "CodeAvecJonathan"
@@ -1211,9 +1039,7 @@ export const VIDEOS_DATA = [
     "matiere": "python",
     "matiereLabel": "Python & Algorithmes",
     "color": "#3776AB",
-    "thumbnail": "https://img.youtube.com/vi/ZcjAw3uEZYw/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=ZcjAw3uEZYw",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/ZcjAw3uEZYw?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "CodeAvecJonathan"
@@ -1225,9 +1051,7 @@ export const VIDEOS_DATA = [
     "matiere": "python",
     "matiereLabel": "Python & Algorithmes",
     "color": "#3776AB",
-    "thumbnail": "https://img.youtube.com/vi/1NUkHC-Fzx4/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=1NUkHC-Fzx4",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/1NUkHC-Fzx4?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "CodeAvecJonathan"
@@ -1239,9 +1063,7 @@ export const VIDEOS_DATA = [
     "matiere": "python",
     "matiereLabel": "Python & Algorithmes",
     "color": "#3776AB",
-    "thumbnail": "https://img.youtube.com/vi/5vX6oiVLza4/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=5vX6oiVLza4",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/5vX6oiVLza4?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "CodeAvecJonathan"
@@ -1253,9 +1075,7 @@ export const VIDEOS_DATA = [
     "matiere": "python",
     "matiereLabel": "Python & Algorithmes",
     "color": "#3776AB",
-    "thumbnail": "https://img.youtube.com/vi/Y-wXK0Wu5pc/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=Y-wXK0Wu5pc",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/Y-wXK0Wu5pc?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "CodeAvecJonathan"
@@ -1267,9 +1087,7 @@ export const VIDEOS_DATA = [
     "matiere": "python",
     "matiereLabel": "Python & Algorithmes",
     "color": "#3776AB",
-    "thumbnail": "https://img.youtube.com/vi/ztEx9p1u9SY/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=ztEx9p1u9SY",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/ztEx9p1u9SY?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "CodeAvecJonathan"
@@ -1281,9 +1099,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/DpVdkIz_fQo/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=DpVdkIz_fQo",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/DpVdkIz_fQo?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1295,9 +1111,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/IHMLPQcHma8/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=IHMLPQcHma8",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/IHMLPQcHma8?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1309,9 +1123,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/uwmh8hc0qDQ/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=uwmh8hc0qDQ",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/uwmh8hc0qDQ?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1323,9 +1135,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/JUSjju1Y1Ds/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=JUSjju1Y1Ds",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/JUSjju1Y1Ds?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1337,9 +1147,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/mDnahxy80KY/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=mDnahxy80KY",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/mDnahxy80KY?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1351,9 +1159,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/IPkvHlI2L4A/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=IPkvHlI2L4A",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/IPkvHlI2L4A?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1365,9 +1171,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/MnDe0DufM9k/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=MnDe0DufM9k",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/MnDe0DufM9k?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1379,9 +1183,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/uMisPCh3Yh0/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=uMisPCh3Yh0",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/uMisPCh3Yh0?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1393,9 +1195,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/xNFSu1hsZqI/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=xNFSu1hsZqI",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/xNFSu1hsZqI?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1407,9 +1207,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/pdO0RT8Li5w/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=pdO0RT8Li5w",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/pdO0RT8Li5w?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1421,9 +1219,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/n5T6xZ_C3nU/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=n5T6xZ_C3nU",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/n5T6xZ_C3nU?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1435,9 +1231,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/RJSybqQZJCA/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=RJSybqQZJCA",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/RJSybqQZJCA?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1449,9 +1243,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/DmYRjT9HD0s/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=DmYRjT9HD0s",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/DmYRjT9HD0s?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1463,9 +1255,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/-GjLleJguUg/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=-GjLleJguUg",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/-GjLleJguUg?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1477,9 +1267,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/m8SYO0UVmfo/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=m8SYO0UVmfo",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/m8SYO0UVmfo?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1491,9 +1279,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/fvr1E8SWFrg/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=fvr1E8SWFrg",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/fvr1E8SWFrg?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1505,9 +1291,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/sM1_0iXjnkE/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=sM1_0iXjnkE",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/sM1_0iXjnkE?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1519,9 +1303,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/-G5vcQE5OZI/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=-G5vcQE5OZI",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/-G5vcQE5OZI?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1533,9 +1315,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/UqUsbf9zQ30/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=UqUsbf9zQ30",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/UqUsbf9zQ30?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1547,9 +1327,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/UASNCWe7WcE/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=UASNCWe7WcE",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/UASNCWe7WcE?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1561,9 +1339,7 @@ export const VIDEOS_DATA = [
     "matiere": "vuejs",
     "matiereLabel": "Vue.js Framework",
     "color": "#6366F1",
-    "thumbnail": "https://img.youtube.com/vi/myL61ZyqujM/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=myL61ZyqujM",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/myL61ZyqujM?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1575,9 +1351,7 @@ export const VIDEOS_DATA = [
     "matiere": "angular",
     "matiereLabel": "Angular Enterprise",
     "color": "#DD0031",
-    "thumbnail": "https://img.youtube.com/vi/aBE0St5yI7U/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=aBE0St5yI7U",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/aBE0St5yI7U?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1589,9 +1363,7 @@ export const VIDEOS_DATA = [
     "matiere": "angular",
     "matiereLabel": "Angular Enterprise",
     "color": "#DD0031",
-    "thumbnail": "https://img.youtube.com/vi/fOuKMuaGJ54/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=fOuKMuaGJ54",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/fOuKMuaGJ54?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1603,9 +1375,7 @@ export const VIDEOS_DATA = [
     "matiere": "angular",
     "matiereLabel": "Angular Enterprise",
     "color": "#DD0031",
-    "thumbnail": "https://img.youtube.com/vi/uJkuw0baJlw/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=uJkuw0baJlw",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/uJkuw0baJlw?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1617,9 +1387,7 @@ export const VIDEOS_DATA = [
     "matiere": "angular",
     "matiereLabel": "Angular Enterprise",
     "color": "#DD0031",
-    "thumbnail": "https://img.youtube.com/vi/dM166xJUZ6Y/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=dM166xJUZ6Y",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/dM166xJUZ6Y?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1631,9 +1399,7 @@ export const VIDEOS_DATA = [
     "matiere": "angular",
     "matiereLabel": "Angular Enterprise",
     "color": "#DD0031",
-    "thumbnail": "https://img.youtube.com/vi/kFl1wrSZ4sQ/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=kFl1wrSZ4sQ",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/kFl1wrSZ4sQ?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1645,9 +1411,7 @@ export const VIDEOS_DATA = [
     "matiere": "angular",
     "matiereLabel": "Angular Enterprise",
     "color": "#DD0031",
-    "thumbnail": "https://img.youtube.com/vi/FRaVbFHRc7w/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=FRaVbFHRc7w",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/FRaVbFHRc7w?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1659,9 +1423,7 @@ export const VIDEOS_DATA = [
     "matiere": "angular",
     "matiereLabel": "Angular Enterprise",
     "color": "#DD0031",
-    "thumbnail": "https://img.youtube.com/vi/kMFnhKru2o0/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=kMFnhKru2o0",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/kMFnhKru2o0?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1673,9 +1435,7 @@ export const VIDEOS_DATA = [
     "matiere": "angular",
     "matiereLabel": "Angular Enterprise",
     "color": "#DD0031",
-    "thumbnail": "https://img.youtube.com/vi/-1lLCIGTfJc/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=-1lLCIGTfJc",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/-1lLCIGTfJc?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1687,9 +1447,7 @@ export const VIDEOS_DATA = [
     "matiere": "angular",
     "matiereLabel": "Angular Enterprise",
     "color": "#DD0031",
-    "thumbnail": "https://img.youtube.com/vi/cEJ7NVXCYsU/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=cEJ7NVXCYsU",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/cEJ7NVXCYsU?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1701,9 +1459,7 @@ export const VIDEOS_DATA = [
     "matiere": "angular",
     "matiereLabel": "Angular Enterprise",
     "color": "#DD0031",
-    "thumbnail": "https://img.youtube.com/vi/G_lcwCu_9IE/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=G_lcwCu_9IE",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/G_lcwCu_9IE?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"
@@ -1715,9 +1471,7 @@ export const VIDEOS_DATA = [
     "matiere": "angular",
     "matiereLabel": "Angular Enterprise",
     "color": "#DD0031",
-    "thumbnail": "https://img.youtube.com/vi/WrqOB0r2svY/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=WrqOB0r2svY",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/WrqOB0r2svY?autoplay=1",
     "duration": "15-25 min",
     "level": "Intermédiaire à Avancé",
     "author": "Grafikart.fr"

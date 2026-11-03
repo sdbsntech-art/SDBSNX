@@ -1,9 +1,8 @@
-const CACHE_NAME = 'ida-cours-shell-v4';
-const DOCUMENT_CACHE = 'ida-cours-documents-v1';
+const CACHE_NAME = 'ida-cours-shell-v5';
+const DOCUMENT_CACHE = 'ida-cours-documents-v2';
 const STATIC_ASSETS = [
   '/manifest.json',
   '/sdbsnx-logo.png',
-  '/unchk-uvs-logo.png',
   '/icon-192.png',
   '/icon-512.png',
   '/apple-touch-icon.png',

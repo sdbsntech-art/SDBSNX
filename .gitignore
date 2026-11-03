@@ -11,6 +11,8 @@ node_modules
 .vite
 dist
 dist-ssr
+playwright-report/
+test-results/
 public/courses/
 *.local
 .env

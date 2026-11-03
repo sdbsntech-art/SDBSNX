@@ -1,12 +1,12 @@
-// Formateurs et Partenaires d'Excellence IDA
+// Répertoire de ressources externes ; aucun partenariat n'est revendiqué.
 export const FORMATEURS_DATA = [
   {
     "id": "grafikart",
     "name": "Grafikart",
-    "role": "Formateur & Référence Web Francophone",
+    "role": "Créateur de ressources pédagogiques",
     "organization": "Grafikart.fr",
     "description": "Formateur expert en développement web moderne (HTML, CSS, JS, PHP, Vue.js, Laravel). Référence incontournable pour des milliers de développeurs avec des tutoriels d'une clarté pédagogique exceptionnelle.",
-    "badge": "Partenaire Pédagogique",
+    "badge": "Source externe",
     "url": "https://www.grafikart.fr",
     "topics": [
       "HTML5",
@@ -19,10 +19,10 @@ export const FORMATEURS_DATA = [
   {
     "id": "uvs",
     "name": "Université Virtuelle du Sénégal (UNCHK / UVS)",
-    "role": "Institution Universitaire de Référence",
+    "role": "Université — lien externe",
     "organization": "Ministère de l'Enseignement Supérieur, Sénégal",
-    "description": "L'UNCHK (Université Numérique Cheikh Hamidou Kane, ex-UVS) est l'université publique numérique du Sénégal, pionnière dans la formation académique à distance de haute qualité en informatique et technologies.",
-    "badge": "Tutelle Universitaire",
+    "description": "Consultez le site officiel de l'UN-CHK pour ses informations institutionnelles et ses programmes. SDBSNX est indépendant et n'est pas affilié à l'université.",
+    "badge": "Lien officiel externe",
     "url": "https://www.unchk.sn",
     "topics": [
       "Licence IDA",
@@ -36,9 +36,9 @@ export const FORMATEURS_DATA = [
     "id": "force-n",
     "name": "Force-N",
     "role": "Programme National de Formation Numérique",
-    "organization": "Fondation Mastercard & UNCHK",
-    "description": "Force-N est une initiative stratégique majeure visant à propulser les compétences numériques, l'intelligence artificielle et l'employabilité des jeunes au Sénégal.",
-    "badge": "Accélérateur Tech",
+    "organization": "Programme externe",
+    "description": "Consultez le site officiel de FORCE-N pour vérifier les programmes et opportunités actuellement proposés. SDBSNX n'est pas affilié au programme.",
+    "badge": "Lien officiel externe",
     "url": "https://www.force-n.com",
     "topics": [
       "Intelligence Artificielle",

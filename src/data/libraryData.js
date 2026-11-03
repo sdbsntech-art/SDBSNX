@@ -8,7 +8,7 @@ export const LIBRARY_DATA = [
     "size": "4.2 Mo",
     "description": "Panorama complet des standards du W3C, HTML5 sémantique, CSS Grid & Flexbox, et bonnes pratiques d'accessibilité (WCAG 2.1).",
     "pages": 148,
-    "downloadUrl": "files/web plat.jpg"
+    "downloadUrl": "#"
   },
   {
     "id": "lib-2",

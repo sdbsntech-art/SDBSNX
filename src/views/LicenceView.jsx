@@ -5,6 +5,7 @@ import { COURSES_DATA } from '../data/coursesData';
 import { REAL_COURSES_INDEX } from '../data/realCoursesIndex';
 import BackToHomeBar from '../components/BackToHomeBar';
 import useAdminDocuments from '../hooks/useAdminDocuments';
+import PublishedCourses from '../components/PublishedCourses';
 import { 
   GraduationCap, 
   Search, 
@@ -71,23 +72,7 @@ export default function LicenceView() {
   }, [cycleData, completedLessons, selectedCycle]);
 
   // Flatten all real documents for the current cycle
-  const allRealDocsForCycle = useMemo(() => {
-    const list = [];
-    if (!realCycleIndex.semestres) return list;
-
-    Object.entries(realCycleIndex.semestres).forEach(([semName, modules]) => {
-      Object.entries(modules).forEach(([modName, docs]) => {
-        docs.forEach((doc) => {
-          list.push({
-            ...doc,
-            semestreName: semName,
-            moduleName: modName
-          });
-        });
-      });
-    });
-    return list;
-  }, [realCycleIndex]);
+  const allRealDocsForCycle = useMemo(() => [], []);
 
   // Counts of real docs by category
   const docCounts = useMemo(() => {
@@ -196,6 +181,11 @@ export default function LicenceView() {
   };
 
   const handleOpenPdfPreview = (title, url, ext = 'PDF', size = '') => {
+    if (url.startsWith('/courses/')) {
+      triggerToast('Ce support est temporairement retiré pendant la vérification des autorisations de diffusion.', 'info');
+      return;
+    }
+
     setActivePdfPreview({
       name: title,
       url: url,
@@ -211,6 +201,7 @@ export default function LicenceView() {
         currentPageTitle={`${cycleData.cycle} • ${cycleData.fullName}`} 
         breadcrumbCategory="Licence Informatique" 
       />
+      <PublishedCourses />
 
       {/* Header with Cycle Selector */}
       <View style={styles.headerArea}>
@@ -221,13 +212,7 @@ export default function LicenceView() {
               alt="SDBSNX" 
               style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
             />
-            <View style={{ width: 1, height: 14, backgroundColor: theme.border }} />
-            <img 
-              src="/unchk-uvs-logo.png" 
-              alt="UNCHK" 
-              style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
-            />
-            <Text style={[styles.cycleTagText, { color: theme.primary }]}>SDBSNX × UNCHK • PROGRAMME ACADÉMIQUE</Text>
+            <Text style={[styles.cycleTagText, { color: theme.primary }]}>SDBSNX • PROGRAMME INDICATIF</Text>
           </View>
           <Text style={[styles.pageTitle, { color: theme.text }]} className="fluid-page-title">
             {cycleData.fullName}
@@ -235,6 +220,17 @@ export default function LicenceView() {
           <Text style={[styles.pageDesc, { color: theme.textMuted }]}>
             {cycleData.description}
           </Text>
+        </View>
+        <View style={[styles.resourceNotice, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
+          <Text style={[styles.resourceNoticeText, { color: theme.textMuted }]}>
+            Les fichiers de cours locaux sont temporairement indisponibles pendant la vérification des autorisations de diffusion. Le programme indicatif reste consultable.
+          </Text>
+          <TouchableOpacity
+            onPress={() => window.open('https://www.unchk.sn/', '_blank', 'noopener,noreferrer')}
+            accessibilityRole="link"
+          >
+            <Text style={[styles.resourceNoticeLink, { color: theme.primary }]}>Consulter le site officiel de l’UN-CHK ↗</Text>
+          </TouchableOpacity>
         </View>
 
         {/* Cycle Switcher Tabs */}
@@ -245,9 +241,7 @@ export default function LicenceView() {
         ]}>
           {['L1', 'L2', 'L3'].map((key) => {
             const isSelected = selectedCycle === key;
-            const fullDocCount = key === 'L1' ? '170 supports' : key === 'L2' ? '333 supports' : '30 supports';
-            const shortDocCount = key === 'L1' ? '170' : key === 'L2' ? '333' : '30';
-            const docCount = isVerySmall ? shortDocCount : (isMobile ? `${shortDocCount} sup.` : fullDocCount);
+            const docCount = isVerySmall ? 'Plan' : 'Programme';
 
             return (
               <TouchableOpacity
@@ -656,7 +650,7 @@ export default function LicenceView() {
                                     </TouchableOpacity>
 
                                     <TouchableOpacity
-                                      onPress={() => window.open(les.href, '_blank')}
+                                      onPress={() => handleOpenPdfPreview(les.title, les.href, 'PDF')}
                                       style={[styles.smallActionBtn, { backgroundColor: theme.bgCard, borderColor: theme.border, borderWidth: 1 }]}
                                       title="Ouvrir / Télécharger le PDF"
                                     >
@@ -689,19 +683,16 @@ export default function LicenceView() {
           {filteredRealDocs.length === 0 ? (
             <View style={[styles.noDocsBox, { backgroundColor: theme.bgElevated, borderColor: theme.border }]}>
               <FileText size={40} color={theme.textDim} />
-              <Text style={[styles.noDocsTitle, { color: theme.text }]}>Aucun support ne correspond à ce filtre</Text>
+              <Text style={[styles.noDocsTitle, { color: theme.text }]}>Les fichiers ne sont pas publiés pour le moment</Text>
               <Text style={[styles.noDocsSub, { color: theme.textMuted }]}>
-                Essayez de réinitialiser la recherche ou sélectionnez un autre onglet.
+                Les supports locaux sont retirés pendant la vérification des autorisations de diffusion. Consultez les sources officielles pour les informations à jour.
               </Text>
               <TouchableOpacity
                 style={[styles.resetExplorerBtn, { backgroundColor: theme.primary }]}
-                onPress={() => {
-                  setSearchFilter('');
-                  setActiveSemestre('all');
-                  setDocCategoryTab('all');
-                }}
+                onPress={() => window.open('https://www.unchk.sn/', '_blank', 'noopener,noreferrer')}
+                accessibilityRole="link"
               >
-                <Text style={styles.resetExplorerBtnText}>Réinitialiser les filtres</Text>
+                <Text style={styles.resetExplorerBtnText}>Visiter le site officiel de l’UN-CHK</Text>
               </TouchableOpacity>
             </View>
           ) : (
@@ -828,6 +819,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     textAlign: 'center',
     gap: 10,
+  },
+  resourceNotice: {
+    width: '100%',
+    maxWidth: 820,
+    alignSelf: 'center',
+    padding: 14,
+    borderWidth: 1,
+    borderRadius: 12,
+    gap: 8,
+  },
+  resourceNoticeText: {
+    fontSize: 13,
+    lineHeight: 20,
+  },
+  resourceNoticeLink: {
+    fontSize: 13,
+    fontWeight: '700',
   },
   cycleTag: {
     flexDirection: 'row',

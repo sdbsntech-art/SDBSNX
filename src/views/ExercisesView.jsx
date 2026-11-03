@@ -96,13 +96,7 @@ console.log(saluerEtudiant("Développeur IDA"));`
             alt="SDBSNX" 
             style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
           />
-          <View style={{ width: 1, height: 14, backgroundColor: theme.border }} />
-          <img 
-            src="/unchk-uvs-logo.png" 
-            alt="UNCHK" 
-            style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
-          />
-          <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX × UNCHK • QUIZ & CODE</Text>
+          <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX • QUIZ & CODE</Text>
         </View>
         <Text style={[styles.pageTitle, { color: theme.text }]} className="fluid-page-title">
           Exercices Corrigés & Quiz Interactifs

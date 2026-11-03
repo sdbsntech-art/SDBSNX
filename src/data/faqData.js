@@ -46,7 +46,7 @@ export const FAQ_DATA = [
     "id": "faq-8",
     "question": "Puis-je utiliser l'application même sans connexion Internet permanente (Offline / PWA) ?",
     "category": "PWA & Hors-Ligne",
-    "answer": "Absolument ! Grâce à notre technologie Progressive Web App (PWA), installez simplement l'application sur votre téléphone Android, iPhone ou ordinateur. Vos cours consultés restent mis en cache et consultables même en zone à faible réseau."
+    "answer": "L’application peut être installée sur les appareils compatibles, mais cette version ne garantit pas la consultation hors ligne. Une connexion Internet reste nécessaire pour charger le site et ses ressources externes."
   },
   {
     "id": "faq-9",

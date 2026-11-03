@@ -151,12 +151,6 @@ export default function QuickSearchModal() {
               alt="SDBSNX" 
               style={{ height: 26, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 4px' }} 
             />
-            <View style={{ width: 1, height: 16, backgroundColor: theme.border }} />
-            <img 
-              src="/unchk-uvs-logo.png" 
-              alt="UNCHK" 
-              style={{ height: 26, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 4px' }} 
-            />
           </View>
           <TextInput
             style={[styles.searchInput, { color: theme.text }]}

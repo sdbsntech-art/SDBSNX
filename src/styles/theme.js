@@ -1,4 +1,4 @@
-// SDBSNX & UNCHK: palette naturelle, sobre et cohérente en modes clair et sombre.
+// SDBSNX: palette naturelle, sobre et cohérente en modes clair et sombre.
 export const theme = {
   dark: {
     bg: '#101713',

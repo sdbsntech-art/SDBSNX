@@ -12,8 +12,8 @@ export default function FormateursView() {
     <View style={styles.container}>
       {/* Back to Home Navigation Bar */}
       <BackToHomeBar 
-        currentPageTitle="Formateurs d'Excellence & Partenaires" 
-        breadcrumbCategory="Écosystème Pédagogique" 
+        currentPageTitle="Ressources pédagogiques externes"
+        breadcrumbCategory="Liens utiles"
       />
 
       {/* Header */}
@@ -24,19 +24,13 @@ export default function FormateursView() {
             alt="SDBSNX" 
             style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
           />
-          <View style={{ width: 1, height: 14, backgroundColor: theme.border }} />
-          <img 
-            src="/unchk-uvs-logo.png" 
-            alt="UNCHK" 
-            style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
-          />
-          <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX × UNCHK • ÉCOSYSTÈME FORMATEURS</Text>
+          <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX • RESSOURCES EXTERNES</Text>
         </View>
         <Text style={[styles.pageTitle, { color: theme.text }]} className="fluid-page-title">
-          Nos Formateurs & Partenaires d'Excellence
+          Ressources et créateurs indépendants
         </Text>
         <Text style={[styles.pageDesc, { color: theme.textMuted }]}>
-          L'alliance prestigieuse du monde académique sénégalais (UNCHK, Force-N, ODC) et des plus grands formateurs web francophones et mondiaux.
+          Des liens vers des organismes et créateurs externes. Leur présence ici ne signifie pas qu’ils sont partenaires, affiliés ou qu’ils approuvent la plateforme.
         </Text>
       </View>
 
@@ -65,7 +59,7 @@ export default function FormateursView() {
         <View style={styles.honorActionsRow}>
           <TouchableOpacity
             style={[styles.honorBtn, { backgroundColor: theme.primary }]}
-            onPress={() => window.open('https://grafikart.fr', '_blank')}
+            onPress={() => window.open('https://grafikart.fr', '_blank', 'noopener,noreferrer')}
             activeOpacity={0.8}
           >
             <Globe size={16} color="#FFFFFF" />
@@ -75,7 +69,7 @@ export default function FormateursView() {
 
           <TouchableOpacity
             style={[styles.honorBtnYt, { backgroundColor: theme.primaryGlow, borderColor: theme.primary }]}
-            onPress={() => window.open('https://www.youtube.com/@grafikart', '_blank')}
+            onPress={() => window.open('https://www.youtube.com/@grafikart', '_blank', 'noopener,noreferrer')}
             activeOpacity={0.8}
           >
             <Youtube size={16} color={theme.primary} />
@@ -117,7 +111,7 @@ export default function FormateursView() {
 
             <TouchableOpacity
               style={[styles.visitSiteBtn, { borderColor: theme.border, backgroundColor: theme.bgCard }]}
-              onPress={() => window.open(formateur.url, '_blank')}
+              onPress={() => window.open(formateur.url, '_blank', 'noopener,noreferrer')}
               activeOpacity={0.8}
             >
               <Text style={[styles.visitSiteText, { color: theme.primary }]}>Consulter la plateforme officielle</Text>

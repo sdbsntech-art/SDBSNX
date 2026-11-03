@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /connexion
 
 # Direct indexing of sitemap
-Sitemap: https://sdbsnx.vercel.app/sitemap.xml
+Sitemap: https://sdbsnx.site/sitemap.xml

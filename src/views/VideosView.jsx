@@ -71,8 +71,8 @@ export default function VideosView() {
     <View style={styles.container}>
       {/* Back to Home Navigation Bar */}
       <BackToHomeBar 
-        currentPageTitle="Vidéothèque HD • 123 Formations" 
-        breadcrumbCategory="Grafikart & IDA" 
+        currentPageTitle="Ressources vidéo externes"
+        breadcrumbCategory="Liens pédagogiques"
       />
 
       {/* Header */}
@@ -83,20 +83,14 @@ export default function VideosView() {
             alt="SDBSNX" 
             style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
           />
-          <View style={{ width: 1, height: 14, backgroundColor: theme.border }} />
-          <img 
-            src="/unchk-uvs-logo.png" 
-            alt="UNCHK" 
-            style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
-          />
-          <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX × UNCHK • VIDÉOTHÈQUE OFFICIELLE</Text>
+          <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX • LIENS VIDÉO</Text>
         </View>
 
         <Text style={[styles.pageTitle, { color: theme.text }]} className="fluid-page-title">
-          123 Tutoriels & Formations Vidéos HD
+          Tutoriels vidéo de sources externes
         </Text>
         <Text style={[styles.pageDesc, { color: theme.textMuted }]}>
-          Des cours complets et pratiques dispensés par <Text style={{ fontWeight: '700', color: theme.primary }}>Grafikart (Jonathan Boyer)</Text> pour maîtriser pas à pas chaque technologie web et mobile.
+          Une sélection de liens vers les vidéos de leurs créateurs. Les vidéos s’ouvrent sur leur source officielle après votre clic ; SDBSNX n’est pas affilié aux auteurs.
         </Text>
 
         {/* Tribute & Thank You Banner for Grafikart */}
@@ -109,14 +103,14 @@ export default function VideosView() {
             <View style={styles.tributeLinksRow}>
               <TouchableOpacity 
                 style={[styles.smallLinkBtn, { borderColor: theme.border, backgroundColor: theme.bgCard }]}
-                onPress={() => window.open('https://grafikart.fr', '_blank')}
+                onPress={() => window.open('https://grafikart.fr', '_blank', 'noopener,noreferrer')}
               >
                 <Globe size={13} color={theme.primary} />
                 <Text style={[styles.smallLinkBtnText, { color: theme.primary }]}>grafikart.fr</Text>
               </TouchableOpacity>
               <TouchableOpacity 
                 style={[styles.smallLinkBtn, { borderColor: theme.border, backgroundColor: theme.bgCard }]}
-                onPress={() => window.open('https://www.youtube.com/@grafikart', '_blank')}
+                onPress={() => window.open('https://www.youtube.com/@grafikart', '_blank', 'noopener,noreferrer')}
               >
                 <Youtube size={13} color={theme.primary} />
                 <Text style={[styles.smallLinkBtnText, { color: theme.primary }]}>YouTube @grafikart</Text>
@@ -229,17 +223,7 @@ export default function VideosView() {
                   onPress={() => setActiveVideo(video)}
                   activeOpacity={0.85}
                 >
-                  <img
-                    src={video.thumbnail}
-                    alt={video.title}
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      display: 'block',
-                    }}
-                    loading="lazy"
-                  />
+                  <Text style={[styles.localThumbnailLabel, { color: video.color }]}>RESSOURCE EXTERNE</Text>
                   <View style={styles.playOverlay}>
                     <View style={[styles.playCircle, { backgroundColor: theme.primary }]}>
                       <Play size={18} color="#FFFFFF" fill="#FFFFFF" />
@@ -305,7 +289,7 @@ export default function VideosView() {
 
                     <TouchableOpacity
                       style={[styles.ytExtBtn, { borderColor: theme.border, backgroundColor: theme.bgCard }]}
-                      onPress={() => window.open(video.url, '_blank')}
+                      onPress={() => window.open(video.url, '_blank', 'noopener,noreferrer')}
                       title="Ouvrir sur YouTube"
                     >
                       <Youtube size={14} color={theme.primary} />
@@ -518,6 +502,14 @@ const styles = StyleSheet.create({
     aspectRatio: 16 / 9,
     backgroundColor: '#0F172A',
     overflow: 'hidden',
+  },
+  localThumbnailLabel: {
+    position: 'absolute',
+    top: 14,
+    left: 14,
+    fontSize: 11,
+    fontWeight: '800',
+    letterSpacing: 0.8,
   },
   playOverlay: {
     position: 'absolute',

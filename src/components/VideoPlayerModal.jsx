@@ -52,18 +52,6 @@ export default function VideoPlayerModal() {
         {/* Modal Header */}
         <View style={[styles.headerRow, { borderBottomColor: theme.border }]}>
           <View style={styles.headerInfo}>
-            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
-              <img 
-                src="/sdbsnx-logo.png" 
-                alt="SDBSNX" 
-                style={{ height: 24, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
-              />
-              <img 
-                src="/unchk-uvs-logo.png" 
-                alt="UNCHK" 
-                style={{ height: 24, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
-              />
-            </View>
             <View style={[styles.badgePill, { backgroundColor: activeVideo.color + '22', borderColor: activeVideo.color }]}>
               <Text style={[styles.badgeText, { color: activeVideo.color }]}>
                 {activeVideo.matiereLabel}
@@ -83,20 +71,19 @@ export default function VideoPlayerModal() {
           </TouchableOpacity>
         </View>
 
-        {/* Video Player Container */}
+        {/* The video is opened on its source only after an explicit user action. */}
         <View style={styles.playerWrapper}>
-          <iframe
-            src={`https://www.youtube-nocookie.com/embed/${activeVideo.id}?autoplay=1&rel=0`}
-            title={activeVideo.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            style={{
-              width: '100%',
-              height: '100%',
-              border: 'none',
-              borderRadius: 0,
-            }}
-          />
+          <Text style={[styles.externalVideoNotice, { color: theme.textMuted }]}>
+            Cette vidéo est hébergée par son créateur. Elle n’est pas chargée dans cette page.
+          </Text>
+          <TouchableOpacity
+            style={[styles.externalVideoButton, { backgroundColor: theme.primary }]}
+            onPress={() => window.open(activeVideo.url, '_blank', 'noopener,noreferrer')}
+            accessibilityRole="link"
+          >
+            <ExternalLink size={16} color="#FFFFFF" />
+            <Text style={styles.externalVideoButtonText}>Ouvrir la vidéo sur son site source</Text>
+          </TouchableOpacity>
         </View>
 
         {/* Action Controls & Notes */}
@@ -142,21 +129,13 @@ export default function VideoPlayerModal() {
             {/* External YouTube link */}
             <TouchableOpacity
               style={[styles.toolBtn, { borderColor: theme.border, backgroundColor: theme.bgCard }]}
-              onPress={() => window.open(activeVideo.url, '_blank')}
+              onPress={() => window.open(activeVideo.url, '_blank', 'noopener,noreferrer')}
               activeOpacity={0.7}
             >
               <ExternalLink size={15} color={theme.textMuted} />
               <Text style={[styles.toolBtnText, { color: theme.text }]}>YouTube</Text>
             </TouchableOpacity>
 
-            {/* Visit Grafikart */}
-            <TouchableOpacity
-              style={[styles.toolBtn, { borderColor: theme.primary, backgroundColor: theme.primaryGlow }]}
-              onPress={() => window.open('https://grafikart.fr', '_blank')}
-              activeOpacity={0.7}
-            >
-              <Text style={[styles.toolBtnText, { color: theme.primary, fontWeight: '700' }]}>Grafikart.fr</Text>
-            </TouchableOpacity>
           </View>
 
           {/* Quick Study Notes */}
@@ -258,6 +237,30 @@ const styles = StyleSheet.create({
     width: '100%',
     aspectRatio: 16 / 9,
     backgroundColor: '#000000',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 14,
+    padding: 20,
+  },
+  externalVideoNotice: {
+    maxWidth: 520,
+    textAlign: 'center',
+    fontSize: 14,
+    lineHeight: 22,
+  },
+  externalVideoButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderRadius: 12,
+  },
+  externalVideoButtonText: {
+    color: '#FFFFFF',
+    fontSize: 13,
+    fontWeight: '700',
   },
   bodyContent: {
     padding: 16,

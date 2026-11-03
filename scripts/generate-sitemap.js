@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const rootDirectory = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputDirectory = path.join(rootDirectory, "dist");
-const siteOrigin = new URL(process.env.SITE_URL || "https://sdbsnx.vercel.app").origin;
+const siteOrigin = new URL(process.env.SITE_URL || "https://sdbsnx.site").origin;
 const urls = new Map([[`${siteOrigin}/`, null]]);
 const indexablePages = [
   "cours/licence-1",
@@ -17,6 +17,13 @@ const indexablePages = [
   "formateurs",
   "communaute",
   "faq",
+  "a-propos",
+  "mentions-legales",
+  "confidentialite",
+  "cookies",
+  "cgu",
+  "propriete-intellectuelle",
+  "contact",
 ];
 
 function escapeXml(value) {
@@ -53,7 +60,10 @@ for (const page of indexablePages) {
   urls.set(`${siteOrigin}/${page}`, null);
 }
 
-collectPdfs(path.join(outputDirectory, "courses"));
+const courseDirectory = path.join(outputDirectory, "courses");
+if (fs.existsSync(courseDirectory)) {
+  collectPdfs(courseDirectory);
+}
 
 const entries = [...urls]
   .sort(([left], [right]) => left.localeCompare(right))
@@ -73,7 +83,7 @@ const sitemap = [
 fs.writeFileSync(path.join(outputDirectory, "sitemap.xml"), sitemap, "utf8");
 fs.writeFileSync(
   path.join(outputDirectory, "robots.txt"),
-  `User-agent: *\nAllow: /\n\nSitemap: ${siteOrigin}/sitemap.xml\n`,
+  `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /connexion\n\nSitemap: ${siteOrigin}/sitemap.xml\n`,
   "utf8",
 );
 console.log(`Generated dist/sitemap.xml with ${urls.size} URLs.`);

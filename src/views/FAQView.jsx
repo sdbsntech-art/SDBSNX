@@ -39,7 +39,7 @@ export default function FAQView() {
       {/* Back to Home Navigation Bar */}
       <BackToHomeBar 
         currentPageTitle="Foire Aux Questions & Méthodologie" 
-        breadcrumbCategory="Aide & Guide UNCHK" 
+        breadcrumbCategory="Aide & guide"
       />
 
       {/* Header */}
@@ -50,16 +50,10 @@ export default function FAQView() {
             alt="SDBSNX" 
             style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
           />
-          <View style={{ width: 1, height: 14, backgroundColor: theme.border }} />
-          <img 
-            src="/unchk-uvs-logo.png" 
-            alt="UNCHK" 
-            style={{ height: 18, width: 'auto', borderRadius: 4, background: '#FFFFFF', padding: '1px 3px' }} 
-          />
-          <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX × UNCHK • CONSEILS & FAQ</Text>
+          <Text style={[styles.headerBadgeText, { color: theme.primary }]}>SDBSNX • CONSEILS & FAQ</Text>
         </View>
         <Text style={[styles.pageTitle, { color: theme.text }]}>
-          Foire Aux Questions & Méthodologie UVS
+          Foire Aux Questions & Méthodologie
         </Text>
         <Text style={[styles.pageDesc, { color: theme.textMuted }]}>
           Toutes les réponses à vos questions pour réussir brillamment vos études en informatique et vos examens universitaires.

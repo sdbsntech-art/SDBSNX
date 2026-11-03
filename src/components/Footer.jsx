@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useApp } from '../context/AppContext';
-import { MapPin, Mail, ShieldCheck, Youtube, Github, Globe } from 'lucide-react';
+import { Mail, Youtube, Github, Globe } from 'lucide-react';
+import { navigateToPath } from '../lib/navigation';
 
 export default function Footer() {
-  const { theme, setCurrentTab, setSelectedCycle, setActiveLegal } = useApp();
+  const { theme, setCurrentTab, setSelectedCycle, navigateToLegalPage } = useApp();
 
   const handleNav = (tab, cycle = null) => {
     setCurrentTab(tab);
@@ -19,7 +20,7 @@ export default function Footer() {
         <View style={[styles.footerTopBand, { backgroundColor: theme.bgCard, borderColor: theme.border }]}>
           <View style={styles.footerTopBandText}>
             <Text style={[styles.footerBadge, { color: theme.primary, backgroundColor: theme.primaryGlow }]}>Accès gratuit</Text>
-            <Text style={[styles.footerTopTitle, { color: theme.text }]}>Cours, TD, examens, vidéos et ressources de qualité.</Text>
+            <Text style={[styles.footerTopTitle, { color: theme.text }]}>Programmes indicatifs, outils de révision et liens vers des sources externes.</Text>
           </View>
           <TouchableOpacity
             onPress={() => handleNav('licence', 'L1')}
@@ -31,56 +32,20 @@ export default function Footer() {
 
         <View style={styles.colBrand}>
           <View style={styles.dualLogosWrap}>
-            <img 
-              src="/sdbsnx-logo.png" 
-              alt="SDBSNX" 
-              style={{
-                height: 38,
-                width: 'auto',
-                objectFit: 'contain',
-                borderRadius: 8,
-                background: '#FFFFFF',
-                padding: '2px 6px',
-                boxShadow: '0 1px 6px rgba(0,0,0,0.06)'
-              }} 
-            />
-            <View style={[styles.logoDivider, { backgroundColor: theme.border }]} />
-            <img 
-              src="/unchk-uvs-logo.png" 
-              alt="UNCHK - Université Numérique Cheikh Hamidou Kane" 
-              style={{
-                height: 38,
-                width: 'auto',
-                objectFit: 'contain',
-                borderRadius: 8,
-                background: '#FFFFFF',
-                padding: '2px 6px',
-                boxShadow: '0 1px 6px rgba(0,0,0,0.06)'
-              }} 
-            />
-            <View style={[styles.logoDivider, { backgroundColor: theme.border }]} />
-            <img 
-              src="/force-n-logo.png" 
-              alt="FORCE-N • Université Numérique Cheikh Hamidou Kane" 
-              style={{
-                height: 38,
-                width: 'auto',
-                objectFit: 'contain',
-                borderRadius: 8,
-                background: '#FFFFFF',
-                padding: '2px 6px',
-                boxShadow: '0 1px 6px rgba(0,0,0,0.06)'
-              }} 
+            <img
+              src="/sdbsnx-logo.png"
+              alt="SDBSNX"
+              style={{ height: 38, width: 'auto', objectFit: 'contain', borderRadius: 8, background: '#FFFFFF', padding: '2px 6px' }}
             />
           </View>
 
           <View style={styles.brandTitleCol}>
             <Text style={[styles.brandTitle, { color: theme.text }]}>SDBSNX</Text>
-            <Text style={[styles.brandSub, { color: theme.textDim }]}>Licence Informatique & Développement d'Applications</Text>
+            <Text style={[styles.brandSub, { color: theme.textDim }]}>Plateforme indépendante • IDA Cours</Text>
           </View>
 
           <Text style={[styles.brandDesc, { color: theme.textMuted }]}>
-            Ressources pédagogiques universitaires, supports PDF, vidéos HD et contenus de référence pour mieux apprendre et progresser.
+            Des outils de révision et des liens vers des ressources externes. Aucun partenariat ou rattachement institutionnel n’est revendiqué.
           </Text>
 
           <View style={styles.socialsRow}>
@@ -106,6 +71,9 @@ export default function Footer() {
               <Globe size={15} color={theme.primary} />
             </TouchableOpacity>
           </View>
+          <TouchableOpacity onPress={() => navigateToPath('/connexion')} style={styles.adminFooterLink}>
+            <Text style={[styles.legalLink, { color: theme.textMuted }]}>Espace administration</Text>
+          </TouchableOpacity>
         </View>
 
         <View style={styles.colLinks}>
@@ -120,7 +88,7 @@ export default function Footer() {
             <Text style={[styles.linkText, { color: theme.textMuted }]}>Licence 3 (L3) • Architecture & Sécurité</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => handleNav('videos')} style={styles.linkItem}>
-            <Text style={[styles.linkText, { color: theme.textMuted }]}>120+ Tutoriels Vidéos HD</Text>
+            <Text style={[styles.linkText, { color: theme.textMuted }]}>Ressources vidéo externes</Text>
           </TouchableOpacity>
         </View>
 
@@ -133,38 +101,33 @@ export default function Footer() {
             <Text style={[styles.linkText, { color: theme.textMuted }]}>Entrepreneuriat & Startups</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => handleNav('bibliotheque')} style={styles.linkItem}>
-            <Text style={[styles.linkText, { color: theme.textMuted }]}>Bibliothèque Numérique (PDFs)</Text>
+            <Text style={[styles.linkText, { color: theme.textMuted }]}>Références et ressources</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => handleNav('formateurs')} style={styles.linkItem}>
             <Text style={[styles.linkText, { color: theme.textMuted }]}>Écosystème & Formateurs</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => window.open('https://force-n.sn', '_blank')} style={styles.linkItem}>
-            <Text style={[styles.linkText, { color: theme.primary, fontWeight: '700' }]}>FORCE-N • Certifications & Emploi ↗</Text>
+          <TouchableOpacity onPress={() => window.open('https://force-n.sn', '_blank', 'noopener,noreferrer')} style={styles.linkItem}>
+            <Text style={[styles.linkText, { color: theme.primary, fontWeight: '700' }]}>Site officiel de FORCE-N ↗</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => handleNav('forum')} style={styles.linkItem}>
             <Text style={[styles.linkText, { color: theme.textMuted }]}>Discussion & Communauté</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => handleNav('faq')} style={styles.linkItem}>
-            <Text style={[styles.linkText, { color: theme.textMuted }]}>FAQ & Méthodologie UNCHK</Text>
+            <Text style={[styles.linkText, { color: theme.textMuted }]}>FAQ & méthodologie</Text>
           </TouchableOpacity>
         </View>
 
         <View style={styles.colLinks}>
-          <Text style={[styles.colHeading, { color: theme.text }]}>Campus & Contact</Text>
-          <View style={styles.contactItem}>
-            <MapPin size={15} color={theme.primary} />
-            <Text style={[styles.contactText, { color: theme.textMuted }]}>Dakar, Pikine, Dalifort • Sénégal</Text>
-          </View>
+          <Text style={[styles.colHeading, { color: theme.text }]}>Contact</Text>
           <View style={styles.contactItem}>
             <Mail size={15} color={theme.secondary} />
             <TouchableOpacity onPress={() => window.location.assign('mailto:sdbsntech@gmail.com')}>
               <Text style={[styles.contactText, { color: theme.textMuted }]}>sdbsntech@gmail.com</Text>
             </TouchableOpacity>
           </View>
-          <View style={styles.contactItem}>
-            <ShieldCheck size={15} color={theme.emerald} />
-            <Text style={[styles.contactText, { color: theme.textMuted }]}>PWA Conforme W3C & UNCHK</Text>
-          </View>
+          <Text style={[styles.brandDesc, { color: theme.textDim }]}>
+            Pour les informations légales, les données personnelles ou les demandes de retrait, consultez les pages dédiées ci-dessous.
+          </Text>
         </View>
       </View>
 
@@ -172,27 +135,32 @@ export default function Footer() {
         <View nativeID="footer-bottom-bar-inner" style={styles.bottomBarInner}>
           <View nativeID="footer-copyright" style={styles.copyrightWrap}>
             <img
-              src="/force-n-logo.png"
-              alt="FORCE-N"
+              src="/sdbsnx-logo.png"
+              alt="SDBSNX"
               style={styles.copyrightLogo}
             />
             <Text nativeID="footer-copyright-text" style={[styles.copyrightText, { color: theme.textDim }]}>
-              © {new Date().getFullYear()} SDBSNX • IDA COURS. Merci à l’UNCHK pour son engagement dans la formation universitaire, à FORCE-N pour ses formations complémentaires et certifiantes, ainsi qu’à Grafikart et au Fab Lab Solidarity (ODC) pour leurs ressources et initiatives pédagogiques.
+              © {new Date().getFullYear()} SDBSNX • IDA Cours. Projet indépendant ; les noms et marques cités appartiennent à leurs propriétaires.
             </Text>
           </View>
 
           <View nativeID="footer-legal-links" style={styles.legalLinksRow}>
-            <TouchableOpacity onPress={() => setActiveLegal('mentions')}>
-              <Text style={[styles.legalLink, { color: theme.textMuted }]}>Mentions Légales</Text>
-            </TouchableOpacity>
-            <Text style={{ color: theme.border, writingMode: 'horizontal-tb', textOrientation: 'mixed' }}>•</Text>
-            <TouchableOpacity onPress={() => setActiveLegal('politique')}>
-              <Text style={[styles.legalLink, { color: theme.textMuted }]}>Confidentialité</Text>
-            </TouchableOpacity>
-            <Text style={{ color: theme.border, writingMode: 'horizontal-tb', textOrientation: 'mixed' }}>•</Text>
-            <TouchableOpacity onPress={() => setActiveLegal('conditions')}>
-              <Text style={[styles.legalLink, { color: theme.textMuted }]}>Conditions</Text>
-            </TouchableOpacity>
+            {[
+              ['about', 'À propos'],
+              ['legal', 'Mentions légales'],
+              ['privacy', 'Confidentialité'],
+              ['cookies', 'Cookies'],
+              ['terms', 'CGU'],
+              ['intellectualProperty', 'Propriété intellectuelle'],
+              ['contact', 'Contact'],
+            ].map(([page, label], index) => (
+              <React.Fragment key={page}>
+                {index > 0 && <Text style={{ color: theme.border }}>•</Text>}
+                <TouchableOpacity onPress={() => navigateToLegalPage(page)}>
+                  <Text style={[styles.legalLink, { color: theme.textMuted }]}>{label}</Text>
+                </TouchableOpacity>
+              </React.Fragment>
+            ))}
           </View>
         </View>
       </View>
@@ -297,6 +265,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 8,
     marginTop: 4,
+  },
+  adminFooterLink: {
+    alignSelf: 'flex-start',
+    paddingVertical: 5,
   },
   socialBtn: {
     width: 34,
