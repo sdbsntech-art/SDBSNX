@@ -4,6 +4,51 @@ import { useAuth } from '../context/AuthContext';
 import { navigateToPath } from '../lib/navigation';
 import '../styles/admin.css';
 
+function getEmailAuthErrorMessage(error, mode) {
+  const code = error?.code;
+  const status = error?.status;
+  const providerMessage = String(error?.message || '').toLowerCase();
+
+  if (mode === 'login') {
+    if (
+      code === 'invalid_credentials'
+      || code === 'user_not_found'
+      || providerMessage.includes('invalid login credentials')
+    ) {
+      return 'Adresse e-mail ou mot de passe incorrect. Si vous avez créé ce compte avec Google, utilisez le bouton « Continuer avec Google ».';
+    }
+    if (code === 'email_not_confirmed' || providerMessage.includes('email not confirmed')) {
+      return 'Confirmez votre adresse avec le lien reçu par e-mail, puis réessayez.';
+    }
+  }
+
+  if (mode === 'signup') {
+    if (code === 'weak_password') {
+      return 'Ce mot de passe est trop faible. Choisissez-en un autre conformément aux exigences indiquées par Supabase.';
+    }
+    if (code === 'email_address_invalid') {
+      return 'Cette adresse e-mail n’est pas acceptée. Vérifiez-la et réessayez.';
+    }
+    if (code === 'signup_disabled') {
+      return 'Les inscriptions par e-mail sont désactivées. Contactez l’administrateur ou essayez Google si cette option est activée.';
+    }
+    if (code === 'user_already_exists' || code === 'email_exists') {
+      return 'Un compte existe peut-être déjà avec cette adresse. Essayez de vous connecter ou utilisez Google si ce compte y a été créé.';
+    }
+  }
+
+  if (status === 429 || code === 'over_request_rate_limit' || code === 'over_email_send_rate_limit') {
+    return 'Trop de tentatives ont été effectuées. Attendez quelques minutes avant de réessayer.';
+  }
+  if (status >= 500) {
+    return 'Le service de connexion rencontre un problème temporaire. Réessayez un peu plus tard.';
+  }
+
+  return mode === 'signup'
+    ? 'Inscription impossible pour le moment. Vérifiez les paramètres d’inscription du nouveau projet Supabase puis réessayez.'
+    : 'Connexion impossible pour le moment. Vérifiez que ce compte existe dans le nouveau projet Supabase.';
+}
+
 export default function LoginView() {
   const {
     signInWithPassword,
@@ -37,7 +82,8 @@ export default function LoginView() {
       if (mode === 'signup') {
         const { data, error: signUpError } = await signUpWithPassword(email.trim(), password);
         if (signUpError) {
-          setError('Inscription impossible. Vérifiez vos informations ou réessayez plus tard.');
+          if (import.meta.env.DEV) console.error('Email signup failed:', signUpError);
+          setError(getEmailAuthErrorMessage(signUpError, mode));
         } else if (data.session) {
           navigateToPath('/', { replace: true });
         } else {
@@ -46,7 +92,8 @@ export default function LoginView() {
       } else {
         const result = await signInWithPassword(email.trim(), password);
         if (result.error) {
-          setError('Connexion impossible. Vérifiez vos informations ou réessayez plus tard.');
+          if (import.meta.env.DEV) console.error('Password sign-in failed:', result.error);
+          setError(getEmailAuthErrorMessage(result.error, mode));
         } else {
           navigateToPath(result.role === 'admin' ? '/admin' : '/', { replace: true });
         }
@@ -54,8 +101,8 @@ export default function LoginView() {
     } catch (authError) {
       if (import.meta.env.DEV) console.error('Email authentication failed:', authError);
       setError(mode === 'signup'
-        ? 'Inscription impossible. Vérifiez vos informations ou réessayez plus tard.'
-        : 'Connexion impossible. Vérifiez vos informations ou réessayez plus tard.');
+        ? 'Le service d’inscription est momentanément inaccessible. Vérifiez votre connexion puis réessayez.'
+        : 'Le service de connexion est momentanément inaccessible. Vérifiez votre connexion puis réessayez.');
     } finally {
       setSubmitting(false);
     }

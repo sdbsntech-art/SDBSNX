@@ -200,6 +200,71 @@ test('email signup requests account creation and shows email confirmation guidan
   });
 });
 
+test('invalid email/password login explains the likely Google account path', async ({ page }) => {
+  await page.route('**/auth/v1/token**', async (route) => {
+    if (route.request().method() === 'OPTIONS') {
+      await route.fulfill({
+        status: 204,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST,OPTIONS',
+          'Access-Control-Allow-Headers': 'apikey,authorization,content-type,x-client-info',
+        },
+      });
+      return;
+    }
+    await route.fulfill({
+      status: 400,
+      contentType: 'application/json',
+      headers: { 'Access-Control-Allow-Origin': '*' },
+      body: JSON.stringify({
+        code: 'invalid_credentials',
+        message: 'Invalid login credentials',
+      }),
+    });
+  });
+
+  await page.goto('/connexion');
+  await page.getByLabel('Adresse e-mail').fill('utilisateur@example.test');
+  await page.getByLabel('Mot de passe').fill('motdepasse-test-123');
+  await page.getByRole('button', { name: 'Se connecter' }).click();
+
+  await expect(page.getByRole('alert')).toContainText('Adresse e-mail ou mot de passe incorrect');
+  await expect(page.getByRole('alert')).toContainText('utilisez le bouton');
+});
+
+test('unconfirmed email account prompts the learner to confirm their address', async ({ page }) => {
+  await page.route('**/auth/v1/token**', async (route) => {
+    if (route.request().method() === 'OPTIONS') {
+      await route.fulfill({
+        status: 204,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST,OPTIONS',
+          'Access-Control-Allow-Headers': 'apikey,authorization,content-type,x-client-info',
+        },
+      });
+      return;
+    }
+    await route.fulfill({
+      status: 400,
+      contentType: 'application/json',
+      headers: { 'Access-Control-Allow-Origin': '*' },
+      body: JSON.stringify({
+        code: 'email_not_confirmed',
+        message: 'Email not confirmed',
+      }),
+    });
+  });
+
+  await page.goto('/connexion');
+  await page.getByLabel('Adresse e-mail').fill('utilisateur@example.test');
+  await page.getByLabel('Mot de passe').fill('motdepasse-test-123');
+  await page.getByRole('button', { name: 'Se connecter' }).click();
+
+  await expect(page.getByRole('alert')).toContainText('Confirmez votre adresse');
+});
+
 test('student password login opens the learning menu instead of administration', async ({ page }) => {
   await page.route('**/auth/v1/token**', async (route) => {
     if (route.request().method() === 'OPTIONS') {

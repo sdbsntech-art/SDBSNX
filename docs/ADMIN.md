@@ -81,7 +81,7 @@ Pour activer l’inscription/connexion Google :
 
 La configuration Google côté Supabase/Google Cloud reste à effectuer par le propriétaire ; le bouton du site commencera à fonctionner après cette configuration.
 
-Vérifications locales : `npm run build` passe ; `npm run test:e2e -- --workers=1` passe (7 scénarios, incluant la redirection des visiteurs non connectés, l’inscription par e-mail, le parcours Google simulé, la connexion étudiant et les mesures responsive aux largeurs 360, 390, 768, 1024 et 1440 px, en thèmes clair et sombre). Il n’existe pas de script lint dans `package.json`. Les tests E2E simulent Supabase et ne remplacent pas une validation des permissions réelles. L’administration et son CSS sont chargés à la demande ; l’ancienne présentation des documents locaux reste indépendante et conservée.
+Vérifications locales : `npm run build` passe ; `npm run test:e2e -- --workers=1` passe (9 scénarios, incluant la redirection des visiteurs non connectés, l’inscription par e-mail, les messages d’erreur d’identifiants et d’adresse non confirmée, le parcours Google simulé, la connexion étudiant et les mesures responsive aux largeurs 360, 390, 768, 1024 et 1440 px, en thèmes clair et sombre). Il n’existe pas de script lint dans `package.json`. Les tests E2E simulent Supabase et ne remplacent pas une validation des permissions réelles. L’administration et son CSS sont chargés à la demande ; l’ancienne présentation des documents locaux reste indépendante et conservée.
 
 ## Limites de vérification
 
